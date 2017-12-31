@@ -1,11 +1,80 @@
 
+## MATH 6000: Model Theory
+
+**Instructor:**  Dr. William DeMeo    
+**Email:** [williamdemeo@gmail.com](mailto:williamdemeo@gmail.com)   
+**Office:** [Math Building](https://www.google.com/maps/place/Mathematics+Building,+Boulder,+CO+80305/@40.0077558,-105.2651941,18z/data=!3m1!4b1!4m5!3m4!1s0x876bedcb63fc434b:0x103526dd5cc47ed7!8m2!3d40.0077558!4d-105.2645434), Room 202   
+**Office hours:** TBA.    
+
+**Location:** [KCEN N252](https://www.colorado.edu/map/?id=336&mrkIid=193914)   (Boulder Main Campus)  
+**Time:** MWF 11am--11:50am   
+**Dates:** 2018-01-16 through 2018-05-03    
+**Registration Restrictions:**  Graduate students only  
+**Course Number/Credits** 35569/3    
+
+-------------------------------------------------------
+
+### Course Web Pages
+
+- **Main Course Page** (GitHub):  
+  https://github.com/williamdemeo/math6000-spring2018  
+- **Online Discussions** (Piazza):   
+  https://piazza.com/colorado/spring2018/math6000/home
+
+-------------------------------------------
+
+### Textbook
+
+**Title:** [Model Theory](https://www.barnesandnoble.com/w/model-theory-wilfrid-hodges/1100952573)  
+**Author:** Wilfrid Hodges  
+**Publisher:** Cambridge University Press  
+**Publication Date:** June 19, 2008  
+**List Price:** $150  
+**ISBN-10:** 0521066360  
+**ISBN-13:** 9780521066365  
+
+The CU book store should have the book in stock, and might have some used copies.
+The book is also on sale at Barnes and Noble for $126 (use [this link](https://www.barnesandnoble.com/w/model-theory-wilfrid-hodges/1100952573)).
+The Barnes and Noble coupon code `WISH` might be good for an additional 15% off (code expires on 12/31).
+
+-----------------------------------------------------------
 
 
-## Other Model Theory Courses and Notes
+### Course Description
 
+**From the course catalog.** Proves the compactness theorem, showing the essential 
+finiteness of logical implication. Proves many basic properties of theories, 
+showing how the syntactic form of statements influences their behavior with 
+respect to different models. Finally, studies properties of elements that cannot 
+be stated by a single formula (the type of the element) and shows it can be used 
+to characterize certain models.
 
+(A more detailed course description and schedule will appear soon.)
 
-### A list from George McNulty's Model Theory Page
+----------------------------------------------------
+
+### Grading Policy
+The grades in this course will be based on each student's work on the problem 
+sets. Roughly speaking, an A will be assigned to students whose problem sets 
+eventually reveal a mastery of the central concepts and theorems of model 
+theory; a B will be assigned to students whose work reveals a grasp of the 
+basic concepts and a reasonable competence, short of mastery, in putting 
+this grasp into play to solve problems.
+
+------------------------------------------------------------------
+
+### Final Exam
+As the material is not well-suited to an in-class, 2.5 hour writing effort, 
+in place of a final exam there will be a final problem set that may be wider 
+in scope than previous problem sets.
+
+------------------------------------------------------------
+
+### Other Resources
+
++ [Notes on Model Theory](http://euclid.colorado.edu/~monkd/m6000.pdf) by Donald Monk
+ 
+#### George McNulty's List
 
 The following list of resources was copied from [George McNulty's Model Theory Page](http://people.math.sc.edu/mcnulty/762/index.html)
 
