@@ -27,11 +27,10 @@
 
 **Title:** [Introduction to Model Theory](https://www.barnesandnoble.com/noresults/introduction-to-model-theory-philipp-rothmaler/)    
 **Author:** Philipp Rothmaler  
-**Publisher:** Taylor Francis  
+**Publisher:** Taylor & Francis  
+**Publication Date:** 5 September 2000   
 **ISBN-10:** 9056993135  
 **ISBN-13:** 9789056993139  
-**Pub. Date:** 09/05/2000  
-**Publisher:** Taylor & Francis
 **List Price:** $79
 
 -----------------------------------------------------------
