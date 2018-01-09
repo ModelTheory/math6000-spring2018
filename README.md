@@ -25,17 +25,14 @@
 
 ### Textbook
 
-**Title:** [Model Theory](https://www.barnesandnoble.com/w/model-theory-wilfrid-hodges/1100952573)  
-**Author:** Wilfrid Hodges  
-**Publisher:** Cambridge University Press  
-**Publication Date:** June 19, 2008  
-**List Price:** $150  
-**ISBN-10:** 0521066360  
-**ISBN-13:** 9780521066365  
-
-The CU book store should have the book in stock, and might have some used copies.
-The book is also on sale at Barnes and Noble for $126 (use [this link](https://www.barnesandnoble.com/w/model-theory-wilfrid-hodges/1100952573)).
-The Barnes and Noble coupon code `WISH` might be good for an additional 15% off (code expires on 12/31).
+**Title:** [Introduction to Model Theory](https://www.barnesandnoble.com/noresults/introduction-to-model-theory-philipp-rothmaler/)    
+**Author:** Philipp Rothmaler  
+**Publisher:** Taylor Francis  
+**ISBN-10:** 9056993135  
+**ISBN-13:** 9789056993139  
+**Pub. Date:** 09/05/2000  
+**Publisher:** Taylor & Francis
+**List Price:** $79
 
 -----------------------------------------------------------
 
