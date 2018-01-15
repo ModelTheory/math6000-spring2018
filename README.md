@@ -1,7 +1,7 @@
 
 ## MATH 6000: Model Theory
 
-**Instructor:**  Dr. William DeMeo    
+**Instructor:**  William DeMeo    
 **Email:** [williamdemeo@gmail.com](mailto:williamdemeo@gmail.com)   
 **Office:** [Math Building](https://www.google.com/maps/place/Mathematics+Building,+Boulder,+CO+80305/@40.0077558,-105.2651941,18z/data=!3m1!4b1!4m5!3m4!1s0x876bedcb63fc434b:0x103526dd5cc47ed7!8m2!3d40.0077558!4d-105.2645434), Room 202   
 **Office hours:** TBA.    
