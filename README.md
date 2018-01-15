@@ -9,8 +9,9 @@
 **Location:** [KCEN N252](https://www.colorado.edu/map/?id=336&mrkIid=193914)   (Boulder Main Campus)  
 **Time:** MWF 11am--11:50am   
 **Dates:** 2018-01-16 through 2018-05-03    
-**Registration Restrictions:**  Graduate students only  
-**Course Number/Credits** 35569/3    
+**Registration Restrictions:**  Graduate students only    
+**Course Number/Credits** 35569/3      
+**Credit Hours:** 3 Credit Hour Lecture  
 
 -------------------------------------------------------
 
@@ -38,11 +39,11 @@
 
 ### Course Description
 
-**From the course catalog.** Proves the compactness theorem, showing the essential 
-finiteness of logical implication. Proves many basic properties of theories, 
-showing how the syntactic form of statements influences their behavior with 
-respect to different models. Finally, studies properties of elements that cannot 
-be stated by a single formula (the type of the element) and shows it can be used 
+**From the course catalog.** Proves the compactness theorem, showing the essential
+finiteness of logical implication. Proves many basic properties of theories,
+showing how the syntactic form of statements influences their behavior with
+respect to different models. Finally, studies properties of elements that cannot
+be stated by a single formula (the type of the element) and shows it can be used
 to characterize certain models.
 
 (A more detailed course description and schedule will appear soon.)
@@ -50,18 +51,18 @@ to characterize certain models.
 ----------------------------------------------------
 
 ### Grading Policy
-The grades in this course will be based on each student's work on the problem 
-sets. Roughly speaking, an A will be assigned to students whose problem sets 
-eventually reveal a mastery of the central concepts and theorems of model 
-theory; a B will be assigned to students whose work reveals a grasp of the 
-basic concepts and a reasonable competence, short of mastery, in putting 
+The grades in this course will be based on each student's work on the problem
+sets. Roughly speaking, an A will be assigned to students whose problem sets
+eventually reveal a mastery of the central concepts and theorems of model
+theory; a B will be assigned to students whose work reveals a grasp of the
+basic concepts and a reasonable competence, short of mastery, in putting
 this grasp into play to solve problems.
 
 ------------------------------------------------------------------
 
 ### Final Exam
-As the material is not well-suited to an in-class, 2.5 hour writing effort, 
-in place of a final exam there will be a final problem set that may be wider 
+As the material is not well-suited to an in-class, 2.5 hour writing effort,
+in place of a final exam there will be a final problem set that may be wider
 in scope than previous problem sets.
 
 ------------------------------------------------------------
@@ -69,7 +70,7 @@ in scope than previous problem sets.
 ### Other Resources
 
 + [Notes on Model Theory](http://euclid.colorado.edu/~monkd/m6000.pdf) by Donald Monk
- 
+
 #### George McNulty's List
 
 The following list was copied from [George McNulty's Model Theory Page](http://people.math.sc.edu/mcnulty/762/index.html)
