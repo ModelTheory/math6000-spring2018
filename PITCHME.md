@@ -51,7 +51,7 @@ to characterize certain models.
 - Grades will be based on student's work on 12 problem sets |
 - A if problem sets reveal mastery of central concepts and theorems |
 - B if problem sets reveal grasp of the basic concepts, short of mastery |
-- Possible Strategy: each problem set graded pass/fail. A for passing at least 9 problem sets; B for passing at least 6 problem sets |
+- Grading Scheme: each problem set graded pass/fail. A for passing at least 9 problem sets; B for passing at least 6 problem sets |
 
 +++
 
