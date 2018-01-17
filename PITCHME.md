@@ -59,6 +59,6 @@ to characterize certain models.
 
 @fa[thumbs-up](There are no exams in this class!)
 
-The material is not well-suited to an in-class, 2.5 hour writing effort.
+The material is not well-suited to an in-class 2.5 hour writing effort.
 
 The final problem set that may be wider in scope than previous problem sets.
