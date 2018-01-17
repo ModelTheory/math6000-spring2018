@@ -51,13 +51,11 @@ html:-moz-full-screen-ancestor {
 .reveal .slides {
     text-align: left;
     font-size: 0.8em;
-    margin: 20px;
-    margin-right: 40px;
+    margin: 30px;
 }
 
 .reveal .slides section {
-    margin: 20px;
-    margin-right: 40px;
+    margin: 30px;
 }
 
 .reveal a {
