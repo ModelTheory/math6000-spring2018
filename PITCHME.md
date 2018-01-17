@@ -55,7 +55,7 @@ to characterize certain models.
 
 +++
 
-### Final Exam
+### Exams
 
 @fa[thumbs-up](There are no exams in this class!)
 
