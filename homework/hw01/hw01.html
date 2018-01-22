@@ -16,9 +16,32 @@
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
 </script>
       <style>
-      
-.line-number.bracket-matcher {
-  background-color: #777;
+.conflict-resolved {
+  background: #31363f;
+}
+.conflict-ours {
+  background: rgba(0, 136, 255, 0.4);
+}
+.conflict-ours.cursor-line {
+  background: rgba(0, 136, 255, 0.3);
+}
+.conflict-theirs {
+  background: rgba(32, 182, 132, 0.4);
+}
+.conflict-theirs.cursor-line {
+  background: rgba(32, 182, 132, 0.3);
+}
+.conflict-base {
+  background: rgba(204, 133, 51, 0.4);
+}
+.conflict-base.cursor-line {
+  background: rgba(204, 133, 51, 0.3);
+}
+.conflict-dirty {
+  background: rgba(235, 221, 91, 0.4);
+}
+.conflict-dirty.cursor-line {
+  background: rgba(235, 221, 91, 0.3);
 }
 
 .spell-check-misspelling .region {
@@ -470,5 +493,31 @@ Show that <span class="math"><script type="math/tex">\mathcal M = \prod_{i\in I}
 <hr>
 <p><strong>1.6.2.</strong> Find an embedding <span class="math"><script type="math/tex">e \colon \mathcal M \to \mathcal M^I</script></span>
 such that <span class="math"><script type="math/tex">p_i e = \operatorname{id}_M</script></span> for all <span class="math"><script type="math/tex">i \in I</script></span>.</p>
-<hr></body>
+<hr>
+<p>Consider the conjecture below (which was inspired by questions asked by Jared Louchs and Connor Meredith).</p>
+<p>Suppose we are given two signatures of the following form</p>
+<p><span class="math"><script type="math/tex">\sigma_0 = (\emptyset, \emptyset, \{r\}, \sigma_0') \quad \text{ and }
+\quad  \sigma_1 = (\emptyset, \{f\}, \emptyset, \sigma_1')</script></span></p>
+<p>such that <span class="math"><script type="math/tex">\sigma_0'(r) = \sigma_1'(f)+1</script></span>. To ease notation below, let’s
+take <span class="math"><script type="math/tex">\sigma'_1(f) = n</script></span>.</p>
+<p>(<span class="math"><script type="math/tex">\sigma_0</script></span> might be called a “purely relational” signature, since it has only
+relation symbols; similarly, <span class="math"><script type="math/tex">\sigma_1</script></span> is “purely algebraic”.)</p>
+<p>Now, suppose we have structures <span class="math"><script type="math/tex">\mathbf{P} = (S, r^{\mathbf{P}})</script></span>
+and <span class="math"><script type="math/tex">\mathbf{L} = (S, f^{\mathbf{L}})</script></span> of types
+<span class="math"><script type="math/tex">\sigma_0</script></span> and <span class="math"><script type="math/tex">\sigma_1</script></span> respectively, defined on the same universe, <span class="math"><script type="math/tex">S</script></span>.</p>
+<p>Let’s make up a new definition that might be useful in this situation.
+Let us say that <span class="math"><script type="math/tex">\mathbf{P}</script></span> is a <strong>proxy</strong> for <span class="math"><script type="math/tex">\mathbf{L}</script></span>
+if each of <span class="math"><script type="math/tex">r^{\mathbf{P}}</script></span> and <span class="math"><script type="math/tex">f^{\mathbf{L}}</script></span> can be defined in terms the other
+as follows: for all <span class="math"><script type="math/tex">x_0, x_1, \dots, x_{n-1}, y \in S</script></span>,</p>
+<p><span class="math"><script type="math/tex">f^{\mathbf{L}}(x_0, x_1, \dots, x_{n-1}) = y \quad \Leftrightarrow 
+\quad r^{\mathbf{P}}(x_0, x_1, \dots, x_{n-1}, y).</script></span></p>
+<p><strong>EXERCISE.</strong>
+Try to prove, or disprove by counterexample, the following</p>
+<p><strong>Conjecture:</strong>
+If <span class="math"><script type="math/tex">\mathbf{P} = (S, r^{\mathbf{P}})</script></span> is a <strong>proxy</strong> for <span class="math"><script type="math/tex">\mathbf{L} = (S, f^{\mathbf{L}})</script></span>,
+and if <span class="math"><script type="math/tex">\mathbf{Q} = (T, r^{\mathbf{Q}})</script></span> is a <strong>proxy</strong> for <span class="math"><script type="math/tex">\mathbf{M} = (T, f^{\mathbf{M}})</script></span>,
+then a relational homomorphism <span class="math"><script type="math/tex">h: \mathbf{P} \to \mathbf{Q}</script></span> is <em>strong</em> if and only if the
+map <span class="math"><script type="math/tex">h: S \to T</script></span> is an algebraic homomorphism from <span class="math"><script type="math/tex">\mathbf{L}</script></span> to <span class="math"><script type="math/tex">\mathbf{M}</script></span>.</p>
+<p><strong>Further food for thought</strong><br>
+Do you think the notion of “proxy” defined above captures the sense in which the poset we saw in class can be represeted as a semilattice?  If not, think about alternative definitions of “equivalent” structures of different signatures.  This is an open-ended question that may help you get better aquainted with structures and their signatures, but it is not a central theme of the course.  In other words, it’s something to think about over dinner.</p></body>
 </html>
