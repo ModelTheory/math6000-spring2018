@@ -10,8 +10,8 @@ below (which was inspired by questions asked by Jared Louchs and Connor Meredith
 
 Suppose we are given two signatures of the following form
 
-$\sigma_0 = (\emptyset, \emptyset, \{r\}, \sigma_0') \quad \text{ and }
-\quad  \sigma_1 = (\emptyset, \{f\}, \emptyset, \sigma_1')$,
+$\sigma_0 = (\emptyset, \emptyset, \{{r\}}, \sigma_0') \quad \text{ and }
+\quad  \sigma_1 = (\emptyset, \{{f\}}, \emptyset, \sigma_1')$,
 
 such that $\sigma_0'(r) = \sigma_1'(f)+1$. To ease notation below, let's 
 take $\sigma'_1(f) = n$.
