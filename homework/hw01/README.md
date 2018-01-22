@@ -5,8 +5,8 @@
 **Textbook Exercises:** 1.2.1, 1.3.1, 1.3.2, (1.3.3), (1.4.1),
 (1.5.1), 1.6.1, 1.6.2.
 
-In addition to the above listed exercises, you may wish to prove the conjecture 
-below (which is inspired by the questions/comments of Jared Louchs and Connor Meredith).
+In addition to the above listed exercises, please consider the conjecture 
+below (which was inspired by questions asked by Jared Louchs and Connor Meredith).
 
 Suppose we are given two signatures of the following form
 
@@ -39,3 +39,6 @@ If $\mathbf{P} = (S, r^{\mathbf{P}})$ is a **proxy** for $\mathbf{L} = (S, f^{\m
 and if $\mathbf{Q} = (T, r^{\mathbf{Q}})$ is a **proxy** for $\mathbf{M} = (T, f^{\mathbf{M}})$,
 then a relational homomorphism $h: \mathbf{P} \to \mathbf{Q}$ is *strong* if and only if the 
 map $h: S \to T$ is an algebraic homomorphism from $\mathbf{L}$ to $\mathbf{M}$.
+
+**Further food for thought**  
+Do you think the notion of "proxy" defined above captures the sense in which the poset we saw in class can be represeted as a semilattice?  If not, think about alternative definitions of "equivalent" structures of different signatures.  This is an open-ended question that may help you get better aquainted with structures and their signatures, but it is not a central theme of the course.  In other words, it's something to think about over dinner.
