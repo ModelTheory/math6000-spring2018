@@ -3,15 +3,16 @@
 
 **Instructor:**  William DeMeo    
 **Email:** [williamdemeo@gmail.com](mailto:williamdemeo@gmail.com)   
-**Office:** [Math Building](https://www.google.com/maps/place/Mathematics+Building,+Boulder,+CO+80305/@40.0077558,-105.2651941,18z/data=!3m1!4b1!4m5!3m4!1s0x876bedcb63fc434b:0x103526dd5cc47ed7!8m2!3d40.0077558!4d-105.2645434), Room 202   
-**Office hours:** TBA.    
+**Office:** [Math Building](https://www.google.com/maps/place/Mathematics+Building,+Boulder,+CO+80305/@40.0077558,-105.2651941,18z/data=!3m1!4b1!4m5!3m4!1s0x876bedcb63fc434b:0x103526dd5cc47ed7!8m2!3d40.0077558!4d-105.2645434), Room 202 (but office hours are in [Kittredge Central Hall](https://www.google.com/maps/place/Kittredge+Central+Hall,+Boulder,+CO+80305/@40.0032454,-105.265602,17z/) Rm N252)
 
-**Location:** [KCEN N252](https://www.colorado.edu/map/?id=336&mrkIid=193914)   (Boulder Main Campus)  
-**Time:** MWF 11am--11:50am   
+**Office Hour:** MWF 12--12:50    
+**Office Hour Location:** [Kittredge Central Hall](https://www.google.com/maps/place/Kittredge+Central+Hall,+Boulder,+CO+80305/@40.0032454,-105.265602,17z/) Rm N252  
+
+**Lecture Time:** MWF 11am--11:50am   
+**Lecture Location:** [KCEN N252](https://www.colorado.edu/map/?id=336&mrkIid=193914)   (Boulder Main Campus)  
 **Dates:** 2018-01-16 through 2018-05-03    
 **Registration Restrictions:**  Graduate students only    
 **Course Number/Credits** 35569/3      
-**Credit Hours:** 3 Credit Hour Lecture  
 
 -------------------------------------------------------
 
