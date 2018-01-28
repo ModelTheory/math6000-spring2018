@@ -1,5 +1,22 @@
 # Homework for Math 6000 Spring 2018
 
+
+## General Homework Instructions
+
+1. Homework should be submitted in hard copy. (The instructor is not responsible for printing out electronic homework submissions.)
+
+2. If you are running late and don't have time to print your homework before the class in which it is due, then you may email it on or before the due date, if you agree to the following conditions:
+
+   + You will email a pdf file as well as the $\LaTeX$ source code you used to produce it. (A scanned copy of handwritten homework is typically not acceptable and would require the instructor's authorization.)
+
+   + Your work may be used (anonymously), for example, to produce the official solutions that will be shared with other students.
+
+   + MS Word is **not an acceptable format** for a homework submission under any circumstances.
+
+   + You will bring a hard-copy of your (previously emailed) solutions to the next class (typically Monday).
+
+---------
+
 ## HW 1
 **Due Friday Jan 26**
 
@@ -8,11 +25,14 @@
 
 **NOTE:** Exercises in parentheses are not required; please do not submit solutions to these.
 
+---
 
 ## HW 2
 **Due Friday Feb 2**
 
 **Exercises:** 2.2.1, 2.2.2, 2.2.3, 2.3.1, 2.3.2, 2.5.1, 2.6.1.
+
+---
 
 ## HW 3
 
