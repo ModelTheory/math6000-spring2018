@@ -21,7 +21,7 @@
 **Due Friday Jan 26**
 
 **Exercises:** 1.2.1, 1.3.1, 1.3.2, (1.3.3), (1.4.1),
-(1.5.1), 1.6.1, 1.6.2.
+(1.5.1), 1.6.1, 1.6.2, plus the extra problem in hw01 directory.
 
 **NOTE:** Exercises in parentheses are not required; please do not submit solutions to these.
 
@@ -38,7 +38,10 @@
 
 **Due Friday Feb 9**
 
-**Exercises:** TBA
+**Exercises:** 3.1.1, 3.1.2, 3.1.5, 3.2.3, 3.3.1, 3.3.6. 3.4.1, 3.4.4, 3.4.5.
+
+---
+ 
 
 ## HW 4
 
@@ -46,11 +49,15 @@
 
 **Exercises:** TBA
 
+---
+
 ## HW 5
 
 **Due Friday Mar 2**
 
 **Exercises:** TBA
+
+---
 
 ## HW 6
 
@@ -58,11 +65,15 @@
 
 **Exercises:** TBA
 
+---
+
 ## HW 7
 
 **Due Friday Mar 16**
 
 **Exercises:** TBA
+
+---
 
 ## HW 8
 
@@ -70,11 +81,15 @@
 
 **Exercises:** TBA
 
+---
+
 ## HW 9
 
 **Due Friday Apr 6**
 
 **Exercises:** TBA
+
+---
 
 ## HW 10
 
@@ -82,11 +97,15 @@
 
 **Exercises:** TBA
 
+---
+
 ## HW 11
 
 **Due Friday Apr 20**
 
 **Exercises:** TBA
+
+---
 
 ## HW 12
 
