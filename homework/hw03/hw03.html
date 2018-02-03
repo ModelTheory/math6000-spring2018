@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>hw03</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","output/HTML-CSS"],
+    extensions: [],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    showMathMenu: false
+  });
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+</script>
+      <style>
+.conflict-resolved {
+  background: #31363f;
+}
+.conflict-ours {
+  background: rgba(0, 136, 255, 0.4);
+}
+.conflict-ours.cursor-line {
+  background: rgba(0, 136, 255, 0.3);
+}
+.conflict-theirs {
+  background: rgba(32, 182, 132, 0.4);
+}
+.conflict-theirs.cursor-line {
+  background: rgba(32, 182, 132, 0.3);
+}
+.conflict-base {
+  background: rgba(204, 133, 51, 0.4);
+}
+.conflict-base.cursor-line {
+  background: rgba(204, 133, 51, 0.3);
+}
+.conflict-dirty {
+  background: rgba(235, 221, 91, 0.4);
+}
+.conflict-dirty.cursor-line {
+  background: rgba(235, 221, 91, 0.3);
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h2>HW 3</h2>
+<p><strong>Due Friday Feb 9</strong></p>
+<p><strong>EXERCISES</strong><br>
+<strong>Sec 3.1:</strong> <strong>3.1.1</strong>, <strong>3.1.2</strong>, (3.1.3), (3.1.4), <strong>3.1.5</strong>,<br>
+<strong>Sec 3.2:</strong> (3.2.1), (3.2.2), <strong>3.2.3</strong>,<br>
+<strong>Sec 3.3:</strong> <strong>3.3.1</strong>, (3.3.2), (3.3.3), (3.3.4), (3.3.5), <strong>3.3.6</strong>,<br>
+<strong>Sec 3.4:</strong> <strong>3.4.1</strong>, (3.4.2), (3.4.3), <strong>3.4.4</strong>, <strong>3.4.5</strong>.</p>
+<p>(Solutions to numbers in parentheses should not be turned in.)</p>
+<hr>
+<h3>Section 3.1.</h3>
+<p><strong>3.1.1.</strong> Prove the coincidence lemma for satisfiability (from the remark before Lemma 3.1.1).</p>
+<hr>
+<p><strong>3.1.2.</strong> Prove the following equivalences for all sentences <span class="math"><script type="math/tex">\varphi</script></span> and <span class="math"><script type="math/tex">\psi</script></span> and structures <span class="math"><script type="math/tex">\mathcal{M}</script></span> (of matching signature):<br>
+(i) <span class="math"><script type="math/tex">\mathcal{M} \models \varphi \vee \psi</script></span> if and only if,
+<span class="math"><script type="math/tex">\mathcal{M} \models \varphi</script></span> and
+<span class="math"><script type="math/tex">\mathcal{M} \models \psi</script></span>;<br>
+(ii) <span class="math"><script type="math/tex">\mathcal{M} \models \varphi \to \psi</script></span> if and only if,
+<em>if</em> <span class="math"><script type="math/tex">\mathcal{M} \models \varphi</script></span> <em>then</em>
+<span class="math"><script type="math/tex">\mathcal{M} \models \psi</script></span>;<br>
+(iii) <span class="math"><script type="math/tex">\mathcal{M} \models \varphi \leftrightarrow \psi</script></span> if and only if,
+<span class="math"><script type="math/tex">\mathcal{M} \models \varphi</script></span> and
+<span class="math"><script type="math/tex">\mathcal{M} \models \psi</script></span>;<br>
+(iv) <span class="math"><script type="math/tex">\mathcal{M} \models \forall x \varphi</script></span> if and only if, <em>for all</em> <span class="math"><script type="math/tex">a \in M</script></span>, <span class="math"><script type="math/tex">\mathcal{M} \models \varphi(a)</script></span>.</p>
+<hr>
+<p>3.1.3. (not required)<br>
+Show that the sentences <span class="math"><script type="math/tex">\exists x (x = x)</script></span> and <span class="math"><script type="math/tex">\forall x( x = x)</script></span> are valid.  Which of the two sentences is true in empty structures</p>
+<hr>
+<p>3.1.4. (not required)<br>
+For any natural number <span class="math"><script type="math/tex">n</script></span> find an <span class="math"><script type="math/tex">L_{=}</script></span>-structure that is true  in an <span class="math"><script type="math/tex">L</script></span>-structure precisely if it has cardinality <span class="math"><script type="math/tex">n</script></span>.</p>
+<hr>
+<p><strong>3.1.5.</strong> Let <span class="math"><script type="math/tex">\varphi = \varphi(z)</script></span> be an <span class="math"><script type="math/tex">L</script></span>-formula, and <span class="math"><script type="math/tex">t = t(\mathbf{x})</script></span> an <span class="math"><script type="math/tex">L</script></span>-term,
+<span class="math"><script type="math/tex">\mathcal{M}</script></span> an <span class="math"><script type="math/tex">L</script></span>-structure, and <span class="math"><script type="math/tex">\mathbf{a}</script></span> a tuple of <span class="math"><script type="math/tex">M</script></span> (of appropriate length).
+Prove the so called <em>Subsititution Lemma</em>, which says that <span class="math"><script type="math/tex">\mathbf{a}</script></span> satisfies the formula <span class="math"><script type="math/tex">\varphi(t(\mathbf{x}))</script></span> in <span class="math"><script type="math/tex">\mathcal{M}</script></span> if and only if <span class="math"><script type="math/tex">t^{\mathcal{M}}(\mathbf{a})</script></span> satisfies <span class="math"><script type="math/tex">\varphi(z)</script></span>. More precisely, letting <span class="math"><script type="math/tex">\psi</script></span> denote the formula <span class="math"><script type="math/tex">[t/z]\varphi := \varphi_z(t)</script></span> (and hence <span class="math"><script type="math/tex">\psi = \psi(\mathbf{x}) = \varphi_z(t(\mathbf{x}))</script></span>),
+we have <span class="math"><script type="math/tex">\mathcal{M} \models \varphi(t^{\mathcal{M}}(\mathbf{a}))</script></span> iff
+<span class="math"><script type="math/tex">\mathcal{M} \models \psi(\mathbf{a})</script></span>.</p>
+<hr>
+<h3>Section 3.2.</h3>
+<p>3.2.1. (not required)<br>
+Show that every finite subset of a structure <span class="math"><script type="math/tex">\mathcal{M}</script></span> is parametrically definable in <span class="math"><script type="math/tex">\mathcal{M}</script></span>.  Derive the same for every <strong>cofinite</strong> subset of <span class="math"><script type="math/tex">\mathcal{M}</script></span> (i.e., a subset <span class="math"><script type="math/tex">X \subseteq M</script></span> whose complement <span class="math"><script type="math/tex">M - X</script></span> is finite.)</p>
+<hr>
+<p>3.2.2. (not required)<br>
+Consider a given set <span class="math"><script type="math/tex">M</script></span> as an <span class="math"><script type="math/tex">L_{=}</script></span>-structure <span class="math"><script type="math/tex">\mathcal{M}</script></span>.  Describe all sets defined (with parameters) by atomic <span class="math"><script type="math/tex">L_{=}</script></span>-formulas in <span class="math"><script type="math/tex">\mathcal{M}</script></span>.</p>
+<hr>
+<p><strong>3.2.3</strong>
+Let <span class="math"><script type="math/tex">L</script></span> be a language of signature <span class="math"><script type="math/tex">\sigma = (\mathbf{C}, \mathbf{F}, \mathbf{R}, \sigma')</script></span>.  For all <span class="math"><script type="math/tex">x \in \mathbf{C}</script></span>, choose a new unary relation symbol (a <em>new predicate</em>) <span class="math"><script type="math/tex">P_c</script></span>, and, for all <span class="math"><script type="math/tex">f \in \mathbf{F}</script></span> with <span class="math"><script type="math/tex">\sigma'(f) = n</script></span>, a new <span class="math"><script type="math/tex">(n+1)</script></span>-place relation symbol <span class="math"><script type="math/tex">R_f</script></span>.</p>
+<p>Set <span class="math"><script type="math/tex">\mathbf{R}^\ast = \mathbf{R} \cup \{P_c : c \in \mathbf{C}\} \cup \{R_f : f \in \mathbf{F}\}</script></span> and let <span class="math"><script type="math/tex">L^\ast</script></span> be the language with non-logical symbols <span class="math"><script type="math/tex">\mathbf{R}^\ast</script></span>.  Given an <span class="math"><script type="math/tex">L</script></span>-structure <span class="math"><script type="math/tex">\mathcal{M}</script></span>, let <span class="math"><script type="math/tex">\mathcal{M}^\ast</script></span> be the <span class="math"><script type="math/tex">L^\ast</script></span>-structure with the same underlying universe <span class="math"><script type="math/tex">M</script></span> such that</p>
+<ul>
+<li><span class="math"><script type="math/tex">R^{\mathcal{M}} = R^{\mathcal{M}^\ast}</script></span>, for all <span class="math"><script type="math/tex">R \in \mathbf{R}</script></span>,</li>
+<li><span class="math"><script type="math/tex">\mathcal{M}^\ast \models P_c(d)</script></span> iff <span class="math"><script type="math/tex">c^{\mathcal{M}} = d</script></span>, for all <span class="math"><script type="math/tex">c\in \mathbf{C}</script></span>,</li>
+<li><span class="math"><script type="math/tex">\mathcal{M}^\ast \models R_f(\mathbf{a}, b)</script></span> iff <span class="math"><script type="math/tex">f^{\mathcal{M}}(\mathbf{a}) = b</script></span>, for all <span class="math"><script type="math/tex">f \in \mathbf{F}</script></span>.</li>
+</ul>
+<p>Prove that <span class="math"><script type="math/tex">\mathcal{M}</script></span> and <span class="math"><script type="math/tex">\mathcal{M}^\ast</script></span> have the same definable sets.</p>
+<hr>
+<h3>Section 3.3.</h3>
+<p><strong>3.3.1.</strong> (The Deduction Theorem)<br>
+Given <span class="math"><script type="math/tex">L</script></span>-sentences <span class="math"><script type="math/tex">\varphi</script></span> and <span class="math"><script type="math/tex">\psi</script></span> and a set <span class="math"><script type="math/tex">\Sigma</script></span> of <span class="math"><script type="math/tex">L</script></span>-sentences, show that <span class="math"><script type="math/tex">\Sigma \models \varphi \to \psi</script></span> if and only if <span class="math"><script type="math/tex">\Sigma \cup \{\varphi\} \models \psi</script></span>.</p>
+<hr>
+<p>3.3.2. (not required)<br>
+Prove that a finite conjunction of existential (resp. universal) formulas is logically equivalent to an existential (resp. universal) formula. Prove the same for finite disjunctions. In which of the four statements you proved can you not in general simply exchange the quantifiers with the logical connectives?</p>
+<hr>
+<p>3.3.3. (not required)<br>
+Verify the assertions made in all of the remarks in Section 3.3, in particular, prove the theorems on normal forms.</p>
+<hr>
+<p>3.3.4. (not required)<br>
+Let <span class="math"><script type="math/tex">\Sigma</script></span> be a set of <span class="math"><script type="math/tex">L</script></span>-sentences, and <span class="math"><script type="math/tex">\Phi(\mathbf{x})</script></span> and
+<span class="math"><script type="math/tex">\Psi(\mathbf{x})</script></span> sets of <span class="math"><script type="math/tex">L</script></span>-formulas in the free variables <span class="math"><script type="math/tex">\mathbf{x} = (x_0, \dots, x_{n-1})</script></span>.  Then <span class="math"><script type="math/tex">\Phi</script></span> and <span class="math"><script type="math/tex">\Psi</script></span> are <span class="math"><script type="math/tex">\Sigma</script></span>-equivalent iff for some (every) expansion <span class="math"><script type="math/tex">L(\mathbf{c})</script></span> by an <span class="math"><script type="math/tex">n</script></span>-tuple of new constants <span class="math"><script type="math/tex">\mathbf{c}</script></span>, the sets of
+<span class="math"><script type="math/tex">L(\mathbf{c})</script></span>-sentences <span class="math"><script type="math/tex">\Phi(\mathbf{c})</script></span> and <span class="math"><script type="math/tex">\Psi(\mathbf{c})</script></span> are <span class="math"><script type="math/tex">\Sigma</script></span>-equivalent.</p>
+<hr>
+<p>3.3.5. (not required)<br>
+Show that adding dummy variables preserves logical equivalence.</p>
+<hr>
+<p><strong>3.3.6.</strong> Prove by induction on the complexity of formlas that every formula is equivalent to a formula obtained from <em>unnested</em> atomic formulas using <span class="math"><script type="math/tex">\neg</script></span>, <span class="math"><script type="math/tex">\wedge</script></span>, and <span class="math"><script type="math/tex">\exists</script></span>.</p>
+<hr>
+<h3>Section 3.4.</h3>
+<p><strong>3.4.1.</strong>
+Prove that isomorphic structures have the same <span class="math"><script type="math/tex">L</script></span>-theory and hence, if <span class="math"><script type="math/tex">\mathcal{M}</script></span> is isomorphic to a structure from an axiomatizable class <span class="math"><script type="math/tex">\mathbf{K}</script></span>, then <span class="math"><script type="math/tex">\mathcal{M}</script></span> itself is in <span class="math"><script type="math/tex">\mathbf{K}</script></span>.</p>
+<hr>
+<p>3.4.2. (not required)<br>
+Axiomatize the class of all vector spaces over a field <span class="math"><script type="math/tex">K</script></span> (in the language of Exercise 1.2.1).</p>
+<hr>
+<p>3.4.3. (not required)  (In the notation of Exercise 3.2.3.)<br>
+Let
+<span class="math"><script type="math/tex">\Sigma = \{\exists^{=1}x\, P_c(x) : c \in \mathbf{C}\} \cup \{\forall \mathbf{x}\, \exists^{=1} y\, R_f(\mathbf{x}, y) : f \in \mathbf{F}\} \subseteq L_0^\ast</script></span>.
+Prove that the class of structures satisfying <span class="math"><script type="math/tex">\Sigma</script></span> is
+<span class="math"><script type="math/tex">\{\mathcal{M}^\ast : \mathcal{M} \text{ is an \(L\)-structure}\}</script></span>, hence
+<span class="math"><script type="math/tex">\operatorname{Mod}\Sigma = \{\mathcal{M}^\ast : \mathcal{M} \text{ is a nonempty \(L\)-structure}\}</script></span>.</p>
+<hr>
+<p>In the next few exercises involve the notion of “Galois
+correspondence,” which we now review. If <span class="math"><script type="math/tex">X</script></span> is a set (class, resp.) then the set (class) of all subsets
+(subclasses) of <span class="math"><script type="math/tex">X</script></span> is denoted by <span class="math"><script type="math/tex">\mathfrak{P}(X)</script></span> and called the “powerset” of <span class="math"><script type="math/tex">X</script></span>.</p>
+<p>Let <span class="math"><script type="math/tex">X</script></span> and <span class="math"><script type="math/tex">Y</script></span> be two sets (or classes).  A <strong>Galois correspondence</strong> between <span class="math"><script type="math/tex">X</script></span> and <span class="math"><script type="math/tex">Y</script></span> is a pair of maps
+<span class="math"><script type="math/tex">\alpha\colon \mathfrak{P}(X) \to \mathfrak{P}(Y)</script></span>
+and <span class="math"><script type="math/tex">\beta\colon \mathfrak{P}(Y) \to \mathfrak{P}(X)</script></span> satisfying the following properties:</p>
+<ul>
+<li>if <span class="math"><script type="math/tex">X_0\subseteq X_1 \subseteq X</script></span> then <span class="math"><script type="math/tex">\alpha(X_0)\supseteq \alpha(X_1)</script></span>;</li>
+<li>if <span class="math"><script type="math/tex">Y_0\subseteq Y_1\subseteq Y</script></span> then <span class="math"><script type="math/tex">\beta(Y_0)\supseteq \beta(Y_1)</script></span>;</li>
+<li><span class="math"><script type="math/tex">A \subseteq \beta \alpha(A)</script></span> for all <span class="math"><script type="math/tex">A \subseteq X</script></span>;</li>
+<li><span class="math"><script type="math/tex">B \subseteq \alpha \beta(B)</script></span> for all <span class="math"><script type="math/tex">B \subseteq Y</script></span>.</li>
+</ul>
+<hr>
+<p><strong>Extra Exercise.</strong> Prove that the map <span class="math"><script type="math/tex">\beta \alpha \colon \mathfrak{P}(X) \to \mathfrak{P}(X)</script></span> is a <strong>closure operator</strong> on <span class="math"><script type="math/tex">X</script></span>.  That is, for all <span class="math"><script type="math/tex">A\subseteq A'\subseteq X</script></span>, we have:</p>
+<ul>
+<li><span class="math"><script type="math/tex">A \subseteq \beta \alpha(A)</script></span> (<span class="math"><script type="math/tex">\beta \alpha</script></span> is “extensive”)</li>
+<li><span class="math"><script type="math/tex">\beta \alpha(A) \subseteq \beta \alpha(A')</script></span> (<span class="math"><script type="math/tex">\beta \alpha</script></span> is “monotone”)</li>
+<li><span class="math"><script type="math/tex">\beta \alpha\beta \alpha(A)  = \beta \alpha(A)</script></span> (<span class="math"><script type="math/tex">\beta \alpha</script></span> is “idempotent”)</li>
+</ul>
+<hr>
+<p><strong>3.4.4.</strong> Prove that <span class="math"><script type="math/tex">\Sigma \mapsto \operatorname{Mod}_L\Sigma</script></span> and <span class="math"><script type="math/tex">\mathbf{K} \mapsto \operatorname{Th}_L{\mathbf{K}}</script></span> defines a Galois correspondence between <span class="math"><script type="math/tex">L_0</script></span> (the set of all <span class="math"><script type="math/tex">L</script></span>-sentence) and <span class="math"><script type="math/tex">\operatorname{Mod}_L \emptyset</script></span> (the class of all nonempty <span class="math"><script type="math/tex">L</script></span>-structures).  Derive that, given theories <span class="math"><script type="math/tex">S</script></span> and <span class="math"><script type="math/tex">T</script></span> in the same laguage, we have <span class="math"><script type="math/tex">S = T</script></span> if and only if <span class="math"><script type="math/tex">\operatorname{Mod} S = \operatorname{Mod} T</script></span>.</p>
+<hr>
+<p><strong>3.4.5.</strong> Show that, under the Galois correspondence of the preceding exercise, the deductively closed sets of <span class="math"><script type="math/tex">L</script></span>-sentences (including the inconsistent one) are exactly the closed subsets of <span class="math"><script type="math/tex">L_0</script></span>, while the axiomatizable class of nonempty <span class="math"><script type="math/tex">L</script></span>-structures (including the empty class) are exactly the closed subsets of <span class="math"><script type="math/tex">\operatorname{Mod}_L \emptyset</script></span>.</p></body>
+</html>
