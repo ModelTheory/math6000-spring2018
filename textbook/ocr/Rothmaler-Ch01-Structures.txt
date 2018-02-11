@@ -1,0 +1,304 @@
+Page 1     
+OCR Texts: 
+Chapter 1
+
+Structures
+
+ıet us first look at some examples. By speciiying certain neutral elements
+and operations, we may view the set 2a of integers ǆ an additive groupl as a
+multiplicative semigroup, or as a ring. In the three cases given these would
+be (0+), (1;·), or (0, l;+,  · ), respectively. We could also add the inverse
+operation-or the ordering relation <. It is this choice of signature, as we
+sayr that determines which structure on % we are dealing with.
+1. 1 Signatures
+A signature (T i8 a quadruple (C, F, R, a ı) consisting of a set C of constant
+symbols, a set F of function symbols, a set R of reıation symbols, and
+a signature function aı : F U R-> N \ {0}, where we assume the sets C,
+F, and R to be pairwise disjoint. The elements of CuFuR are also known as
+the non-logical symbols. For simplicity we often identify a signature with
+its set of non-logical symbola. Accordingly, by the cardinality or power
+of cr, in symbols lal, we simply mean the cardinality of the set C U F u R.
+Unary relation symbols are also called predicates. A signature with C-O,
+F = 0, or R = O is said to be without constants, without functions,
+or without relations, respectively. A signature that has neither constants
+nor functions, is called (purely) relational.
+
+The signature function assigns to each symbol from F U R its arityt
+i. e. İ € F i8 a d (f)-arr function symbol and R E R i8 a o '(R)-ary relation
+symbol. Since a constant symbol e € C may be viewed as & (constant)
+function with unique value c, we may think of c as a O-plane function. Ac-
+cordingly the eignature function can be extended to all non-logicaı symbols
+by setting d (c) = 0 for all c € C.
+
+3
+
+
+
+Page 2     
+OCR Texts: 
+W ht'n t'xplit  · itly writing duw tl ll hignltul T W t'Sl'Pnr iltl tll('H('ls C, P,
+n11d R by a su mic olon. I. g. writing o-(U, 1 ; +,', <) nml o'(1-) =.'( · ) =
+a'(<) = 2 tix,  · s n signntur (? w ith thu colistant sy mbnls 0 nml 1, t, wo birrnry
+function sy tnbols + nml., aml 41 binnr.  · relatiotl sy mbol <. If tile. Arities aro
+utrtlt  · rstood (c. g. By some suggestive choice of sy mbols as abov ( · ), we ornit
+the signature function altogc ther.
+1. 2 Structures
+Let a-(C, F, R, a') be a signature.
+Giv en a set M, we may giv e o a'meaning'in AI by choosing elements
+from AI and filnctions and relations on M which are to be denoted by
+the non-logical symbols from a. Every such choice determines a 5o-called
+structure of that signature on A  · 【, which assigns to each constant, function,
+or relation symbol a well-defined interpretation in A  · I meeting the constraints
+gi'A a-structure JH is a quadruple (AI, C  · v, Fm, R. w) consisting of an
+arbitrary set AI (the underlying set or universe of M), families C. V_
+(cv : c € C), F-'H_u. v f € F), and R. v_(R. v R € R), where
+Gv € M for all c € C,. f.'H is a a'(f)-ary function from AI to Af for all
+f € F, and Rjv is a cr'(R)-ary relation on M (hence a subset of AP'([t)) for
+all R € R. The cardinality or power lm of a cr-structure M is simpl!  ·
+the cardinality lm of the underlying set, Af. For P, a non-logical symbol
+from cr, the object P. v is said to be the interpretation of P in JH. Given
+a signature cr without constants, . Is used to denote the empty a-structure.
+
+Note that empty a-structures exist precisely when C is empty, $. e. when
+cr is 11'ithout constants.
+
+The notation for structures follows the guidelines fixed-for signatures
+in the previous subsection. Further, if R € R is an n-ary relation sym-
+bol and (ao,..., a7z-1 ) € RM we also write R. M (Qo,... Tart-1 ) or even
+N F R(ao,..., an-1), this referring to the satisfaction relation to be defined
+below. In case of an Tt-place function f, we write f. V (ao,..., aTz-1) = b or
+M F f(ao,..., an-1) = b, accordingly. As usual, tuples are denoted e. g. By
+; writing f (d) or R (a) then tacitly assumes f and R to hav e the arity cor-
+responding to the length of .
+
+Example. Consider a-(0, 1, +,., <), where a'(+)-.'( · ) = a'(<) = 2.
+Every ordered ring 71 (see §5, 5 below) can be regar ded as a a-structure
+(R 072, 1l; +71,. 71; <7Z), where the non-logical symbols from o are inter-
+preted by the corresponding constants, functions, and relations, respectively.
+
+
+
+Page 3     
+OCR Texts: 
+ı. 3. HOAFOA-rORpıııSAďs 5
+Then, for example, 71 0 < 1 or, equivalently, OÌz <n 1l.
+
+Exercise 1. 2. 1. Find a signature appropriate for the description of vector spwes
+over a given field /c.
+
+1. 3 Homomorphisms
+In order to compare two o-structures M and N we need maps between them
+that preserve certain features of these structures.
+
+A homomorphism from M to N is a map h : M 4 N satisfying
+(i) h (cM) = ¢V, for alle € C,
+all aor  ·  ·  · , an-1 € M, and all f € F with cr'(f) = n,
+all ao,..., an-1 € M, and all R € R with cr'iR)-n.
+We write h : MĦNfor short.
+\ 4
+
+The structure JV is a (strong) homomorphic image of the structure
+M if there is a (strong) homomorphism from M onto JV.
+
+SinĮ the n ıtation h[(ao,...,. An-1) ] = (h (ao),..., h(a.-1)) from the list
+before Chapter 1, we can rewrite (ii) and (iii) more concisely as follows.
+(ii') fN (h[ã]) = h (fm(ã)) for all f € F and ã € M°'(n,
+(iii') Rm (ã) R N (n[ã]) for all R € R and ã € Ma'(R).
+An isomorphisnı from M toN (or between M andM is, by definition,-
+a surjective monomorphism from M onto N. We rrite h : M N if h is
+such an isomorphism. If h fixes a set X Ç M n N pointwise (i. e. h extends
+the map idx), we wTite h M X JV and speak of an isomorphism over
+X or just an X-isomorphism. The structures M and N are said to be
+onıorphic (over X), and JV is called an isomorphic image of M (over
+
+
+
+Page 4     
+OCR Texts: 
+6 CHApTER ı. STR UCTURES
+X), if there is an isomorphism between M and N (over X). The notation
+M N (or M g. ť )v) is used to indicate this. An isomorphism type of
+(T-structures is an egĮ. vrtence class of cr-structures modulo the equivalence
+relation .
+ı
+\Re nl ar k. That is indeed an equivalence relation i5 easy to see. L
+
+Isomorphic structures have of course the same cardinality.
+
+Warning. A bijective homomorphism need not be an ¡somorphism!
+
+Example. Consider two sets M and N of the same power and a signature
+cr that consists of a unique predicate symbol R only, Tbrn these sets into
+cr-structures M and N by setting Rm_O and RN_N. Any bijection
+h : M 4 Ar is clearly a homomorphism but not a strong one, hence it cannot
+be an isomorphism.
+Remark. In case R = O, any bijective homomorphism is already an iso-
+morphism, since then every homomorphism is strong.
+Lemma 1. 3. 1. Let M and N be cr-stmctures and let h : M 4 JV be a bi-
+jectįon.
+TheTŁh M 4N andh-\JV 4 M hoįdifand onıy iíh·. MJV and
+6-l JVM hotd.
+Proof . The homomorphic condition (iii) for h-'implies that h is an
+isomorphism.
+. Any isomorphism is a homomorphism. D
+Remark. Let M and JV be ü-structures.
+
+Then h : M Ħ N is an isomorphism if and only if there is h': JV M
+s u c that hhı = idN and h'h = idM ·
+
+An endomorphism of JH is, by definition, a homomorphism from M
+to itself. The endomorphisms of M form-with respect to composition of
+nıaps-semigroup (see §5. 2 below) whose identity element is idM. An
+automorphism of M is an isomorphism of M onto itself. Given X C M,
+an X-isomorphism from M onto itself is called automorphism over X  ·
+or just X-automorphism of M. The automorphisms of M form a group
+with respect to composition of maps, the so-called automorphism group
+of M, denoted by Aut M. Given X C M, AutxM denotes the subgroup
+formed by the X-automorphisms. A monomorphism h : M JV is also
+called isomorphic embedding of M in JV (cf. The end of §1. 4 below). In
+
+
+
+Page 5     
+OCR Texts: 
+1. 4. RRJCTIONS ONTO SUUSWS 7
+case h r. T. id× r sonıe. X'ç Af, we speak of onıbeddınsa over X or
+. ť-embeddinss, deiıoted h : M-x N. M i8 said to be (lsomorphlcally)
+embeddable (over X) in Aí, ıf there is an embeddinB (over X) of M in Ń.
+We then wTite M N (resp. Jvı X N).
+Thus every automorplıism is a surjective and injective endomorphism,
+and again, the converse need not be true (check!).
+As in group theory or other al8ebraic theories known to the reader, every homæ
+mo 中 hic image of a structure M is (isomorphic to) a factor structure of M moduıo
+a congruence nlation on M. In order to have a 1-1 correspondence between the
+isomorphism types of homomorphic images and factor structures, one needs to r
+strict oneself to strong homomorphisms (which, of couree, is irrelevant if there are
+no. Reıation symbols around). See §2. 4 of Malcev's Algebraic Systems for this.
+Exercise 1. 3. 1. Given X Ė M, let Aut{×}M be theset{h € AutM : h[×] = X}.
+Show that AutxM is a normal subgroup of Aut{×}M. What happens if, instead
+of h[×] = X, we require only h[×] ç X?
+-Exercise 1. 3. 2. Find a structure with a bijective endomorphism that is not an
+automorphism.
+
+Exercise 1. 3. 3. Find an infinite structure M with a trivial automorphism group,
+i. e. Aut M-{idM }.
+
+1. 4 Restrictions onto subsets
+Often one wants to think of a subset of a given structure as a structure of
+the same signature, in its own right. This is possible only if the subset meets
+the following requirement.
+
+ııet M = (M, Cm, Fm, Rm) be a cr-structure and N a subset of M.
+We say N is closed in M under ħinctioıH'(from a) if cm Ė N and
+FM[N] ÇN (i. e., € N, for alle € C, md fm (ã) € N, for allfEF
+and all cT'(f)-tuples ã in N). If this i6 the case, we can turn N into a a-
+structure N by setting dv = d\«, İN (ā) = fm (ă), and R"(8) precisely if
+Rm (b), for all c € C, all f € F, and all d (f)-tuples ã om N, as well as all
+R € R and all d (R)-tuples b from N.
+
+Remark. If the signature of M i5 purely relational, i. e. C-F_O, euery
+subset N C M can be made such a uniquely determined structure N. If
+the signature of M is without constants, i. e. C-O, the empty set can be
+made such a structure (isomorphic to 0. From §1. 2).
+
+'This terminology is justified by the aforementioned fact that constants can be regarded
+as nullary functions.
+
+
+
+Page 6     
+OCR Texts: 
+8 CIıA PŢER 1. STıı UCTURES
+Fbr this relationsllip lıe\weelı M iınd f wc introduco ı, llt fi)llowing ter-
+n\inologv.
+N is calıed a restriction (or relativisation) of M olrto N, denoted
+M r N. Thc str\ıct\ınt N is said to be a substructure of M, if N Ç M
+auld N is tlıe restriction of M onto N. W writ( N Ç M fnr sılort.
+M is said to bt? a superstructure or ail extension of N, if N is a
+subsŁnıcture of M. We write M N theır.
+Remark. Tlıe image lt[M] of airy hotnomorphism h : M-> N of a-struc-
+Lures is closed under finctions in and thus the uıriverse of a canonical
+substÆucture of Ar. Heme such an imagť is itself a a-stmcŁure and as sııch
+a homoīnorphic image of M. This stmcŁure oī1 lt[M] is denoted by h (M).
+The homomorphisīn / ı is a monomorphism if aml only if it is an isomorphism
+between M aml h (M).
+Éxercise 1. 4. 1. Describe thc diĦercme between substru(tures of Z according t,o
+whether Z is coılsidered in tho signature (0; +) or in thc signaturi (0; +,-).
+1. 5 Reductions onto subsignatures
+We obtain a diñcrcnt kind of (xīrıonical structure, if, instead of slırinking the
+uniuerse, we make the, signatTt?'e smaller and just'forget'thc interpretation
+of the symbols left out from tlıe signahrre. As in the preceding section, we
+consider also the reverse process-whicłı is no longer canonical where we
+have to assign interpretations to syınbols added to the signature.
+
+Let ao and nl be signatures such that o Ç o1 (i. e. with Co Ē Cl,
+Fo Ç Fı, Ro Ç Rı, and n = a{ r dom a6). Then every n1-stnıcture JV
+can be canonically regarded as a ao-structure. More precisely, the reduct
+of M onto oo (or thc oo-reduct ol M) is the strmture M r (To-def
+(M, Cy, FP, RP) (where cy = {C c € Co} and similarly for FP
+and np). Given a no-stmcture N and a o1-structure M, tlıe structure M
+is said to be ail expansion of the structure N Lo o11 if N is the reduct of
+
+M onto ao ·
+The relationship hetwecn these concepts is illustrated by the following.
+restriction H extension changing universes
+reduct expansion changing signatures
+Exercise 1. 5. 1. Given a signature a, find a signature crl 2 a sııch that all a-
+structures M and N with. V C. have expansioııs JV'and N't, o crl such that
+. rv'Ė M'and Aut. M ı_Aut{N}M (cf. Notation fmm Exercise 1. 3. 1).
+
+
+
+Page 7     
+OCR Texts: 
+"··. 
+
+ı. 6. PROD UCTS 9
+
+1. 6 Products
+
+Here we see how one caıı, in a canonical way, patch various structures to-
+gether, provided all of them have the same signattıre.
+
+Let I be a nonempty set and (Mi i € I) a family of a-structures. We
+define the direct (or cartesian) product M = ni € ı M¢ of this family to
+be the following cr-structure M. The universe M of M is the set of all maps
+a : I_Ui € ı Mi that have the property that a (i) € M for all i € I. We
+often write a as (a (i) : i € I).
+
+Given c € C, we let dų be the element a € M for which a (i) = cMI for
+alli € I.
+Given an n-place function symbol f € F and a tupıe ii = (ao,..., an-1)
+from M, we let 1 M (ä) be the element b € M such that, for all i € I, we
+
+Given an n-place relation symbol R E R and a tuple ii = (ao,..., an-1)
+from M, set Rm (ā) in case RMI (ao (i),... Tan-1 (i)) holds for all i E I.
+
+ĺbr Hi« n Mi we also write Mo x... x Mn-1. Given i € I, the structure
+Mi is called the ith (direct) factor of the direct product JV. 1f Mi-N
+for all i € I, the product HiEI Mi is also called Ith direct power of N, in
+symbols Nı.
+
+Remark. The axiom of choice ensures that Hi € I Mi ¢ O if none of the Mi
+is empty. (In case I is finite, the axiom of choice is not necessary for this.)
+
+In connection with the above direct product we have the following canon-
+ical homomorphisms.
+
+Given j € I, the map pj : Hi € I Mt 니 Mj denned by pj (a) = a (j) is, by
+definition, the projection onto the jth factor.
+
+Remark. Any such projection pj is a homomorphism of M-Hi € I Mi to
+Mj, which is surjective if )H # 0.
+
+Exercise 1. 6. 1. Show that M = Hi € ı Mi is uncountable as soon, as no Mi is
+empty and infinitely many of the Mi have at least two elements.
+
+Exercise 1. 6. 2. Find an embedding e M 4 MI such that pie-idAr for all
+į € Į.
+
+. : ľ i-
+"-h/:..
+
+
+

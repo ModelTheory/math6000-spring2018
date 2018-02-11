@@ -1,0 +1,415 @@
+Page 1     
+OCR Texts: 
+Chapter 2
+Languages
+In the first three sections of this chapter we build a formal language for
+each signature (T-(C, F, R, ü'). More precisely, we build a lso
+called an eleme?ıtary) language L = L (a), whose building blocks are the
+symbols from a certain alphabet, which depends on the signature a, and
+whose synţactic categories axe teruzs and Jormiılas. (WUat we here simply
+call a language, logicians also call an object language-as opposed to the
+mełalanguage, in which the main text of this book is written and in which
+we usually argue.)
+
+FĖz an arbitrary signature cr-(C, F, R, cT').
+
+2. 1 Alphabets
+
+The lL(  · ) we are going to define will consist of qertahı of
+SS. The set of these symbols is calıed the alphabet of L (cT). It consists
+of the following.
+
+1. Logical. symbols: the connectives-[read noti for negation, A [read
+ar'-K'COiñcti o n, the existential quantifier 3 [read there eÆists or
+tliere is], and the equality symbol-
+2. countably nıany variables (see below)
+3. The symbols from the signature a (i. e. The W
+and relation symbols from cr)
+Ų, the parentheses ( a-.-
+
+(Thus alphabets can differ only in their non-logical symbols.) Some
+symbols may seem to be misshıg in the above, however we will see in due
+course · that this choice suñices.
+
+Although the alphabet contains a fixed (countable) set of variables,
+
+11
+
+
+
+Page 2     
+OCR Texts: 
+ı2 CHApTER 2. LANGUAGES
+t, here \ LTIII be no need t, o know their formal names. We denote thpm by
+Zo\ıl\Z2?... or T, y, Z, or
+t. He like. These symbols thus serve as (
+variables for variables fi'om the alphabet and arc formally not part of the
+alphabet.
+2. 2 Terms
+
+The terms of signature (T (also called a-terms) are defined recursively as
+follows.
+
+(i) All variables are terms.
+
+(ii) All constant symbols are terms.
+(iii) If to,..., tn-1 are terms and f E F with cT'(f) = n, then fito,..., tn-1
+is a term too.
+(iv) t is a term, if it can be built in ĥnitely many steps using (i)-(iii).
+An example of a term in the language with two binary function symbols
+f : and l2 is fr(fı(]ż(z, l2(z, Jƛ(T, y))), Jƛ(z, z)), Jƛ(T, £)). If ft is + and l2
+is., then this term can be regarded as the polynomial (z  · (z  · (z  · y)) + (x  ·
+a)) + (z  · z). Be aware that a terni is a syntactic object with no meaning
+attached initialıy. So we cannot drop the parentheses'assuming associa-
+tivity or commutativity of the operations', for terms °know? nothing about
+operations, they are just, built from function synibols that will later, on the
+semantic ıevef of Chapter 3, bc interpreted as operations in structures. In
+such a structure any term wilı then be interpreted as an element of that
+
+structure.
+Given a sct. of variablt, thc term algebra of L over X (or with basis X, is
+the bstructure Termı. (X) defined łH follows. The domain of Tenni. (X) is the set
+of all Łterlns whose variables arc in X. \ W interpret tlıe constant and the func-
+tion symboķ of L by themscıves, i. p... cTc'"L (X)_c and f Te r ı n ı. ix) (t....., t.) =
+f(tl,..., t.) for each c € C and ! € F. Thc relational symbob of L are inter-
+preted trivially, that is we let tlıem have empty domains, i.. c., R Te'"I. (X)_O for
+
+yExercise 2. 2. 2. Let hn and h be as abm  · c and lct t (ï) be an bterm whose variables
+Ť are in X. Provp that tm (hu[ĵ]) = h (t(iř)),
+
+Exercise 2. 2. 3. (Abotıt unique ıegibility) Prove that no proper initial segment ol
+a term (regarded ǆ a string of syınbols of the aıphabet) can be a ternı. Deńve
+that for every terni there is a utıiqtıe way of building it up ĺrom its constituents
+according to the abov( recursion.
+
+
+
+Page 3     
+OCR Texts: 
+2. 3. FORATULAS 13
+2. 3 Formulas
+Next we build formulas from terıns. While terms will later (in Chapter
+3) be interpreted as elements of structures, formulas will be interpreted as
+statements about these elements. Thus formulǱ will turn out to be the
+objects of our languages, whose interpretations have a truth value. But, as
+for terms, formulas themseıves are syntactical objects that'know'nothing
+about elements or structures.
+We define formulas of signature cr (or cr-formulas) recursively as fol-
+(i) If tl and t2 are cr-terms, then tl-i2 is a formula.
+
+(ii) H to,..., tn-1 are (T-terms and R € R with cT'(R)-n, then
+
+Rito,..., tn-1) is a formula too.
+(iii) If q and are formulas and = is a variable, then-q, (q A Q), and 3£ V
+are formulas too.
+(iv) q is a fornıula if it can be obtained ūonı (i)-(iii) in finitely nıany steps.
+
+The formulas fonı (i) and (ii) are said to be atomic. We denote the class
+of atomic formulas by at. The formulas from (i) are also ļcnown as term
+equations and those from (ii) as relational atomic formulas. Atomic for-
+mulas and their negations are called literals. The only proper subformula
+of the formulas-V and 3z q is the formula q, the only proper subformulas
+of (1p A ) are its two conjuncts, q and  ·
+Sometimes we are interested only in atomic formulas in which no vari-
+ables lıave been replaced by terms other than variables. These are called
+unnested and defined formally as follows. Variables ai and constant synı-
+bolsc € Care unnested terms, as wellas terms of the formf(ao,..., =n),
+where the ai are variables (and f € F). No other terms are unnested. An
+atomic formula is said to be unnested if it is either an unnested term equa-
+tion (i. e. An equation of unnested terma) or else a relational formula of the
+form R(£o,... Iøn-1), where R e R and the =i are variables.
+An example of an atomic formula in L(+,  · ) is (z  · (T  · (Æ  · y))) + y-
+(z  · (a  · (a  · y)) + (a  · r)) + (ac  · =) ; it is not unnested.
+The terms and formulas of the signature cr together form the expres
+sions of L ((T) (or L (cT)-expressions). Formally we defmue the language
+L (tr), ţo be the set of aJ1 a-formulǆ. All concepts from Chapter 1 cor-
+responding to signatures (like reducts, signatures without constants,
+purely relational signatures etc.) caiı thus be applied to languages as
+well.
+
+
+
+Page 4     
+OCR Texts: 
+14 CHAPTER 2. LANGMGES
+hence one can check in ĥnitely many steps and efï : ectively if a string of
+symbols is a term or a formula of the given language.
+
+The correspondence between signatures and languages being on»to-one
+(in fact, uniquely determined by the set of non-logical symbols), we may
+write «r = or (L) instead of L = L ((T).
+Given a language L without constants, OL denotes the empty L-structure
+
+Exercise 2. 3. 1. Veriu that there are only finitely many unnested atomic sentences
+in L, provided the signature of L is finite.
+
+Ć
+'Exercise 2. 3. 2. (About unique legibility)
+Prove that no proper initial segment of a formula (regarded ǆ a string of
+symbols of the alphabet) can be a formula. Derive that for every formula there is a
+unique way of building it up from its constituents according to the above recursion.
+2. 4 Abbreviations
+We now introduce some common notation as abbreviations, like the nullary
+connectives 丁 [read : tnıe or uenm] and 上 [read : false or Jatsum], the
+binary connectives v [read: oT] for the disiunction,-[read ifr 仇en]
+for the implication or subjunction, and-[read f and only if] for the
+equivalence or equijunction, the many-place connectives A and V for
+multiple conjunction and disjunction, and the universal quantifier V
+[read : Jor alli ·
+
+The formal definitions are as follows. Given terms tl and t2, formulas V
+and Q, and a natural number n > O we write
+Tfor一上，
+
+V V ïor-t-V A-¢),
+
+tp 4Ø tot-qv¢,
+V-q'tot tv-¢) Mq = q), Vaq tor Ħ3a-v,
+
+3xo... zn-1 V (also 3Ēq in cǆe Ē = (£o,..., Zn-1)) for 3zo... 3£n-1 q,
+
+Ai<. Qi for (... (qo A 91) A... ) A vn-1 (here qo,... Tqn-1 are arbitrary
+
+formulas),
+3  · av? for 3zo... zn-l(Ai<j«. zi +ajAAi«. q (zi)), Q Ł, J l ヘ
+
+3-"zqfor 32"xqA3ś"aq. q ĥ, 'ı Ą lc'%
+Sometimes we also write J»n for 3n+ı (similarly for 3 <") and 3! for 3-1.
+
+3\ハマ"气'.そ
+
+
+
+Page 5     
+OCR Texts: 
+2. 4. ABBREVıATIONS 16
+The diąjuncts of a disjunction 1p V are the subformulas V and Q.
+The subformulas of an impıication V-Q are the premise 1p and the
+conchısion Q.
+Parentheses are used in formulas (and terms) to indicate their syntactic
+structure. However, in order to avoid too many, we adopt the rule that
+the unary connective-binds more strongly than the binary connectives A
+and V, and the latter bind more strongly than-and H. Fbrther, outer
+parentheses around formulas may also be omitted (as we have already done
+in the above abbreviations). On the other hand, parentheses may be added
+if tMs serves their rea 山山 ility,
+Note that the abbreviations introduced are not formally part of the lan-
+guage. This has the advantage of avoiding many cases when doing proofs by
+induction on the complexity of a formula, in which case we have to deal only
+with., A, and 3. However, we do use the other connectives and quantifier
+for the following syntactical classification of formulas.
+
+Let E be a set of formulas. A boolean combination of formulas from
+E is, by definition, a formula that can be obtained from formulǱ from E by
+using V, A and. only. (Obviously we may also allow and., and we
+could do without V.) A positive boolean combination of formulas fronı
+E is a formula that can be obtained from formulas from by using onıy A
+and V. The boolean closure of E is the set of all boolean combinations of
+formulas from E, denoted by A.
+
+A formula is positive if it can be obtaĵned from atomic formulas using
+only A, V, 3, and V. The class of all positive formulas (of all possible
+
+languages) is denoted by +.
+
+A negative formula is a negated positive formula. The class of all such
+is denoted by-.
+
+A formula is quantifier-free if it contains no quantiñers, where, for í
+technical reǆons, we assume T and 上 to be quantifier-free too. 1
+
+The clǆs of all quantilier-free formulas (of arbitrary signature) is denoted
+by qf.
+
+Thus qf is the clms of all booıean combinations of atomic formulas. The
+class of aı1 positive formulǱ from qf is the class of all positive boolean
+combinations of atomic formulas.
+
+'Thia is relevant only in case of quantifier-free sentences in laiıguages without constants,
+cf. Remark (3) in §3. 3.
+
+
+
+Page 6     
+OCR Texts: 
+16 CIIAPTER 2. LA NG UAGES
+2. 5 Fee and bound variables
+A main ingredient of our formal language are the placeholders for elements
+of a structure--the variables. (Note that the terni ßrst-o?der indicates that
+oïıly variables for elements occur, as opposed to second-order logic, which
+also has variables for sets of elements.) They allow us, as common in math-
+ematics, to formulatp in our formal language relations between elements
+without naming them concretely. Accordingl), we have to distinguish be-
+tween two difterent kinds of occurrences of variables in a formula-an oc-
+currence as such a placeholder and an occurrence as an operator variable for
+a quantifier.
+More formally, we make the following dŤ"nition. In the formula 3x v,
+the subformula q is said to be the scope of the quantifier. The occurrence
+of a after the quantifier s x's occurrence as operator variable. This
+occurrence as wu as each occurrénce of £ in the scope of the quantifier
+is a bound occrrence of this variable, while any occurrence that is not
+bound is said to be a free occurrence of this variable. A free variable
+of a formula is, by definition, a variable that has a free occurrence in this
+
+formula.
+
+Example. All occurrences of in the formula Vz(T-y V 3y(z + y)) are
+bound, while the first of the occurrences of y is free and the other two are
+bound : Hence y is the only free variable of this formula.
+A particular role play expressions without free variables. A term t is
+said to be constant if it contains no variables at all. A formula q is said to
+be a sentence if it contains no free variables.
+Remark.
+(1) (i) Every constant swbol is a constant term.
+(ii) If to,..., tn-1 are constant terms and f E F with cT'(f) = n, then
+
+fito,..., tn-1) is also a constant term.
+(iii) Obviously, a term t is constant iff it can be obtained. In finitely
+
+many steps from (i) and (ii).
+(2) Atomic sentences, i. e. Atomic formulas that are sentencs, are ei-
+
+ther equations of constant terms or relational sentences of the form
+Rito,..., t?z-1 ), where the ti are constant terms.
+
+(3) Languages without constants thus have no atomic serztences. According
+
+to our convention about T and 上 (from §2. 4) the only quantifier-free
+sentences in this case are T and 上 and their boolean combinations.
+
+
+
+Page 7     
+OCR Texts: 
+2. 6. SUBSTITUTIONS 17
+
+For technical reasons we introduce the foı1owing division among formulas
+For technical reasons we introduce the following division among formulas
+of a given language L. Given a tuple Ē of variables, L. is to denote the set
+of L-fo rmulas, whose free variable are among the variables from . Ĥırther,
+Ln is used to denote the collection of all bformulas that have preciaely n
+free variables (no matter which). For Uk<. Lk we also write Ls  ·  ·
+
+ThǱ, Lo i8 the set of L-sentences, anđ L = Un € N L.. Fbrther, L. is the
+set of all L-formulas whose free variables are from Ē, while Li(l)/. contains
+only those formulas from ıl in which all entries of occur free (however,
+Lł (a) also contains all other L-formulas with precisely 1 (Ē) free variables)  ·
+I for instance, Ē = (ao,..., o7), then ao-o1 IB in Lı Ç l<8, but £7-o27
+is not, while for arbitrary variables = and y the formula Æ-y is in L2, but
+not in L8. This notational difference is rather technical, for one can always
+add so-called dummy uariables, as we will see in §3. 2 below..
+
+The cardinality or power of the language L i8, by definition, the cardi-
+natz number IL1. In §7. 6 we will see that ILI = 1L. 1 = ILot = max{Ro, lal} =
+maJc{No, IC UFuRı}. Hence a language is countably infinitea precisely if the
+set of symbols from the signature is countable (that is, finite or countably
+infinite).
+
+Exercise 2. 5. 1. Find a recursive delinition of free variable that is accorđing to the
+syntactical complexity of the formula under consideration.
+
+2. 6 Substitutions
+An inıportant syntactic operation on expressions of the language is that of
+substitution of variables by terms. Fbr example, in the language I (+,  · ),
+substituting = by z  · z in the term Æ + z we obtain the term (z  · z) + z.
+Simiıarly in polynomial equations (which are fornıulas in that langu ₩)  ·
+Care hm to be taken only in the case of bound variables, e. g., substituting
+= by z  · z in the formula 3z(ß + z-O) would bring the variable z of the
+term z  · z under the scope of 3z. This phenomenon is called collision of
+variables. Renaming i8 a remedy for this : in the above example replace
+first z by y, sayr which yields 3y(a ļ y-O), and only then substitute. The
+resulting formula would then be 3y((z  · z) + y-O).
+
+The reader will have no great dißñculty to understand how to perform tłıis
+renaming of bound variables in general (but note, the result is not unique,
+
+zwe introduce cardinals only in Chapter 6. For the time being it sufices to replace
+every statement about cardinals by a statement about sëts havhıg the same p{wrer (which
+is defined, as usual, by the existence of a bijectio1ı).
+a Every language being inlinite anyway (due to ińlinite supply of variables at the least),
+we may simply say'countable'here.
+
+
+
+Page 8     
+OCR Texts: 
+Ąl for it depends on the choice of new variable used ; in a more şyuĻaĽĹ ; Ľaiiy
+aware treatment not necessary here one could make this process determined
+by choosing always the'first'variable not yet used). We therefore allow
+ourselves a certain lǆness in what we define next.
+
+Let oo,..., zn-1 be pairwise distinct variables and to,..., tn-1 arbitrary
+L-terms. A substitution qf zi b ti (i < n) in a given term t consists
+in replacing in t all occurrences of i by ti (for all i < Tz). The result-
+ing (uniquely determined-term. will be denoted by tzn... z.-1 (to,..., tn-1).
+We may simply write t(ło,... !. t.-1 ), but only under the proviso that all
+variables occurring in t are among 301  ·  ·  · , Tn-1. When using this notation
+we ǆsume that an index (xo,... 1ln-1) is tacitly given, and 1ıìe adopt tle
+mle that this įnd
+
+zi by ti (t < n) in a given L-lormula V consists in simultaneously replac-
+ing in V all Tree occurrences of i by ti (ż < n), where, if necessary, one
+Órst hǆ to rename variables so that no variable occurring in ti gets under
+the scope of a quantifier in (p. Ignoring the fact that this process of re-
+
+naming bound variables is not unique, we denote'the'resulting formula by
+
+
+
+Vro... T.-1 (to,..., in-1 ). Similarly to the case of terms, we may simply write
+v(io,..., tn-1)-provided all free variables of V occur among zo,..., zTı-1  ·
+As before, an index Ē is assumed to be tacitly given, and we adopt the rule
+that this įndez, Tor a gżuen p, is ahuays the same.
+
+Let us emphasize that in this notation the zi are always pairwise distinct.
+(This applies only to the index Ē : in qì (), for instance, the entries in
+may all coincide.)
+
+The notation just introduced can also serve to indicate certain variables
+occurring in a formula. Namely, pi () is certainly just q itself, and we may
+write q (ž) instead of (p« () precisely if all free variables of V occur in .
+Thus the notation p () for q indicates that all free variables of V occur in
+Ē (however, more variables may occur in Ē, be it bound variables of V or
+those which do not occur in p at all).
+
+Given two terms tl and t2 (or two formulas q. 1 and 2 ), we can choose
+a tuple of variables, í, long enough so that t,-ll (Ē) and t2-t2 (Ē) (or
+q. 1 = 1 (Ē) and 2 = 2 (Ē), respectively), even if the variables achzally
+occurring in il and t2 (or q. 1 and 2 ) are quite difïerent. This turns out
+handy when variables have to be exhibited in general term equations or
+conjunctions.
+Fbrthermore, given a formula p of the form 3z 0 from Lni we can find an
+?ı-tuple (of pairwise distinct) variables oo,..., xn-1 (all dilferent from £)
+such that V-p (Ē) and the free variables of 0 occur among zo,..., zrŁ-1, z,
+and hence such that we may w rite q-qo () = Ĵz O(, z).
+
+; wç%
+ġ bjh'''
+
+CHAPTER 2. LANGUAGES
+
+
+
+Page 9     
+OCR Texts: 
+2. 7. TitE LANGUAGE OF P(/iıE IDE\TTĦ T ı9
+A* ï«xia Æ tbe lirıuaiłłi«s i* . Rynm« mtıtktjeı of the
+iu¢t alwe «ill be«oı»ť ratbï
+ざłり上多〒。
+'EXWCı« U. \. W dot  · ıb» łou Hy, ı) ıaeıı k  · ¢iwa v(r, y) Ę ı,??
+
+2, 7 Tlıe Inng\ınge of puro łdentıty
+
+11w pĐ\An ₩ w łı ı nf ıHir¢ ıty. ı... I» »bicb oo
+¢mlm. Fuhe1łtĘ\, «# ¢t$łĮn py¢nl«łıl ı*t1lr, i ¢. ı._-UQ_), *twï 4P=
+\tm*» tıļ¢ }4łtu*ułw ħjth C r-R ä ¢ (łłr¢»pmbrr, tprıa¢  · kw
+»ytıàıc*. = ł* ialwah łfł tbc  · #lłdłąļw )
+
+nłp tnhļ \*ı*n* łņ \hi9 ļ*n¢#a$e up łĮ*$i wmıa* Th #l¢*¢»ic lonwı»
+到中\b。叭礴前列山a禹铺1h户¢旧物矽一g·*孙싹ヲオ，贸·t节目忉l¢*耆歹售制W서勝Thr
+a*t ₩ p d._áa, \3#1ń ¢ķņ#Þ《jaıo'Ħ\= 1..'*tQĮ$《#ųtrÞ U* * ilr ¢ıir m ľw
+m*'» thaal bavl  · . Brqūdr?» cqud}1y # twry. ua» Mh*"ıu»n«łť, &, ,
+tiłatĤm Ųwiı wM Mr«a¢】j» mm ł*F lłgt'Mat»l *»1ı#iob
+
+
+

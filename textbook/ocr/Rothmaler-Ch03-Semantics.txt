@@ -1,0 +1,862 @@
+Page 1     
+OCR Texts: 
+Chapter 3
+Semantics
+Now that we have structures and corresponding formal expressions, the cru-
+cial step is to establish a connection between the two. More precisely, we
+want to assign a meaning to each expression in any given structure of cor-
+responding signature. Technically speaking, in every such structure we will-
+interpret the expressions of our language in such a way that terms become
+elements of the structure and sentences of the language turn into statements
+about these elements so that we can assign a truth value to each sentence
+(depending only on the structure under consideration). This is straightfor-
+ward if no quantifiers occur (and will constitute the initial step in our formaJ
+definition). WHen quantiliers do occur, however, we run into problems : we
+are forced to interpret also formulas containing free variables. Alfred Tarski
+found the right way to do this, which we will study in the first section.
+
+[Tarski, A. : Der WahrheitsbegrifF in den formalisierten Sprachen, Studia Philosoph.
+1 (1935) 261-405]
+
+The extra work involving formulas with free variables pays off, as we will
+see in the second section. Namely, not only are we able to assign a truth
+
+wlue to sentences (formulas tuithotıt free variables) in each structure, but %Đ
+we will see that to any formula tuith free variables, in every structure, we
+can naturally assign a'solution set'of elements (or tuples, depending on the
+number of free variables) of that structure. It is this 'functorial'ǆpect of
+
+formulas that carries model theory beyond mere (logical) axiomatizability
+
+questions.
+
+We will interpret the expressions of the language inductively according
+to their syntactic complexity. The initial step is built into the notion of
+structure, since a structure comes equipped with the interpretation of the
+symbols of the signature. This provides a natural interpretation of unnested
+
+21
+
+
+
+Page 2     
+OCR Texts: 
+22 CHAPTER 3. SEA$ANTICS
+ternıs and unnested atomic formulas in that structure. All this requires a
+little care and preparation, which we now begin.
+3. 1 Expansions by constants, truth and satisfac-
+tion
+As, in general, quantification binds free variables, in the process of build-
+ing a formula from atomic subformulǆ the number of free variables often
+drops. This is the reason that for most purposes arguments or definitions
+by induction cannot be performed within the class of sentences, but lead
+automatically to formulas with arbitrarily many free variables. The same
+applies to the (technical) concept of truth. A remedy for this is to consider
+formulas as sentences in a certain extended language.
+
+For Me mainder ol thįs sectįon fiz a language L oJ sįgnature cr-
+(C, F, R, °').
+
+A new constant (symbol) for L is any symbol not occurring in the
+alphabet of L. We use this terminology only in connection with the following
+concept. Given a set of new constants, C, the expansion of L by the new
+constants C (or the expansion of L by constants from C, for short),
+in symbols L (C), is, by definition, the (uniquely determined) language of
+signature (C u C, F, R, °').
+
+Most important is the following particular cǆe. Given a set A of elb
+ments of an L-structure M, we choose a netıì constant for every a € A, which
+
+we denote by Q (assuming this latter is not part of the alphabet), and set
+= {ţı : a € A}. Then we define the expansion of L by new constants
+for A (or the expansion of L by A for short) to be the expansion L (ļ).
+
+For an arbitrary L-structure M and an arbitrary map f : A M, we
+denote by (M, f[A]) the L ()-structure in which for all a € A the constant
+gı is interpreted by f (a). This becomes somewhat simpler when A C M and
+f = idA : the L ()-structure thus obtained is denoted by (M, A). We omit
+the underlines if no ambiguity can arise.
+
+Instead of L (d). we write L. () or even L. (A), and similarly for Lï (A).
+Generalizing the notation L (A), given any class of formulas A and any
+set A of symbols not occurring in A, we Įıse the notation A (A) for the class
+of all formulffi obtained from formulas from A by substitution of variables
+by elements from A.
+
+Notice, we have (+ n L) (C) = + n L (C) and (qf n L) (C) = qf n L (C)
+for the class + of positive formulas and that of quantifier-free formulas, qf
+(similarly for any other classes of formulas, like e. g. V, 3, and V3 introduced
+
+
+
+Page 3     
+OCR Texts: 
+. N j
+3. 1. EXPJWSIONS BY CONSTANTS, TRUTH, SAHSFACHOX 23
+below)  ·
+Now we can int ₩ t LW)-terms in (M,. \ ı). Gi \ m aıı Lstructtıre M
+and a constant teruı t hı L (), the value (or the iııterl»retation) of t hı
+M · -ǳf (M, M), in symbols t. w. is defined as folltn»  · s.
+(i) If t is the constaııt c € C, then t. W_c\1.
+(ii) If t is the constant g for some a €.\i then F"_a.
+(ūi) If t is the termf(to,..., tn-1), wheren € N. f € Fwith ď(n = n, aııd
+to,..., tn-l are constaııt L ()-temıs. Then r_f. Ļ'(% w..... t').
+Thus such aiı evaluation or interpretation of terms is a function fronı
+the set of constant LW)-temıs into, \ I. The e \ aluation or interpretation
+of L ()-sentences in M'Ħm be a function from Lo(m to the set {tru
+false}. Note that due to our working in the expansion JW of, V we can.
+indeed, pro ceed inductively over smtmces onl!  · .
+Given an structure M, the truth of an L ()-sentence in.'W_
+(M, M), hı symbols M'q, is defined as follows.
+Let R € R with ď (R) = n, let to,..., tn-1 be constant L ()-terms, let
+, 1, 2 € Lo (U), and let Q € Lśl (U). Then we set
+(i) M'11-t2, if t+w_t w,
+(iii) M'-Q, if M', i. e. If not JW ů,
+(ivi M · ?h A, if M'l and JLĄ t»2,
+(v) M'Ĵx O, if there is a € M such that JW Or (g).
+
+If M'V, we say that p is true in (or hoıds in or of) JW, or that
+M  · satisfıes q.
+Our original concern was the truth of sentences in Lstructures. We
+make a corresponding definition, more generally, for arbitrary Lfonnulǆ.
+Let M be an structure and ã = (ao,... \ an-1) an n-tuple from M (we do
+not exclude the case n-O, i. e. â = O).
+
+Given an Lterm-tiTo,..., zn-1), the value of t at ã in J\4, in
+symbols t. v (ã), is by definition the element tE(Y w, where JW is as before
+and tï () is the (constaiıt) L ()-term tzo... Zn-ı(go,..., gn-1).
+Given an formula v-v(zo,... \Tn-1), the tuple ā = (ao,... Ran-1)
+is said to satisfy q in M, in symbols M p(ao,..., an-1) or M q (ã),
+if M'Vzo... Tn-l(,..  · tQn-1). We also write M'Vī (ĝ) for the latter.
+We extend this notation ǆ follows to arbitrary sets ¢ = {qi (Ē) : i € I}
+of Lformulas in the same free variables . We then wTite Đ = ¢ (í) and
+set M ¢ (ii) in case M Vi (ii) for all i € 1. Correspondingly we sayt ii
+satisfies Đ in M. In case Đ is a set of sentences, we say that it is true in
+(or holds in or of) M', or that M'satisfies Đ.
+
+Y \ s
+
+
+
+Page 4     
+OCR Texts: 
+24 CHA PTER 3. SEMANTICS
+An L-formula or a st  · t of L-fornıulǆ is said to be satisfiable in M, if
+UPle satisfies it in AI ; it is said to be satisflable if it is satisfiable in
+some nonempty (!) L-structure. (In §3. 3 below we will introduce the concept
+of consistency and show that, for sentences this is the same ǆ satisfiability.)
+An Lformula is called valid or true in M, in symbols M (P, if
+ery tuple in. H (of mat ching length) satisfies v in M. In case V is a
+sentence, in accordance with the above, we also say that v holds in (or of)
+M. The formula V is called valid or (logically) true, in symbols q, if
+u it is \ alid in every nonempty (!) L-structure.
+In order to check the validity of a formula in a given structure, one has to
+examine all tuples of · matching length.'We exhibited a certain sloppiness in
+not specifying 1uhich matching length. We justify this in the remark below
+saying that the definition does not depend on the particular length. It turns
+out that we can take the number of actually occurring free variables for this
+length. Fn particular, in case of sentences we may work with length zero,
+i. e., its satisfiability is witnessed by the empty tuple, whence, in a given
+structure, there is no difference between the satisfiability and the validity
+of sentence. Consequently, a sentence is satisfiable in a nonempty structure
+M precisely if it is true in JV. Hence, a sentence hǆ a model if and only if
+it is satisfiable.
+Remark. (Coincidence Lemma for Satisfiability)
+It is clear from the definition of substitution (₩  · 6) that for satisfac-
+tion of a formula (p-v(zo,..., zn-1) by a tuple ã = (an,..., aTt-1) only
+those indices i count for which xi occurs free in p. That is, given tuples
+= (xo,... R£n-I ) and y-(ųo,..., Vm-1 ) of variables, both contain-
+ing all the free variables of q, and given tuples ii = (at),..., an-1 ) and
+b = (bo,..., bm-1 ) from M, if ai-bj for all those ź < n and j < m for
+which zi and yj denote the same variable occurring free in q, we have
+M q. (ä) if and only if M Vu (b). We leave the proof of this rather
+obvious fact as an exercise.
+
+Another coincidence of interpretations is expressed in the next lemma.
+Even though it is rather trivial, we present a proof in order to present, once
+for all, a complete proof by induction on the complexity of formulas and
+terms. Later we will omit the rather straightforward arguments and give
+only hints to the less trivial steps in the induction.
+
+Lemma 3. 1. 1. (Coincidence under Expansion) Let L Ç L ı be languages
+and N arŁ L'. stmeture.
+
+Then Jor alı L-IoTTĦ1ıĮǱ 中-v(ì) and tuples ii from N (of matching
+[ength)'u) e haDe
+
+
+
+Page 5     
+OCR Texts: 
+3. 1. EXPANSIONS BY CONSTA}N S, TRUTH, SATISIACT ION-26
+
+N þ q (ä) il and ttrıty ilN I j q (iı).
+
+Proof. Let a (L) =(C, F, R,.').
+
+First we prove, for any Lterm t = t (E), tlıc equation
+
+(+) ťv (ä) = tNrL (ã).
+) If tcE) is the variable zi, then tM(â) = glv·_ai-!NRLR_tAll. (in.
+(Here'stands for the corresponding exparHion by constants again.)
+(in) If t (í) is the constant c (from L), then t"(â) = cv. TA'rı. (ii).
+
+(iii) Let to,..., tn-1 be termB satisfying (*) (induction }rypothesis), and
+
+the definition of reduct, also fr_fNtL, consequently also tA'(â) =
+tMlL (â).
+The inductive proof for ť) is thus omplete. L
+Next we prove the assertion of the lemma inductively on the compleJcity
+of the formula q.
+
+(i) If V is a term equation (in L), the assertion is irnnıediate irom ľ).
+
+(ii) If V is a relational atomic Lformula, the assertion follows from ľ) and
+the fact that Rv_R, VIL for all R € R (by the definition of reduct
+
+again).
+(ūi) Suppose the formuıǆ 0, 01, 2, and O are Lformulas şat e
+-1 e. Bion (induction hypothesis). We have to show that any of the
+N þ ť
+form-Q, Qı A Qż, or 3z Q satisfies the assertion too.
+If q-q (Ē) =-tp, then Q = (í), hence
+', ç(.. ¥_v(Ē) = ı 42, then ı*ı = Ql(Ë).nd ¢2 = (naııd hence
+ïy L ₩)Xk v (iniffNýl(â ) andN 2(io
+finally, V-q (Ē) is of the form 3z0, then O-e(Ē, z) aiıd lıence
+N q (iį) iff N0(â, a) ĺor somea € N
+iE N r L e(ã, a) for some a € N i«N IL q (ă).
+This completes the induction D
+
+Remark. (About equality.) The quEstion may arise, why the equaliw 53'm-
+bol is not considered a relation symbol from R, in which case the definition
+of homomorphism and monomo 印 hisnı would be much more elegant, for its
+being a map would be already included in (iii) a = b 4 h (a) = h (b) aiıd
+its being injective in. The inverse implication. It should be said thM there
+
+
+
+Page 6     
+OCR Texts: 
+(not hlll\jl't · t to inti rprt  · tlt inH)
+'J. A')IC x c r c I s ('3. 1. 1. I'rl)v I  · till'f(lim  · ltlt'ncc l, Tmnl for hatifii\ljllity (from till'rt'innrk
+
+Ml''b Exercise 3. 1. 2. Prnv T till  · fnl]nw ing lquiv llprlr ¢5 fnr all hl'nll'neus / ilrlrl L · \ml
+; t-'strurturi'h. V (nf matrllinR xignnturpj,
+
+(ii), V F +- · if nruJ only if. zf 14 F V then. V F U',
+(iii). V F -(, if aml only if. JV F V zlT JLF F U,,
+(iv) M F VIV if md only ifl.r nll a € Al, M F +(o).
+
+Exercise 3. 1. 3. Show that th« sentences 31(r-r) and h(T-i) are valid.
+Which of tht  · twn sentences is trur in empty structures7
+
+Exercise 3. 1. 4. For nny natural number n, find an L_-sentence which is trup in
+an L-structurt  · precisely if it has cardinality n.
+
+Exercise 3. 1. 5. Let V-v (I) be an Lformula. And t-1 () an L-term., V an
+,vk
+Prove the so-ca11e0 substitution lemma, which says that ii satisfies the formula
+4r tl v (t(i)! (iu, J H) if and only if t, v (ii) satisfies v (x). IOrc precisply, letting t  · denote
+the formula V. (t) (and hence Q =  · (I)), we hare, V F v(t. L f (ii)) iff M F L'. (ii).
+3. 2 Definable sets and relations
+Every Lformula 11  · ith n free variables defines an n-place relation in every
+Lstructure, Verv often in model theory it is this relation that matters
+rather than the actual formula it comes from. Therefore we care about the
+syntactic structure of a formula only if it is significant for the relation defined
+thereby. In particular two formulas that define the same relation in everv
+structure are model-theoretically the same (the technical term to be defined
+below is logically equivalent).
+
+We fix the following terminologY and notation. Let M be an L-structure.
+Given a E L. (w here n > O), let a (M) denote the set defined by ¢ in JV,
+that is. By definition, the set { € AP : M F u (ii) } (w hieh is also known
+\ : E M), if it is defined by some U € L.. I. e. A = U (JV). An n-place relation
+
+
+
+Page 7     
+OCR Texts: 
+3. 2. DEFıNABLE SETS AND RELATIONS 27
+on M is said to be deflnable (in M), if, as a subset of M  · , it is deĥnable
+in M. The thus delined set of n-tuples is called a definable set too. (To
+distinguisl : sets definable by 1-place formulas in M from the latter kind
+of «lelinable set, we caıled them deñnable subset of M, as opposed to sets
+defined by many-place formulas, which are not subsets of M.)
+
+Given (Ē, ý) € Ln+m (where Ē is an n-tuple and an m-tuple of vari-
+ables with no variables in common) and an m-tuple č from M, the formula
+¢(, ĉ) from L. (M) is called an instance of (Ē, y) (or just a -instance
+if the partition of variables is understood). The set defined by it in M, that
+is the set {ii € M": M ¢(ii, č) }, is denoted by (M, č). The tuple ĉ is
+also known ǆ the parameter (tuple) of this set. Fbrther, a set A C M  ·
+is said to be definable with parameters or parametrically definable
+(in M), if there is a formula and an m-tuple č (in M) 朋 above such that
+
+formula. # Æ) and t h= ire X (. £ pa £,
+
+7 Į
+
+Note that for n ś m we can embed L. in L. by adding what is known
+as redundant or dummy variables. This means that we ǆsociate with
+any formula q-q(zo,..., Tn-1) € L. the formula V'€ L. defined as
+qp A (zn = T.) A... A (zm-1-Tm-1). For the corresponding definable
+relations we then have qp'(M) = v (M) × Mm-".
+Sometimes (when we are not so much interested in the arity) we identify
+(p and fp'as above, assuming that redundant variables have been added. This
+usually does not lead to problems, as both formulas are logically equivalent
+in the sense of the next section. So, in a way, we always may assume
+that arities match. Just as well, all substitutions are always assumed to be
+matching. In generat, įn aıl TŁotattoTL, lengths ol tuples are assumeď to be
+the coct ones (įl necessaryt after tacitly adding dummy variables).
+Exercise 3. 2. 1. Show that every Iinite subset of a structure M is paranıetrically
+definable in M. Derive the same for every cofinite subset of M (i. e. a subset
+X Ç M such that M \ X is finite/
+ı-s W
+
+
+
+Page 8     
+OCR Texts: 
+28 CÏŁAPTER 3. sniA, 177C5
+
+Extrcbe 3. 2. 2. Co»ider a ¢en Sıpt M as aa L.-3!rn%. \t. DpWibe aE grcs
+幽眉目呐(冒ith p蟹划园酬闳n}も罗·a卫朝匦初工。-白日国名ıs蛔メイ，
+
+Tbe Dpıxt exrrcise $boı¥ that £or parp oees i« to pıınķ
+relationa】 ıangnages.
+
+Exercise 3. 23. ılet L b¢y a lazıguage af sigııat urea = (C. F. Rď')_Far all r € C.
+cbo{wı a nrnr unarJi'rion symbol € a ner pnnboıte) F. and all f € F 《ith
+
+ď (f) = n a n€w n A 1-retat srmboł Rr-aiıd ıet L  · be the ıanguage m
+Set R'= Ru{P, c€ C}u{Rj f€ F》
+m-ıogica】 wmbob R'. Gi\m m L M, kt M · be the L'ïue ńth
+the sarıw underlying m. \ 1 such that
+
+R. = R. v', for all R € R.
+
+. W P. (d) ifí r_d. For all c € C.
+
+, W Rf (ii. b) ifí f. H (ã) = b. For all f € F.
+Prove that Jl4 and JM'havĺ* the saiııe definable
+
+3. 3 Models and entailment
+卜
+We now tum to the notion which ga \ T the field its name.
+
+Let E be a set of Lsentences. We defined in §3. ı what it meaiıt for E to
+be true (or to hold) in an Lstructure. M. or, qui \ alently, for. RŲ to satisĘ '
+E. We introduced, remember, the notation M E for this. If, in addition,
+M is not empty, we sav M is a model of E. We use Modi. £, or, if the
+context L is understood. simply Mod E. to denote the class of Lstructlıres
+that are models of E (i. e. The class of all nonempty Lstructures satisĘw
+E)-the model class of E.
+
+Clearly, E can be regarded as a set of sentences in aiıy ıanguage L'ex-
+tending L, and so ModL, E is deóned. But note, this class is essentiall. T difter-
+ent from Modı. E if L 'L. For example, NoDLO is the class of all nonempty
+Structures, while ModL, O is the class of all nonempty し'_structures.
+
+Turning to the central concept of logic. we say that the sentence q
+II is a consequence of E. or that E entails V, in symbols'E h. or just
+U E þ v, if every nıodel of E is also a model of . For {ť  · } þ q we simply ĦTite
+Q þ . We sometimes use the term logical consequence to emphasize that
+
+w e are talking about consequences in the above technical sense--as opposed
+to consequences in the every dal T sense, tw _in the metalangue ·
+
+'The symbol thus stands for two difierent relations, that of being a nïo«lel and that
+of entaiıment. Which of tlıe two is under consideration is evident from thc context the
+former is a relation between stnıctures and (sets of) spntencps, \lThile the lattq is a relation
+between sets of sentences and sentences.
+
+
+
+Page 9     
+OCR Texts: 
+3. 3. MOD AND ENTAILA'lENT 29
+Note that in contrast to tlıe relatlorı of being a mtłdcl, enlment. Does
+not dwnd Mtķt L (this Justifyln8 the omiasion of the ßubscript)
+more · Peiy, E トし hokls if and only If E F q holds for any (or equiv-
+alelıtly the smallest) language L'containing both E and q ille direction
+from right to lett follows immediately from the coincidence lemma (3. l. l),
+the converse one needs in addition that if L'c L, every L'-structure can
+be trivially expanded to an structure (the new symbols can, in fact, be
+interpreted in an arbitrary way, as is eǆily seen). We can Łhus say that
+E q if and only if every model of E is also a model of q.
+
+Eŕ is to denote the set of all consequences of E in L, i. e. E
+Lo · ģ v}. This set is called the ded į,. ve We of E in L (usually
+ŕ ='V
+we omit the subscript L when it is understood.) A set of sentences E is
+said to be deductively closed if E_E. Two sets of sentences Eo and
+21 are equivalent modulo a set of sentences E (or just E-equivalent),
+in symbols Eo rų£ 21, if E U Eo and E U 21 have the saıne deductive closure
+in L. We say (logically'equivalent) equivalent instead of O-equivalent,
+[Tarski, A. : iber eini ₩ fundamentale Begrilfe der Mathematik, Comptes REndus
+Séances Soc. Sci. LeMres Varsovie Cl. III 23 (1930) 22-29]
+
+Clearly, Eo and 21 are E-equivalent if and only if E U Eo and E U 21
+are logically equivalent. Fbrther, it is not hard to see that (E) _E,
+whence the deductive closure of E is deductively closed.
+
+Next we verify that we may write þ V instead of 0 V without causing
+any conħrsion. e =) qcÃS ; į_q
+
+lewwwa 3. 3. 1. an l-sentence (p is o consequence oĵ the empty set ¢ and
+onıy įf tp is salid (i. e., e deductie clostire ol 0 Ç Lo is pmcisel the
+set ol aıtd L-serļŁ € nees).
+\ľ,
+pr oof we h f ; Ė. if and only if M o inıplies M qo for all nonempty
+Łstructures M. This is the case if and only if M V for all nonenıpty
+structures M (ǆ every structure is a model of the empty set of sentences),
+hence if and only if ço. D
+Suppose E Ç LoI, Ē is an ?ı-tuple of variables (n > O), Đ (Ē) Ç Lř and
+V (Ē) ç し ī. The sets Đ (Ē) and V (Ē) are called equivalent in the structure
+M, or just M-equivalent, in symbols Đ-M W, if for all ii E M"we have
+M Đ (ã) if and only if M (ã). They are called equivalent modulo
+E, or just E-equivalent, in symbols ¢-E V, if they are M-equivalent for
+all models (i. e. Nonempty Łstructures) M E.
+
+
+
+Page 10     
+OCR Texts: 
+30 CHAPTER 3. SEMANTICS
+We extend these definitions to formulǆ v? (Ĵ) and (Ē) in the obvious
+way by applying it to the sets {q} and {}, so that the notations q-M
+and V-E ¢ make sense.
+The terms t () and s (í) are said to be M-or E-equivalent if the
+fomıulas y-t (ř) and y-s () are.
+Instead of equivalent we say (logicaıly) equivalent and we write-
+instead of_o-
+As in the coincidence lemma, in this definition only those entries of ã
+are rele \ ant which are substituted for a free variable in ® or W. Thus this
+delinition does not depend on n.
+Clearly, v (ź) and (ž) are E-equivalent if and only if Eu{} and Eu{tp}
+are logically equivaıent (if and only if E VĒ(P H Q)). If these formulas
+have the same number of free variables, then they are M-equivalent if and
+only if they define the same sets in M. In general, they are M-equivalent
+if aiıd only if the latter is true after adding dummy variables appropriately.
+It is now easy to write and verify the well-known logical laws as equiva-
+lences, e. g.-(Ą û)--V v-Q or (3r V A 3£ )-3zy(q A Q. (y)), in case
+y occurs free in neither p nor ¢ ·
+We leave it to the reader to find and prove the equivaıences that make
+the next remarlts evident.
+Rnmarks.
+(1) (Disjunctive Normal Forms) Let E be a set of formulas.
+Every boolean combination q of formulas from E is logically equivalent
+to a formula (in the same free variables) of the form Vi<. Aj<. Qij, °
+so-called disjunctive normal form of q, where each qij is from E or
+a negation of a formula from E.
+
+(2) Everr quantiïier-free formula is logically equivalent to T, 上, or to a for-
+muıa of the form Vi«  · Aj«.. Qij, where the (pıj are literals (i. e. Atomic
+or negations of atomic formulas). If we want the same free variables
+to occur, then, in the case of quantiĺier-free sentences in languages
+without constants, we hatte to allow T and JL, see next remark.
+(3) The formulas z-z and z z are equivalent to T and 上, respectiveıy
+
+(note, the latter uses that models are never empty). If there is c € C
+then T and 上 are logically equivalent to c-c and c ¢ c, respectively.
+Therefore we do not need T and 上 in this case (cf. previous remark).
+(4) (Prenex Normal Forms) Every formula is logically equivalent to a for-
+
+mula (with the same tree variables) of the form Qozo... Q.-13n-1 p,
+the so-called prenex normal form of tb, where the Qi staııd for quan-
+tifiers (tııat is 3 or V) and q is a quantifier-fræ formuıa as in the second
+
+
+
+Page 11     
+OCR Texts: 
+3. 3. MODELS AND ENTAıLMENT 31
+remark above. (By the first half of the previous remark, we can avoid
+T and 上 in the formula V by introducing an extra quantifier.)
+These normal forms are of course far from being unique.
+Given a formula Q in prenex normal form Qozo... Qn-1o-1 ų-the for-
+mula q is also known ǆ a (quantifier-free) matrix of fp, while the (quan-
+tiñer) prefix of Q is Qozo... Qn-13n-1. In cǆe the quantifier V (resp.
+the quantifier 3) does not occur in Q, this formula is called existential
+or an 3-formula [read : e-formulai (resp. universal or V-formula [read
+a-lormula】). The corresponding classes of formulas are denoted by 3 and
+V. Correspondingly, W denotes the class of all formulǱ of the form V q,
+where p € 3, while 3V denotes that of formulas 35 91 where p € V, and so
+on.
+
+Remark.
+(5) Every positive formula is logically equivalent to a formula in prenex
+
+normal form whose matrix is a positive boolean combination of at?mic
+formulas.
+
+A contradiction in L is an sentence of the form V A_q. A set of
+sentences or a single such sentence is said to be consistent if no consequence
+of it (in L) is a contradiction, i. e., if its deductive closure contains no
+contradictions. Otherwise the set is said to be inconsistent.
+
+Since no nonempty structure can satisfy a contradiction, the deductive
+closure of a contradiction is the set of all sentences (of the language under
+consideration). Conversely, if the deductive closure of a set of sentences is
+the set of all sentences (of thc language under consideration), it certainly
+contains (many) contradictions. Consequently, a set of sentences (or a single
+sentence) is consistent if and only if its deductive closure is not the set of
+atl sentences (of thc language under consideration).
+
+Similarly, no contradiction has a model, and, conversely, a set of sen-
+tences without a model obviously entails ellery sentence (of the language
+under consideration).
+
+The next remarks are now immediate.
+
+Remarks.
+(6) Every contradiction is inconsistent and logically equivalent to 上. Every
+
+valid sentence is consistent and logically equivalent to T.
+(7) A set of sentences is consistent if and only if it has a model.
+
+Next we derive an important semantic property of new constants.
+
+
+
+Page 12     
+OCR Texts: 
+32 CıIAPTER 3, SıMANT'ıCS
+Lenınıa 3. 3. 2, (On New Corıstants) Let E c )rı, 1p € ı,.. And let č be a7l
+n-tuple ol constants not occuTling in L,
+
+Therł E I, (e) (Ł') implies E トし Vi tp (Ĵ),
+
+Proof. For the nontrivial direction, let the L-structure M bc łl model of
+E. We have to show that M q (ii) for all n-tuples iz fromu M. Now, Łhc
+L-structure M becomes an L (c)-structure M'when setting čM'. ä, i. c.,
+when M'. (JV, ā). By the coincidence lemma (3. 1. 1), M E implies
+M'E. Then the hypothesis yields M'V (č), which is t, he same ǆ
+Remark.
+(8) Consider the recurrent special case, where q (Ē) is of the form () 4 Q
+with O € Lo. Then E L (ĉ) p (č) implies E L 3Ē ý (Ē)-Þ O, since the
+sentences V ((ž ) 4 0) and 35 () 4 Q are logically equivalent.
+
+Exercise 3. 3. 1. (The Deduction Theorem) Given L-sentences and Q and a set
+
+of L-sentences E, show that E q 4 ¢ if and only if E U {v}  ·
+
+Exercise 3. 3. 2. prove that a finite conj unction of existential (resp. universal)
+formulas is logically equivalent to an existential (resp. universal) formula. Prove
+the same for finite disjunctions. In which of the four statements to prove you cannot
+
+in general simpıy exchange the qiıantifiers with the logical connectivcs?
+
+Exercise 3. 3. 3. Verify the assertions made in all the above remarks, in pǆticular,
+prove the theorems on normal forms.
+Exercise 3. 3. 4. Let E be a set of sentences, and ġ (Ī) and V (Ï) sets of
+formulas in the free variables Ē = (zn,..., xn-1). Then Đ and W are E-equivalent
+iff for some (every) expansion L (č) by an n-tuple of new constants ĉ, the sets of
+L (č)-sentences Đ (č) and W (č) are E-equivalent.
+Exe.. Ise 3. 3. 5. SIro. That addi. g d""y, ariables p, cserves 1. Gi, M. qui.. 1"",
+3. 4 Theories and axiomatizable classes
+
+An htheory (or a theory in L) is a consistent and deductively closed set
+of sentences. The cardinality or power of an theory T, in symbols
+ITI, is by definition the cardinality of L.
+
+
+
+Page 13     
+OCR Texts: 
+3. 4. THEORIES AND AXJOMATTZABLE CLASSES 33
+Since aıı Lthtory TĶdeductiwly closed, it cnntains all \alid Lsentences,
+in particular the sente 3z(z-1). Hence, no struct ure satisiying a th»
+ory is empty. ıiı other nnrds. Eveq'such struct1ıre is a model, i. e., given a
+Ueoïv T, the class MoDLT is exactly the class of structures satislirilıg T
+(no empty struct have to be excluded).
+
+The neM remarlet are immediate fnom what was said about consistency
+in the preceding section.
+
+ıĺEmarxs.
+(1) Lo is the only deductinEly closed aııd inconsisteııt set of Lsentencea.
+(2) Let T and T be Ltheories.
+
+T Ç T if and only if for all Lstructures. . If, Ļt Tthen JV P.
+(This follows directly irom the deónition of and lronı the fact that
+
+Given a class K of Lstructures, the theory of K, or sinıply the
+theory of K. is, by delinitio the set THK (or THLK) of those Lsentences
+that are true in all nonempty structures from K, i. e.
+
+THK-{ € Lo JĻï , for all nonempty JM € K}.
+
+We wTite ThM instead of Th {M} and call this set the theory of J.
+Note that THK-THL(K \ {OL}), in particular, Th OL-THL{OL} =
+thl@ = Io ·
+
+Note that in the pathological cases when K-0 or K-{OL}, that is
+when Th K = Lo, the set THK is not a theory in the sense of our definition,
+for then it is inconsistent. However, it is easy to see tlıat otherwise it indeed
+is a theoņ  · (in any case, Th K contains aı1 valid sentences ). In particular,
+if T is a theory, so is Th Mod T. Next we convince ourselves that, conversel!',
+every theory is of this form.
+
+Leınma 3. 4. ı. ıÆt T be a set ol sentences.
+(1) T Ç Th ModT.
+(2) T_Th ħ  · lod T.
+
+(3) T is deductiuely cıosed FT-ThModT.
+
+(4) T is a theory iï and onltl iJ T is consistent anđ T-ThModT.
+
+Proof The first assertion is immediate from the deónitions. The second
+is immediate from the definition of consequence (and the fact that ModT
+contains only models). The remaining two assertions now follow easily. D
+Given a theoņ  · T, denote by T ıoo the theory of the class of all inónite
+models of T.
+
+
+
+Page 14     
+OCR Texts: 
+: $  · ı CııA pTER ; ı, SEMA NTıCS
+Tlıe simplest exaiıtplc of n tlıcory is LIıu L.-tlıcory of alı sets (regarded
+iw J..-sŁructures), which wc call tılc tlıeory of pure identity nrıd denote
+by 7.. Clearly, T. is the sct of all vłrlid L.-sentences and T is the tĺıcory
+of alı inĥnit, n qpt, S
+Ul a1ı 1nnııllc sELS.
+Given an L-llleory T itrıd aıl arbitrary class of formulas A, we call
+T =del (T n A) the A-part of T. We write THŁīK fi) r (Tĺ : K) b arıd
+call this the A-theory of K. By this, notation liki: Tłr, 7+, T_, Tv, n3, 了ir3,
+etc. should be « : lear. Thc. First five of thes« : are also called quantifier-free,
+positive, negative, universal, and existential part uf T.
+We conchıde tlıis section with Łlnother hǆic ııotion. A cluis K of L-
+structures is said to be axiomatizable or elementary (in L) if there is
+a seŁ E Ç Lo §uch that K is tlie clǆs of L-structures satisfying E. Wc
+then say that E axiomatizes K. In cale E consists of a single sentence
+V, i. e. E-{v}, we omit the braces and say, V axiomatizes K. A class
+is said to be finitely axiomatizable (in L) if it, can be axiomatized by a
+single L-sentence (or, equivalently, by a finite set of those). A theory T is
+axiomatized by E if E ç T c E or, ecłlıivalently, the model classes of T
+and E are the same.
+It is emily seen that the empty set axiomatizcs (in L) the clms of all
+L-structures. Further, a clms K is axiomatized by a set E if and only if
+the class K U {ØL} is axiomatized by {a V-3r (£-£) げ E E}, and
+also if and only if K \ {OL} is axioïTiatized by E U {3z (I-T) }. This
+allows us to exclude the empty stnıcture emiıy front discussions related to
+axiomatizahility. It also slıows that a class is axiomatizablc if and only if it
+i5 of the forrn K = Modı, E or K = MoDLE U {ØL}  ·
+
+Given an arbitrary clǆs of fornmlǆ, A, we call an Ltheory A-axi
+matizable (or simply a A-theory) if it can be axiomatized b, ľ a subset of
+& n Lo ·
+V-theories [rcad : a-theorics] are also caıled universal or universally
+axiomatizable. Sinıilarly, 3-theories [read : e-theories] are called existen-
+tial or existentially axiomatizable. +-theories are also called positive
+or positively axiomatizable.
+
+Remarks.
+(3) Obviously. E axiomatizes T if and only if E and T are (logically) equiv-
+aient. i. e., if and only if EP_T.
+
+(4) The theory T is a A-theory if and only if T C Ta (if and onıy ir
+
+T = T3).
+
+Example. T"is axiomatized by T U {3>"r (£-r) n € N}.
+
+
+
+Page 15     
+OCR Texts: 
+3. · I. THEORıES AND AXIOH'IATıZABLE CLASSES 35
+LemnAn 3. 4. 2. A clt\ss K oĵ L-stnıctures is aziomatizable iĵ u7ıd only iĵ
+K \ {OL} = ModT lrK.
+proqf We saw above that K i8 axiomatizable if and only if K \ {OL} is, So
+wc may restrict to the case where K docs not contain the empty structure.
+Then, if K has the form Mod Th K, it clearly is axiomatizcd by Th K.
+Let, conversely, K be axiomatized by E ç Lo. The inclusion from left
+to right holds for any class K not containing the empty structure. Since
+K = ModE, clearly E is contained in Th K and so Mod Th K Ç ModE = K,
+whence the innverse inclusion also holds. D
+Exercise 3. 4. 1. Prove that isomorphic L-structures have the same Ltheory and
+-Į/ hence, if M is isomorphic to a structure from an aJciomatizable cıass K, then M
+A''itself is in K.
+Exercise 3. 4. 2. Axiomatize the class of all vector spaces over a field K (in the
+language of Exercise 1. 2. 1).
+
+Exercise 3. 4. 3. (In the natation of Exercise 3. 2. 3.)
+
+Let E-{3-lzP.(T) : c E C} U {VĒĴ-'yRf(Ē, y) f € F} C L. Prove
+that the class of structures satisfying E is {M': M is an hstructure}, hence
+ModE = {M'M is a nonempty strueture}.
+
+Let X and Y be any two classes. A Galois correspondence between X
+and Y is a pair of maps a : tP(X)-tP(Y) and P q](Y) = 13(X) such that
+for all Xo, X1 Ç X and Yo, Yi Ç Y, if Xo Ç X1 then a (Xo) 2 a (X1), if Yo Ç
+Y then ß(Yo) 2 ¢(Y), and Xo C Pa(Xo) and Yo Ē ap(Yo). A subset Xo C
+X (respectively, Yo Ç Y) is said to be closed with respect to the above Galois
+correspondence, if Xo-Pa (Xo) (respectively, Yo-ap (Yo))  ·
+k)
+
+Exercise 3. 4. 4. Prove that E H MoDLE and K H THLK dtñnes a Galois cor-
+respondence between Lo, the set of all sentences, and MoDLO, the class of all
+nonempty Lstructures. Derive that, given theories S and T (in the same lan-
+guage), we have S = T if and only if Mod S = Mod T.
+
+3 X"i'". 4. 5. showthat,.nderthe Galoiscorrespondenceoftheprecedingex-
+ercise, the deductively closed sets of Lsentences (including the inconsistent one)
+are exactly the closed subsets of Lo, while the axiomatizable clǆses of nonempty
+Lstructures (including the empty class) are exactly the closed subsets of MoDLO.
+In Chapter 5 we will see a number of concrete axiomatizations (of alge
+braic classes).
+It is advisable to understand well the dualism between axiomatizable
+classes (as described above) and deductively closed sets of sentences (as
+described in Lemma 3. 4. 1 (3)). This is treated in a more systematic way in
+the last two exercises (and only for the case without empty structures).
+
+
+
+Page 16     
+OCR Texts: 
+36 CııAP 丁 Eıt,'ı, SEMANT'les
+3. 5 Complete tltcoľics
+
+I, t't us considťľ rr\ttxitnnl consistent sct. s of sentt'nees, Tłtưs('clearly are
+d«l\ıctivTly t  · lut  · d nntı tınıs theories. In faci, il is easy to sec that ı. ¡lt  · s(l are
+maxilnnl tlwurit's, tl\nt is, ir L is t]ı( Innguagc we nrr working in, tıwories
+that nLT lıot propťrly contained in nırolırcr bthcory. Nris leads to the
+following dptinit ion,
+
+An 1.-The«»ry T'is sıtitl to be complete if for every j.-sentence q, either
+p € T or-€ T.
+
+Lemma 3. 5. 1. The Jollouing are equiualent lor euery L-theoıı T.
+(i) T is complete.
+
+N ) T is (ı mazirnal L-tt\eory.
+
+N\ ) T is a marimal consisteīıt set oJ L-sentences.
+(iv) T-Th 加加 rallMT,
+(v) T = Th M Jor some M.
+
+Proof If T i5 complete, every L-sentence p that is consistent with T must
+be contained in T, hence T is a maximal theory. Similarly, a maximal theory
+is a maximal consistent set.
+
+If M is a model of T, then T Ç Th M. If T is in addition maximal, we
+obtain pqualit, y here.
+
+We are left with the implication from the last assertion to the ĥrst. But
+this follows easily from the fact that, for every € Lo, either q or-q is
+true in M. D
+
+As every consistent set of sentences has a model, we readily derive
+
+Corollary 3. 5. 2. (Lindenbaum', Theorem)
+
+Euery constslent set ol L-sentences is contained in a complete L-theory, a
+so-called completion. D
+
+This assertion is also known ǆ the Linđenbaunı-Tarski theorem. Lindenbaum
+was a colleague of Tarski, who wm killed by thu Nazis and never published this
+result, cf.
+
+[Tarski, A. : Ůber einige fundamentale Begriffe dcr Mathematik, Colnptes Rendus
+Séances Soc. Sci. Lettres Varsovie Cı. III 23 (1930) 22 29] ·
+
+Not every theory is complete, e. g. The set of all valid L sentences is a
+theory by 3. 3. 1. But this is far from being complete, as we are going to
+see next. Note fırst that there are L-structures of every finite cardinality,
+for on euery nonempty set one can define an L-structure, for instance by
+
+
+
+Page 17     
+OCR Texts: 
+& 5. COAFPLETE THEORIES 37
+giL'ing all temıs the słıiue \ due and interpretiııg the rest ol the lansunge
+arbitrarily. ĺbrther, let tpn denote lhc sentence 3-"ı (T-T), which iß
+contained in ewry lanßuage and s ₩ tlrat there are preciseıy Tł element, 8.
+Then, as mentioned, O U {tpn} is colısistent for all rı > O, while Vn A qrn
+is inconsistent {or n + rn. Hence 11one of the sentences qn is contained in
+O, wheııce the latter is an incompıete theory. Moreover, by I. indenbaum's
+theorem, it has inónitely many completions.
+
+Later we will see 1 € ss trivial examples, like the theory of all groups.
+
+A \ rry nontrivial exanıple of an incomplete theory is the following theory,
+the led Peano arithmetic, denoted by PA.
+
+Ebcampıe. Consider the ıanguage L of signature (0, 1 ; +,  · ). The Axĵ
+Peano arithmetic are the following Lsentences.
+
+(P2) Vz(z ¢ 0-ĵy(z = y + 1)),
+(P4) Vz(T + O = z),
+
+(P6) Vx(z  · 0 = 0),
+
+and for all q € L1 the ǆiom of induction
+
+Denote by PA the deductive closure of { (P1),..., (P7) } u { (Pq)
+L1}. This is consistent and thus a theory, for (N O, l; +,-) is a model.
+model is called the staiıdard model of PA.
+Gödel's ūrst inconıpleteness theorem says that this theory is incomplete.
+入夏 ore precisely, it says that there are true number-theoretic statenıents
+in L (włlich means nothing more than true in (N O, l; +,-)) that are not
+provable in PA, i. e., PA F Q. Since (N O, l; +,  · ) itself is a model of PA,
+we have on the other hand PA -Q. Hence PA is incomplete and thus a
+proper subtheory of the Łtheory Th (N O, l; +,-). The latter is also called
+true arithnıetic (or conıplete first-order number theory).-Gödel's
+theorem is a deep result in mathematical logic, for which we refer the reader
+to the standard literature.
+
+-Exercise 3. 5. 1. An LǄeory T is complete ifFqv¢ € T impliesq € T or tp € T.
+Exercise 3. 5. 2. Consider a language L without relations. Prove that there is, up
+to isomorphism, precisely one hstructure of power 1. Does this remain true if L
+has also relation symbols? E. g., how many structures of power 1 are there if L
+has precisely two relation synıbols both of wHch are unary (i. e. 1-place)?
+onıs of
+
+: P € This
+
+
+
+Page 18     
+OCR Texts: 
+38 CHAPTE只ゴ，SEハイAN了コCS
+Exercise 3. 5. 3. Firıd a fommla dťfining the set of prime nurnb( · rs in the standard
+model of Peano arithıJretic.
+3. 6 Empty structures in languages without con-
+stants
+As in the preceding chapter, we close with a side remark about a'Łrivial'
+topic. We mentioned in §1. 2 that there is an empty (T-structure 0. (or an
+empty L-struct ure OL) if and only if (T (or L = L (cr)) hǆ no constants. Fix
+such a language L. Although also in OL an L-sentence is satisfiable if and
+only if it is true in OL (since'there is'an empty tuple, i. e. a O-tuple in
+0), due to the lack of tuples of positive length in 0 no formula with free
+variables is satisóable in O, while all such formulas are true in OL. For the
+same reason Vz V is true in OL for all V € L, while Ĵz V is not. Fbrther, all
+Lformulas are OL-equivalent even though some are true in OL and some are
+not (note that also in OL, the sentence T is true, while 上 is not).
+
+These anomalies are likely to be the remon that in most logic texts empty struc-
+tures are not even considered and that Jz(z-T) became a logical axiom. However,
+this exclusion leads to other anomalies, namely in connection with the notion of
+generated substnłchıre, cf. §6. 3, and sometimes even to incorrect statements of cer-
+tain theorenui, see the example after Theorem 9. 2. 2. Wc do allow empty structures,
+but for traditional reasons and in order to avoid the aforementioned semantic sin-
+gularities, we exclude empty models (cf. §3. 3) sn that all models satisfy Jr(z-x).
+In the definition of truth (§3. 1), however, we did not exclude empty structures so
+that the statement OL E makes sense. (Note that this statement is false if E
+is a theory, see introduction to §3. 4.) In any cme, all this is no real problem, and
+Hodges therefore says, in practice these points netier matter (see p. 42 of his Model
+Theory)  ·
+
+Exercise 3. 6. 1. Prove that thc set of L-sentences true in OL i5 neither consistent
+nor deductively closed.
+
+Exercise 3. 6. 2. Determine the set of L-sentences tme in OL precisely.
+
+Exercise 3. 6. 3. Find an algorithm to prođuce normal fonns that respects not only
+logical e«łuivalence but also equivalence modulo the empty struct\ıre.
+
+
+
