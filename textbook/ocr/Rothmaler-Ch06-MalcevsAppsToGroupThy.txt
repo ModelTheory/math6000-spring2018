@@ -1,0 +1,931 @@
+Page 1     
+OCR Texts: 
+Chapter 6
+
+Malcev's applications to
+group theory
+
+In this chapter we present a method for the transfer of certain properties of
+finiţely generated subgroups of a given group to the group itself developed
+by Anatolij Ivanovich Malcev [read :'Maltsev'] in his clǆsical paper
+IManmeB, A. H. (Malcev, A. I.) : 06 oÆaoM oómeM MeroAe nonyųeEĺıïH JioxaJib-
+liEnt Teopem reopıuï rpynn, Uchenye Zapiski Ivanov. Ped. Inst. 1, 1 (1941) 3-9]
+whose English translation appeared as
+
+[A. I. Malcev : A general method for obtaining local theorems in group theory]
+
+only in the 1971 volume of his collected papers (pp. 15-21) cited in Ap
+pendix H.
+
+We start with an account of the method of diagrams, introduced indæ
+pendently by Malcev and Abraham Robinson, and proceed with the method
+of interpretation, which seems to have been some sort of folklore as early as
+in the thirties.
+
+6. 1 Diagrams
+Recall that if a structure M is a substructure of a structure N, then all
+symbols of the signature are interpreted in M in the same way as they are
+(on the subset M) in N in other words, M P(ã) if and only ifN P(ã)
+for every unnested atomic formula D and every tuple ã from M. In the first
+lemma we extend this to arbitrary quantffier-free formulas 0 ·
+Lemma 6. 1. 1. Let M and JV be L-stnĮctures.
+67
+
+
+
+Page 2     
+OCR Texts: 
+68 CHAPTER ti, hIALCRV S APPı. ıCATIONS To GROUP THEORY
+. \-t Ç. V (i. ť... \  · ! is (1 stłbstĦłcttłrĽ ulN) ?l rłntl (/ım】 il Al Ē N, Al is
+closed in A ttndel'ltĮnctions lmłn titt: s'i!łnat. ure («l. ËI. 4), t\ml
+
+lur alt wantifier-Jtlee Į.-lunmtlas (ıïtd 1mıtctung t, uples ă JroŢn M.
+
+Pmof. Th  · direction from riglıt to left is trivial (it suffices t, o consider
+unnested atomic formulas for that).
+
+For thc converse, we need only show that condition ť) for unnested
+fornmlas-as given by the definition of substructure-implies the full con-
+dition ť). Thc first step for this is to prove ť) for all atomic formulas,
+which can be easily established by an induction on the complexity of terms
+occurring in the atomic formulas. The second stepi an induction on the
+complexity of the quantilier-free formulas, is even easier, since the condition
+(*) easily'extends'to conj unctions, disjunctions and negations. The details
+are left as an exercise. D
+
+Next we introduce some useful technical notation. Suppose M and N
+are structures and is an arbitrary class of formulǱ (not necessarily from
+L).
+We write M şa JV or JV Ęa M if M çp implies N ço, for all
+q € A n Lo (or, equivalently, ThaM C ThaN). The notation M 三 Ą JV
+is used to denote that both, M a N and JV A M hold. We omit the
+subscript A in case A J Lo ·
+
+Ą
+'1'ne notation ì : M N means, by dehmtron, that J : M IV and
+
+that M qp (iı) implies JV 0 (f[ã]), for all q € A n L (hence also for
+L-formulas Ęp containing free variables) and all matching tuples ã from M.
+For reasons of tradition we write f : M JV instead of f : M į JV. If
+Ą-{v}, we omit the braces..
+
+For technical reasons we have built some redundancy into these defini-
+tions : in M a JV (or f : M JV) only those formulas in A count that
+are also in L. For instance, if A contains all of L, then f : M N says
+nothing more than just f : M_)V.
+
+As an illustration, we state a few facts whose proof we leave as an exer-
+
+CISE,
+
+Remark,
+
+(2) Let A C Lo. Then f : M į JV if and only if M şA JV and f : M 4 N.
+at
+(3) f : M N if and only if f : M-> N.
+
+
+
+Page 3     
+OCR Texts: 
+6. ı. DıAGRAMS 69
+Suppose Ą Ç L contains at, the set of all atomic formulas, as well as
+all negations of unnested relational atomic formulǱ, i. e., all formulas
+-R (í) where R € R.
+
+스
+'I'nen İ : M N implies that f is a strong homomorphism (while the
+converse is not true).
+
+(5) f M N is injective ifand only if f : M į N for the set A-{£ ł
+
+v}  ·
+
+(6) If A Ç Lo contains, along with every sentence, also its negation, then
+
+M a N implies M 三 & N.
+
+(7) If A C L contains, along with every formula, also its negation, then
+
+f : M JV implies that for all V € A and tuples ä from M we have
+M fů (iı) ifïNv (f[ã]).
+
+Remark (2) shows that, in case A consists of sentences only, the map f
+is redundant in the notation f : M N.
+It z Ť y € A, Remark (5) allows us ţo write f : M N instead ot
+Ĵ MJ.
+
+The relation =a, is an equivalence relation. In the particular case where
+a = Io this relation, that is =, is known as elementary equivalence. it
+三
+will be investigated in more detail in §8. 1. Similarly, the maps 1 : M N
+are known as elementary maps and will be investigated in more detail in
+§8. 2.
+
+Let M be an structure. The diagram of M, in symbols D (M), is,
+by definition, the set of all atomic and negated atomic L (M)-sentences that
+are true in M i. e.
+
+D (M) = {q (ã) : M (p (ã), q € L is atomic, iį in M} u
+
+{-p (iį) : M -q (iį), 1o € L is atomic, ii in M}.
+
+The diagram of M is thus the set of all L (M)-literals that are sentences
+and true in M. The diagram of an empty structure is empty, as empty struc-
+tures exist only in languages without constant symbols, which, by Remark
+(3) in §2. 5 have no atomic sentences.
+Example. The diagram of a group is TG-equivalen6 to the Cayley diagram
+(i. e. Its multiplication table) joined by all negations of term equations that
+are not true in the group (see also the remark at the end of §6. 4 *).
+Lemma 6. 1. 1 can now berestated like this : M C JV if and only if M C JV,
+M is closed under functions, and (N, M) D (M). The latter is equivalent
+
+
+
+Page 4     
+OCR Texts: 
+TU C IIAP'I'L'll ti. ALAI. ('L'\"S Al'1'1, IC/YT'IONS'1'0 GnOljP"!'llE01lY
+to id. \l : A  · f , V (wilL  · re qf dcnutu 5 thc class of all quantifier-frc  · o for inula,
+ai int].otluct'tt in §2. I). Wt'llz1vt', 111ore genentll.y,
+
+Lemma 6. 1. 2. (The Diagram I. emma)
+
+Suppose M aTHI N are L-structures and ! M_N.
+11) J : M W N (I. e., 1 is a monomorphism Jrom M to N) il and oTLhj il
+
+1 : JUT qN zf and only zf (N, f[Alj) F D (M).
+In paTtcutaT, J M L JV i.mplies l M H JV.
+12) M w N iJ arrd onzTj il N has an LIAI)-erpansion which S a 1TLodct ol
+
+D (M).
+
+Proof. Ad (1). Let A be the set of all litera]s. As in the preceding lemma, we
+have f : M H N iff 1 : M E JV iff f : M JV. But the latter is obviously
+equivalent to UV, f[Ar]) F D (M).
+
+(2) follows from (1), for if )V is an L (A·[)-expansion of N satisfying
+
+D(M), then, on setting f(a) = gAr'for all a € AI, we obtain f M w N.
+
+his implies the important feature of isomorphic structures that-also
+with respect to their theory-they are indistinguishable.
+
+Proposition 6. 1. 3. Rf / : M N, I. he Tt ! : M JV, hence also M = N
+(I. e. Th M = Th JV).
+
+proof we already know from Lemma 6. 1. 1 that f : M E N, I. e. That
+
+holds for all q e qf and matching tuples ii from M.
+
+B3  · induction on the complexity of V we are going to verify V) for all
+V € L. The inductive steps for conjunction and negation are triv ial. So we
+are left with the existenlial quantifier step.
+
+Let p be of the forni 3x V  · (z, ti), where li  · € L, t+1 and ii € M". Suppose
+that for all b € AI we have M F v1(b, ii) iff JV F V  · (1 (b), J[ii]). We have to
+show that then M F 3zq(x, ii) iff N F 3xq(x, f[iiD.
+
+Note that M F J£ v"J(z, li) if and only if M F a(b, ii) for some b € M.
+By the above supposition the latter is, in turn, equivalent to the existence
+of some b E Af such that N F '(f (b), f[] ). Since f is surjective, this is
+equivalent to the existence of c € JV such that N F qJ(c, f[ii]), hence to
+N F Jxq, (x, l[] ), as desired.
+
+This concludes the proof of / : M w N, and M = A( follows as a special
+
+
+
+Page 5     
+OCR Texts: 
+6. 2. SIMPLE PRESERVATioN THEOREMS 71
+Remark. (8) This can be used to ñnd, for any structure M, a disjoint
+
+structure N ThM consider a bijection of f of M onto an arbi-
+trary disjoint set N and define thereon a structure N according to
+the preimages. Then f : M N and hence, by the preceding result,
+
+N Thm.
+
+(9) Another inıportant consequence is that sets definable without pmanıb
+
+ters are invańant under automorphisms, i. e., given an structure M
+and an automorphism f € AutM, we have f[Q (M) ] = (M) for all
+¢ € L.
+
+Exercise 6. 1. 1. Write out a detailed proof of Lemma 6. 1. 1.
+Exercise 6. 1. 2. Verify Renıarks (1) through (9).
+
+Exercise 6. 1. 3. Prove Thqf (M, M) Ç D (M) (see notation in §3. 4).
+
+Exercise 6. 1. 4. Show that if M C N, then TĻf (M, M) = Thqr (N, M), hence
+also Thqf (N, M) Ç D (M) .
+
+Exercise 6. 1. 5. Verity that the diagram of a structure is logically equivaleǄ to
+the subset of all its tznnested atomic formulas and aJl its negations of unnested
+atomic formulǆ.
+
+Exercise 6. 1. 6. Show that the diagram of a finite structure in a finite signature
+is ñnitely ǆionıatizable.
+
+Exercise 6. 1. 7. Write down the diagrm of a field with tee elenıents (, up to
+TF. equivalence).
+
+Exercise 6. 1. 8. Generalize RJemark (9) appropriately to paranıetrically defined
+sets.
+
+6. 2 Simple preservation theorems
+
+We start with a simple consequence of the diagra】Jn lemma 6. 1. 2.
+ııemma 6. 2. 1. Let l M N.
+
+ïlien M JV and eDen (M, M) (N, f[M])  ·
+
+Pr oof Let (Ē) be an arbitrary V-formula, i. e., tp has the form Vyv(Ē, ),
+where q € qf. By Lemma 6. 1. 2 (1) (and Remark (7) of the preceding section)
+we have M v(iį, b) iff N q(f[ã], f[b]) for all tuples ii and b from M.
+Hence N Vy q(f[ii], ý) implies M vy v(ii, ), i. e., N Q (f[ä]) implies
+M (ii). D
+
+
+
+Page 6     
+OCR Texts: 
+T2 CHAPTER G. hLALCEV S APPUCATIONS TO GROUP Ttll£OlłY
+Ldt T be an ı.-Tlleory. Mod T (or just 7') is said to bc closed under
+(or preserved in) (rıoneınpty) substructures if JV T implies M T
+ĺor all nonempty L-structures M and N wit, h M c N. For'closed under
+subst, ructures'one oft cn say s lıereditary.
+Remark. If T is preserved in substructures, then it is also preserved in
+embeddings (downward), i. e., if JV JV T and A【 O then M T
+ifor then there is Ar'c N isomorphic to M and the former yields N'T,
+which, to ₩ ther with the latter, implies M T by Proposition 6. 1. 3).
+
+Lemma 6. 2. 1 implies that V-theories are preserved in substructures. We
+are going to prove t, he converse, for which we need the next lemma. Before
+that consider the following application of the previous lemma.
+
+Example. One cannot universally axiomatize the theory of groups in the
+signature (1 ;  · ), since here,'substructure'means only °submonoiď.
+lewwwa 6. 2. 2. the lollou) įng condįtįons are eqiİįuaįent lor any l-仇 eories
+r and T'.
+Ļ\) Euery modet ol T'ean be embedded ín a model ol T.
+(ii) Tv C T'.
+Proof (i) 4 (ii) is immediate from the preceding lemma (and Remark (2)
+of §3. 4).
+(ii) 4 (i). Let Ty C T'and M T'. We have to find some N T
+with M JV. By Lemma 6. 1. 2 (2) this is equivalent to the consistency of
+T u D (M).
+
+Assume T U D (M) is inconsistent. Then there is a finite conjunction,
+(p (ii), of formulas from D (M) such that T U {qo (ä) } is inconsistent, hence
+T -q (ĉį). Since the constants iį do not occur in T, the lemma on new
+constants (3. 3. 2) then implies T VĒ-0 (), hence VĒ-q (Ē) € T. But
+VĒ-v () € V (as V € qf), whence VĒ-v () € Tv. Then M T'and
+Ty C T'imply M VĒ-v (), which contradicts the fact that q (ĉi) holds
+in M. Ū
+
+Remark. The case T'-Tv shows that
+Mod Ty = {M : M N T},
+
+i. e., the models of the V-part, Ty, of a theory T are fup to isomorphism)
+precisely the substructures of models of T. (In Lemma 8. 3. 1 we will see that
+we may omit the clause ° up to isomorphism'.) FOm this one can derive that
+
+Ty = Th{M : MN T},
+
+
+
+Page 7     
+OCR Texts: 
+6. 2. SIAFPLE PRESERVATFON THEOREMS 73
+see Exercise 6. 2. 1.
+Ptopositīon 6. 2. 3. The Jollowing are equiualent Jor any L-eonj T anOL
+any set oĵ Jormulas, Đ T) L. (cf. Notation irl 93. 3).
+
+(\) Đ (ï) is T-equiualent to a set oĵ V-$ormulas Jrom L in the same Jree
+trańables.
+For all moďels M arıd N oJT arid allō € M  · , iJ McN anďN
+Đ (u), therı M ĐŁĀ). In other tuorďs, lor alı models M and N ol T,
+ií M c J, therŁ uv, M) Ș¢tM) (M, M).
+
+[Loś, J. : On extending of models I, Fhndamenta Math. 42 (1955) 38-54]
+
+[Tarski, A. Contributions to the theory of models I, II, Koninkl. Ned. Akad.
+Wetensch. Proc. Ser. A 57 (1964) 572-588]
+
+Proof In view of Exercise 3. 3. 4 it suūces to show that (ii) holds if and
+only if Đ (ĉ) is T-equivalent to a seţ of V-sentences in L (č) (where č are new
+constants). If M'and JV'are L (č)-structures with M · Ç W, then, for
+their reducts M and N, we have M ç N, and there is ii € M"such
+that M'_(M, ii) and W = (N, ii). Conversely, if iı E M"and M C )V,
+then (M, ii) Ç (N, ã) as L (č)-structures. Hence (ii) is equivalent to the
+fact that the set of L (č)-sentences, Đ (č), is preserved in substructures whose
+breducts are thenaselves nıodels of T.
+If now Q (č) is T-equivaleǄ to a set of V-sentences, then (ii) follows from
+Lemma 6. 2. 1 for L (č).
+
+For the converse, let Ø (č) be preserved in substructures whose Lreducts
+are themselves models of T. Let g (Ĉ) be the V-part of (TuĐ (Č)) (in L (Č))  ·
+By the above remark, the models of U (ĉ) are precisely the L (č)-substructures
+of models of T u ĝ (ĉ). Hence, under the above preservation hypothesis, the
+models of T U V (č) are also models of T U Đ (ĉ). Consequently T U Đ (ĉ) and
+T u W (ĉ) are equivalent, i. e., Đ (ĉ) and (č) are T-equivalent. D
+
+Coro\ıary 6. 2. 4. Let T be an L-theory.
+
+An L-loïmiıla (Pţi ) įs T-equįualent to an V-ĵomuįa įf and oïıly įH
+fů (iį) implies M o (iį), Jor all JH T andNT with M ÇN and all
+ã in M.
+
+Pr ool. The second clause is, by the the preceding proposition, equivalent to
+the above (i) for ĝ-{P}. Invoking the finiteness theorem this shows that
+q is T-equivalent to (the conjunction of) Jinitely many V-formulas. But a
+conjunction of V-formulas is equivalent to an V-formula. So (i) says, in this
+case, that q is T-equivalent to a single V-formula, as desired. D
+
+
+
+Page 8     
+OCR Texts: 
+7-\ CHAPTER (i. MALCEV S AppUCATıONS TO GROUP THEORY
+Corollary 6. 2. 5. (Thl'Loś-Tal  · ski Preservation Tılcorelu) A theor!/is PTY-
+se】  · ťcd in substmctuns iĵ and onĮy il it is anv-tlteory.
+Proof. Apply proposition 6. 2. 3, where ¢) is thc theory under consideration
+and T-0 (and ?ı-O). D
+Ļet us turn to the inverse situation of pǆsing from substructures to
+bigger structures. Suppose T is an L-theory. Mod T (or just T) is said to
+be closed under (or preserved in) extensions if M T implies N T,
+for all nonempty L-structures M and N with M N.
+Remark. As in the previous case, this preservation also holds true for gen-
+er al embeddings : if T is preserved in extensions, then it is aıso preserved in
+embeddings (upward), i. e., if M Aí and M T then JV T (by the
+same argument ǆ in the corresponding remark after Lemma 6. 2. 1),
+
+The contraposiţive of Lemma 6. 2. 1 shows that if f : M N then also
+f : M Aí, for the 3-formulas are precisely (equivalent to) the negations
+of the V-formulas. In particular, M implies M a N, hence 3-
+sentences are preserved under taking extensions. Again there is a corre-
+sponding preservation theorem, i. e., the converse is true too, ǆ we will
+show in the remainder of this section.
+If we restrict ourselves to single sentences (or finitely axiomatizable the-
+ories), this is almost immediate. First of all, it is easy to see that Corollary
+6. 2. 4 implies the following dual (exercise!).
+
+Corollary 6. 2. 6. LeŁ T be an L-theory.
+An L-lom1ıla lĒ) is T-equivalent to an 3-ĵomula į$ anď only įĵ, îoT
+all M T and Aí T 1uith M C JV, we haųe M į Aí (t. e. M v (ii)
+implies N v (ã), Tor all ã Jrom M). D
+
+As a special ease, we have
+
+Cor ouary6. 2.'T. A sentence tp (oT afrTłitely oiomatįzable theory T) is
+presemed in extensįons įl arŁd only įĵ V is equįuaįent to an 3-state1TŁent (re-
+spectiuely, T ts an 3-theory). D
+The reason that the direction cannot be derived so easily for arbi-
+trary (non-finitely axiomatizable) theories T is that in general M T is
+not the same as M {-q : q € T} (in other words, it is impossible in
+general to take the negation of an infinite set of sentences). Nevertheless,
+the theorem can be proved, albeit by a more complicated argument.
+
+
+
+Page 9     
+OCR Texts: 
+6. 2. SIMPLE PRE SERVATTON THEOREMS 75
+Lemma 6. 2. 8. LeŁ A be a set ol L-sentences that is closed tinder V (i. e.,
+if tpo,... RVn-\ € h, then also Vi《.. q € &).
+
+An L-theoryT įs a h-theow (i. e. T Th) įf arŁď onıg įl, for aliM T
+and all JV ThaM, 1ı1e haųe JV T.
+
+Moreouer, one can restïict oneself to disjoįnt M anď N iTû thįs.
+
+Remark. The assertion states that T is a A-theory if and only if T Ç T
+for all completions T'of T. Thus the lemma holds for complete theories per
+deliniţionem.
+Pr ool. The direction 4 is trivial. For the nontrivial direction, let JV T& ·
+We have to verify JV T (cf. Remark (2) in ₩. 4). By hypothesis, for this
+we only have to find M T such that JV THAM.
+
+Set-A-{-õ : ô € Ą}. If Tu Th. AN is consistent, such an M exists.
+Therefore we are left with showing the consistency of T u Th_aN.
+
+So let ôi € A E < n) and N Ai<.-ôi. Denote the sentence Vi«. ôi by
+p. Then N -(p and, by hypothesis, p is in A. If T U {-ôi : i < n} were
+inconsistent, we would have T V : hence q € Ta and thus also N fp, °
+contradiction.
+Consequently there is a model M T u Th. ĄN, which, by Renıark (8)
+at the end of §6. 1, may be chosen disjoint from N. D
+
+Noting that this lemma applies to the case A-3, we are now able to
+give a proof of the preservation theorem for extensions.
+Theorem 6. 2. 9. (Łoś'Preservation Theorem) A theory is pïcsemed in ea-
+tensions if arıď only i$ it is an 3-theory.
+Pr ool. We proved already that 3-theories are preserved in extensions. For
+the converse, suppose the theory T is preserved in extensions. Let us first
+prove the following ǆsertion.
+
+ť) THJVUD (M) is consistent for every structure M and all nıodels N
+
+ThĵM.
+To prove ť), let v (ã) be a finite conjunction of sentences from D (M).
+Then qo is quantifier-free, ĉi is from M, and M q (ii). Clemly, M
+
+35q () and hence 3Ēqo (Ē) € ThĵM. Since N ThĵM, we also have
+JV Ĵ v (Ē). Hence there is a tuple b in N such that N (p (b). Then
+(N, b) ThJVu {0 (ã) }, and ť) follows on applying the finiteness theorem.
+
+In order to prove that T is an 3-theory, by the preceding lemma, we
+need only show that N T, whenever M T and N ThĵM. Suppose
+M and N are of that kind. Condition ť) yields a model of ThN U D (M),
+
+
+
+Page 10     
+OCR Texts: 
+implies. \,"F 7'by p]t's(?l,v \tiotl, llcnc('thu latIef impli(s JV F r'. D
+Exercise 6. 2. 1. Pl'ovT 7+ = Tll {11 : M w N F 7'}.
+Exercise 6. 2. 2. Deriv e Cor ollm T G. 2. 5 dir. uct, ly f]. om (thc rcrnark aftu] :) Lcrmnn
+
+Exercise 6. 2. 3. Prove Corolln]y G. 2. 6.
+
+Exercise 6. 2. 4. Fomiulntu and prove the dual of Proposition G. 2. 3 for. 3-formulai
+(that is. Thc gemralization of Co]ollary G. 2, G to arbitrary sets of for mulas Q()).
+
+In the next exercises wc deal with the dual of thc remark after Lemma 6. 2. 2,
+1. e. w ith thc models of T3 ·
+
+Exercise 6. 2. 5. Given theories S and T, show that & u T is consistent, if and
+only if ttiere arc M F T arid N F S such that M w JV (if and only if thure is a
+sentence in 5 whose ncgation is in Ta)  ·
+
+Exercise 6. 2. 6. Prove the following two equations.
+
+(1) Mod Ta = UV : there arc M JV = JV such that M F T}
+(2) T3 = Th UV : there are M JV JV such that M F T}
+
+Exercise 8. 4. 5 is asking for an example of a theor y T and a model of Ta that
+does not contain a model of T (this showing that we cannot improve on the previous
+exercise).
+6. 3 Finitely generated structures and local prop-
+
+erties
+
+We are going to investigate properties of structures that are determined by
+their finitely generated subst, ructures.
+
+Remark. The intersection of an arbil, rary collection of substructures of a
+given structure is again a substructure of that structure (possibly empty)  ·
+More precisely, the intersection of the universes is closed under functions
+fi · om the signature and is therefore the universe of a uniquely determined
+substruct ure.
+This allows us to make the following definition. Suppose M is an L-
+struct, ure and X C M. The substructure generated by X in M is,
+by (iefinition, the uniquely determined substructure w ith universe n(N
+. T C, Lr, N C JW}, which we denote by JV. v-(Thus M. Y is the smallest,
+
+
+
+Page 11     
+OCR Texts: 
+6. 3. FINTTELY GENERATED STRUCTURES 77
+substrucLuL
+Mx = M.
+
+A substructure of M is said to be flnitely generated if it is generated by
+a finite set, i. e., if it is of the form Mx for some ńnite X Ç M. A structure
+is called finiteıy generated if it is a finitely generated substrucţure of itself.
+
+Let p be an ǆbitrary property of structures. We say that M has
+locally p if every finitely generated substructure of M has the property p ·
+
+We often identify a property of structures with the class of structures
+it defines. So a property p is said to be elementary (or axiomatizable)
+if the class of all L-structures with this property is eıementary, i. e. Axiom-
+atizable. Similarly, a property is said to be hereditary if it is preserved
+in substrucţures. We often identify an axiomatizable property with the set
+of axioms it is axiomatized by. (One could avoid the usage of the term
+° property'altogether, but it may serve as a shorter way of saying things
+sometimes.)
+
+Exercise 6. 3. 1. Show that the substructure of an structure generated by the
+erapty set is empty if and only if L has no constant symbols.
+
+Exercise 6. 3. 2. Let M be an L-structure and X Ē M. Verify that the universe,
+Mx, of Mx is the set {tw (ä) : t is an L-term, ã is a matching tuple from X}.
+
+Exercise 6. 3. 3. Let M and JV be L-structures and X Ç M. Suppose f : X 4 N
+satisfres (M, X) =at (N, f[×]) (and is thus injective). Extend f to an isomorphism
+F : Mx JVf [x] and prove (M, Mx) 三 at (N, F[M×]).
+
+Examples of local properties are locally finite, locally embeddable
+in a structure N (i. e., every finitely generated substructure is embeddable
+in JV), locally embeddable in a structure of a given class K (i. e., ev-
+ery ñnitely generated substructure is embeddable in some structure lrom
+K). For the latter we simply say locally embeddable in the class K. A
+group-theoretic example is locally cycliclocally!cyclic (i. e., every ĥnitely
+generated subgroup is cyclic).
+
+Next we consider a few examples showing that a structure having a
+property p locally need not itself have p ·
+
+Examples.
+
+(1) The easiest one is an infinite set M with no further structure, i. e. a
+
+model of T°o. Since the substructure generated by a subset is just this
+subset itself, M is locally finite (buţ not linite).
+
+(2) The same applies to just any purely relacional structure, i. e. a structure
+
+M whose signature has no constant or function symbols. Also then the
+substrucţure generated by a subset X C M is simply the restriction of
+M ţo that set X. Hence M is locally finite (but not necessarily finite).
+
+· e of M containing X.) M is said to be generated by X if
+
+
+
+Page 12     
+OCR Texts: 
+78 CTIAPTEIŁ II. MALCEV S APPLICATIONS TO GROUP THEORY
+
+(3)
+ĺ. css triťinl examp](s are tllc Prūfer group8 of lil l. l, wlıich are locally
+finite, l»tıt inĺinite, and also locally cyclic, but ılot itself cyclic.
+
+Consider LIIa ordering of Łhc nĉLtural numbers, N = (N, <), as a struc-
+ture in thc language L«. Choose pairwise disjoint chains M. of length
+n (Tt € N) in N. Now consider the L<-structure M on M = U. EN Mn
+defined as follows : given a, b € N, set a < b if and only if there is n € N
+such that a, bE M. and M. a<b.
+
+Then N is locally embeddable, but not embcddable in M, for M hǆ
+no infinite chains. (However, N is embeddable in Mod Th M, as the
+scT of L. (N)-sentences Th M U {i < j i, j € N, i < j} is consistent
+and each of its models has an infinite chain.)
+
+The argument of the last statement in parentheses can be generalized as
+follows.
+Proposition 6, 3. 1. (Henkin's Criterion) Lel M be an L-stmıchıre and K
+an ari omatizable class oJ L-structures.
+Ther* M is embedďable ŕi member oï) K įl and only įl M is ıocaįly
+ernbeddabįe in K.
+[Henkin, L. : Some interconnections between modern algebra and mathematical
+logic, Tansactions of the Ainerican Mathematical Society 74 (1953) 410-427]
+PToof For the nontrivial direction, choose an axiomatization T of K (i. e.,
+K-MoDLT) and consider TUD (M). If N'TUD (M), then the L-
+reduct N of N'is a model of T, hence N € K. Further, N D (M) implies
+M N, by the diagram lemma.
+
+Thus, all we have to do is show that TuD (M) is consistent. By the
+finiteness theorem it suffices that every finite subset of TuD (M) have a
+model. Every suclı finite subset is easily seen to be contained in a set of the
+form TUD (Mo) for all appropriate choice of a finitely generated substructure
+Mo C M. By hypothesis, however, there is an embedding f of Mo in some
+No E K. Hence T u D (Mo) has a model, namely (AO, f[MO] ). D
+
+Here we have a case where a local property implies the corresponding
+° global'property-one also says that the local theorem holds for this prop-
+erty. We will see much deeper ones in due course.
+
+Exercise 6. 3. 4. Prove : every linear ordering can be embedded in a dense linear
+ordering.
+
+
+
+Page 13     
+OCR Texts: 
+ti. 3. F1NITELY GENEII /YI'ED ST 1¢ U(T U1f irs 79
+Example. As iltl 1pplic\tion ur H cnkiu's cril(rioll, wc provc: I, llc well-known
+t, hoorcm thi\t evcl'y abclian grollp is cmbcddzLble in 1 divisible n6cli:111
+gro1lp\ I. e. zL model of AG U {V£jy(r-Tty) Tl € N \ {0}}. Iicnkin',
+criterion implies that all abelian group is cmbeddable in a divisible abclian
+group, whenever it is so locally. Recall the Tundamenlal theorem of abelian
+grottp theory saying that every finitely generated abelian group is a direct
+sum of finitely many cyclic groups. So, in order to embed such a group
+into a divisible one, it is enough to be able to do this for the various cyclic
+summands (and then just patch those embeddings together). This now is
+not too hard : the finite cyclic groups are embeddable in a Priifer group (cf.
+911. 1), while the infinite one (there's only %) is embeddable in @ ·
+The proof of Henkin's c r iterip can be modified to yield the local theorem
+for every property that is both(hereditary and elementary (I. e. preserved
+under substructures and axiomatizable). We conclude this section with a
+proof of this. Some remarks are in order before that.
+Remarks. (1) Since elementary properties are invariant under isomor-
+
+phism (cf. Proposition 6. 1. 3), every hereditary and elementary prop-
+erty passes from any structure M down to all structures embeddable in
+M, cf. The situation in the remark aft. Er Lemma 6. 2. 1.
+(2) By the Lo§-Tarski preservation theorem (Corollary 6. 2. 5), the heredi-
+
+tary and elementary properties are exactly those which are expressible
+by sets of V-sentences, I. e. By V-theories.
+
+Examples. Consider
+group theory.
+
+(5) The property of being abelian is hereditary and elementary (take E-
+
+{v£y (xy-yx) })  ·
+(6) The property of being of exponent k (I. e., satisfying V (k_1), is
+
+hereditary and elementary.
+(7) The property of being periodic (I. e., every element has finite order)
+
+clearly is hereditary, but not elementary (see Corollary 5. 2. 2).
+
+(8) The property of being locally finite clearly is hereditary, but not ele-
+
+mentary (exercise!).
+
+(9) The property of being divisible is elementary, but not hereditary.
+
+Exercise 6. 3. 5. Check the last two examples.
+
+Proposition 6. 3. 2. (The Local Theorem for Hereditary, Elementary Prop-
+erties) Suppose M is an L-structure and p is a hereditary and elementary
+property oJ L-structures.
+
+Then M has p il arid only il M has p locally.
+
+the language of signature (1 ;.,-') appropriate for
+
+
+
+Page 14     
+OCR Texts: 
+80 CHAPTER ti. MALCEV'S APPUCATIONS TO GITOUP THI£OIIY
+Phx/. ı. ťt I( = ħ[odt. E be tlıe class of bstructurcïi linving £. ı.
+By tht  · diagram lemma, r u D( · H) is consisti  · nt ir nml orııy iĺ M is
+embeddable in K. As K is hŁ  · reditary, tln  · lat, ter is tllť case ir imd onıy if M
+itself is in K. Thus J E K ilr E u D (,) is consistent (for airy /,-structure
+/ \1). The finiten argument, from the prooí of Henkin's criterion completes
+tlie proof. D
+Using a clever expansion of the language, hlalcev extended the applica-
+bility of this kind of model-theoretic argument to a much 11  · ider clms of not
+necessarily elementary properties like the one introduced next. We will deal
+with this in §6. 5  · .
+
+Let 21,..., E. be elemeiıtary properties of groups or just set, s of sen-
+tences in the signature (1 ;.,-'). Following Malcev we say that a group Ç has
+type (21,..., E..) if there is a normal series € i = Ço 【> É, 1 I>... 【> Ç.-{1}
+such that gk/Çk+1 Ek+t for all k < n.
+
+In §6. 5 * we will prove the local theorem for lhis group-theoretic property.
+For this we need
+
+6. 4 The interpretation lemma
+The general technique of interpretation'is a tool to code structures in other
+structures-possibly (and often desirably) of different signature. We con-
+line ourselves to the particular case of interpretation of factor structures of
+substructures in a given structure, since this suffices for the group-theoretic
+applications we are after. In particular, our interpretations here do not
+change signatures-a restriction one would not want to make in a general
+treatment of int, erpretation. (See also the first two exercises below for an-
+other direction of generalizaţion.)
+
+In order to code factor structures of substructures in L-structures we
+expand the language L by a predicate (i. e. a unary relation symbol), P,
+for the substructure and a binary relation symbol, E, for the factorization.
+The resulting language is denoted by L'. (Abusing the notation slightly,
+one often writes L + = L U {P, E} to express this.)
+
+Consider EpE, the union of the following (sets of) L'-sentences.
+
+L\) VTZ IPLĽ) A PL) A P(, 1 = Elx, xl A IE(T yl H EI, x)1 A tELE, y) A
+
+E(u, z)-E(£, z))) ('E is an equivalence relation on P'),
+
+'This term hǆ formally nothing to do with'interpretations'of symbols of a signature
+in a structure, as introduced in Chapter 3.
+
+
+
+Page 15     
+OCR Texts: 
+6. 4 +. THE ĽVTERPRETATION LEMMA 81
+(2) {VĒ (Ai P (xi)-> P(f(
+substructure'), 2
+
+(3) {vĒg (Ai (P (£i) ĄP (vi) AE(Æi, vi)) 4 (E (f(iË), f ()) A (R() H R (ý))))
+
+f € F, R € R} ('E is a strict congruence relation on P').
+If M EpE, then, in the following canonical way, P (M)/E can be
+regarded as an L-structure.
+
+First some notation. Given a € P (M), set a/E = {.'€ P (M)
+E(a, a ı) }. If A Ç P (M), let A/E denote {a/E a € A} ; and for a tuple
+ii = (ao,..  · ıan-1) from P (M) use ä/E to denote (ao/E,... Tan-1/E).
+
+Then M'-def P (M)/E becomes an L-structure by the following stipu-
+lations. Given c € C, set cM'_c"/E given f € F and a matching tuple ii
+Om P(M), set fm'(ã/E) = fm(ã)/E and, given R € R and a matching
+tuple ii kom P (M), let M'R (tilE) if and only if M R (ii). Since E
+is a strict congruence relation (in the above sense), this definition does not
+depend on the choice of representatives.
+
+We call M'the canonical factor structure of P (M) modulo E and
+say that the structure M'(and every structure isomorphic to it) is inter-
+preted in M.
+
+Example. Let L be the language of signature (1 ;.,-').
+
+Then (2) above is TG-equivalent to
+
+and also to
+
+P(1) Ą VToÆ1 (P(zo) A P(T1) P(zoz'll.
+
+Thus (2) says that P (M) is closed under multiplication and inverses, i. e.
+that P (M) is a subgroup. (3) is TG-equivalent to
+VZ01UOy1 ((p (oo) A p (o1) A p (vo) A p (3/1) A E(zo, uo) A E(1, w)) 4
+
+(E(zoz1, yov1) A E(zo 1, Vo'l l)  ·
+
+Along with (1) and (2), this implies
+
+hence that 1/E-{a € P (M) : E(a, 1) } is a normal subgroup of P (M). M
+further implies
+aThe i run over the indices of the entries of Ē here. Similarly in (3).
+D ) : f € F}u{P (c) : c € C} ('Pisa
+
+
+
+Page 16     
+OCR Texts: 
+8'Ż CHAPTER G. bIALCEVS APPUCATIONS TO GROUP THEORY
+i. e. That b/E-{a € P (M) : E(a, b) } is a coset of 1/E for every b €
+P(jt ). One can show that, conversely, every relation E is a strict congruence
+relation in the sense of (3) above, whenever 1/E is a normal subgroup of
+P (J{ ) and the b/E are cosets of 1/E.
+Lemma 6. 4. 1. (The Interpretation Lemma)
+In the notation aboue, there įs a map'.. L 4 L·'wiŁh · L. 4 Lĥ loT
+aıl n € N anď such Mat įl M F EpE, tp € L, arid ū is a matching htpĮe
+Jrom pLM), then
+
+More concreteįy,'L 4 L  · įs gįuen as loıįows.
+
+(tl-tżY_Eltr, t2) Jor aıl unnesteď tems tl and l2
+-(Y_. '; (91 427 二 Atþ and (3T0Y_Ĵ£(P(T) AQ')
+İoT alı , ¢1, tĮt2, and e įn L.
+
+PToof By induction on the complexity of formulas.
+In the initial step we have M'f (ā/E) = 9 (ã/E) ifï M'f (iį)/E =
+g (ä)/E ifï M E (f(ã), 9 (ã)) iff M (f (ã) = g (ii) Y, and analogously for
+relations and constants. Note that Exercise 3. 3. 6 justijies to consider only
+unnested atomic formulas in this.
+
+The induction steps for-and A are trivial. Hence we are left with the
+quantiİier step. So let q (í) be the formula 3y 0(5, y), and msume O already
+satisİies the assertion, i. e., M'O(ĉi/E, b/E) ifï M 0'(iį, b), whenever
+M EpE, b € P (M), and ii is a matching tuple from P (M).
+Then M'v (ã/E) if and only if there is some b € M'such that M'
+đ(ã/E, b/E), if and only if there is some b € P (M) such that M 0'(ã, b),
+if and only if M X (P (x) A O'(ä, £)), if and only if M V'(iı). D
+
+An Tı-fold application of the lemma yields
+Corollary 6. 4. 2. (The n-fold Interpretation Lemma) 51ıppose Pi arıd Ei
+(i < n) aTe įįke P anď E belore; L įs Mke L'belore; anď M įs defĺned as
+M'belore lor P = Pi anđ E = Ei ·
+
+ThentheTeaTemaps;:L LĮ (į <n) 1uįth;L..-> ILD. loT aıį
+m € N such that if M F Ui《. Epi E.. 1o E L, and ă įs a matching t ₩ ıe
+Jrom PĮ(M), then
+
+M qo(â/Ei) ijŤm v(ã) 口
+
+Exercise 6. 4. 1. Find and prove an analogous interpretation lemma for many-place
+P.
+
+
+
+Page 17     
+OCR Texts: 
+6. F. MALCEV'S LOCAL THEOREMS 83
+
+Exercise 6. 4. 2. Extend tlıc concept of intcrpretatioır sliglrtly ns to be able to
+interpret tlıe ring of compıttx ııuınbcrs in LIrut of the renls, łH well as tho ring of
+rationaı ırumbers iıı that of intcgers.
+
+Exercise 6. 4. 3. Interpret thc cyclic group with live elements in (Z ; O ; +,-).
+
+Exercise 6. 4. 4. Let T be an theory, P a new predicate, and L'thc language
+LU {P}.
+Find an L'_theory T'such that the models of T'are exactly the L'-structures
+M'of the following kind : the L-reduct M of M'is a model of T, P (M') is closed
+under functions of L, and the therefore uniquely determined L-substructure of M
+on P (M') is a model of T.
+6. 5 * Malcev's local theorems
+Throughout this section, L denotes the language of signature (1 ;.,-').
+
+Using the interpretation lemma, in an appropriate expansion of a group
+we ūrst elementarily express the property of being of type (21,..., E.). We
+have seen that in a group g the formula P'(T) >def P (£) AE(£, 1) defines
+the normal subgroup 1/E of P (g) and that P (g)/E is isomorphic to the
+factor group P (g)/P'(g). If, conversely, a formula P'(Æ) defines a normal
+subgroup P'(Éï) of P (g) in É, then setting E(T, y) def P'(zy-') we
+obtain a congruence relation such that P (€i)/P'(g) P ()/E.
+
+Consider an expansion of the language L by two new predicates P and
+p'. Let Epp, be the set obtained from EpE by replacing each subformula of
+the form E(1ı, u) by P'(11o-'). Then, given a group g and a corresponding
+expansion g', we have g'Epp, iff P'(g) P (g).
+
+Again we can do this Tı-foldly. Given new predicates Po,..., Pin, let L'_
+Lu {Po,..., P. } and r = Ui<. EPP+1 U {vz Po () A v£ (P.(z)-> z-1) }  ·
+
+Lemma 6. 5. ı. 5lippose Er,..., E. are elementary properties. For alį i <
+n, consider the set (2i+1) : = {vĮ : 1o €卫 i+1} (įuhere the : are the maps
+Trom ơorollaw 6. 42) and the set E'_TGuľu (21) ðu... U(E.) _1 fuhere
+r is as aboDe).
+
+Then g įs a grotıp ol type (21,..., ETı) įf and onįy įf g has an L'-
+erpansion g'th at įs a modeı ol E'.
+
+Proof . If 7 = (g, Po,..., řin) V, then the Çi = def Pi (g') constitute
+a normal series satisfying g'(2i+1) Į. Hence, by the n-told interpretation
+
+. If 9o 【> 111 【>... ı> g. Is as required, becomes an L'_structure g'
+on setting Pi (Çi') = Çi. D
+
+
+
+Page 18     
+OCR Texts: 
+that it is Lxit)ll\ntilnblt'itl z\tl t'Xpnnsit11l ut'tlll'ur iAilln] ImlA\ltll't'; il10r 4 pr ¢'(:ih4'I. V,
+
+linally wi'art'Prt'Par¢d to prov('
+
+Theorem 6. 5. 2. (hlalecv's Main Local TheorctT1) Sttpposc E....., E.. Are
+hewtlitary, olementary prope?  · Lies (in L).
+
+L\) Being ol type (Er,..., E..) is a hereditary propcrt.'y (I. e. pT'eserued in
+
+stlbstrttctures).
+; 2) A grotLp g is oJ type IE\,..., E..) il and only il it is so locally.
+
+Proof. Ad (1). Let g be of type (E],..., E..). Then there is a normal series
+are going to show that every subgroup H of g also is of type (E],..., E..).
+Setting Hi-gi n H we have H = ?to 711 [> 【> ?l..-{ 1 }, for if
+h'€ 7li+1 and /z € Hi, then lr-'h'h € T1 n l+1-i+1 (hence Hi+1 Hi).
+
+It remains to prove Hil7li+1 F Ei+l. For this, in turn, by heredity of
+the Ei, it suffices to prove HilTli+1 w I, /Qi+r. However, the map from
+li/+1 to ii/ui+1 given by hH,+] H hi+1 is an embedding, as for all
+h € Hi, we have h € li+1 if and onl3'if lz E T1 n ii+1, hence if and only if
+h E gi+r  ·
+
+Ad (2). 4 is a special case of (1).
+
+. In analogy to Propositions 6. 3. 1 and 6. 3. 2, the just proved assertion
+(1) and Lemma 6. 5. 1 imply I is a group of type (21,..., E..) if and only if
+TG u E'u D (q) is consistent. A finiteness argument as in the propositions
+mentioned completes the proof then, L]
+
+There are numerous applications of this result, of which we consider
+only a few here (and in the exercises to §7. 2'). Other applications can be
+found in the cited literature, especially in §§22 and 26 of the group theory
+text by Kargapolov and A  · lerzljakov (Lwo younger colleagues of Malcev at
+Novosibirsk), where a stronger version of Malcev '5 local theoFem-for more
+generallogics-can be found. See also Corollary 6. 6. 8 in Hodges'Model
+Theory, where a proof of the local theorem for the property of having a
+faithful n-dimensional linear representation is given. Following Hodges, this
+latter 1940 result of Malcev was the first application of the finiteness theorem
+in algebra!
+
+A group g is said to be abelian-by-finite if it has an abelian normal
+subgroup of finite index, I. e. An abelian subgroup A q (such that gjA
+
+
+
+Page 19     
+OCR Texts: 
+is tinitt', Tho litt · nl tlw) r t'III Ibr tlris pt · (rpt'rly t'; III b( · ht ; \tt  · d holll( · wirnt lll¢rf('
+st t  · otrgl!  · .
+
+Coronary 6. 5. 3. A grotlp is abc[ian-by-finite iJ (tnd only IJ ttttT · c is 11 €
+stich that cuetT Jinitcly generate-I sttbgroup oJ g tlas (ITL (tbelian TtonR(1l
+subgmttp oJ intlcr < 11.
+
+Pnoof. Consider the hereditary and elementar, Y properties E..-{3 <". (r-
+£) } and E = {V×y (xy-yx) }. A grollp q is of type (E.. E) if and only if it
+has an abelian normal subgroup A of index < n (I. e. such that lg/Al < Tz)'
+
+If now g is abelian-by-finite, it has a normal subgroup A q of a certain
+finite index n-lg/Al. Then g is of type (E.. E). Now this direction, as
+well as its converse, follow from Malcev's local theorem. D
+
+Example. Consider a periodic group I of m x m-matrices over thc field
+C of complex numbers. Schur's so-called second theorem asserts that q is
+abelian-by-finite. This can be derived, using the preceding corollary, from
+Schur's so-called first theorem saying that is locally finite and a theorem
+of Jordan saying that finite groups of m x m-matrices over U have an abelian
+normal subgroup whose index depends only on m.
+A group is said to be solvable of degree < TL if it has a normal series of length
+< n with abelian factors. There is an easy proof of the local theorem for this
+property using a different definition (via some well-known commutator conditions).
+However, to practice this section's material, we include
+
+Exercise 6. 5. 1. Derive the local theorem for solvability of degree at most n from
+Malcev's theorem.

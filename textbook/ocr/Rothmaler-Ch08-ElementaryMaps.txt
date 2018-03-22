@@ -1,0 +1,740 @@
+Page 1     
+OCR Texts: 
+Part III
+Basic properties of theories
+The material presented in the previous part was based mostly on some
+more or less clever applications of the finiteness theorem in order to produce
+models of certain theories. To ensure that these theories expressed what they
+were to express we often formulated them using diagrams or interpretations.
+We now turn to general properties of theories and more advanced meth-
+ods of investigation of the relationship between their models. Fhndamental
+here is the notion of elementary embedding between structures of the same
+signature (Chapter 8). Cases where this concept simplifies are dealt with in
+Chapter 9 about quantifier elimination and related issues (where we prove,
+among other things, Hilbert's Nullstellensatz). Chapter 10 finally deals with
+iterated elementary embeddings, that is with so-called elementmy chains, a
+basic tool of model theory.
+
+Ås a geneTal assumption, let (T be an arbitrary sigTıahıre aTıd L = L (cT)
+the corresponding langiıage, unįess ure say othemįse.
+
+
+
+Page 2     
+OCR Texts: 
+Chapter 8
+Elementary maps
+8. 1 Elementary equivalence
+
+Recall from §6. 1 that the L-structures M and N are said to be elementarily
+equivalent if M = JV, which is the same as ThM = ThN.
+
+Proposition 6. 1. 3 says, among other things, that isomorphic structures
+are elementarily equivalent. We prove first that the converse is true if and
+only if the structures under consideration are finite.
+
+proposition 8. 1. 1. The TollouJing are equivalent Tor any L-stmicture M.
+) JV 三 M impıįes JV M Jor any L-stmcture N.
+N) M is limite.
+pTooF The isomorphism type of a structure is uniquely determined by its
+diagram.
+If M is afinite structure with universe M-{ao,... Tan-1} in a language
+of finite signature, then the diagram of M is essentially finite (see Exercise
+6. 1. 6). In this cme we can aĵciomatize the diagram by a single sentence
+v(Qo,... Tan-1). Then M is, up to isomorphism, the only model of the
+sentence 3-"z(z-Æ) A 3Ē v (), and (i) follows.
+
+If the signature of M is infinite, the diagram of M need not be finite
+anymore (in the simplest such cme, there could be infinitely many constant
+symbols that are interpreted in M by the same element). Then, for any
+finite subset A of D (M), we form the conjunction va(ao,..., an-1) of all
+sentences in A and see that M is, up to isomorphism, the only model of the
+set {3_a(z-z) } u {33 po (Ē) : a @ d (m) l. this implies (i) again.
+
+If, for the converse, M is infinite, then, by Löwenheim-Skolem upward
+(Theorem 5. 1. 1), iţs complete theory has arbitrarily large models. As we
+
+111
+
+
+
+Page 3     
+OCR Texts: 
+ł 12 CHApTHIı s. Eı, EMENTA/Ł\'MA PS
+will s«w in the 111'xt propositiorl. Tll( · s(? arc olcmonŁarily equivıılcnŁ t, o M,
+To violate (i) it therefore rtlmł\ins to consider smil n model oĺ łt «:arclilıaliŁy
+biggct· thuı thtt uf.lh ifor isotnorplic structures certainly lıavc l¡l(l billie
+car dinzılity). D
+We just used that all models of a complete theory are elemcntarily equiv-
+aient. Now we veri'this, aloırg wit, h a cert, ain converse.
+Propos\t\on 8. 1. 2. A theory is com. pıete iî (ıTLfI oīìly iJ oll ol its rnodcls are
+elernentarįly f. Quiualent.
+Pï  · oof. Obviously, M T implies T C ThM and, provided T is compıelc,
+also T = Th M. Hence, if T i5 complete, then Th M = TiN (i. e. M 三 M
+for all M, NT.
+If now T is not complete, then T C Th M for any ]nodel M T. Pick
+q € Th M \ T. Since then T q, the set T U {-P} has a model N. Tlien
+M and N are two models of T that are not elementarily equivalent. D
+Coronary 8. 1. 3. A contpleŁe theory has a Jinįte modet il arıd onįy iJ įt ilas,
+up to įsomorphįsrn, o'nįy one modeı.
+
+Proof If the complete theory T has a model of power n < m, then Ĵ-nx (-
+x) E T, hence every model has power n. Since T is complete, all models of T
+are elementarily equivalent. But for finite structures elementary equivalence
+is the same as isomorphism.
+
+If, conversely, T has only one model, Löwenheim-Skolem irnplies that T
+cannot have an infinite model. D
+
+Exercise 8. 1. 1. Lct q € L deĥne a finite set. r in the L-structure M. Show t, hat
+in every. /v clementarilJ  · equivalent to JĻI, thc set dcĥned by V has the same power
+as X. Formulate and prove a converse of this.
+
+Exercise 8. 1. 2. Show that 7 (from li3. 4) is complete.
+
+Exercise 8. 1. 3. Prove that every structure elcmentarily equivalent to the gmup
+Q of ratinnal numbers (in thc signature (O ; +,-)) is a direct sum of copies af Q
+(hence a vector space over Q)  ·
+8. 2 Elementary maps
+
+As already seen in §6. 1, we obtain a stronger relationship between struc-
+tures if we consider the transfer nol only of sentences, but also of arbitrary
+formulas.
+
+
+
+Page 4     
+OCR Texts: 
+8. 2. ELEAFENTARY MAPS 1 13
+ı,et, H and Ar be tructures. A 111ap f M-N is called elementary
+if f. \1 , LT W ₩. 1). The structure M is said to be elementarily
+enıbeddable in. r, in sy11bols JV . N, if there is an elementary nıap
+f. MN hom M to JV.
+Remarks.
+(1) If J N, then M = Af.
+(2) While elementarv equivalence is weaker than isomorptırsm, every e t
+mentar,'-map is automatically an isomorphic embedding (cf. Lemma
+6. 1. 2 (1)). Therefore elementary maps aFe also called elementary em-
+三
+beddings, and the notation M N is justffied.
+
+(3) The converse is not true in general, unless the embedding is surjective
+
+(i. e. An isomorphism), since
+(4) Proposition 6. 1. 3 says that everr isomorphism f : M JV is an elb
+ment ₩ map.
+
+Similarly ǆ in the diagram lemmas 6. 1. 2 md 7. 1. 1 we can describe el-
+ementary maps and elementary embeddability by theories in an expanded
+language. For this we define the elementary diagram of an structure
+M to be the complete L (M)-theory Th(M, M).
+Lenıma 8. 2. 1. (The Elementary Diagram Lenım a) Let M and N be L-
+
+stmctures.
+L1\ A map l M N įs eıemeT&tary if anď onıy if (M, M) = V, AMD
+
+if and orıly if (N, f[M]) Th(M, M).
+
+(2) M N N has art erpamion that is a rnodeı ol THŁM, M).
+
+Proof Ad (1). FM Nis the same as f:M į N, hence also the saime
+as (M, M)-(N, f[M]). By the completeness of Th(M, M), however, the
+latter is equivalent to (N, f[M]) Th(M, M).
+
+(2) follows from (1) as in 6. ı. 2 or 7. 1. 1. D
+
+It is handy to use the diagram'notation
+
+召
+A : h C
+
+'This term has nothing to do with the model-theoretic diagrams discussed before.
+
+
+
+Page 5     
+OCR Texts: 
+114 CHAPTER 8. ELEMENTARY MAPS
+knoìA'n from homological algebra, which is a shorthand for the following
+statement.
+A, B, C are strııclures ol Łhe same signature f : A 4 ı3, 9 : ı3 4 C,
+hA_C laTe hoTnomowhisTns), andgl = h, į. e., g(lla)) = h(aì loT aįl
+a E A Oor the įatter, one aįso says, e ǆagram coınmutes).
+Similarly one can form more complicated diagrams, where we indicate
+elementary maps by putting °ï'next to the corresponding arrow.
+Lemma 8. 2. 2. Sttppose
+
+-C. 
+
+
+B
+
+1 ) ıĴ 1 and g are eıemerıtary, then so is h.
+(21 ll g and h are eternentaw, then so is 1  ·
+(31 g need not be eıemenŁarg, įl J and h are.
+Pr oof f is elementary iff (A, A)-(B, f[A]), and analogously for g and h.
+Now the transitivity of = and (C, 9[f [A]]) = (C, h[A]) imply (1).
+
+Ad (2). Since (B, B)  · (C, g[B]) implies (B, X)  · (C, 9[×]) for every
+X Ē B, we have (A, A)-(č, h[A]) = (C, g[f[Ajj) = (B, f[A]).
+
+Ad (3). We construct an example. Let A be an infinite L-structure. By
+Löwenheim-Skolenı, Th(A, A) hǆ a model ı3  · of a power bigger than A.
+三
+If B denotes its L-reduct, Lemma 8. 2. 1 yields f : A B. Setting C = A
+and h = idA we obtain ìı : A C. For cardinality reasons we cannot have
+B C (for elementary maps are injective).
+
+It remains to find 9 : ı3 4 C such that gf = h. For this consider L = L_.
+Then every map is a homomorphism. Hence we may define g by 9 (b) = a, in
+case f (a) = b for some a € A, and g (b) = c for an arbitrary c € A otherwise.
+Then the diagram commutes. D
+
+Exercise 8. 2. 1. Relativise Lemma 8. 2. 1 to an arbitrary set A C L, that is to
+f MĠN.
+
+Exercise 8. 2. 2. Given a structure M and an ultrafilter U on a nonempty set I,
+prove that the canonical embcdding (from Exercise 4. 1. 2) of M in its ultrapower
+M ı/U is elementary.
+
+
+
+Page 6     
+OCR Texts: 
+8. 3. ELEMENTARY S UBSTRUCTURES AND EXTENSıONS 115
+8. 3 Elementary
+
+Next we deal with the elementarinees of identical inclueioïıß of structures.
+Suppose M and Ń are L-structures and A is an arbitrary set of formulas.
+We use the notation M a N (or also N a M) to mean that M Ç N
+and the following implication holds for all V € n L and matching (possibly
+empty) tuples ã from M if Ń P(ä), then M P(iı) ·
+In case A contains all of L, we write M N and N M and say, M
+is an elementary substructure of N, or N is an elementary extension
+
+of M.
+[Tarski, A. and Vaught, R. : Arithmetical extensions of relational systems, Com-
+positio Math. 13 (1957) 81-102]
+
+Tivially, M M. Fbrther, M a N is equivalent to (N, M) Ą (M)
+(M, M) (cf. The notation in §6. 1).
+If ľ is the class of all negations of formulas from A, then we have M A
+N if and only if M C N and idM : M N. In particular, M N if and
+only if M C N and idM : M N. Fbrther, M N if and only if M C N
+and vw) n M"_qp (M) for all n € N and q € Ln, i. e., the definable sets
+of M are just the intersections with M of the definable sets of N. For sets
+defined with parameters from M, this yields v(N, č) n M"_v(M, č) for
+all V € Ln+m and č € Mm.
+As every elementary embedding is an (isomorphic) embedding, every ele-
+mentary substructure is a substructure (and the use of the term is justified).
+
+Remarks. The following are true for any L-structures A, ı3, and C.
+
+(1) A 13 if and only if A C B and (A, A)-(13, A) (special case of Lemma
+
+(2) f : A 13 if and only if there is A'B such that f : A A'.
+(3) If Aı3, thenA 三召.
+(4) A A.
+(5) If A B C, then A C (special case of Lemma 8. 2. 2 (1)).
+(6i If A ç B č and A C, then A B (special case of Lemma 8. 2. 2 (2)).
+
+The following simple, but useful trick allows us to reduce the relation of
+(elementary) embeddability to the existence of an (elementary) extension.
+Lemma 8. 3. 1. (Isomorphic Correction) let M aTıd N be L-stĦıchıTıes, and
+AÇ し,
+(n lIMN, thenthereįsJvNsuchthatMcNr andīd MN'.
+2 ) If MN, then there is N'N such that Mc N'.
+substructures and extensions
+
+
+
+Page 7     
+OCR Texts: 
+116 CHAPTER 8, ELEMENTARY A  · [A PS
+13) Įï M + N. then there i$ N'JV sucíı that M N'.
+
+Proof. (2) and (3) are special cǆes of (1). For the proof of the latter,
+suppose f : M N. Take the union of the map f-'(defined on /[Aí】)
+with an arbitrary bijection from N \ f[A'ï] onto a set disjoint from M.
+Call the resulting map 9 and the image of this map N', Then N'contains
+M and g is a bijection from N onto N'extending f-1. Hence gf is an
+identical inclusion of AI into N'. Make N'an structure JV'in such a way
+that g becomes an isomorphism from JV onto N'(i. e., interpret the non-
+logical symbols in N'by the g-images of the interpretations in M. Being an
+isomorphism, 9 is an elementary map. By an obvious A-version of Lemma
+8. 2. 2 (1), so i5 gf, and we are done. D
+
+The next result shows that, when verifying by induction on the com-
+plexity of formulas that an embedding is elementary, all but the existential
+quantifier step are trivial.
+Proposition 8. 3. 2. (The Tarski-Vaught Test) Let M, JV be L-stnıctures.
+
+M JV il and only įJ M C N and 仇 e JoįĮouJtng condition hoįds.
+LTV) For alį n < (ı), aįl p € Lrt+1, anď aıl n-tuples ā Jrom M,
+įhv 3z q(x, ii), then there exists b Ē M stıch thai N çp(b, ii).
+
+proof If M N, then M C N and for all Ęo and ã as above we have
+(whenever b € M). Therefore, JV 3z p(X, iı) yields b E M such that
+M q(b, ã), hence also JV q(b, ä). This proves the easy direction.
+
+For the harder direction, assuming M C N and the condition (TV), we
+show by induction on the complexity of tþ € L that
+(*) M (iı) iff N (ã)
+
+for all matching tuples Łi from M.
+
+As M C JV, this is true for all atomic . The induction step for con-
+junction and negation being trivial, we are left with verifying (*) for (ã) of
+the form 3x v(z, ä). Now, M Ĵz v(£, łi) if and only if there is b € M with
+M ů(b, ã). By induction hypothesis, this is equivalent to the existence
+of b € M with N P(b, ii). This in turn is, by condition (TV), equivalent
+with JV 3£ P(X, iı). D
+
+heres a reformulation of the tarski-vaught test : m < n if and only if
+M C N and for all n < u, all tp(£, ) E L. +1, and all n-tuples â from M, if
+tþ(N, ĉL) + O, then M n¢W, ōL) + .
+
+
+
+Page 8     
+OCR Texts: 
+8. 3. ELEMEN TARY SUBSTRUCTURES AND EX TENSIONS 117
+Corollary 8. 3. 3. (Thc Ibrski-Vaught'ľĽsl) Stłppose N i, li an L-structure
+and M Ç N is stich that condition (TV) holds,
+Then M is closed untlcr Jt\nctioīw, (ıītd thc restriction M olJť oTıto M
+is an elementary substmcture ol N.
+Ptlool. We need only check the aforementioned closedness. For this consider
+(TV) for the for mulas x-. (c € C) and £-f (łi) (f E F and ä from
+Aí)，口
+
+Corollary 8. 3. 4. Let M and N be L-stmnclures tıJith M Ç N.
+Iï Jor all Jinite sets A M and aįl c € N ere is an automorphįsm
+f € AutAN = {f € Aut N l r A-idA} sticli that f( · ) € M, then
+M N ·
+
+Pruof Suppose Tı < 1 p € Ln+1, and ii is an n-tuple from M with N
+3£ P(£, ä). We have to find b € M with N ĺp(b, ä).
+N 3 qD(£, ä) yields c € N with N qp(c, ã). Choose f € AutãN
+such that f (c) € M. Since f is an elementary map, N D(C, iį) implies
+Let us apply this to two examples.
+Proposition 8. 3. 5.
+
+(1) Euery infinite subset M of a set N is, as an L_-stmncture, an elemen-
+
+tary substructure.
+12) Let n denote the (usmaı) ord
+
+ol the reaıs (as Į«-structures).
+Then ïi p ·
+
+Proof Ad (1). Let M and N be intinite sets and M C N. Let further
+A M and c € N. We will find an automorphism of N (i. e. a bijection of
+Ń onto itself) which pointwise fixes A and brings c to some d € M. Without
+loss of generality, · ¢ A (otherwise seţ d-c and İ = idN)  ·
+
+As M is infinite and A is finite, we can pick d € M \ A. Set İ
+(N \ {c, d}) = idN. {  · , d}, f (d) = c, and f( · ) = d. Then Corollary 8. 3. 4
+yields the assertion.
+
+ad (2). let a € @ and c € ir. We will ñnd d € q and an automorphism
+of the ordering p sending c to d and pointwise lixing Å. As in (1), let c ¢ Å.
+The set A U {c} partitions m into finitely many pairwise disjoint left-open
+intervals. Consider the two intervals that have c as a joint endpoint, say
+(a, c】 and (c, b] for some a, b € A. Pick d € Q n (a, b) arbitrarily. Then
+there is an order automorphism of (a, b] onto itself (i. e. An order respecting
+
+
+
+Page 9     
+OCR Texts: 
+118 CHAPTER 8. ELEMENTARY A  · 【A PS
+bijection froın (a. B] onto itself) which sends c to tl. (Take, for example,
+f (z) =. + (r-a) g' if r € (a, c]. And İ (T) = b-(b-£) grg if £ € ( ·  · b])  ·
+Extending this bijection by the identity on R \ (a, b], we obŁain the desired
+automorpMsm. Again the preceding corollary yields the assertion. D
+Now that we have learned how to test given maps for elementariness, we
+should 9o on and construct'elementary maps, 1Ą'hich we will do in the next
+section.
+Exercise 8. 3. 1. Let. Be an structure. prove that the following are equivalent
+for any formula € L. (M).
+(i) +(-) is finite.
+
+(üi) v(. V) C AP for every A'M.
+
+Exercise 8. 3. 2. Show that an elementary substructure ?l of an abelian group
+is a pure subgroup in the sense that if h € H is divisible by n in Ç (i. e. h = ïıg
+for some 9 € G), then h is divisible by n in
+Exercise 8. 3. 3. Prove that embeddings of inlinitedimensional vector spaces are
+elementary (in the language of §5. 4).
+Exercise 8. 3. 4. Suppose T is an L-theory, P is a new predicate, and Lı is the
+language obtained from L by joining P.
+
+Find an L'_theory T ı such that the models of Tı are the Lı_structures M ı of
+the following kind the L-reduct M of M'is a model of ? the set P(M') is closed
+under functions from L ; the thus determined L-substructure of M on the universe
+P (JW) is an elementary substructure of M.
+
+Exercise 8. 3. 5. Show by counterexample that the criterion 8. 3. 4 is not necessary
+for being an elementary substructure.
+
+Exercise 8. 3. 6. Prove that, given an arbitrary subordering M = (A  · Ť, <) C p, this
+inclusion is elementary if and only if M DLO__.
+
+8. 4 Existence of elementary substructures and ex-
+
+tensions
+
+First we construct'small'elementary substructures. Note that only in the
+infinite case can we hope for something nontrivial, for a finite structure
+has, by Proposition 8. 1. 1, only itself as an elementary substructure or an
+elementary extension.
+
+
+
+Page 10     
+OCR Texts: 
+8. 4. EXISTENCE OF ELEMENTARY SUBSTRUCTURES 1\Q
+Theorem 8. 4. 1. (Löwenheim-Skolem downward for )
+Every įīıfiTŁite L-stmcture M has an eıemerıtary substmcture oï a power
+Ś ÏLı.
+Moreouer, euerg stlbset A ol M ts containeď im am elementary substmc-
+turte ol M ol a potıter ś ILI + \AI. Conseqtłently, M has elementary sub-
+stnłctunes ol etiery cardinality ñ uJith ILI ś < IMJ.
+Proof. The third assertion follows from the second if A is taken to have
+power K. The fưst assertion follows from the second if A is taken empty.
+Fbrther, all of them are redundant in case IMI < ILI, for then we may take
+M M ·
+So let A C M and IMI > ILI, and set K-JLI + IAI. Successively we
+choose an ascending chain A c Ao c A1 c... C Ai Ç... E < u) of sets
+Ai Ç M of power K satisfying
+ť) if qp € L1 (Ai) and M 3Æ çp, then there is a € Ai+1 such that M
+
+cp (a),
+
+for all i<u.
+We choose the Ai as follows. Start with an arbitrary subset Ao of M of
+power containing A. Having chosen Ai, we add to it, for every q (z) from
+L (Åi) with M 3z v (=), an arbitrary b, E M with M P(b.), and call
+the resulting set Ai+1  ·
+
+As IL (Ai) I = ILI + tAil =. (Corollary 7. 6. 8), we add at most such
+elements bp hence K-tAil ś IAi+/I < + tAil = ñ.
+
+Set N = Ui< u Ai. Clearly, N has power n. We are going to show, using
+the tarski-vaught test (Corollary 8. 3. 3), that this set is the universe of an
+elementarr substructure N ol M.
+
+So let Tı < u, q € Ln+1, and ii an ?ı-tuple from N with M ]z v(£, ã).
+We want b € N satisfying M çp(b, ii). But ii is contained already in some
+Ak (k < u), as N = Ui«. Ai. Since then P(Æ, ĉi) € L1 (Ak), condition (')
+provides us with some b € Ak+r Ç N satisfying M q(b, ii). D
+
+Note that this says nothing about the precise power of elerhentary sub
+structures of a power < ILI, and the same applies to the next corollary. ·
+Models whose cardinality is smaller than the language are also known as
+tiny. It is, in general, a hard and largely open question to find the possible
+cardinalities of tiny models.
+Corollary 8. 4. 2. (Löwenheim-Skolem)
+
+(1) Euew L-theory has a model ol a polder < ILI.
+
+Lż) Euerg L-theory with am įnfiınite model has a modet of euery po'u) er \Ll.
+
+
+
+Page 11     
+OCR Texts: 
+120 CHAPTER 8. ELEMENTA RY MAPS
+[Löwenheim, L. : ůber Mĉiglichkeiten im Relativkalkūl, Mathematische Annalp. n
+76 (19ı5) 447-47o]
+[Skolem, Th. Logisch-kombinatorische Untersuchungen ūber die Erfūllbarkeit
+oder Bewcisbarkeit mathematischer Sģĺtze nebst einem Theorem ūber dichtp Men-
+gen, Skrifter, Vidcnskabsakademie i Kristiania I. Mat.-Nat. K1. N0. 4 (1920) 1-
+36]
+Proof. Let M be a model of the L-theory T. Every {inite model of T has
+power even < LI (i. e. Is tiny). So let T have an infinite model. Then,
+for every K > LI, the upward Löwenheim-Skolem yields a model M of T
+of power > K. Then the preceding theorem provides us with an elementary
+substructure of M of power K. Since the latter i5 elementarily equivalent to
+M, it is a model of T too. D
+Skolem's paradox. Consider the Zermelo-Fyaenkel set theory ZFC (in the
+language L €, cf. §7. 4). If the theory ZFC is consistent (which is unknown but largely
+assumed ţo be true), then it has a countable model. By Cantor's theorem 7. 6. 5,
+given any set A, its power set has power > IAI. Consequently, this countable model
+contains uncountable sets. Tłris seeming contradiction is Skolem's paradox. (For
+Skolem it was a reason for serious doubts about axiomatic set theory.) However,
+the contradiction is only apparent and carl be resolved as follows. Uncountability
+in a model of set theory is not °rea1'(that i5, not metaţheoretical uncountability).
+All it means for a set in a model of set theory to be uncountable is that there
+is no bijection between that set and the set of natural numbers in tìiat model.
+(Remember, set-theoretically functions are just sets, namely graphs.) From this
+point of view, Skolem's paradox becomes, on the contrary, very plausible : the less
+sets (and hence functions) a model contains, the less bijections will there be with
+the set of natural numbers.
+[skoiem, Th. Einige Bemerkungen zuR axiomatischen Begľūndung der Mengen-
+lehre, in Proc. 5th Scand. Math. Congress, Helsinki 1922, 217-232]
+
+Applying the upward Löwenheim-Skolem to elementary diagrams, we
+obtain arbitrarily large elementary extensions. Letting a downward appli-
+cation (of Theorem 8. 4. 1) follow, as in the preceding proof, we can exactly
+prescribe the cardinality (but, as before, only in cardinalities that are not
+
+'tiny').
+
+Theorem 8. 4. 3. (Löwenheim-Skolem upward for ) Sìippose M żs an in-
+ßnite L-stmcture aTıd K ILI + JMI.
+
+Then M has an etementar ertension ol power K.
+
+
+
+Page 12     
+OCR Texts: 
+8. 4. EXISTENCE OF ELEMENTARY SUBSTRUCTURES 121
+Pıuol. The elementary diagram of M is the L (M)-theory Th(M, M). By
+the preceding corollary, it hǆ a model N'of power K, for \L (M) 1 < ILI +
+三
+IA/I < N. Denote its L-reduct by N. By Lemma 8. 2. 1 (2), M N. Using
+isomorphic correction (Lemma 8. 3. 1), we then find N'JV with N'
+JH. D
+We can strenghen this ǆ follows. (Remember from Exercise 7. 6. 3 : every
+set of cardinals hǆ a supremum in Cn.)
+
+Theorem 8. 4. 4. Let K be an arbįtraw set oĵ elementarįıy equiualent L-
+
+stmctures.
+For etiew ca rdinal K IKI + \LI + supM € K (lJVI) there is an L-stmcture
+JV ol power K stich that M Ar Tor all M € K. Moreouer, Tor ant/EDen
+Mů € K, 1ue can Jind N so that Mo N.
+Proof Consider T-U{Th(m, M) : M € K}, where, without loss ot
+generality, for any ţwo different M, M'€ K we may assume that the new
+constants {! : a € M} and {Q': a'€ M'} are chosen to be disjoint too (this
+can be accomplished by renaming them). It suffices to show that T is con-
+sistent. So let A be a finite subset of T. The various occurring elemen-
+ţary diagrams are complete theories, hence closed under finite conjunction.
+Therefore we may assume that A = {qi : i < n}, where qi € Th(Mi, Mi)
+for some Mi € K (i < n) such that Mi ¢ Mj for all i < j < n. Then, for
+all i < n, there are a number mi < L【), a formula v € Lmi, and an mi-tuple
+äi from Mi such that Vi is of the form v(ĉii). By the disjoint choice of the
+constants, also the iįi (as sets) are disjoint. Thus we may assııme the tuples
+of variables, i, to be pairwise disjoint as well. But then we have
+二(彐面o...歪れー1八年(岳i))蛋一手ヘヨ歪iペ(岳i))
+i<n i<n
+hence every model of the right-hand conjunction is, after an appropriate
+expansion by constants, already a model of A.
+
+So it remains ţo find a model of that conjunction. For all i < rı we
+have Vi € Th(Mi, Mi), hence also Mi 3Ēi v(Ēi). Buţ the latter is an
+L-sentence, which, by Mo Mi, must be true also in Mo. Thus Mo is a
+model of Ą, and T is consistent, as desired.
+
+The moreover clause can be derived using isomorphic correction (Lemma
+8.3.1)，口
+
+Coro \ \ary 8. 4. 5. Given a seţ K ol moďels of a cornplete theo T, there is
+a model oï T in which euery moďel frorTŁ K is eıernentarily embe 山虹 Lble.
+
+
+
+Page 13     
+OCR Texts: 
+122 CHAPTER 8, ELEMENTARY MAPS
+ïTŁ particıLLar, (ıny huo models Mo and Mì oJ a comptete theory T can
+be elementarily embedded irı a joint modelN T. Moreouer, we caTz choose
+N so aŁ Mo N ·
+Proof proposition 8. 1. 2 shows that all models are elementarily equivalent.
+Then we may apply the preceding theorem, for if K is a sei, {ĺMl : M € K}
+hǆ a supremum in Cn. D
+Exercise 8. 4. 1. Suppose M is an L-structure and V e L. (n > O) is such that
+v (M) is inlinite.
+Then for every K € Cn with n łLI there is an ı-structure JV = M of power
+ñ and such that l (Aí) 1 = ñ.
+Exercise 8. 4. 2. Let K be a division ring.
+Show that the theory T (of the infinite /c-vector spaces, cf. §5. 4) is complete
+moreover, every embedding of infinite K-vector spaces is elementary.
+
+Exercise 8. 4. 3. Verify that ultrapowers (along with isomorphic correction) pr»
+vide us with another tool to construct elementary extensions.
+
+Exercise 8. 4. 4. Consider M and N as in Example (4) of §6. 3 and the disjoint
+union of M and JV, regarded as an L«-structure JV.
+
+Prove that M and JV are elementarily equivalent.
+
+Exercise 8. 4. 5. Find an example of a theory T and a model of Tj that does not
+contain a model of T (this showing that we cannot improve on Exercise 6. 2. 6).
+8. 5 Categoricity and prime models
+A theory is said to be categorical in a given power 入 € Cn (or just À-
+categorical) if it has, up to isomorphism, exactly one model of power .
+An L-theory is said to be categoricaı if it is categorical in some power
+ž ILI. We call an L-theory totally categorical if it has infinite models
+and every two models of the same power (finite or inĥnite) are isomorphic.
+
+Notice, the definition of -categoricity has two parts : the existence of a
+model of power À and the isomorphism of any two models of power , i. e.,
+the number of nonisomorphic models of power is 1. There is a subtilty in
+the deĥnition of total categoricity : by Löwenheim-Skolem (Corollary 8. 4. 2),
+an L-theory is totally categorical if and only if it is categorical in all 入 L】
+and also in all 入 < IL in which it has a model ; in other words, if and
+only if it has an infinite model and the number of nonisomorphic models in
+any given cardinality i51 or O (and for no À L is this number 0.) In
+particular, a totally categorical theory is categorical.
+
+
+
+Page 14     
+OCR Texts: 
+8. 5. CATEGORICITY AND PRIME MODELS 123
+Theorem 8. 5. 1. (The Loś-Vaught Test)
+A caŁeg oricaı eory ts compleŁe if arŁd only i$ tt has no finite modets.
+[Loś, J. : On the categoricity in power of elementary deductive systems and some
+related problems, Colıoqium Math. 3 (1954) 58-62]
+
+【Vaught, R. : Applications of the Löwenheim-Skolem-Tarski theorem to problems
+of completeness and decidability, Koninkl. Ned. Ad. Wettensch. Proc. Ser. A
+57 (1954) 467-472]
+
+Proof Since a compıete categorical theory has inlinite models (which can't
+be elementarily equivalent to a finite one), no complete categorical theory
+has a inite model (cf. Propositions 8. 1. 1 and 8. 1. 2).
+For the converse, let T be a 入-categorical L-theory (where 入 ILI)
+having no finite models. By Proposition 8. 1. 2, iţ su 伍 ces to show that, given
+M, NT, we have MN.
+Using Löwenheim-Skolem (8. 4. 2), choose structlıres M'= M and N'.
+N such that Im'1 = Vl = 入. The 入-categoricity implies that M'and N'
+are isomorphic, hence, by Proposition 6. 1. 3, elementarily equivalent. This
+implies also M 三 N. D
+Examples.
+
+(1) The theory T_of pure identity is totally categorical, but not complete
+
+(it obviously has in every nonzero cardinality up to isomorphism exactly
+one model). Also T is totally categorical ; in particular, it is complete.
+(2) The theory DLO__is, by Cantor's theorem, No-categorical, hence com-
+
+plete (since it has no finite models). In one of the exercises below it is
+asked for a proof that this theory is noţ categorical in any uncountable
+
+power.
+(3) It is proved in Corollary 14. 2. 3 that every complete theory of alg»
+
+braically closed fields is categorical in all uncountable cardinalities.
+(4) More examples of categorical theories will be discussed in the exercises.
+
+In his 1954 paper cited above, Loś conjectured that a theory in a counţable
+language is categorical in all uncountable cardinalities, once it is categorical irı some
+uncountable cardinality. Michael Morley was able to confirm this in 1963. Thus,
+for countable complete theories (with infinite models) there are only three possible
+kinds of categoricity countably categorical (= No-categorical), but not uncountably
+categorical ; uncountably categorical (categorical in all 入 > No), but not countably
+categorical ; and totally categorical (categorical in all infinite cardinalities).
+
+[Morley, M. : Categoricity in power, Tansactions of the American Mathematical
+Society 114 (1965) 514-538]
+
+
+
+Page 15     
+OCR Texts: 
+124 CHAPTER 8. ELEMENTARY MA PS
+The proof of this result is beyond the scope of this text. The reader utay consult
+the qlroted literature instead, for instance Hodges'shorter model theory. It should
+be ıroted, tlıough, t, hat hlorley's deep result wm tlıe starting point for st. Abilit, y
+(or cıǆsification) theory-ǆ developed by Saharon Shelah---which constitutes the
+heart of contemporary model theory (see also §15. 8).
+In §5. 3 we noted that every ħeld contains a prime ĥeld, which depends
+only on t, he given characteristic. This leads to the following definitions.
+Let K be a class of L-structures. An L-structure M is said to be a
+prime structure for K, if M JV for all JV € K. Let T be an L-theory.
+An L-structure M i5 said to be an algebraically prime model of T, if M
+is both, a model of T and a prime structure for Mod T. An L-structure M
+is called an elementarily prime modelż of T, if M . N for all JV T.
+Clearly, an elementarily prime model of T is itself a model of T.
+Examples.
+(6) The field Q is a prime structure (a prime field) for the class of fields
+of characteristic 0. The field F, is a prime structure (a prime field) for
+the class of fields of characteristic p.
+
+(6) The field Q is an algebraically prime model of the theory TFo of all
+
+fields of characteristic 0. Similarly, Fp is an algebraically prime model
+of the theory TF, of all fields of characteristic p.
+
+(7) Every countably infinite set is, by Proposition 8. 3. 5 (1), an elementarily
+
+prime model of To. Every finite set is a prinıe structure for the model
+class of T. (Somewhat pathologically, even the empty set is a prime
+structure for Mod T.. For L_has no constant symbols.) Since the
+empty set i5 not a model,'the'one-element set (a singleton) is the
+algebraically prime model of T_.
+(8) The standard model N of Peano arithmetic is an elementarily prime
+
+model of true arithmetic Th N, see Exercise 13. 2. 3 below (and cf. §3. 5).
+(9) If L is a language without constant symbols, then the empty L-structure
+
+is a prime structure for every class of L-structures.
+
+Remarks.
+(1) Prime models have cardinality < ILI.
+
+(2) Every elementarily prime model is an algebraically prime model.
+(3) Any theory with an elemenŁarily prime model is complete.
+
+(4) Every countable No-categorical theory without finite models has an
+
+elementarily prime model, namely'the'countable model.
+
+2, ľhc attributes algebraicalıy and elementaĦly are to indicate with respect to which kind
+of maps we require embeddabiïity, just (algebraic) embeddings or elementary embeddings.
+
+
+
+Page 16     
+OCR Texts: 
+8. 5. CATEGOMCITY AND PRIA. [E MODELS 125
+(5) The orderirıg 71 of the rationals is an elementarily prime model of
+[Robinso11, A. : Complete Theories, Studies in Logic and the Foundations of
+hlathematics, North-Holland, Amsterdam, 1956]
+Proof Ad (3). If a theory has an elementarily prime model, then the latter is
+elementarily embeddable in, hence equivalent to every model of that theory.
+Consequently, all of its models are elementarily equivalent, and the theory
+is complete.
+
+Ad (4). By Löwenheim-Skolenı, every model of a counţable theory has
+a countably infinite elementary substructure. If the theory under consid-
+eration is in addition No-categorical, this latter structure is unique up to
+isomorphism.
+
+(5) follows from (4). D
+
+It should be noted that there are complete theories without elementarily
+prinıe models, see §15. 3.
+
+Exercise 8. 5. 1. Show that DLO_+l DLO+., and DLO++ are complete theories.
+
+Exercise 8. 5. 2. Prove that DLO__is in no uncountable power categorical.
+
+Exercise 8. 5. 3. Prove the following statements for every division ring /c.
+
+The theory TK (of all ) C-vector spaces, cf. Exercise 7. 6. 2) is categorical in all >
+Hq + No ·
+
+If /c is infinite, Tıc is not Kl-categorical.
+
+If K is finite, T)c is totally categorical. In which finite cmdinalities does Ęc have
+models?
+
+Exercise 8. 5. 4. Prove the following three statements.
+
+The theory of the abelian group Q is K-categorical if and only if is uncountable.
+The theory of all infinite abelian groups of prime exponent p (i. e. satisfying
+Vx (p-O)) is totally categorical. Both theories are complete.
+
+Exercise 8. 5. 5. Show that the theory of the structure M from Exercise 8. 4. 4 is
+categorical in all uncountable powers.
+
+Exercise 8. 5. 6. Find for every signature a totaıly categorical theory with a model
+in every cardinality > 0.
+
+
+

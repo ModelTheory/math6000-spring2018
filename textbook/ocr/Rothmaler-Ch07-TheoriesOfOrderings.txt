@@ -1,0 +1,1047 @@
+Page 1     
+OCR Texts: 
+Chapter 7
+Some theory of orderıngs
+This chapter contains various fundamental order-theoretic topics. The first
+one is a modification of the previous chapter's diagram method.
+7. 1 Positive diagrams
+
+The positive diagram D+ (M) of an structure M is defined to be the
+set of all atomic L (M)-sentences satisfied in (M, M).
+
+Remark.
+D (M) = D+ (M) U {-q (ã) : q € L is atomic, ã in M, p (ii) ¢ D+ (M) }  ·
+As in Exercise 6. 1. 5, it suffices to consider unnested sentences v (exercise!).
+Example. The positive diagram of a group is fup to TG-equivalence) its
+Cayley diagranı (i. e. Its multiplication table).
+
+As an analogue of Lemma 6. 1, 2 we have
+
+Lemma 7. 1. 1. (The Positive Diagram Lemma) Suppose M and JV ane L-
+stmchıres.
+(n If h M 4 N, en h M 4 N įf and onl if h M N, if and onįy
+if uv, h[M]) D+ (M).
+
+L2) There is a homomoTphisTn M 4 JV įf and onıy if N has an erpansįon
+
+which is a rnodel olD+ (M).
+
+PToof Ad (1). The Iirst equivalence is Remark (3) after Lemma 6. 1. 1. The
+second is obvious (for the given map h).
+
+(2) follows from (1) as in Lemma 6. 1. 2. D
+
+87
+
+
+
+Page 2     
+OCR Texts: 
+SȘ CHAPTEIŁ 7. SOHIE T IIEOıĮY oF ORDERINGS
+Exercise 7. 1. 1. Vtırify tlınt thp positive diagri\ın of a structm. u is ıogicn1ıy ľtluiv-
+aletıt tü tlrť subset uf all its tłnnrstcd atomi(: formulas.
+
+Exercise 7. 1. 2. Prove qr n+n Th(M, M) ç D+[my  · (cf. Notation in §2. 4).
+
+7. 2 + The theorem of Mar czewski-Szpilrajn
+This theorem is a neat application of positive diagrams.
+Theorem 7. 2. 1. Any partial order on a set A ca?ı be extended to a linear
+order on A.
+
+ISzpilrajn, E. : Sur I'extension de I'ordre partiel, Fhndamenta ħīath. 16 (1930) 386
+389] (Thc author later published under the name E. Marczewski.)
+
+Proof. Let A = (A, ) be a partial ordering (regarded as an L«-structure).
+As a first step we reduce the result to finite orderings,
+
+If (B, {b. : a € A}, <) i5 a model of
+
+E = D+ (A) UĽOU {Q¢b : a, b € A, a+ b}
+
+and if ß is its L«-reduct, then h (a) = b. Defines, by Lemma 7. 1. 1, a ho-
+momorphism h : A'_B, which is obviously an embedding. In particular, h
+respects the ordering, i. e.,
+ľ1 abą hla) く h (b).
+
+As ı3 i5 a linear ordering, so is h (A) Ç B. Since h is a bijection between
+A and hlA], we therefore obtain a linear ordering of A on setting a < b if
+h (a) < h (b), for any a, b € A. By ( · ), the order < extends the partial order
+on A.
+
+Thus it remains to prove that E i5 consistent, So let Eo be a finite
+subset of E and let ao,..., an-1 be thc new constants occurring in Eo ·
+Then Eo C D+({ao,..., an-1}, A U LO U{ai aj i < j < n}. If I1ow, on
+{ao,... Tan-l}, the partia, 1 order can be extended to a linear order (on
+{ao,..., arz-1 }), we get a model of Eo, and are done.
+
+Thus we have reduced the theorem to finite partial orderings and we are
+left witlı 口
+
+Lemma 7. 2. 2. Euery ĵinįte partįaį oTdering ean be extended to a ıiïlear
+ordemng.
+
+
+
+Page 3     
+OCR Texts: 
+proof. Uy induction on tlıe number of elements, ?t, lhc coses 72-0, 1, 2
+being trivial.
+Let ({(lo,..., a. }, ) bc a i»artial ordering enumeratcd in sucll l way
+that on is a inaximal element, and assuine (by induction hypothesis) lhat
+the i»artial ordering ({ao,..., an-1}, ) can be extended to a linear ordering
+({ao.... \un-1}, <). Then < u{(ai, a.) i < ?ı} is a linear ordering on
+{ao,..., a.. } extending . D
+Another proof of the preceding lemma is the following. 1
+Exercise 7. 2. 1. Define recursively a rank function r from a finite partial ordering
+A = (. 4, ) to N by setting r (a) = 0 for every <-minimal element a in A, and
+setting ribi = 1 for every -minimal element b in A \ {a € A : r (a) = 0}, and so
+forth.
+
+Use this to extend to a linear order on A.
+
+A partially ordered group ((, <) is said to be orderable if < can be extended
+to a linear ordering of the group Ç (in the sense of §5. 5). g is called orderable if
+there is some linear ordering of the group Ç, while i is called freely orderable if
+every partial order of the group (i can be extended to a linear order of .
+Exercise 7. 2. 2. Prove the following local theorems.
+
+(a) A partially ordered group (Ç, <) is orderable if and only if (Ço, <) is orderable
+for every linitely generated subgroup go of g.
+
+(b) A group is orderable if and only if it is locaJly orderable.
+(c) A group is freely orderable if and only if it is so locally.
+
+Exercise 7. 2. 3. An abelian group is orderable if and only if it is torsionfree.
+7. 3 Cantor 9 s theorem
+
+As early as at the end of the 19th century Georg Cantor discovered an
+important feature of countable dense linear orderings.
+
+Theorem 7. 3. 1. Aįį couīıtabıe derıse linear orderings tuįthout erıdpoiïıts are
+isoTTLOrphįc.
+[Cantor, G. : Beiträge zur Begrūndung der transñniten Mengenlehre I, Mathema-
+tische AnnaJen 46 (1895) 481-512]
+
+'Thanks, Ulrich!
+
+
+
+Page 4     
+OCR Texts: 
+9û CłłA P T ER f. SOIıĮ TIŁEOIW OF ORDER, ĮNGS
+Pīuof. First ı Tt'nll that t\t'use lint'm · ur dc】·ings arc inlinilc (cf. Exercis( 5, 5. 1 ).
+Consider two countnble d( · nsc litıtt : 11'nr derings wiı, llolll cllf ]Poinls, A =
+({ai : i € N}: く) lıld l$-((bi : i € N}: <), (T lltl same syiııl》ol < is used
+in both clues, w ı1o conhlsit)ll will iı].isc.) Wc slıcccssiv(:ly clloose sC(łueiıCeS
+(a : i € N) in.·ļ lml (b, : i € N) iu B shell t}lat, for all i E N, we hłıve
+(lhis maki f : ¢ı: 냐 b 孔 homomorphism of order ings). Further we require
+{d : : i € N} = A and {lı : : i € N} = B, which then yields f : AB. We
+accomplisl : this by thc so-called back-and-Torta method as follows.
+Asslmle we hłıve alrełıdy found a € A and b E B satisfying (') for all
+i < rı, where n is any given natural number.
+
+If 71 is even, lel a : be the aj of smallest index j which is not contained in
+{(ı:...., a_1}. Density and the lack ofendpoints guarantees the existence
+of some b € B such that
+
+Ifrı is odd, let, conversely, b be the bj ofsmallest indexj which is not
+contained in {bĒ,..., b_l}. Again there is a € A satisfying (. *).
+fn both cases (. *) implies ( · ), and, as we choose alternatingly from A
+and B, we exhaust them both. Hence we eventually obtain an everywhere
+deńned and surjective map f A-> B, which, by (*), is a homomorphism
+of orderings. D
+
+Incidentally, in contrast Ĺö a usual misconception, Cantor hiïnself did
+not use back-and-forth (but went only'forth'). The method seems to have
+nrst appeared in
+
+[Huntington, E. V. : The continuum as a type of order : an exposition of the modern
+theory, Annals of Math., 6 (1904/05) §45]
+
+(see Hodges'Model theory for other relevant references). Later it became
+a fundamental method of model theory (cf. The proof of Theorem 12. 1. 1 (2)).
+Exercise 7. 3. 1. Find a proof of Cantor's theorem that goes only'forth'.
+Exercise 7. 3. 2. Find the four isomorphism types of countable dense linear order-
+ings (and justify your answer).
+7. 4 Well-orderings
+
+In the remaining three sections of this chapter we introduce some set-
+theoretic tools-also mostly due to Cantor-that are used in many parts
+
+
+
+Page 5     
+OCR Texts: 
+7. 4. WELL ORDERINGS
+
+91
+
+of mathematics. 2 Wc present this material as part of our model-theoretic
+treatment of orderings ; wc will add il, however, to our set-theorclic tools on
+the metalevel, i. e. iui part of our methods of proof. As usual in most i»nrts
+of mathematics, we ha \ rn't fonnally outlirıcd or precisely fixed the latter,
+but rather made use of some sort of naive set theory (including the axiom
+of choice). Ho \ ưever, in order to justify the method of translinite incluc-
+tion. which we will need ıater, we are forced to be soınewhat more precise
+in our set-theoretic setting. (Nevertheless, we will remain on a quite naive
+level and refer the interested reader to the cited set-theoretic literature for
+a more mature treatïnent.)
+
+Usually one works in a realm of pure sets, i. e. sets whose elements are
+sets again (as opposed to so-called urelements). This realm can be thought
+of as a huge'structure'V whose signature has only one symbol, the binary
+relation symbol €. This is not a structure in the formal sense of Chapter 1,
+as its universe is not a set anymore (it is too big). However, besides that
+it looks just like a usual structure. Fbrther, one assumes that V satisfy
+the so-called Zermelo-ħtıenkel azioms ZF and, with the exception of a few
+
+philosophically concerned mathematicians, also the aziom of choice, AC,
+which, altogether, form the axioms ZFC. the elements of V are the sets,
+and the axioms of ZFC control which ° composites'of these are to be sets
+(i. e. Elements of V) again. In general, those'composites'are classes. Thus
+some of the classes are sets. But not all of them are an example of such a
+proper class, as one says, is (which is noţ an element of itself). Other
+examples are isomorphism types of arbitrary nonempty structures. The
+underlying idea for the distinction of sets among the classes is that sets
+are ° smalľ classes. Thus it is natural to assume that finite classes are sets
+and that a subclass of a set is a set again. These are essentially two of the
+Zermelo-Oaenke1 aJcioms. We will mention more when we need them in the
+course of our arguments.
+
+To make our model theory part of such a set-theoretic setting, as the rest
+of mathematics, we included in the concept of ° structure'that the collection
+of all its elements be a set (cf. §1. 2), i. e. An element of V. As mentioned
+before, (V, €) is not a structure in this sense. It is no problem, however,
+to extend the notion of structure to mbitrary classes by simply dropping
+this requirement. In this way one obtains'big structures'_like (N, €). In
+order to have the previous material at our disposal we allow such structures
+in the remainder of this chapter. For instance, by a partial ordering we
+
+zThose who are more or less familiar with the rudiments of the theory of cardinal and
+ordinai nunıbers may skip this and pass on immediately to Part III.
+
+
+
+Page 6     
+OCR Texts: 
+92 ('lLAP'r 111 T. 0A[I£'I'l111011 OF oltl)l'n1N(:S
+hL'rQ simpl,''111o:111 a rlu,s uqllippu d witll :\ll IITu flu xiv u :md tr nnHitiv('birlilry
+rL  · izit ion.
+Supposu (. Y, <) is 21 lim': 1 ordering. By : l(ll initial) segment of (X, <)
+we 111oa11 l subclass of.T which cont, ains, nlo11g with ('v ery o. E X, also all
+b €. Y smaller than a. A(n initial) section of (. T, <) is 21 clasfi of Lhc form
+{. r €. Y : r < a} for 50111o a E. r. T his section is given by the clement, a
+and we denote it by A'.. A linea】 : ordering is said to be narrow if each of
+its sectiolrs is a set.
+Clearly, any section is a segment,. Furt, hcr, any proper segment, of a
+narrow linear ordering (X, <) is contained in a section and is t, hus a set.
+Consequently, if (X, <) is narrow, but not itself a set, then X is t, he only
+segment of (_K, <) that is not a set. In particular, X cannot be a section,
+which means that (X, <) has no greatest element.
+
+A well-ordering is, by detinition, a nal. Row linear ordering in which
+every nonempty subclass has a least element, I. e. An element that is smaller
+than or equal to all ele】T1ents in that subclass. A well-ordering which itself
+is a set is simply called a well-ordered set. A well-ordered set obviously
+is narrow, Note furt. Her that any well-ordering is a linear ordering (consider
+any tw o-element subset).
+
+Recall that our orderings are strict (I. e. Irreflexive), hence homomor-
+phisms of linear orderings are automatically monomorphisms.
+
+Examples. (1) Every finite linear ordering is a well-ordered set.
+
+(2) The ordering of the natural numbers (I. e. The usual ordering on N ) is
+
+a Mell-orde].ed set.
+
+Remarks. (1) Every subordering of a well-ordering is a well-ordering, and
+
+every proper segment of a well-ordering is a well-ordered sct.
+(2) A narrow linear ordering is a well-ordering if and only if it is well-
+
+founded in the sense that it cont, ain no infinite descending chain of
+elements ao > al > a2 >... > an >
+(3) The empty set is a segment of every linear or dering. Since every well-
+
+ordering has a smallest element, the empty set even is a section in every
+well-ordering.
+(4) Any segment of a well-orclering (X, <) is a section or the entire class
+X.
+(5) Every well-ordering is isomorphic (as an ordering) to the class of all of
+
+its sections ordered by set inclusion.
+
+Proof. Ad (4). Let I be a segment of X, but not X itself. Let further a
+be the least element of X \ 1. We show that I-X.. Pick any b € X. If
+
+
+
+Page 7     
+OCR Texts: 
+7. 4. WELL ORDER INGS !) 3
+b < a, thc  · n b ¢. ľ \ ı by tht? clıolce of (ı, hence b € t. If, o11 the oŁher hand,
+b = a or b > (ı, then b ¢ I, R1r otllcrwiee a would bc in İ. ColıBequ( ntly,
+ı = {£ €. ţ : r< (ı} = X. ·
+For the proof of (5) consider the ırrap given by a H X.. D
+Lenıma 7. 4. 1.
+1 ) ĮĮ Ĵ is a homomowlıtsrn ol a uJelĮ-onlering (X, <) into itscıí, ttŁen
+1 (T) > x for alla € X.
+L2) No mell-ordering is įsomorplıįc to aTŁY ol its sections,
+Proof Ad (1). Iterated application of f to tlıe inequality > f (x) would
+yield T > f (E) > f 2 (T) > > f  · (£) >..., contradicting the well-
+foundedness of (X, <).
+(2) follows from (1).. D
+
+Every well-ordering satisfies the
+
+Induction principle. ıet (X, <) be a tuell-ordeńng and p a property oî
+elements ol X.
+
+Suppose euery eıement a € X sǆįslies the įmdmctįorb hypotheaįs
+ĺa) if all b < a in X haųe e property p, Men so does a.
+Then aıl elements ol X haųe the pToperty (p.
+
+proof Otherwise there would be a least element a € X not having the
+property p, hence the condition (a) would be violated. D
+While the induction principle constitutes the fundamental method of
+proof by transfinite induction, there is a similar fundamental tool for the
+constmncłion of functions on well-orderings, the so-called recursion principle.
+Applications of the recursion principle are also known ǆ definitions by
+transfinite induction. They typically look as follows.
+
+We are given a well-ordering (X, <), an arbitrary class W, and a re-
+cursive condition F by which we are to successively define a function
+f : X->W, that is, this condition says how ţo extend an already con-
+structed 1. : 니 W to a € X. Finally one delines f to be the union
+of all the j.. The recursive condition F thus has to be a function assigning,
+to every function from a section X. (of X) to W, a value f (a) € W of a.
+That is, if j. : -> W has been already constructed, we set f (a) = F (J.)
+(and thus obtain a'larger'function İb : Xb-> W, say, where b is the least
+element of X \ X.).
+
+
+
+Page 8     
+OCR Texts: 
+94 CHA PTEIŁ Ť. SOAıE THEORY OF ORDERıNGS
+Recursion princlpıe. Let (. ţ, <) br : a 1ue11-ordering ftTtd ĺľ an arbitmry
+class. Given a € X, consitlcr thr. class F.. ol all lıt1ıctįons ul till sectioìı X.
+to \ \'.
+For every hnctiolŁ I/ Utı€x F.-W there is a uīıiquel deteT-Tııined
+Jwctiorı 1 X-\ ľ satisJying the æcuraiue condition 1 (a) = Ftl \ X. ìlor
+alta € X.
+Proof Let ŤI
+We claim,
+
+ľ) for all a € X, tlıe set î n ï. contains at most one tunction ; moreover,
+
+for all 9, lt € F, we have 9 ç h or h ç g (where, as usual in set theory,
+we identify a function with its graph).
+For a proof, pick g € Ť n ï. and lt € Ť n ï.. where a < c. We claim that
+g-h r X. (hence g C h). If not, there would be a leaßt b < a in X with
+9 (b) h (b). Then we would have 9 r Xb-h r Xb and hence, by the choice
+of ï, also g (b) = F(ý r Xb) = F(h r Xb) = h (b). This contradiction proves
+Thus F forms a chain with respect to set inclusion. Hence, its union 
+
+U F is a function, J", whose domain is either all of X or a section thereof.
+In the former case we are done, for the function f'clearly satis{ies the
+
+recursive condition on its domain. Assume therefore that dom f'is a section,
+X. say, for some a E X. Then ï is in F n F.. Let f be the function
+f'U {(a, Fb")) } (i. e., we set f r X.-f'and f (a) = F (f'l l. Obviously,
+this latter function satislies the recursive condition on dom f-X. u {  · },
+If there were some b > a in X, we would have f € Fb n î for the smallest
+such b, hence also f C I'. This would imply a € dom J", contradicting the
+assumption. Thus a is the greatest element of X, and therefore dom/=
+X. u{a} = X.
+In any case, f : X W has the desired properties. The uniqueness of
+
+f one finally derives as in the proof of ( · ) D
+
+In the next section we will specify these principles to ordinai numbers.
+Remark. The arźom ol choice is equivalent to the well-ordering princi-
+ple, which says that etiery set can be well-ordered. Another equivalent is
+the following statement, known as Zorn's lemma. 3
+
+ïf edem chain in a partįaıįy ordered set X has a Zeast upper bound įn X,
+then every element in X Ės smaller than or equaı to a maximal eıement,
+all i9 said that Max Zorn himself rejected this name for the simple reason that it is
+neither Zorn's nor a lemma.
+
+) e thc class U. €. { {9 € : 9 (b) = F(§ 1 Xb) for all b < a}.
+
+
+
+Page 9     
+OCR Texts: 
+T. 5. 0IIDIN,'\L NLTHTBI{RS AND iltA NSF INIT IC INI) tFUTION Yr
+1. e. o11 t'tcTncnt IoT· iL'l\ich then is no biggt?1 · t[cTl\cnt. NOll', \f X \s 1\o\
+linearly ordt  · md, it can have several maximal clements.)
+We assume the reader familiar with these equivalents. Th{ty can tjc found
+in any of the cited set-theoretic (as well as in in most of the cited algebraic)
+literature.
+Exercise 7. 4. 1. Given orderings X and y, one defines their sum,, Y + y, ta bc
+the disjoint union of X and Y equipped with the order extending thc orders of
+X and y defined by × < y for all × € X and ?j € Y.
+
+Prove that the sum of two well-orderings again is a well-ordering.
+
+Exercise 7. 4. 2. Show that the class of well-orderings is not axiomatizable (as a
+class of Lc-stnlctures).
+
+7. 5 0rdinai numbers and transfinite induction
+
+We now investigate sets partially ordered by the element relation €. In
+particular, on such sets the relation € is transitive. In set theory there is
+another important concept of transitiv ity : a class X is said to be transitive
+if × € y € X implies x € X.
+
+Remarks.
+(1) The following are equivalent for any class X.
+
+(I) X is transitive.
+(ii) T E X implies x C X.
+(iii) Y C X implies U Y £ X.
+
+Proof (I) + (ii) is clear.
+
+(iii) means that y € Y implies y X, provided Y C X. This, however,
+is immediate from (ii).
+
+Conversely, (ii) is the special case Y-{  · } of (iii). D
+
+TYivially, X is the greatest element with respect to € in X u {X} (for
+x E X implies z € X). The transition from X to X U {X} plays a particular
+role in what follows.
+
+Lemma 7. 5. 1. Suppose X S a transitiue set om whi ch the element relatiort
+lows a partal (T'esp. a tuell-) or  · dering.
+
+Then the same is true Jor X U {X}.
+
+
+
+Page 10     
+OCR Texts: 
+96 CHıLPTER T. SOME TIIEORY OF ORDERINGS
+Proof. Since evel". v plt\ment of the 1. Ransitive st  · 1.. ţ is n 51 山 sct, of X, t llc same
+is true for. ţ U {., ţ}. IIľnce tlıe latttȚr'is transiliv( · .
+
+If € is ir rellt  · xivu o11. ţ, w(t lrztve. Y ¢ × (rur otlrurwisc X € X € X
+: 대"contradict, tile irrcflexivity of € o11 X), H('ncc € is irrcflcxivc also on
+
+Let € be, in łtddition, transitive on x. We show it, is so also on Xu{×}.
+For this, let x, y, z € X U {X} wiŁh × € y € z. If x, y, z are all in X, then
+T € z follows from the transitivity of € on X. It is easily seen from X ¢ X
+and the transitivity of X that otherwise z € y € z-X, hence x € z. D
+An ordinai number (or just an ordinai) is, by definition, a transi-
+tive set on which the element relation € forms a well-ordering (and is, in
+particular, irreflexive). We denote the class of all ordinai numbers by On.
+
+(Their name stems from the fact that the ordinals represent the order
+types of well-ordered sets, see Theorem 7. 5. 6 below.)
+
+Remarks.
+(2) There is no inĥnite descending chain of ordinai numbers ao al 3
+
+cr2 Ĵ... (cf. Remark (2) in §7. 4).
+
+(3) Intersections of ordinai numbers are ordinai numbers.
+
+(4) The previous lemma shows that if a is an ordinai, so is a u {  · }. (Here
+
+we used that by the Zermelo-Fyaenkel axioms a u {a} is a set again.)
+(5) Every transitive subset of an ordinai is an ordinai.
+(6) Every element of an ordinai is an ordinai.
+
+(7) The union of a clms (resp. of a set) of transitive sets is a transitive
+
+class (resp. a transitive set).
+
+Proof. Ad (6). Let a € On and z € a, hence also z C a. By (5) we need
+only show that z is a transitive set. So let Æ € 3/€ z. By the transitivity of
+a, we have x € y € a and hence Æ € a. Consequently, T, y, z € a and the
+transitivity of € on a implies T € z, as desired.
+
+Ad (7). Let each € X be transitive. Using (1) (ii) above we show that
+U X is transitive. So let y E U X. Then y € × for some Æ € X. Now the
+transitivity of z yields y C , hence also y C U X.
+
+Finally, if X is a set all of whose elements are sets then, by the axioms
+of set theory, also U X is a seţ. D
+
+We will see shortly that also unions of arbitrary sets of ordinals as well
+as transitive sets of ordinals are themselves ordinals.
+The simplest ordinai is the empty set 0. Starting from this and using (4)
+we obtain infinitely many ordinals. Given an ordinai a, we denote by a + 1
+the ordinai a U {  · }. Fbrther, we write
+
+
+
+Page 11     
+OCR Texts: 
+7. 5. 0RDINAL NUMBERS AND TRANSFINITE INDUCTION 97
+etc. And
+
+(In Lemma 7. 5. 3 (4) below we will see that u € On.)
+Fther, we write
+
+a+2 for (a+1) +1,
+a+3 for (a+2) +1,
+etc.
+
+FYom now on we will regard natural numbers as elements of u, i. e. AS
+ordinai mımbers (and identify N with 【ı/).
+
+Lemma 7. 5. 2. Iet a, P € On.
+ŁU a € P įjĵ ot cp.
+
+(2) Either a € ¢ or ot-J8 or ee p € cc (i. e., (On, €) is a tineor orderirıg)  ·
+
+Pr oof Ad (1). 4. Let a € B. The transitivity of P implies a C P. The
+irreñexivity of € on a implies a + P.
+
+. If a C P, the seţ P. a is a nonempty subset of P, and hǆ thus an
+€-least element 7 € P \ a. We are going to prove a-7 (and hence a € P).
+
+If ô € 7, the transitivity of P yields õ € P. Together with the minimality
+of 7 this implies ô € a. Hence 7 C a.
+
+To show that also a Ç 7 let 6 € a (C P). Since € orders the set ß
+linearly, ô and 7 are comparable with respect to €. Thus 7 € ô, 7-ô, or
+ô € 7. In the first two cases we would derive 7 € a from 6 € a (and the
+transitivity of a). As this would contradict the choice of , we must have
+
+ò € 7 : as desired.
+
+Ad (2). (1) implies that an¢ = P or anjơ € P, for anp C P. Analogously
+we have a n P = a or a n P € a. This yields four cases to consider, a = ß,
+P € a, a € ß, or, as the fourth case, anp € ß and anp € a. But the
+fourth case is impossible, for a n P € a and a n P € a n ß contradict the
+irreHexivity of € on a € On.
+
+Finally, irreflexivity and antisymmetry (of € on On) guarantee that no
+two of the remaining cases can take place simultaneously. D
+
+nom now on, given ordinals a and P, we write a < ß instead of a € P
+(which is the same as a c ¢), and we write a < P instead of ° a < P or
+a-p'(which is the same as a C ß).
+
+
+
+Page 12     
+OCR Texts: 
+98 CHAPTER T. SOME THEORY OF ORDERıNGS
+Thus thť ordinai numbers form an infinite ascencling chain (On, <) with
+respťct to < (which, for ordinals, is the same ǆ the element relation € or
+the inclusion c). This chain (On, <) contains no infinite descending chains.
+We will sec shortly that it evell is a well-ordering.
+As suggested by the notation, a + 1 is the immediate successor of a : if
+(ł < J3 (hence a € /ĵ and a C O), then au{°} C P, i. e., a+ 1 Ś . Starting
+from O, which obviously is the smallest, ordinai (for O is contained in every
+ordinai), we thus obtain the ascending chain 0 < 1 < 2 < 3 <... < u <
++ 1 < (ł) + 2 <... 1 which constitutes an initial segment of the chain of all
+ordinals, (On, <). h  · lore generally we have
+Lemma 7. 5. 3.
+11) An ordįnal įs precįseįy the set oĵ aįį its sections tui respect to the order
+<. Further, ae-one-e Jor alį sections ap ol a € On (€ a).
+(2) (On, <) is a tuell-oTdering.
+
+13) Euerg transitįue subset oĵ On is an ordįnaį.
+4 ) The union ol any subset ol On is an ordįïıal.
+
+PTool. Ad (1). Suppose a € On and P € a.
+As Qca, we have aıĵ-{7 € a : 了く岡 = { € a 7 € P} =an=
+P. As every element of ¢ is an ordinai, we further have Onp-{7 € On
+了く厣}={了€On了€芦}一口，
+Ad (2). By (1), (On, <) is narrow. Since On is also well-founded,
+Remark (2) of §7. 4 shows that On is well-ordered by <.
+(3) now is immediate from the definition of ordinai number, while (4)
+follows on invoking the above Remark (7). D
+Not only is (On, <) a well-ordering, it is even transitive, for every
+p € On itself is a set of ordinals, hence ß C On. Nevertheless On is
+noi an ordinai : otherwise it would be an element of itself, i. e., On € On,
+contradicting the irreflexivity of € on On. What is wrong here? Nothing
+On is only a class and not a set, while ordinai numbers are sets. 4 Its not
+being a set i5 the only obstacle for On to be an ordinai.
+
+Now that we know that On is a well-ordering, we may specify the prin-
+ciples of induction and recursion to ordinai numbers.
+
+nansfinite Induction. Sııppose X € On or X = On, and p z
+ol ordinaĮs.
+
+Assu»me that the induction hypothesis
+Ła) * eueTy 13 < a has p, then so does cĽ
+
+4The assumption that On be a set is known as Buraıi-Forti's antinomy.
+
+, s a property
+
+
+
+Page 13     
+OCR Texts: 
+· c8 ñłJadoıd əųŁ sıtq 0 (0)
+:uoțļanput
+Əqł J0 SĮSBQ ƏŲĻ 10 dəļs W!ļ:U ƏŲĻ palleJ OSIE UƏŲȚ Sl JƏUIıOJ Ətłı g
+sreutpJo Ț!tnĮl aņţugut IW puų O = g ₩ ıCiəȚeJųdəs (g) alelnutĵoJ uųa əuo
+
+· đ liłaədoad əqļ anoq X ìııoĵf 51U ₩₩ 0110 UƏqū
+'9 səop os 'đ fiłĵəäoıď əQŢ əanq 9 > d 11o lț (9)
+əIıuų əm X 3 9 slÐuppdo ??tııpl ïIÐ Jo{ PuÐ
+'\ + 1o səop os uəqļ ° đ liļJədoJď əW 5oq n li h + n)
+ənnq əm ¢ X 3 m 11o Jo$ ¢ ŢÐųĻ əuınssy
+'51Đutpĵo Io tiNədoJd D sz puu'uo-X Jo uo Ĵ X əsoďdns
+· daļs ļUI!I əqļ PUE daļs Jossaaans
+Əq ° sdəļs aAțļanpuț ȚuəJəgtp ıcwțļuəssə omļ suĮeņqo əuo'Siuțpıo Jossəaans
+əqļ PU7 SIEU!PJO ļțtnți ƏQȚ'sassuia omȚ OņUț uoțstA!p ıțaqł oļ u!pıoəəy · SIŲU
+-TPJo 101 uo!ļanpu! əņugsuEJļ Jo əldtauïJd əųĻ ƏȚElnmJOĮƏı 00 ƏÀ&
+
+'īÐuțpJo 1111 (əł!uguț ļsəlinujs əqļ puÐ) ļaəu əqł s\ c7 L£)
+'1nutpJo Ţțtuț1 (18911o tus əW) st 0 (Ł)
+'rıo Ĵ d əwos Jol \+d = 1o lț liluo pun $i 1Du!pJo Jossəəəns n st uo 3 )o h)
+'V9'L Bmuīaq
+'sıEu!pĵo Jossəəans pəllųa əľe sleu!PJo JƏqļo llv'slųutpro JəIIEMs
+IW 30 uoțun ƏŲŅ St wql IEUȚPJO UE'uoțątugəp JCq'Sl 【BUPJ0 ļTUI V
+□ xjn Ho Jo{ (nj Dd-(n) 1
+
+łÐųł ųəTLs M 4-X l uotłaun$ pəuTuMəŁəp filənb!uTL Ð s\ əJəųŁ UƏū
+
+'M uï ƏN1ÐN Ð 'M oł x30 ƏUıOS tııou{
+uo!łaun{ yada o1'óu?uó?ssu uo!?aunl D st dt ?Ðtl? Jaypn{ asoddng · SÇÐ1a tuł
+-!qJÐ uo Z M puu 'uo-X Jo uo 9 X asoddng · uo!sanaəH əņ!UUSUB
+
+□ c9 lipadoltd a ₩ aauv. ľ Ĵ D lıu uətlı
+
+'X 3 D & lana Jol sploq
+
+66 NoiĒonaNi EĒINIDSNVI. L aNV SUHB】NĤN qVNIǄO Ç'1
+
+
+
+Page 14     
+OCR Texts: 
+100 CHAPTER 7. SOME THEORY OF ORDER1NGS
+The reforruulation of the recursion principle for ordinals is left to the
+reader. Instead «re want to derive the aforementioned correspondence be-
+tween ordinals and isomorphism types of well-orderings (also called well-
+order types). More precisely, we are going to show that every well-order
+type contains exactly one ordinai. This enables us to transfer the transfi-
+nite induction ǆ specified to ordinals to arbitrary sets : by the well-ordering
+principle every set can be well-ordered and is then, by the theorem below,
+isomorphic to an ordinai. This means nothing more than that every set X
+can be indexed by an ordinai number a, i. e., X = {×Q ß < a}. Then
+statements about the elements of X can be proved by induction on ß < a.
+
+Any two ordinals are comparable. Hence, if they are different, by Lemma
+7. 5. 3 (1), the smaller one of them must be a section of the other. Then
+Lemma 7, 4. 1 (2) implies that they cannot be isomorphic. Thus every well-
+order type contains at most one ordinai, In order to show that every well-
+order type does contain an ordinai we need the following
+
+LeHıma 7. 5. 5. Suppose IX, <) įs a 1ueıį-ordeTing anď l X On is 51ıeh
+that the ordering (X.. «l is įsomowhįc to the ordįnal î (a) lor euertl a € X.
+
+Then İ is an order isomorphįsm Jrom Lx, <) onto an initial segmerıt oĵ
+ŁOn, <). Further, AXl = On įl and only f X is ınot a set.
+
+Proof The map f is an embedding of (X, <) in (On, <), for c < b iff
+X. c Xb iff f (c) is isomorphic (hence equal) to a section of f (b).
+
+We claim that f[×] is an initial segment of (On, <). This is trivially
+true in case f[×] = On. If this is not the case, tliere is a leǆt element Q in
+On \ f[×]. We show that B = f[×] (and hence (X, <) is isomorphic to ).
+By the minimal choice of P, we have C f[×]. If there were a > Ď in f[×],
+there would be also a € X with f (a) = a, The isomorphism a (X.. <)
+would then yield b € X. with Q (Xb, <) (for ß is a section of a). Then
+we would obtain ¢ f (b), hence also /ĵ = f (b), contradicting the choice of
+P. Thus, in any case, f[×] is a segment of (On, <), as required for the first
+assertion of the lemma.
+
+The set-theoretic aziom of replocement says that, given a function f and
+a set X, also f[×] is a set. Since f is a bijection onto f[×], it has an inverse,
+and so the replacement axiom yields that X is a set if and only if so is f[×] ·
+As On is not a set while each of its sections is, the second assertion follows
+as well D
+
+Theorem 7. 5. 6. Euery u) eıl-ordered set is įsomowhic to a tıïıįque ordirıal
+number. EUer'well-ordering that is not a set ts isomowhic to (On, <).
+
+
+
+Page 15     
+OCR Texts: 
+T. 5. 0RDINAL NUMBERS AND TRANSFINĮTE INDUCTION 101
+proof. First we shcıw that every well-ordered set (X, <) is isomorphic to a
+proper initial segment of (On, <), i. e. To an ordinai. If this were not the case,
+the preceding lemma would yield (ı in X such tlıat X. is not isomorphic to
+an ordinai. But then eveı  · y section of Xa would be isomorphic to an ordinai,
+contradicting this lemma.
+
+Thus every section of a well-ordering is isomorphic to a unique ordinai.
+If now (X, <) is an arbitrary well-ordering, we may ǆsign to every a € X a
+(uniquely determined) ordinai f (a) X.. The resulting function f : X 4
+On then satisfies the above lemma, which implies the assertions. D
+
+Corollary 7. 5. 7. Giuen tı】ell-orders X and y, the tı】ell-oTďeri?ıg X is iso-
+mowhic to an inįtįal segment ol y, or y is įsomowhįc to an initįaį segment
+oĵ X. (In any mse, one of them is embeďtitlble in the other.) D
+Cantor, who introduced the ordinai numbers, defined them as well-order types
+(and he didn't bother ţo give a precise seţ-theoretic justification for their existence).
+fn contrast, John von Neumann defined them as particular well-ordered sets. We
+followed the latter's apparently more ar 七 ificial way, as it is more elegant and set-
+theoretically precise. The theorem just proved, however, shows that the two well-
+ordered clǆses, (On, <) on the one hand and the class of well-order types with
+the order given by inclusion of corresponding representatives on the other, are
+isomorphic. In this sense the two definitions-von Neumann's and Cantor's original
+onhare equivalent.
+
+[Cantor, G. : Beiträge zur Begrūndung der transliniţen Mengenlehre II, Mathema-
+tische Annalen 49 (1897) 207-246]
+
+[v. Neumann, J. : Zur Einfūhrung der transfiniten Zahlen, Acta Litt. Scient. Univ.
+Szeged., Sectio scient. Math. 1 (1923) 199-208]
+
+For more on the history of ordinaJs see
+
+[Bachmann, H. Transfinite Zahlen, Ergebiıisse der Mathematik und ihrer
+Grenzgebiete 1, Springer, Berlin 1955, 204 pp  · ] ·
+
+Exercise 7. 5. 1. Given ordinals a and P, their sum a + ¢ is defined to be the
+uniquely determined ordinai which is isomorphic (as an ordering) to the sum of the
+ordering a and P (in the sense of Exercise 7. 4. 1).
+
+(a) Show that the addition on u coincides with the usual addition of nahıral
+
+numbers.
+(b) Prove that the successor of a is the sum of a and 1 (this justifying the notation
+
+a + 1 for the successor of a).
+
+(c) Verify 1 + a-a for all infinite a € On (and that addition of ordinals is not
+
+couţative ).
+
+Exercise 7. 5. 2. Let X be a subset of On. Prove that U X is the supremum of X
+in (On, <).
+
+
+
+Page 16     
+OCR Texts: 
+102 CHAPTER T. SOME THEORY OF OJŁDERINGS
+Exercise 7. 5. 3. Show that tlıc complete L<-tllcory of any infinite ordinai nmnber
+has a noıl-well-founded motlcl, i. e. a model that is not well-ordered.
+7. 6 Cardinal numbers
+Recall that two sets have the same potıter (or cardinalżty) if there is a bi-
+jection between them. The relation of having the same power is easily seen
+to be an equivalence relation on the universe of sets. Similarly ǆ well-order
+types (i. e, equivalence clǆses of well-orderings modulo isomorphism) con-
+tain as a particular representative an ordinai number, we see next that also
+the equivalence classes of sets with respect to having the same power contain
+as a representative a particular kind of number, a so-called cardinal number.
+This will allow us to speak of the cardinality of a set-as a set-theoretic
+object (ǆ opposed to just having around an equivalence relation of having
+the same power).
+Namely, we define a cardinal number (or just a cardinal) to be an
+ordinai that has not the same power as any smaller ordinai (i. e. There
+is no bijection onto a smaller ordinai). In other words, a cardinal is the
+smallest ordinai in the clms of all sets of the same cardinality. For this
+reason cardinals are also known as initial (ordinai) numbers. We denote
+the class of all cardinal numbers by Cn.
+Example. Obviously, finite ordinals are cardinals (since no finite set can
+be bijectively mapped onto a proper subset). Thus all natural numbers are
+cardinals. Clearly, also u) is a cardinal. However, u + 1 is not a cardinal, for
++ 1 and u have the same power.
+Recall the well-ordering principle (from the remar k at the end of §7. 4)
+that says that every set, A has an ordering < making (A, <) a well-ordered
+set A and hence isomorphic to an ordinai. The smallest thus occurring
+ordinai is defined to be the cardinality of A, in symbols IAI. Clearly, IAI
+is a cardinal.
+Being a subclass, Cn inherits various features fr om On, first of all the
+ordering, which is a well-ordering also on Cn. Then, being an ordinai,
+every cardinal is equal to the set of all smaller ordinals, i. e., to the set
+of all ordinals of smaller cardinality. Fbrther, by Theorem 7. 5. 6, every set
+of cardinals is, with respect to the inherited order, isomorphic to a unique
+ordinai.
+As mentioned,'ĥnite ordinai','finite cardinaľ (and'natural number')
+are synonymous. The situation is difĺerent in the infinite. Let us look at the
+
+
+
+Page 17     
+OCR Texts: 
+76. CARDHVAL NUMBERS 103
+inßnite cardinals a little closer. First of all, denote the class of all such by
+Cn cıo. The class of (infinite) cardinals is a proper subclass of that of (infinite)
+ordinals. However, even though there seem to be'much more'ordinaıs 乞 han
+cardinals, Cn oo is a proper clms, for it is unbounded within On and hence,
+by Theorem 7. 5. 6, cannot be a set. In particular, ǆ orderings, (Cnoo, <)
+and (On, <) are isomorphic. this isomorphism is of great importance. it
+provides every infinite cardinal with a uniquely determined ordinai index,
+and conversely ǆsigns to every ordinai a a unique infinite cardinal, which,
+following Cantor, is denoted by No. 5 Thus every infinite cardinal is of the
+form N. (and all these are different). Therefore infinite cardinals are also
+called alephs.
+
+For instance, being the first infinite cardinal, the ordinaJ u is equal to
+the cardinal No. The smallest uncountable cardinal is N1. Then comes 82,
+and so on. In general, given n < u, N. is the n + 1st inlinite cardinal. The
+smallest aleph with an infinite index is N.. In general, given any ordinals a
+and P, we have N. ś NB iff a < P. Fbrther, within (Cn-, <), the cardinal
+No+1 is the successor of N.. Given a cardinal number n, not necessarily
+in aleph notation, its successor (in (Cnoo, <)) is denoted by n+. Thus, if
+-N.. Then +-Na+1 (while + = Tı + 1 in case n-n < u).
+
+Since cmdinals behave quite differently from arbitrary ordinals, it is very
+useful to have this separate notation. E. g., the successor of the ordinai (4) is
++ 1, i. e. The second countably infmite ordinai (which is not a cardinal, as
+it hǆ the same power as its predecessor), while the successor of the cardinal
+u, that is the successor of No. Is Nr (an ordinai much bigger than (4) + 1 or
+even u + n for all n, for it is uncountable).
+
+Another advantage of this indexing of infinite cardinals by ordinals is that
+it allows us to apply the principles of transfinite itıduction and recursion not
+only to Cn, but also to Cnoo (directly via the ordinai indices).
+
+Since the successor of an infinite ordinai has the same cardinality, no
+cardinal can be a successor ordinai. In other words, every cardinal is a
+limit oTdimal. However, the reader might have already guessed that it is
+reasonable to call a cardinal of the form n+ (where K is an arbitrary cardinal)
+a successor cardinal. Correspondingly, a limit cardinal is defined to be
+a cardinal of the form Nô, where ô is a limit ordinai. Thus No is the smallest
+limit cardinal, and N. is the second biggest limit cardinal.
+
+We defined the sum of ordinals in one of the exercises of the preceding
+section. Also the other arithmetical operations can be defined in a canon-
+ical way so that their arithmetic, restricted to natural numbers, coincides
+
+5N [read'aleph'] is the İirst letter of the Hebrew alphabet.
+
+
+
+Page 18     
+OCR Texts: 
+104 CIIAPTER 7. SOME THEORY OF ORDEïŁINGS
+with thc usual onc. In the infinite this arithmetic proves useful for the in-
+vestigatian of welı-orderings (due to Theorem T. 5. 6). However, wc have to
+refer t, he reader t, o olle of the set-theoretic texts for more details, and also
+to Rosenstein's book cited in Appendix C, which contains some interesting
+model theory of ordinai numbers.
+The arithmetic of cardinal numbers is completely difïerent. While that
+of ordinals is designed to reflect certain compositions of well-orderings, the
+arithmetic of cardinals is designed to reflect cardinalities of compound sets
+(and we will need the rudiments of it in the sequel to calculate certain
+cardinalities). It is therefore natural to define the arithmetical operations
+as follows.
+Given 冯 入€ Cn, setn 十入 = def I 院 U 시, 代 · 人 = 己 ef I。X 시, and. 大 rdef I 入 · I.
+As in the case of ordinai arithmetic, these operations coincide with the
+usual ones (for natural numbers) on the set u. But we will see in due
+course that in the infinite things are different. Nevertheless, many common
+arithmetical rules hold true for arbitrary cardinals. For instance, using
+appropriate bijections the reader may verify the ones listed below.
+Remarks. Let , , /ı € Cn.
+
+(1) (Cn 0; +) is a commutative monoid with neutral element 0 (cf. §5. 2).
+
+(3) (Cn ; 1 ;-) is a corrimutative monoid with neutral element 1.
+(5) If K ś 入, then K  · H < À  · H  。
+(6) 0  · K-n  · 0 = 0.
+(ア)院入十/ı一院入。阳。
+
+(9) (K  · 入) H_np. P
+(10) If K ś and p > O, then Jı K ś /ı À and Kı '< Àl '
+(11). o_1, in particular, 0°_1.
+
+(13) If nło, then O"_0.
+
+These are the bǆic laws of cardinal arithmetic which look (and are
+verified) t. He same on Cn as on u). Next we turn to some propeľties that
+are essentially different fr om those of natural numbers. h  · lost of them follow
+more or less directly from the following.
+
+Theorem 7. 6. 1. (Hessenberg)
+
+À  · À = À lor aįı € Cn 00.
+
+
+
+Page 19     
+OCR Texts: 
+7, 6, CARDINAL NUMBERS 105
+Proof. By induction on € Cn oo
+First we order the pairs of ordinale from I, tı(: eet y by the following
+rule.
+(a, ¢) (7, ô), provided
+either max{a, ß} < max{T, ó},
+or else max{a, ß} = max{T, lr } and or elsu a-7 and / 3 < ô.
+Obviously, (× , ) is a (strict) linear ordering. In the caBe À-No-u
+this ordering is the well-known ordering of u x u found by Cantor in or«ler
+to prove the countability of Q, This also constitutes the initial etep of our
+induction (the case No'No-No).
+Let now À € Cn°o be arbitrary, and assume that K  · K-K for all K < À
+(induction hypothesis). All we have to do in order to complete the induction
+is derive 入  · À = 入 from this.
+Let (7, ô) € 入 × 入 and E-maĵc{7, ô} + 1. Being an infirute cardinal, 入
+is a limit ordinai. Hence E € 入 and (7, ô) (E, E) € 入 × 入. Moreover, the
+entire section (入 × 入) (7, ô) given by (7, ó), is contained in € x E and therefore
+hǆ a cardinality ś Ie x el = lel  · I € I. The latter is, by induction hypothesis,
+equal to eı, hence smaller than 入.
+Consequently, every section of × 入 has cardinality < . If we could
+prove that (× 入, ) is a well-ordered set, hence isomorphic to some ordinaı
+a (by Theorem 7. 5. 6), this would imply that a cannot be bigger than 入 (for
+otherwise it would contain a section of power 入). In particular, we would
+obtain 入 · 入 = 1 入 x 시 〈 1 시 = 入.
+On the other hand, mark (5) above says that always À < 入  · 入. Thus,
+indeed, it remains to verify that (入 × 入, ) is a well-ordered set.
+
+First of all, the Zermelo-ħaenkel axioms imply that À × À is a set.
+Let now O X c À × . Pick the least ordinai 17 in {max{a, P}
+(a, ñ) € X} and then the leǆt ordinali in the set Y-def {a € On
+there is ß with (a, ¢) € X and max{a, P} = ?7}. If now 6 is the least ordi-
+nal such that (7, ô) € X, then obviously (7, ô) is the ıeast element in X, as
+desired. D
+
+Corollary 7. 6. 2. 玎 one ol the TıoTŁzero cardįTıaıs tt an 注 X is infinite, then
+十 入 = 托 · 入 = max{。，샤 。
+Proof Without loss of generality, let 入 be infinite and K < 入.
+
+Clearly max{n, À} = 入 < + 入 ś 入 + 入. The la 忱 er sum is, by Remark
+(14), not greater than  · , hence, by Hessenberg's theorem, not greater
+than 入-max{n, 入 }. This shows K + 入-max{n, À}.
+
+
+
+Page 20     
+OCR Texts: 
+106 CIı,  · \ı'TER T. SOAıE TıIIĽoıŁY OF ORDERINGS
+If N ł O, all analogotrs argument call be ust  · d ło prove Łrlso N  · À =
+max{n, À}. D
+Corollary 7. 6. 3. ıf 入 € Cncc ttıld O < rı < (4l, tlzrrz À + ?t-À  · n-À"=
+, \. D
+Next we see why sets of the form tp (X) are called potuersets.
+
+Lemma 7. 6. 4.
+(1) lŅ (X) ı = 21×1 Jor ettery set X.
+(2) Łet N € Cn and 入 E Cn
+00
+
+I」2く氏く人then，沪ーサ.
+
+Proof. Ad (1). The subsets of X are in 1-1 correspondence with the char-
+acteristic fhnctions on X. hence with fimctions from x {0, 1}, i. e. x2.
+Ad (2). Invoking Remark (10) above, 2 < łi < À < 113 (入) 1 < 2l implies
+2l < nÀ < (2 入) 入. But Remark (8) and Hessenberg's theorem yield (2 入) À_
+2入·入一2入，口
+The inequality ltp (X) I > X is obvious for finite sets X (for 2"> n for
+all Tz < u). Cantor found an elegant, so-called diagonal argument to pmve
+this for arbitrary sets X. Variants of this argument occurred later in all
+parts of mathematical logic.
+
+Theorem 7. 6. 5. (CantoF)
+
+2 "> K lor aïį cardinal numbers ti.
+
+Proof We prove ltp (X) I > lxl. Consider singletons to see lţp (X) 1 > lxl. If
+we had equality here, there would be a ħmction f from X onto P (X). Then
+consider the set Y-def {  · € X : £ ¢ f (x) }. The surjectivity of f would
+yield y € X with f (y) = Y. Then, for all × E X, we would have € f (y) iff
+T ¢ f (z). But in the case T-y this is a contradiction. D
+Remark. (About the cardinalities of number systems)
+
+Clearly, INI = No. Hence, by Hessenberg's theorein, Ql = IN × Nl = No ·
+No-No. Corollary 7. 6. 2 yields I%l = IN \ {0} U Nl = No + No-No. Lemma
+7. 6. 4(2) implies that the continuum R has power IRI = INZI = N'_2No.
+Invoking Hessenberg's theorem again, we then obtain C = IR × ml =
+2No. 2No = 2No.
+
+As a special case of Cantor's theorem we have 214o N1 or, equivalcntly, R > N1 ·
+So the question arrises if this inequality is proper, i. e., if there is an uncountable
+set having smaller cardinality than thc continuum. Cantor was convinced that this
+was not the case. He tried to prove what tater became the continuum hypothesis
+(and Hilbert,'s first problem)
+
+
+
+Page 21     
+OCR Texts: 
+7. 6. CARDINAL NUMBERS 107
+(CH) 2No_N1'
+Even thougl : he was completely convinced of tlrc trutlı of lıis conjecture, Cantor
+did not succ in proving it, for n good reǆon. For, altlıotıgl : in 1938 Kurt Gödel
+wm able to coiıstnıct a modul of thc sct-theorutic axioms ZFC satisfying a much
+stronger lvpothesis, the so-called Beneral continuum hypothesis
+(GCH) 28._N. +1 for alla € On,
+in 1963 Paul Colıen found a model of ZFC that satisfies the negation of (CH).
+Hence, the statements (CH) and (GCH) are, ǆ one says, independent of ZFC,
+and the (deductive closure of) ZFC is thus an incomplete theory.
+Finally we want ţo determine the cardinality of languages. The following
+bound turns out to be of use in this.
+We need some more set-theoretic notation. Given a set X and a cardinal
+入, we use <ÀX to denote the union of the sets /ıx, where /ı runs over all
+cardinals < 入. Since no confusion can arise, one often writes <wx instead of
+<Nox. Fther, given a cardinal K, the cardinaliţy of the set < 入 K is denoted
+by戺く入.
+Of particular interest is the case 入 = No : the set <ux is the set of all
+finite sequences of elements of (i. e. of a1ı ţuples from) X. Its cardinality,
+for infinite X, can be computed ǆ follows.
+proposition'T. 6. 7. Tt<Ro_tt lor aıl įn$inįte cardinals n.
+
+proof Corollary 7. 6. 3 yields n nl = n"= n, hence, together with the preced-
+ing lemma, also <NO_I U. <." · 1 = No'''. But the latter is, by Corollary
+7. 6. 2, equal to ıt. ū
+
+Thus the set of all tuples from an inńniţe set hǆ the same power as that
+set. This leads to the computation of the following important cardinaliţies.
+Coro\hcy 7. 6. 8. Let L be a įanguage oJ signatmre ơ.
+
+(1) ILI-IL. 1 = ILoI = max{No, lcTl} = lcrl + No Øere lcrl is the cardinality
+
+ol the set of non-įogįcaı syTnbols ol ơ, cl. 51. 1).
+
+(2) ir ơ is an arbżtrary set of neiıJ constants, then IL (C) 1 = ILI +lơl.
+
+Proof Ad (1). Every L-formula is a finite sequence of symbols of the alpha-
+bet of L. The latter consists of finitely many logical symbols, countably in-
+finitely many variables, two parentheses, and I° non-logical symbols. Thus
+
+
+
+Page 22     
+OCR Texts: 
+108 Cit \pTEıı 7. SOME THEORY OF ORDEı{INGS
+the alphabet luis powur h'=tlc イ max{Ntı, lcrl}. 13, v t, ltt  · preceŁ  · ding propositiorı,
+t.lıere are N such finite sequences, whence IL(ıI ś IL.. ] < LI ś K. On the
+other hand, using N[1 variables and lcrl non-logical constants it, is easy 1, o
+build max{Nn, I  · I} different L-sentences, wltcnce also h. < ILuI.
+() lollows from (ı), for the signature of L (C) has power I °l + lcl. D
+Also the cardinal numbers were introduced by Cantor, albeit as abstract powers,
+i. e. Equivalence classes of sets modulo the equivalence relation of having tho same
+power (and also here he didn't care much about a set-theoretic justilication of their
+existence). Again it was von Neumann who turned thein into concrete objects of
+the set-thearetic universe, namely into ordinai numbers.
+
+[Cantor, G. : Beiträge zur Begrūndung der transfiniten Mengenlehre I, Mathema-
+tische Annalen 46 (1895) 481-512]
+
+[v. Neumann, J. : Die Axiomatisierung der Mengenlehre, Math. Zeitschrift 27
+(1928) 669-752]
+Exercise 7. 6. 1. Prove Remarks (1)-(14) above.
+
+Exercise 7. 6. 2. Prove that a vector space of dimension 入 > 0 over a division ring
+) C hǆ power max{lKl, 入 }.
+
+Exercise 7. 6. 3. Show that every set of cardinal nurnbers has a supremum in Cn.
+
+A cardinaı is said to be reguıar if it is noţ a union of less than 入 lesser
+cardinals, i. c., if there are no R < 入 and ni < À (i < ) such that Ui<. Ni-入.
+
+Exercise 7. 6. 4. Show that, No and N1 (and, moreover, all successor cardinals) are
+regular.
+
+Exercise 7. 6. 5. Show that N. is not regular.
+
+
+

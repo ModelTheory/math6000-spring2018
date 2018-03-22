@@ -1,0 +1,936 @@
+Page 1     
+OCR Texts: 
+Chapter 5
+First consequences of the
+finiteness theorem
+As a first application of the finiteness theorem we derive a fundamental
+result about arbitrarily large models. Then we give some simple applications
+to classical structures. In order to apply the finiteness theorem to these,
+we have to Erst axiomatize them in an appropriate (first-order) language.
+Finally, we explain why the liniteness theorem is also called compactness
+theorem. This leads to certain topological spaces, the so-called Stone spaces,
+which we will return to later in Part IV. 1
+5. 1 The L6wenheim-Skolem Theorem Upwar d
+
+Theorem 5. 1. 1. (L6wenheim-Skolem Upward) Let E Lo'
+
+If E has arbitrarMy large limite 1TLodels or art inlimite 1TLodel, therl E has
+models ol arbitrarily large power.
+
+[L6wenheim, L. Ober M6glichkeiten im Relativkalkiil, Mathematische Annalen
+76 (1915) 447-470]
+[Skolem, Th. : Logisch-kombinatorische Untersuchungen fiber die Erfiillbarkeit
+oder Beweisbarkeit mathematischer Satze nebst einem Theorem tiber dichte Men-
+gcn, Skrifter, Videnskabsakademie I Kristiania I. Mat.-Nat. K1. No. 4 (1920) 1-
+36]
+'The use of topology in this text is only sporadic (for the most part in §§5. 6-7 and
+§11. 3) and could usually be avoided (see e. g. Exercise 9. 1. 1). Consult any topology text
+for the rudiments of thc theory, e. g., Ch. 1 of Jiinich's Topologv.
+
+49
+
+
+
+Page 2     
+OCR Texts: 
+50 CHAPT ER 5. FLFTST CONSEQ UENCES
+Thc tllp orem iH rnntllint'tl iu thpSe t1A0 ptp(rs iu o11o fnrlll or anot, lier. Howev cr,
+thu full strcngtl, for \rbitrar.'· lmg\mgcs wm formulal(d (but never published) by
+A. Tarski, w lienee thc all, pmativu name Ldwenheitrt-Skolcm-Tarski thcorem. Sce
+also
+
+ISkolem, Th. : Selected works in logic, p. 360, Universitctsforlagct. Oslo, 1970.
+
+Bem. 3] ·
+
+Proof For any given set C of new constants, we are going to find a model
+of E of power at least thc power of C.
+
+For this, consider the following set of L (C)-sentences,
+
+Ec_E u {c c'c, c'€ C and c ¢ c'}.
+
+Since E has arbitraril large finite models or an infinite model, ev ery finite
+subset E'€ Ec has a model, for in any sufficiently large structure we can
+find pairwise distinct interpretations for thc finitcl,''many c occurring in E'.
+The finiteness theorem yields a maciel of Ec,. Its L-reduct is then a model
+of E of power > Cl. D
+
+This was a t.' · pical, albeit easy application of the finiteness theorem. As
+a consequence we see that finiteness is not axioinatizable. In particulnr, the
+class of finite sets is not axiomatizablc (compare this w ith Exercise 4. 3. 4,
+show ing that thc class of infinitt'sets, though axiomatizable. Is not Jinitely
+axiomatizablp). Similarly, thu t llcorem above imtnodiatcl. v.' · iclds-simpl  ·
+for cardinality rcmoni---results likt'tho follow ing, due to Thoralf Skolem,
+who derived it diwct]y l.,''somo prpcllrsor of thc ultr \product construction.
+(lt is ironic thlt tl]('sc rcHults flrc? dm'to Skolen, whn had thc most serious
+methoclological dollbls nbollt tlro uHcftrlnL  · ss of t hc irncountnblc-a historical
+phenomenon that is, tllougl : still (?xisting, quite obsolctt · .)
+Coro\tary 5. 1. 2. TIte coTnp[ctc Jirst-ortlt T mmtbcr theory (oT · tl-lte arith-
+metic, cl. §3. 5) / tas nonst£indard modi · ls, I, e. Motlels Ttet isornoJTthic to
+t/lat of 1/ze 7zatural ntinzbc7's. D
+[skolem, Th. : ijbpr dic Nicht('lmrakt('risi(,rblrkt'it dt'r Znhl('nrc'iht'mittels entllirh
+otter abziihlbar ununtlliclt vic lcr Ausirgcn mit nussrhlirMirh Zahle  · nvariablpn, Fun-
+damenta hlatlt. 23 ( 193-1! 150 161]
+Exercise 5. 1. 1. Using tllu finitcness thcorcm. pHwc thlt Pcano arithrnctiF (rf.
+§3. 5) hm modi'ls with nonzcro rlcmQnts having infinitt'l: man,''prilnc divisors.
+
+
+
+Page 3     
+OCR Texts: 
+5. 2. SEAUGııOUPS, MONOIDS, AND GJıOUPS 6】
+5. 2 Semigroups, nıonoids 1 and groups
+In the next few sections we find axionıatizations of some well-known clasaea
+of algebraic structures and see what immediate consequences of the {initeness
+theorem nre can derive about them.
+
+We choose appropriate languages, first for semigroups, monoids, and
+groups, in wHch we are able to axiomatize these classes.
+
+Consider the signature ( · ), where  · is a binary function symbol (whose
+intended interpretation is the multiplication). In the corresponding ıanguage
+we formulate the sentence
+
+the axiom of associativity of the operation., Its models are precisely
+what is known to be semigroups. We denote by SG the LH-theorr of all
+semigroups, i. e. The deductive closure of om (1).
+
+We simplify the expressions in this language by introducing the following
+abbreviations.
+Given a nomero m € N, the symbol z"stands for the term (..  · (z  · z)  ·
+..  · )-Æ, where Æ occurs n times. We also write Æy instead of a  · y.
+
+Let 1 be a constant symbol. If we add to (1) the (1 ;  · )-sentence
+(2) V» (£1 = Æ A l£ = z),
+
+saying that the interpretation of 1 is the neutral element of (the interpr»
+tation of)., we obtain the system of axioms { (1), (2) } in the language L(1 ;  · ),
+whose nıodels are called monoids. We denote by TM the L(1 ;  · )-theory of
+all monoids, i. e. The deductive closure of { (1), (2) }.
+
+In order to describe inverses we pass to a richer signature (1 ;.,-'), which
+has in addition a unary function symbol-'(with the obvious intended inter-
+pretation). Agaiïı we introduce some handy (and common) abbreviations.
+
+We write £-"for the L(1 ;.,-')-term (Æ")-'(n as before), and zy-1 or
+z/y for the term T  · (y-').
+
+If we extend the previous aĵcioms by the L(1 ;.,-')-sentence
+
+saying that (the interpretation of)'is the operation of taking inverses
+with respect to (the interpretations of)  · and 1, we get { (1), (2), (3) }, which
+axiomatizes the groups. That is, a group is an L(1 ;.,-')-structure satisfy-
+ing this set of axioms. We denote by TG the L(1 ;.,-')-theory of aJ1 groups,
+i. e. The deductive closure of { (1), (2), (3) }  ·
+
+If we add also the conımutativity aJciom
+(4) Vzy (zy-ya)
+
+
+
+Page 4     
+OCR Texts: 
+52 \ CHAPTER 5. FIRST CONSEQUENCFJS 
+
+for the oporation  · , we obtain the axionls of abelian grolrps. Usually one
+writes abelian groups additively, that is, a structure for the signature
+(O ; +,-), where O is a constant sy mbol, + is a binary f\mction symbol, and
+Let Lz denote the languıwe of this signature (O ; +,-) arid AG the Lz-
+-1, a unary function symbol.
+theory of all abelian groups, i. e. The deductive closure of the following
+coı1ection of axioms.
+(1) + Vxyz ((T + y) + z) = £ + (y + z))
+(2) + V (£+O =£AO+r-T)
+(3) + V£ (T + (-: c) = O A (-£) + £-O)
+W j
+The theory of torsionfree abelian groups, i. e., the Lz-theory with the
+axioms AG U {v£ (nz-O--+ -O) : 1 < n € N}, is denoted by AGtr  ·
+Similarly as in thc case of multiplication, we write ïz for the term
+(... (T + £) +... ) + (rt times), where rı E N is not zero. Further, we
+use (-Tı) £ to denote-(Tı), aiıd £-?j to denote £ + (-y).
+Now that we have these axiomatizations, we can apply the finiteness the-
+orem to derive interesting properties of axiomatizable classes of semigroups,
+monoids, or groups. As an example we have the following result, and the
+reader is asked to state and prove similar ones (see also the exercises).
+proposition 5. 2. 1.
+temces (1) and (2).
+emerĮt ol order at least TŁ (į. e., an element a stıch that ak +-\ ĵor alı
+k < Tı). Then E has a model containing am element ol infinite order
+(i. e., an element a such that (1k ł 1 Jor all k € N).
+
+proof Let L be a language cbntaining the langiıage of signature (1 ;  · ). Set
+Lı_L (C) and r = E U {c"+ 1 : tı € N}, where C is a new constant. Any
+model of V is a model of E, and the interpretation of c therein is the desired
+element. Therefore it suĦices to ñnd a model of V. By the finiteness theorem
+this is equivalent to finding a model for every fiïıite subset of E'. Now, every
+such finite subset is contained in a set of the form E u {e k + 1 : k < Tı} for
+some Tı € N, łıence it suffices to find a model for the latter. This is possible
+by hypothesis, for given M = (M.. An), where M. E and am € M. has
+order > Tı, setting dv_an shows that M a model of V. D
+
+Coronary 5. 2. 2. The class oJ per\od\c groups, that is groups all oĵ tuhose
+elememts hae linite order, is not aziornatizable.
+
+□
+
+回国@国陟
+
+Let E be a set ol sentences containirıg the aboue sen-
+
+
+
+Page 5     
+OCR Texts: 
+5. 3. RINGS AND FIELDS 53
+The congrucnco classes of inlegers rnodulo a natural number n form an
+abclitııı Broup of cardinality (more group-theoretically, of order) n, which
+we denote by Z. ·
+
+Z. i8 thus tlıe cyclic grotıp (Zlnz oi +,-), hence homomorphic image
+of (Z O +,-) under the group homomorphism k H k + nz.
+
+Exercise 5. 2. 1. Prove that the class of finite cycıic groups is not axiomatizable.
+
+Exercise 5. 2. 2. Prove that the class of cyclic groups is not axiomatizable.
+
+Exercise 5. 2. 3. Show that the class of groups can also be axiomatized in the
+language of signature (ı ;  · ). What are then the substructures of a group? What
+about the same question for the signature (1;', ), where is a binary function
+symbol (which is to be interpreted so that z y-z · y-')?
+
+Exercise 5. 2. 4. Prove that every reduced product of groups is a factor group of
+the corresponding direct product.
+
+Exercise 5. 2. 5. Find a direct product of inlinitely many groups md a factor group
+tbereof which is not a reduced product of these groups.
+
+Exercise 5. 2. 6. Prove that everr factor group of a product of simple groups is a
+reduced product of these simple groups.
+5. 3 Rings and fields
+We consider rings in the signature of additive groups extended by that of
+monoids, that is in the signahıre (0, 1 ; +,-,  · ), where O and 1 are constant
+symbols,-is a unary function symbol, and + and  · are binary function
+symbols. Then
+
+AG u TM u{V«yz (r  · (y+z) = (ß  · y) +(a  · z) A (y+z)  · z-(y  · z) +(z  · £)) }
+
+U {0 + 1}
+
+axiomatizes the clms of rings. 2 We denote the theory of all rings by TR.
+
+A ring is said to be commutative if its multiplication is commutative,
+i. e., if it satisiies axiom (4). The theory of all commutative rings is denoted
+by CR. Note that CR is thus the deductive closure of TR U { (4) }  ·
+
+The set of L(0, 1 ; +,-,  · )-sentences
+
+TR U {V写ヨy(写泸O一一千名·y一1八y·名一1)}
+
+2Note that it is built into this delinition of ring that it be associative with a 1.
+
+
+
+Page 6     
+OCR Texts: 
+54 CIJAPTER 5. FIRST CONSEQUENCES
+axioïnatizes Łhc division rings. Wc denote the theory of all division rings
+by DR. Commutative division rings, that is divisiotı ringe that are, as rings,
+also commutative, are called fields, The theory of all fields is denoted by
+TF. Thus TF is the deduclive « : losure of DR U { (4) }, whiclı i8 the barne as
+the deductive closure of DR U CR.
+Division rings arc also known ǆ skew fields, since they arc like ĥelds, except
+they need not satisfy the commutativity ǆiom. We prcbr thc positive term diuision
+ring, because skew could also suggest that the ring be noncommuŁative, which is
+A, A
+not mtenaeo.
+For the above axiomatization we chose not to include the operation of
+taking multiplicative inverses into the signature. The reason is that it would
+not be total, as 0-1 is not defined, while, in our setting, all function symbols
+have to be interpreted by total functions. One remedy would be to assign
+to 0-1 an arbitrary, but fixed (and irrelevant) value, like e. g. O. We chose
+not to do so (which seems to be closer to the usual mathematical practice)
+and to use z-1 as an abbreviation instead. More precisely, given a division
+ring }C, as an L(0, 1 ; +,-,  · )-structure, and an element O # a € K, we use
+a-'to denote the uniquely deterlnined b satislying a  · b = 14 b  · a-1.
+Note that due to this choice of signature every substructure of a division
+ring is a subring (that need not be a division ring). 3 The same applies to
+fields, of course, which means that a substructure of a field need not be a
+field. We therefore introduce the term subfield to mean a subring which i8
+a lield in its own right. (Note that the inverses of nonzero elements are the
+same, whether taken in a subñeld or the initial ńeld.)
+An important invariant of a division ring is its characteristic, as defined
+next. The characteristic of a division ring /c is the sïnallest nat ural number
+p such that /c p1 = 0, if such a number exists, and 0 otherwise. Hence /c
+has characteristic O if and only if K {pl 0 : p > O}.
+
+Thus the characteristic of /c DR is simply the order (in the sense of
+proposition 5. 2. 1) of the element 1 in the additiue group of /c, i. e., in the
+(O ; +,-)-reduct of /c. Recall that this number, if not O, is always a prime
+(see Exercise 5. 3. 3 below).
+
+The clms of division rings of fixed characteristic is also axiomatizable.
+It. Is obvious that in the case of positive characteristic we need to add to
+DR only finitely many-in fact just one--extra axiom for this purpose. We
+will see shortly, as an emy application of the ñniteness theorem, that in the
+characteristic zero cǆe tĮıis is impossible.
+
+aThe abstinence we impose on the signature will pay oft ıater in the quantilier elimi-
+nation for algebraically closed fields, cf. §9. 4
+
+
+
+Page 7     
+OCR Texts: 
+5. 3. RINGS AND FIELDS 55
+Let q be a prime uumber or 0. Then Dlłq denotes the theory of all
+division rings of characteristic q similarly for TFq ·
+
+Recall from basic algebra that every field of characteristic 0 contains a
+subfield isomorphic to Q, the field of rational numbers. 4 Similarly, every
+lield of characteristic pl with p a prime number, contains a subfield iso-
+morphic to Fpt where ]Fp denotes the field with universe Zp, that is the
+(0, 1 ; +,-,  · )-expansion of Zp by multiplication modulo p (more precisely,
+the expansion obtained by interpreting  · as multiplication modulo p). These
+sublields are known as the prime fıelds. Tb summarize, the prime field of a
+field F i8 isomorphic to Q or Øp, depending on whether F has characteristic
+0 or p (> O).
+
+Note that Z p is the (0 +,-)-reduct, in more common terms, the additive
+group of Fp  ·
+
+In analogy to the proposition about orders in (expansions of) groups
+in the previous section, the !initeness theorem yields the following about
+characteristics of (expansions of) division ringa. By the characteristic of
+an expansion of a division ring we here simply mean the characteristic of
+the underlying division ring.
+
+Proposition 5. 3. 1. Suppose E is a set of sentemces in a langtıage L tıìhose
+signature contains (0, 1 ; +,-,  · ) and DR ç E.
+
+ïf E has models ol arbitrarily high characteristic, then E has a model ol
+characterįstįc 0.
+
+[Robinson, A. : On the metamathematics of algebra, Studies in Logic and the
+Foundations of Mathematics, North-Holland, Amsterdam, 1951]
+Proof We have to show that Eı = E U {pl + 0 p > 0} is consistent, for
+which, by the finiteness theorem, it suññces to show that every finite subset
+i8 coıHistent. Every such subset, Eı, is contained in some set of the form
+E U {n1 0 : n < p}, where p i8 a prime. But the latter set has, by
+hypothesis, a model (mmely one of characteristic p). D
+Remark. Note that the set E may contain sentences of the possibly larger
+language L. However, important only is that it has, for every natural number
+n, a model whose (0, 1 ; +,-,  · )-reduct is a division ring of characteristic n.
+COro\y 5. 3. 2. Let L be as before and (p an L-seıntence.
+
+IF DRo トし (pı then ther e is a prime mimber pq such that DRp トし 0 Tor
+alı primes p > ptp  ·
+
+4We identified the łield of rational nuınbers with its universe, q, here. This laxness is
+very common in mathenıatics when the signature is understood.
+
+
+
+Page 8     
+OCR Texts: 
+56 CIIAPTE 只 5. FïN, ST CONSEQUENCES
+Proof Otherwise E = DR. U {-v} would lltwt modo]s ol'arbitrm·iıy high
+characteristic, heme, by Prnposilion 5. 3, 1, also olle of characlerisl, ic O, con-
+tradicting the hypothesis. D
+Remarks. (l) Corollary 5. 3. 2 llıeŁLns: ir 111 (0, l; +.-,')-s«nŁcncc q holds
+in every divisioıı ring of characteristic (}, 1, hcrı tlterc is a prime number
+pıp such thaŁ V holds in all divisioı1 ı  · itıgs of characteristic pq. In
+particulłır, DRo is not finitely axiomatizable.
+A similar proof yields analogous results for ally other axiomaŁizable
+clǆs of division rings of characteristic O, which Łhtrs are not finitcly ax-
+iomatizable. In particular, TFo. 1, hc theory of all fields of characteristic
+O, is not finit, cly axiomatizable.
+Warning. Onc cannot replace p by an infinite sct of sentences : consider the
+counterexample {p1 ł 0 p > 0}.
+We conclude this section with some observations about terms and for-
+mulas of signature (0, 1 ; +,-,  · ). A priori, terms can be quite compli« : ated,
+e. g. (U + z) + ×(u + zx) + myy(z-y) , where ?n E % is already used to
+abbreviate an m-fold suln. However, modulo CR, the theory of commtlta-
+tive rings, such a 1, enn is equivalent to a nmch simpler expression, namely
+to a sum of monomials, where in addition occtlrrences of the same variable
+can be joined and, using thc abbreviations of §5. 2, written as powers. What
+we obtain are polynomials with coefficients from %. The above term, for
+instance, is CR-equivalent, to 2ry + 2×2z + ?ïıry 2z-7ïıÆ3/3, which is a poly-
+nomial in Z[ß, y, z]. Clearly? we can consider this teriu also as a polynomial
+in £ with coefficients from %[t/, z]. Since every terni equation is, via strbtrac-
+tion. CR-equivalent to a, term equation of the forin t-O, wc 1rıay smmnarıze
+this discussion as follows.
+Lemma 5. 3. 3. Let L be the įaTŁguage oî sįgrŁahtre O, \ ; +,-,  · ).
+Lrt Euery atomic L-lormmttı ITı the uarįables Ē is CR-f. Quįuaįerlt to a poįy-
+nomial equation ł = 0, tuhere ł € %[]. IF is the urıion ol the ttıples
+and ž then the terrn t may be regarded as (ı poįyTıoTnįaį ITŁ z with
+coeñicients Trom %[ý], i. e., i € (%[] ) [ź] ·
+(2) Let A be a commtıttıtiue rįTıg.
+Euery atomic L (A)-lormtıįa įn the tree uarįabįes Ė is A-eqtuuaįeTŁt to a
+polynomial eqīıatioït t () = O, ?uhe Te t € A[ž]. D
+Remark. Atomic L-sentences are, by (1), CR-cquivalen6 to (trivial) poly-
+nomial equations of the fbrm k = O, where k is aiı integer. Siïnilarly, atomic
+L(A)-sentem{es are, by (2), CR-equivalenĹ to (trivial) polynomial equations
+of the form k = O, where k € A.
+(2)
+
+
+
+Page 9     
+OCR Texts: 
+5. 4. VECTOR SPA CES 57
+Exercise 6. 3, 1. Justify the above Reınark (2) (nfter the corollary)  ·
+
+A ıero-divi8or of n ring is a i\onzcro element wılose product with a certain
+nonzero elenıent is 0.
+
+Exercise 5. 3. 2. Firıd a tiïıite sy stem of axioms for tlıe class of rings without zero-
+divisors. Do thc same for the class of commutative ringe without zerudivisors (euch
+rings are known ǆ integral donıaina).
+
+Exercise 5. 3. 3. Define the characteristic of an arbitrary ring (as before) and show
+that, for rings without zero-divisors, this number is 0 or a prime.
+
+An element r + 0 from a ring 73 is called nilpotent, if there exists an n € N
+such that r". O.
+
+Exercise 5. 3, 4. Show that the class of all rings without nilpotent elements is
+linitely aJciomatizable.
+
+Exercise 5. 3. 5. Show that the reduced product of a given family of rings is a
+factor ring of the direct product of this family.
+
+Exercise 5. 3. 6. Prove the converse of the preceding statement for division rings
+(in contrast to groups, cf. Exercise 5. 2. 5, or arbitrary rings (check!))  ·
+
+Exercise 5. 3. 7. Show that the natural ordering < on R is deñnable in the lan-
+guage of fields.
+5. 4 Vector spaces
+Vector spaces over a Jized division ring K are usually regarded as structures
+of the signature (O ; +,-) U {fk k € K}, where the Tk are unary func-
+tion symbols (for the multiplication by the scalars k € K). We denote the
+corresponding language by Ltc  ·
+
+Consider the following sets of LK-sentences.
+(2) {Vzy (Tk(z + y) = Tk (Æ) + Tk (y)) : k € K}
+(3) {Vz (Tk+k·(z) = fk (Æ) +fk'( · )) : k, k'€ K}
+
+Together with AG these axiomatize the class of left vector spaces over
+JC (or left /c-vector spaces). We denote the Ltc-theory of all such spaces
+by TK. Thus nc is the deductive closure of AG and the above four sets.
+Recall that every vector space has a uniquely determined dimension and
+that two vector spaces over the same divisiotı ring are isomorphic if and only
+if they have the same dimension (if the reader knows this only for vector
+spaces over fields, he or she may want to go over the proofs again and check
+that they never use the commutativity of the lield).
+
+
+
+Page 10     
+OCR Texts: 
+56
+
+CITA PTER 5, FÏÏŁST CONSEQUENCES
+
+proof Otherwise E = DR U {-q} wollld have models of arbitrarily high
+characteristic, hence, by Pmposition 5. 3. 1, also olie of clıaracteristic o, con-
+tradicting the hypothesis. D
+Remarks. (1) corollary 5. 3. 2 means : if an (0, 1 ; +,-,  · )-sentence q holds
+in every division ring of characteristic O, then there is a prime number
+pp such that v holfls in all division rings of characteristic > pp. In
+particular, Dito is ilot finitely axiomatizable.
+A similar proof yields analogous results for airy other axiomatizable
+(2) clǆs of division rings of characteristic o, which thus are 】Jot ńnitely ax-
+iomatizable. In particular, TFo, the theory of all fields of characteristic
+O, is not linitcly axiomatizable.
+IVarning. Onc cannot replace V by an infinite sct of sentences consider the
+counterexa ◆ ple {pl ł 0 : îı > 0}.
+Wc conclude this section with some observations abotıt terms and for-
+mulas of signature (0, 1 ; +,-,  · ). A priori, terms can be quite complicated,
+e. g. £(v + z£) + £(u + zic) + myy(z-y) £, where rrı € Z is already used to
+abbreviate an m-fold sum. However, modulo CR, the theory of commuta-
+tive rings, such a term is equivalent to a nmch simpler expression, namely
+to a sum of monomials, włıere in addition occlirrences of the same variable
+can be joined and, using thc abbreviations of §5. 2. written as powers. What
+we obtain are polynomials with coefficients from %. The above terni, for
+instance, is CR-equivalent to 2zy + 2£2z + ?nry 2z-?ııztj 3, which is a poly-
+nomial in %, y, z]. Clearly, we can consider this term also as a polynomial
+in a with coefficients from Z[u, z]. Since every term equation is, via subtrac-
+tion, CR-equivalent to a term equation of the form t-O, we rtıay smmnarize
+this discussion ǆ follows.
+Lemma 5. 3. 3. Let L be e larıgtıage ol signahtre \u, ļ ; ,-,.'.
+(11 Euery atomic L-lormuįa įn the uariables Ē įs CR-equiualent to a poly-
+nomiaį equatioTı t = O, uthere t € ĹĒ\. 玎 ii įs the uniom ol the tuples
+y and ź, t/zen the term t may be regarded as a polynomial in ź ulith
+coeßicients j, om Z[], i. e., t E (Z[] ) [ź] ·
+(2) Let A be a commtıtatit】e ring,
+Euery atomic LIA)-ïormula m the Jree uariab[es Ė is A-eqtnualerıt to a
+polynomial equation t (É) = 0, tuhere t E A[È]. D
+Remark. Atomic sentences are, by (1), CR-equivalent to (trivial) poly-
+nomial eqtıations of the fbrm k = 0, where k is all integer. Similarly atomic
+L (A)-sentenr : es are, l»y (2), CR-equivalent to (trivial) polyrıomial equations
+of the form k-O, where k € A.
+
+
+
+Page 11     
+OCR Texts: 
+5. 4. VEC TOR SPACES
+
+57
+
+Exercise 5. 3. ı, JustifJ'tłıe above Rcınark (2) (after the corollary)  ·
+A zero-divisor of a ring is a nonzcro element whose product with a certain
+nonzero elenrent is 0.
+Exercise 5. 3. 2. Find a finite sy stem of axioms for the class of rings without zero-
+divisors. Do the saiıie for the clǆs of commutative rings without zero-divisors (auch
+rings aJre known ǆ integral domains).
+Exercise 5. 3. 3. Define the characteristic of an arbitrary ring (ǆ before) and show
+that, for rings without zero-divisors, this number is 0 or a prime.
+An element r + 0 from a ring 71 is called nilpotent, if there exists an n € N
+such that r". O.
+Exercise 5. 3. 4. Show that the clǆs of aJl rings without nilpotent elements is
+finitely aəciomatizable.
+
+Exercise 5. 3. 5. Show that the reduced product of a given family of rings is a
+factor ring of the direct product of this family.
+
+Exercise 5. 3. 6. Prove the converse of the preceding statement for division rings
+(in contrast to groups, cf. Exercise 5. 2. 5, or arbitrary rings (check!))  ·
+
+Exercise 5. 3. 7. Show that the natural ordering ś on R is definable in the lan-
+guage of fields.
+
+5. 4 Vector spaces
+Vector spaces over a Jized division ring /c are usually regarded as structures
+of the signature (O ; +,-) u {Tk : k E K}, where the fk are unary func-
+tion symbols (for the multiplication by the scalars k € /c). We denote the
+corresponding language by LK ·
+
+Consider the following sets of Ltc-sentences.
+(2) {Vzy (fk(z+y) = fk (£) +Tk(uD : kE K}
+(3) {Vz (Tk+k  · () = fk (£) 十 fk'()) : k, k'€ K}
+141 ţv エ LIklI】c¢(acn-lk  · kr(an k, kı €
+
+Together with AG these axiomatize the class of left vector spaces over
+K (or left /c-vector spaces). We denote the L]c-theory of all such spaces
+by T)c. Thus T)c is the deductive closure of AG and the above four sets.
+
+Recall that every vector space has a uniquely determined dimension and
+that two vector spaces over the same division ring are isonıorphic if and only
+if they have the same dimension (if the reader knows this only for vector
+spaces over fields, he or she mw want to go over the proofs again and check
+that they never use the commutativity of the field).
+
+
+
+Page 12     
+OCR Texts: 
+58
+
+CH, \i'TEIT 5. IIRSI'CONSEQUENCES
+
+Exercise 5. 4. 1. How w tmld n silllilw Lk._Nxioinntizution uf riRl\l K-veel, ot· >iPICeS
+have to look'!
+given division ring. ollu can axiomatize all left vector spacp s in 1 single lmguagc
+sorted setting. where olw has trvo sorts of variables, onc for thc scnlars and one for
+space and /c is the div ision ring of 5(. Alars. There is alsu a standard wny of coding
+one sinrply introduces a prcdicate (I. e.. a unary relation symbol) for the scalars,
+K (T), and one for th( · vectors, V (T). (or onc lIses-K (T) instead), and adds the
+axiom that, every element is either a victor or a sralar.
+Exercise 5. 4. 2. Find thc corresponding signatures and axiomatizations (if the
+One of the reasons for not using this language in this book lies in the phe-
+nomenon to be described in the next twa exercises.
+Exercise 5. 4. 3. what are the substructures of such a twcinsorted vector space (be
+it in the literally twmsorted or the olLe-sortedly coded setting)?
+Exercise 5. 4. 4. Given any infinite division ring /c, can you axiomatize the class
+of all left victor spaces over )c in the twcpsorted (or'coded') setting?
+Exercise 5. 4. 5. Axiomatize thu class of all left vector spaces over a finite field /c
+in the two-sorted (or'coded') setting-
+Note that we would gain nothing by allowing finite division rings in the preced-
+ing, for, by a classical theorcm of Wedderburn, finite division rings are Eelds.
+5. 5 0rderings and ordered structures
+
+All we need in the signature for orderings is a binary relation symbol, <.
+We denote the corresponding language by L« ·
+Consider the following L<-sentences and their names (leading to corre-
+sponding names of orderings).
+(1) Vx-x<x
+(2) vryz(z <yAy<Z x < z)
+(3) Vxy(£ < y v x-y vy < z)
+(4) Vxy(x < y 3z (T < z A z < y))
+(5) ]xy x < y
+
+irreflexivity (or strictness)
+
+transitivity
+linearity
+density
+nontriviality
+
+
+
+Page 13     
+OCR Texts: 
+5. 5. ORDERıNGS AND ORDERED STJı UCTLÏRES 59
+{ (1), (2) } axiomatizes tlıe class of pıwtlal orderlngß, and { (1), (2), (3) }
+axiomatizes that of ılnear orderlnBs or clıalrm, while { (1), (2), (3), (4), (6) }
+axiomatizes tlıe clms of (nontrivial) deiue llnoar ordorlnBe, A chain in
+a partiaı ordering (X, <) is, by detinition, a eubordering of X which i8 a
+chain in its own right (i. e. which i8 linearly ordered w. r. t. <).
+
+Note that (ı) and (2) imply
+
+(6) Vzy (= < y -y < ß)) antlsymmetry
+
+Remark. Because of the irreflexivity, (1), homomorphisms of linear order-
+ings are automatically embeddings.
+
+Consider the following endpoint ǆioms, whose names are to suggest the
+stated existence or lack of left or right endpoints.
+We use T« to denote the L<-theory of all partial orderings, LO to denote
+that of all linear orderings, and DLO to denote that of all (nontrivial) dense
+linear orderings. Thus these theories are the deductive closures of the cor-
+responding sets of axioms used to deline the respective classes of orderings
+above. We denote the deductive closure of DLO U { (-+) } by DLO_ll and
+call this the theory of dense linear orderings with a right, but no left
+endpoint ; similarly for the other three endpoint axioms.
+
+We simplify notation by introducing sonıe common abbreviations : z >
+y >def y<Æ and <y def <yv= y and also y def
+
+% < y.
+
+We will consider orderings in more detail in Chapter 7.
+
+Often one can order structures in such a way that the operations of the
+signature are in sonıe sense compatible with the order. A few cases are
+collected next.
+
+A partially ordered group is a (1 ; · ; <)-structure satisfying
+
+Vzyuu (z < y 1ıTu < hytt)
+whose (1 ;  · )-reduct is a group and whose (<)-reduct is a partial ordering.
+This partial ordering is also called a partial ordering of the underlying
+group. If this ordering is linear, we speak of a linear ordering and corr»
+spondingly of a linearly ordered group.
+
+A partially ordered ring is a (0, 1 ; +,-,'; <)-structure satisfying
+
+Vyuu(Z < y 41ı > O Au > O_Mtì < tıyu)
+
+
+
+Page 14     
+OCR Texts: 
+60 CHAPTER 5. FIRST CONSEQUENCES
+whose (0, 1 ; +,-,  · )-reduct is a ring and whose (O ; +,-; <)-reduct is a par-
+A partially ordered division ring is a partially ordered ring whose
+(o, 1 ; +,-,  · )-reduct is a division ring. A partiaı1y ordered fieıd is a com-
+mutative partially oı  · dered division ring, etc. Etc.
+
+Exercise 5. 5. 1. Show that every dense linear ordering is infinite. What would
+lıappen if thc nontriviality axioın, (5), were dropped?
+
+Exercise 5. 5. 2. prove that every linearly ordered group is torsionirec. Derive that
+every linearly ordeređ division ring has characteristic O,
+
+Exercise 5. 5. 3. prove that homomorphic images of linear ordcrings need not be
+partial orderings (in ollr sense). Show that, nevertheless, eveı  · y homomorphic image
+of a given linear ordering X which is itself a partial ordering is isomorphic to X.
+
+we consider boolean algebrǆ in the signature (0, 1 ; +,',-), where O and
+1 are constant symbols (for the smallest and greatest elements), + and
+are binary function symbols (for supremum and infimum), and-is a
+unary function symbol (for the complement). In the corresponding language,
+boolean algebras are axiomatized by the following sentences.
+(1) Vxyz (T + (y + z) = (£ + y) + z A T  · (y-z) = (£  · y). z) associativity
+(2) Vzy (T + y-y + £ A T  · y-y  · z) commutativity
+(3) V£ (Æ + x-A £  · Æ-£) idempotence
+distrİbutivity
+(5) Vxy (T + (z  · y) = z A Æ  · (z + y) = £) absorption
+(6i Vy (£ + y-ñ  · A FTG = ī + y) De Morgan's ıaws
+(7i V(T +O = zAz  · 0=0AZ41=1Æ  · l= zA0114z12-1
+八 £  · Ē=0A= z) laws about 0, 1, and-
+Denote the (0, 1 ; +,.,-)-theory of all boolean algebras by BA. Thus BA
+is the deductive closure of { (1), (2), (3), (4), (5), (6), (7) }  ·
+
+Every boolean algebra can be partially ordered by stipulating that z < y
+if and only if z+y-!. And Æ < y if and only x < y and E + y. Obviously, in
+this ordering 1 is the greatest element and 0 is the smallest eıement. Ǆrther,
+it is not hard to see that, with respect to this partial ordering, Æ + y is the
+smallest upper bound (the supremztm) while T  · 3/is the greatest lower bound
+(the inRmum) of the set {x, y} for any £, y.
+
+5. 6 Boolean algebras
+
+
+
+Page 15     
+OCR Texts: 
+5. 6. B00LEAN ALGEBRAS 61
+Example. ı, et X be a nonernpty set and S a subaet of the power set of
+X that contains O and X and i8 closed under takins (fini) uniom and
+intersections a8 well a8 conıplemente.. Then (S O, X u, n, X\) i8 called a
+booıean alsebra of set8 or just a set al8ebra. It i8 easy m Bee that
+this i8 in«leed a boolean algebra. In euch an algebra the ordering delined
+above turns out to be set inclusion, It i8 an important result of the theory
+of boolean algebras that, conversely, every boolean algebra i8 isomorphic
+to ('can be represented aB') a set algebra. More precisely, one can embed
+every boolean algebra 13 in the boolean algebra of au subsets of a certain
+set. (Hence, when looking for a boolean algebra with certain properties,
+one may as well confine oneself to set algebras.) We will sta this famous
+result without proof (a8 Theorem 5. 6. 1). However, the right choice of this
+set, wHch is the so-called Stone space of B, is half way down the road
+to a complete proof. In order to define this properly we have to extend
+the concept of filter and ultralilter (from 4. 1 and 4. 2) to arbitrary boolean
+aıgebras, which we do next.
+Let LI BA. A nonempty subset F Ç B is called a filter of the booleaiı
+algebra ı3 if the following conditions are satisfied for all a, b € B.
+(i) O¢F
+
+If a, b € F, then a  · b € F.
+
+(iii) If a € F and a<b, thenb € F.
+
+Note that all we did in this generalization is replace (the algebra of
+subsets of) the set I and the partial order of inclusion by alı arbitrary
+boot algebra 13 and its canonical partial orderingı respectively. Irı the
+same way we can generalize principal filter, generation, ultraltlter, and
+principal ultrafilter. E. g., given an element b ¢ 0 in B, the principal
+filter generated by b i8 the set F (b) = {a € B : b ś a} ; and an ultrafilter
+of B is a filter, F, such that a € F or ıi € F for every a € B. It is conımon
+to use S (jB) to denote the set of all ultrafilters of ı3, where 'S'stands for
+(M. H.) Stone.
+Remarks. Ľet B BA.
+
+(1) 1 € F for every filter F of ı3.
+
+(2) Given F C B satisfying filter axiom (iii), F satisfies axiom (i) if and
+
+only if F¢B.
+
+(3) The sets <a> =def {Æ € S (B) : a € =}, where a runs through B,
+
+form a basis of a topology on S (B), the so-called Stone topology.
+The corresponding space is known as the Stone space of the boolean
+algebra B and denoted by S (13) again.
+
+
+
+Page 16     
+OCR Texts: 
+62 CHAPTER 6. FIRST CONSEquENCEs
+(4)
+As in the previous clıapter, Zorn's lemma can be used to show that
+every ĺilter of a boolean algebra can be extended to an ultrafilter. In
+general some form of the axiom of choice is necessary for this. If the
+boolean algebra happens to be well-ordered, however, in particular, if
+it is countable, there is a way around this (exercise!).
+
+A subset of a topological space is said to be clopen if it is at the same
+time closed and open. A Stone space is a nonempty topological space
+wHch has a basis of clopen sets and which is compact (in the sense that
+every covering by open subsets contains a finite subcovering) and hausdorlf
+(in the sense that any two distinct points can be separated by disjoint open
+subsets)  ·
+Theorem 5. 6. 1. (The Stone Representation Theorem)
+
+(1) lí ı3 BA then S (B) is a Stone space, the so-called Stone space ol
+
+the boolean algebra B.
+12) 玎 S įs a Stone ₩ ace, therŁ the cįopen subsets oĵ S loTm o boolean set
+
+algebra B (S).
+(3) EueĦl booıean algebra B is isomorphįc to the boolean algebra BSĻBN
+
+0 the map a Ła). Hence B is įsomorphįc to a stıbalgebra ol the
+booįean algebra ol aįį sìibsets ol S (B).
+
+(4) Euery Stone space S is homeomowhic to the Stone space S (B(S)) uia
+
+the map£H {a € B (S) : £ € a}. D
+
+[Stone, M. H. The representation theorem for boolean algebra, Tansactions of
+the American Mathematical Society 40 (1936) 37-111j
+
+We leave the proof as an exercise (see also the next section or some ot
+the algebraic literature listed in the bibliography)  ·
+
+An atom in a boolean algebra is an element z + O such that there's no
+element between O and , i. e., for all y with 0 < y < we have either y-O
+or y-Æ. A boolean algebra is called atomic if for every £ # 0 there is an
+atom y with y < z. A boolean algebra is said to be atomless if it contains
+no atoms.
+
+Remark. There are boolean algebras that are neither atomic nor atomless
+(exercise!).
+We obtain aĵciomatizations for the class of atomic boolean algebras by
+adding the axiom
+Vz (£ + 0_3y (y < z A y ¢ 0 AVz(z < y z-O))),
+
+
+
+Page 17     
+OCR Texts: 
+5. 6. B00LEAN ALGEBıŁAS 63
+wbile adding the ǆioııt
+
+Vtl
+(y ¢ 0_3z (0 < A 2 < y))
+)ields an axiomatizatiotı ol the clas8 of atomlees boolean alßebras.
+Inıportant (aiıd ruay be his 乞 oricalıy the firBt) exaJmples of boolean alg
+bras are the wcalled Lindenbaum-Tarski algebras, wlıich we conclude with.
+For this, first partition the set Lo of all hsentences into equivalence classes
+with respect to logical equivaıence~, cf. ₩. 3. ı, et ů /-denote the equiv
+lence class of 1p € Lo and Lo/-the set of all such equivalence classes. On
+this latter set one can canonically define the operations A, v, and  · (by
+passing to representatives ; exercise!).
+
+Then ı3L-(Lo/-; 上/., T/-; V, A,-) forms a boolean algebra, the
+Lindenbaum-Tarski algebra of the language L.
+
+One can extend tMs as follows to T-equivalence modulo an arbitrary
+Ltheory T as well as to arbitrary formulas.
+
+Suppose T is an theory (or evenjust a subset of Lo) and Ē is an Tı-tuple
+of variables.
+
+Given y?, € LE, we wTite p śT if T VĒ({p ), and we write
+V-T if V śT and śT 1o. Then (LĒ/-T ; 1/-Tt T/-T ; V, A,-)
+forms a boolean algebra whose isomorphism type depends on n and T only,
+whence the notation 13. (T) for it. Its canonical ordering, again denoted by
+śT, satislies p /-T śT/-T iĘ T Viŕ (V ). The algebra B. (T) i8
+also knonm as the ııth Lindenbaum-Tski algebra of T.
+
+The Oth Lindenbaum-Tärski algebra Bo (08) is thus just BL. The L
+theories are (up to logical equivalence) the filters of this algebra, while its
+ultralilters are the complete btheories (exercise!).
+
+Note that, by Exercise 3. 3. 5, the claısstp/-T contains every formula from
+Łŕ that difters from V by redundant variables.
+
+Exercise 5. 6. 1. Provhwithout using the aJciom of choice (or any equivalent, like
+Zom's lemma)-that in a well-ordered boolean aıgebra, every filter can be extended
+to an ultrafiller. (Note that this applies to any countable boolean algebra, in
+particular to the Lindenbaunı-Tarski algebras of countable languages (or theońes)-)
+Exercise 5. 6. 2. Prove Theorem 5. 6. 1.
+
+Exercise 5. 6. 3. Find a boolean algebra which is neither atomic nor atomless.
+
+Exercise 5, 6. 4. Show that the principal ultra{ilters of a boolean algebra axe prü
+ciseıy the (ultra) filters generated by atoms.
+
+Exercise 5. 6. 5. Verify the statements made in the text that BL and B. (T) are
+well defined.
+
+
+
+Page 18     
+OCR Texts: 
+团团团■由。一
+64 CHAPTER 5. FIRST CONSEQUENCES
+Exercise 5. 6. 6. Prnve tllt'N»ı-t tlm?ntioncd fact l, hul, t, llt· L-t, hcorius arc (up to log-
+ical equivalťuce) thc ñltors of the algebr a 13ı., while its ırltrafilters nre the complete
+theories (so thc Stotıo space of ı3ı. I8 Sı., as iııtroduced in thc beginning of the
+next section).
+5. 7 Some topology (or why the finiteness theorem
+is also called compactness theoremu)
+Tbis section serves among other things as preparation for §9. 1 (in particular
+Lemma 9. 1. 1) and §11. 3. Another objective is to show that the finiteness
+theorem is equivalent to the compactness theorem saying that the set of all
+complete L-theories, equipped with a certain topology, is compact (in the
+sense of the previous section). The proof of the direction that finiteness
+follows from compactness is left ǆ an exercise. However, we are going to set
+the stage for this. Note that we may not use the liniteness theorem then!
+Consider the set of all complete L-theories, and denote it by SL. Given
+V E Lo, set <V> =def {T € SL V € T}. As qA is in T if and only if V and
+Q are in T, we see that <v>n(V  · > = <VA>. Hence {<v> : v € Lo} constitutes
+a basis for a topology on Sİ,. Denote the resulting topological space again
+by SL. This reminds us of Remark (3) before Th e"T 5. 6. 1 and might
+deceive us into inferring that this is the Stone space of the Lindenbaum-
+Tarski algebra 召し  · As a matter of fact, it is (Exercise 5. 6. 6)! What's wTong
+then? The point is that this rests on the finiteness ţheorem, which we
+must not use, at least not in the proof that compactness implies finiteness.
+We could use the Stone space argument, of course, in the proof of the other
+direction (that ĥniteness implies compactness), which would then be a trivial
+consequence of the Stone representation ţheorem. However, we want to
+avoid this latter theorem and give a straightforward proof instead, which is
+interesting in its own right, see Theorem 5. 7. 1 below. Finally, this is a good
+exercise in understanding Stone spaces.
+So let's get back to the topological space Sı. As defined above. Its basic
+open sets <v> are also closed, for SL \ <q) = <-v>. Hence Sİ. Has a bǆis of
+clopen sets. It is also hausdorft, since for all T, T'€ SL with T ¢ T'there
+is p € Lo such that T € M and T'E <-v>. (That SL is a Stone space will
+follow-without the use of stone's theorem-once we have compactness)  ·
+The open sets of sL are the sets of the form Utp € E(q), where Ç s L o
+Hence the closed sets of Sl, are the sets of the form nv € E <P> = {T € SL
+E C T}, where E C Lo ·
+
+
+
+Page 19     
+OCR Texts: 
+5.?. SOME TOPOı. OGY 65
+It i5 not hard to verify (exercise!) that nq € E (v) H E defines a bijection
+between tlıe nonempty closed sets in SL, on tlıe one hand, and tlıe theories
+on the otlłer. Ttıerefore tlıe space SL reflects not only the compıete, but all
+btlıeories.
+Theorem 6. 7. 1. (The Compactness Theorem) The space SL as dejined
+aboue is comp«ıct, that is euery open couerįr&g of SL contains a finite aub-
+couering  ·
+
+Proof. Suppose SL = Ui € ı a is a covering such that a = Uq € E i (Q) for
+some Ei C Lo (i. e., every Uį is open). Set E-Ui € I Ei. We will find
+fpo)..., qn-1 € E such that SL-Ui<. <Pi)  ·
+We have
+
+O=SL\U a一SL·U 〈p)=n SL\〈p)一n〈一P)。
+i € I 1p € E qEE qEE
+This means that the set of sentences {-(p : qp €卫 } has no completion,
+hence no model either. The İiniteness theorem then yields finitely many
+(Po)..  · rfpn-1 € E such that {-1001... Tqn-1} has no model, hence no com-
+pletion either. This in turn means that ni<. <-qoi) = 0. Thus
+SL-SL  · n(-foi> = U SL  · <-qi) = u<vi),
+į<n i<n i<n
+
+and consequently there are ýi € I (i < n) such that SL-Ui<. Ujj. ū
+Corollary 5. T. 2. The eıopeın sets oJ SL are precisely the sets oï the torm
+Łvl, uthere V € Lo ·
+
+Prooi. Is clem.
+
+4. 0bviously, the empty set O = (p A-v) is of this form. Let now
+0 ¢ U = Uq € E<Ęp> be closed for any E C Lo. Being a closed subset of a
+coJnpact space, U is compact. Hence U = Ui«. (fpi) = <Vi<. pi ) for some
+Vi (i < ?ı). Thus U is of the desired form. D
+
+Example. Consider the theory of pure identity, T-Let T! be the L.-
+theory containing the sentence Ĵ-"z (z-Æ). There is only one such theory,
+ǆ there is only one model satisfying this sentence. The theory T! is therefore
+complete. The theory T of the infinite models of T. (cf. p. 33) has
+in every infinite ardinality up to isomorphism exactly one model. That
+it is in fact complete will then follow from Theorem 8. 5. 1 below. Then
+SL_-{T n : n € N} U {T}, where the T"are finitely ǆiomatizable and
+isolated in SL_ ·
+
+
+
+Page 20     
+OCR Texts: 
+66 CHAPTER 5. FIRST CONSEQ UENCES
+
+Exercise 5. 7. 1. VeriĘr the statement nıade about the bijection giveıı before the
+compactness theorem.-
+
+Exercise 5. 7. 2. Derive the finiteness theorem from the com pactness theorem.
+Exercise 5. 7. 3. Show that a complete L-theory is finitely aĵciomatizablc if and
+only if it is isolated as a point in Sı, ·
+
+Exercise 5. 7. 4. Derive from the previous exercise that T_is not finitely ǆiom-
+atizable (a result we already know from Exercise 4. 3. 4).
+
+.  · L I
+
+
+

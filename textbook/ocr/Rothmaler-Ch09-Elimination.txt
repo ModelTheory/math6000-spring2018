@@ -1,0 +1,1099 @@
+Page 1     
+OCR Texts: 
+Chapter 9
+
+Elimination
+
+In the preservation theorems of §6. 2 we found conditions for formulas to be
+equient (logically or modulo a given theory) ţo formulas of a particular
+form. In this chapter we investigate what it means for a theory that all
+formulǆ be, modulo that theory, equivalent to formulǆ of a particular form.
+9. 1 Elimination in general
+
+Given a class of formulas, A, and a theory T, we say that T admits (or has)
+elimination up to formulas from A (or simply A-elimination), if every
+formula çp € L. is T-equivalent to a formula Ô € Ą n L. (i. e. T V ko H
+
+ô))  ·
+
+ǳmark. Suppose T and T'are theories in the same language and T Ç T'.
+If T has A-elimination, so does T'.
+
+Of particular interest is the case where A is closed under boolean com-
+binations. If it is not, we therefore pǆs to its boolean closure À, i. e. The
+class of all boolean combinations of formulas from A. We first investigate
+źi-elimination of sentences.
+Lenıma 9. 1. 1. Suppose E C Lo, tp is a sentence in Lo, h is an arbitrary
+class ol Jomuıas, and Ż its boolearŁ cįo 51ıre.
+TherŁ (p is E-equivalent to T, to , or to a formula from 2 n Lo įf and
+only if M =& N implies M 三 q N, for aıl M, N F E.
+Proof Since M za Ń implies M z2Ĺ N (even in the case A-O), the
+direction from left to right is clear.
+
+127
+
+
+
+Page 2     
+OCR Texts: 
+For tht  · col't'rhL', consid('r tilt'spilt T I / olnll ('u111pl('t(, j,-t ]woriu S (('f. £s. 7)
+and thc clos('LI (Ilu 11('t'cutrrp : Ic t) M'tH, Y = <v) nn. cL (n) nml 5''. (-v> n
+n. € L((T) tht'rt'in. In cilst  · S is t"mply, L LJ {v} is im'orlsistp nl, }l('ll('('LP is
+E-oquiv nlt'nl to 1. Similllr 1, v, ir S'is c mpt. Y, t llQ 11 V-r T. Assttrm't }l( · r('foro
+that 11('itllL  · r S lior S'aro P 1m»t, y.
+For t?v t'r.Y pair T € S illld T'€ S'aml nll M F T ind M'F 7", wc
+hzlvc, h· ll.v pothcsis, M 3 M'(in particullr, A + 0). Hence thcru mllsl
+be a sontenec Trr'€ T wit. II 17../., € T'wlliclr ii contained in A or whoHc
+negatiou is contained in A (in arry else it is in A).
+Tht  · n {(-Trr'> : T'€ S'} fol'"s an opctr covering of S'. Compactness
+. vielcls a finite suhcovering, I. e. 7, € S'(I < n) such that E F V
+Vi<..-TT7·. Letting TT be the sentence Ai<.. TT · T (w hich is clearly in AnL),
+we obtain E F TT 4 q.
+But {7r T € S} forms an opell covering of S, which also has a finite
+subcov ering.'Hence there are Ti e S (I < m) such that E F v Vi«... TT, ·
+Together with t, hc implication abre this shows that 9? is E-equivalent to
+Vi« 7?z 7  · 【.. a sentence contained in A n L. D
+
+We extend this, using expansions by constants, to arbitrar formulas.
+
+proposition 9. 1. 2. Suppo?e E c Lo, V is a Tormula tn Ln, A S an arbi-
+trary set oJ lonTLulas, arrd h is its boolean closure.
+tp is E-eqtliuatent to T to L, or to a lomula JTo1TL 2L n L. if and oTtly
+if tile lollouli'Trg iTTLplication tlo[ds Jor a[l M, N F E and aLI € A  · f"and
+b€N"iJ, IoT alI6eAnL... MF6(ii') iuNb(b). ThenMFtpL&) ifF
+N F q (b).
+proof Choose an Tz-tuple e of new constants (that is disjoint from L U A).
+Since every L (e)-structure has the form (M, ii), where M is an L-structure
+and li € M ", thc implication from the statement of the proposition reads as
+follows.
+For all L (c)-structures M', JV F E, if M'a () JV, then M'=Lp ()
+W.
+By Lemma 9. 1. 1, this is the same as saying that q (c) is E-equivalent to a
+sentence 6 () from 2 (c) nL (c) (as the boolean closure of A (c) is A ()). Thus
+FL () q (c) H 6 (c), hence Lemma 3. 3. 2 (about new constant, s) yields E FL
+V (q(-6 (r)). Consequently, V is E-equivalent to 6 (which obv iously
+lies in A n L). C
+Remark. Given any formula 6, T is logically eguivalent to 6 V-6, w hile 1
+is logically equivalent to li A 6. Therefore, if A n Lo is not einpt, y, we do
+
+
+
+Page 3     
+OCR Texts: 
+9. I. ELıAFLNATION Dv GENEIıAL 129
+not need T and JL in the above lemma. Simiıarly, we do not need T and JL
+in the prtcMing proposition if Ã n L.. Is not empty.
+
+Letting 1p run over L, we obtain
+
+Corollary 9. ı. 3. Suppose T is an L-theory ond A is a class oí Jormulas
+containing T arłd 上 (and Ĺ is its boolean closune).
+T has -elimiïıation i$ and only il, Ĵor att M, JV \-T, aìì Tı < u, aıl
+ñ €.\p aTıd ĥ € N", the lottouing įmplic{ıtion holds il M 6ţà) W
+N ô (b) 】or allô €ム nL.. Then (M, ii) = (N, b).
+
+We will see in §11. 3 a more elegant way of formulating the preceding two
+results using the concept of type.
+
+□
+
+Proposition 9. ı. 4. Suppose T is arŁ L-theory arŁd h ts a class olloTTLutas
+that is closed under bootean combinations arŁd contains T aiłd L.
+
+TherŁ the lollouïiTıg conditįo are equivalent.
+(i) T admits A-elimination.
+
+(ū) For any M T and A C AI, the deductiue closure E(M, A) of T U
+
+Tha (A) (M, A) is a complete L (A)-theory.
+(iii) ıike (ii), but tıJith ßnite A only.
+
+Įl, in addttion, is cıosed under substįtutįoTı by Ł-terms, another equiu-
+aierıt eonditįon is
+
+LYv) Like (tį), but orlty 7uįth A ļ M that are ìıniuerses of oiTıįteıy genenıted)
+
+stibst1ıctures oi M.
+
+Proof  · (i) 4 (ii). Let T have A-elimination. Then, for all M T and
+A Ç M, the (cornplete) L (A)-theory Th(M, A) i5 contained in, and hence
+equal to E(M, A). Then the latter is complete too.
+
+(ū) (iii) and (ii) (iv) are trivial.
+(ūi) 4 (i). Assume M, N T, ii € M  · , b E N", and that, for
+all ô € A n L.. we have M ô (ã) iff N ô (b). In view of the preceding
+corollary we need only show that (M, ii) = (N, b). For this note that (M, â)
+and OV, b) are models of E(M, ã) and that condition (iii) says that this latter
+is a complete L (ã)-theory. Then Proposition 8. 1. 2 implies that (M, iį) and
+(N, b) are indeed elementarily equivaıent.
+
+(iv) (iii) (under the proviso that A be closed under substitution by
+terms ). Suppose M T and Mâ is the universe of the substructure of
+M generated by the finite sequence ã of elements from M. All we have to
+do is show that condition (ii) for A-Mâ implies condition (ii) for A-ii.
+
+For this, let V be an L (ã)-sentence that follows logically from E(M, Mā).
+We prove that q follows already from E(M, iį). By the finiteness of and
+
+
+
+Page 4     
+OCR Texts: 
+ı30 CIIAI ı7'Elt . Eı, IAIINAT loN
+thť A-cloeitxlncss tìl j. \lu  · rv is a sin*lc sucır sıntpncp b (r) o8 nbovt'inpıyiu#
+V : i. t  · . T ô (č)-. Writp ó (č) l\s E ), 6), wiıt  · re ó($, i/) c and anó = Ø.
+t'br notational sirılpıicitj'L \ assuNt  · 1 (y) = 1 (Ô) 5 1.
+If 1 (ý) = O, then ó (ř) ıit  · already in E(M. i) łıl\d there'8 notlıing to
+prove.
+So let T ó(ā, tı)-q, where 6(5, y) C null b € Ma-h. Then there
+is an htprm t (ŕ) surı\ that b = tm (ā) (cf. Rxercise 6. 3. 1), and wc have
+The lemma about new const. Ants (3. 3. 2) (together with Remark (8) frmn
+§3. 3) now y ieıds
+(for b occurs neither in ii nor in ). However, T Vř 3y / () = y, whence
+T ô(â, t (ii))-q. The additional hy pothesis o11 A sws that ô(ř, t (Ī)) €
+A, hence ô(â, 1 (ii)) € E(JV, ii). Consequently, E(M, ii) q. D
+Exercise 9. 1. 1. Find a nontopological proof of Lemma 9. 1. 1.
+
+Exercise 9. 1. 2. Find a proof of Proposition 9. 1. 4 (iť) (i) for thc cast A = qf
+which uses Corollary 9. 1. 3 and Exercise 6. 3. 3.
+
+9. 2 Quantifier elimination
+Elimination up to quantińer-free formulas, i. e. Qf-elimination, is not sur-
+prisingly called quantifıer elimination. Moduıo theories with quantifier
+elimination one can do without quantifiers. In particular, all sentences are
+equivalent to quantifier-free ones. As by Lemma 6. 1. 1, quantifier-free sen-
+tences are preserved both ways,'going up'and'going down', we see that two
+models of a theory with quantifier elimination are elementarily equivalent,
+provided there i5 a structure (of the same signature) embeddable in both of
+them. We can derive somewhat more from Lemma 6. 1. 1.
+Remarks.
+(1) A theory with quantifier elimination whose model clǆs has a prime
+structure is complete. In particular, any theory with quantifier elimi-
+nation in a language without constants is complete, cf. Example (9) in
+§8. 5
+
+
+
+Page 5     
+OCR Texts: 
+(2) Ever, v embtxltling bt'twt't'll mutiu l5 uf t llu ttrit  · s wit II qtrnnt iIItT r lirttinn-
+
+tiull is t'lt'mwntnry. In p\rtic ulnr, t'v Tr.v i\iH('br ilicnlly primtl Inod('l of
+orit's witti qumtilit'r t'liminatioll wt'simpl sp('ilk of prime models.
+
+In Theule
+t  · limination.
+
+W hether a theory admits quantifier elimination depends on Lhc language
+it is formulated in. One can alw ays achieve it b artificially'adding'all
+formulas to the signature. Xiore precisely, giv en an Ltheor. V T, consider thc
+extension L'of L by a new Tz-ary relation R. for every V € L.. (n < u).
+Following Hodges we call the set of L'_sentences T'_T U {V (R. () H
+q ()) : q-q () € L} an atomization'of T.
+
+The atomization T of an Ltheory T is a theory with quantifier elim-
+ination (exercise!). Fbrther, the reduction map r L constitutes a bijec-
+tion betn-een Mod T and Aiod T. This bijection preserves isomorphism
+t}pes in both directions, I. e., it maps isomorphic L"_structures to isomor-
+phic Lstructures, and nonisomorphic ones to nonisomorphic ones. Fbrther,
+M-F T and M = M"r L have the same definable sets. Moreover,
+JW AP iff JV N (where JV'F T and JV = N'r L). That this map is
+
+surjective is immediate, for each M F T can be expanded to M"F T  · by
+simply interpreting Rv in M by q. Thus T  · is consistent. The rest follows
+from the fact that the map defined by V H Rq, from the Lindenbaum-Tarski
+algebra of T to that of P, is an embedding (of boolean algebras) satisfying
+T F 3z R+( ·  · y) (£, ) H Ra. (  ·  · y) (). We leave the verification of all these
+assertions as an exercise.
+The upshot of this discussion is that if one is interested only in the
+investigation of the models of T in terms of their definable sets (no matter
+koto these are defined) and elementary maps between them, one can as well
+pass to the atomization T, a theory with quantifier p. limination.
+
+Atomization yields an abundance of theories having quantifier elimina-
+tion. In due course we will investigate some less trivial examples. Before
+we can do so we need a criterion for quantifier elimination, and for that, in
+turn, some more terminology.
+
+Let K be an arbitrary class of structures. An Ltheory T is said to be K-
+complete if, for every model M F T and every substructure A C M which
+is a member of K, the deductive closure of T u D (A) is a complete L (A)-
+theory. In case K is the class of all structures, this is called substructure-
+completeness.
+
+'Atomizations are also known as Morleyizations or Morley expansions.
+1111 9. 4. wc will mcct an incomplete thpory : 1dtnitting quantifier
+
+
+
+Page 6     
+OCR Texts: 
+132 CHA PTER 9. ELIMINATION
+
+Again we built in some redundancy for notational reasons : only those
+structures from K count which are themselves L-structures (e. g., also a
+blod ı, O-complete theory is substructure-complete).
+
+Remarks.
+(3) An tlıeory T is substructure-complete ifï, for all L-structures A, the
+
+consistency of T u D (A) implies its completeness.
+(4) By Proposition 8. 1. 2 (and isomorphic correction), T is K-coinplete if
+
+and only if, for any two models M, N T having a joint substructure
+A € K, we have (M, A) = (N, A).
+(5) A K-complete theory T has the following elementary amalgamation
+
+property over K.
+If A € K is a joint substructure of the modeıs M, N T, then there
+三
+are M ı M and g : JV M'making the diagram
+
+M'
+
+JV
+ス认ダ
+
+"·.-,. 8
+commute, i. e. g IA-idA  · (Using Theorem 8. 4. 4, choose an elb
+mentary extension (M', II) (M, A) and ail elementary embedding
+g : UV, A) (M', II). Similarly, onc call verib  · a somewhat more
+general property, where the identical inclusions of A are replaced by
+arbitrary embeddings of A,)
+
+Suppose all substructures of L-structures generated by the empty set
+arc isomorphic to a single L-structure A. (This is t he case in languages
+without constants, where A is tllc empty structure.)
+
+If A € K, then, by (1), thc K-completeness of an htheorr entails
+its (usual) completeness (for ł\ll models M and N contain A, hence
+(M, A)-(N, A) yiplds M = M.
+
+For languages without constants, {0}-completeness is the same as com-
+pleteness. In particular, substructur € COmplete theories in a language
+without constants are complete.
+
+More generaıı. ľ, if the model class of a substructwcomplete tlıeory
+T (in any language) has a prime structure (in the sense of §8. 5), then
+
+
+
+Page 7     
+OCR Texts: 
+9. 2. QUANTıFıER ELATION 133
+T is complete (for if A is this prime structure, then, after isomorphic
+correction, any two models M, JV T contain A ǆ a substructure
+the rest of the argument is as in (6)).
+A primitive formula is, by definition, a formula of the form 3È ¢, where
+Q is a conjunction of literals ; here may be empty. (Positive primitive
+means that no negated atomic formulas may occur in , cf. 4. 2. 1.) We call
+a formula simply primitive if it is a primitive formula with only one exis-
+tential quantifier, i. e. a formula of the form 3z , where is a conjunction
+of literals. We denote the clms of simply primitive formulas by 3  · .
+
+It is easy to see that 3Ē (V v ) and 35 q v 35 are logically equivalent.
+Therefore, a formula is (equivalent to) an 3-formula if and only if it is
+equivalent to a disjunction of simply primitive formulas.
+
+Lemma 9. 2. 1. ATŁ L-theory T admits quaıntifier eıirnĖnation įf and only
+į$ euery sįTnpty pr(mįttlte L-Jomuįa is T-equiìiaıent to a qua ı ntifier free L-
+JoTmula.
+PTool. For the nontrivial direction, assume that every simply primitive
+formula is T-equivalent to a quantifier-free L-formula. Inductiveıy on the
+complexity. of V € L we show that p is T-equivalent to a quantifier-ħee
+formula. The initial step q € at is trivial. The inductive steps involving
+conjunction and negation are trivial as well, as conjunctions and negations
+of quantilier-free formulas are quantifier-free, and replacing subformulas by
+equivalent ones does not afïect the equivalence.
+
+We are left with the cǆe that V is of the form 3y 0(2, y) and 0(Ē, y) is, by
+induction hypothesis, T-equivalent to a quantifier-free L-formula ý(, y) €
+qf. As noted above, 3y V, i(Ē, y) is logically equivalent to V, Ĵyi(Ē, y).
+Since qf is closed under disjunction, we may therefore assume that (, y) is
+a conj unction of atomic and negated atomic formulǆ, i. e. That 3y ¢(ič,  · y) is
+a simply primitive formula. By hypothesis, these formulas are T-equivalent
+to a quantifier-free L-formula, and the same is true for q. D
+
+We are now able to prove the main result of this section.
+Theorem 9. 2. 2. The Tollowing arie eqtıiualent Jor any L theoTy T.
+(i) T admits quantifzer elimination.
+T żs substmchıre-complete.
+
+(iii) If M, N T and A is a ßnitely generated 51ıbstTucture ol M as utell
+
+as oĵ N, ǳen tM, 23  · IN, A) (į. e., īor every sįrnply primitiue
+p € L. (n < (ł/) and etiery ā € A", 1ıle haųe M p (ā) i$JV (p (ā)).
+
+
+
+Page 8     
+OCR Texts: 
+134 CtlAPTlt : I. Eï, IAIINATION
+Phool. Por the case j = uf ı'mı»wition 9. 1. 4 inıpli\w that (\) ht t  · q \ ıivnıt  · nt
+to the mndition
+1 *) The tkluctivņ cıosure of TuThqr(M, A) is con\pleto htr tvery M ľ T
+and ewcť stıbeset.  · \ Ç M tlıat is the uniwrsr ul J\ stıhstruct, \lrv. 4 ol
+JŲ.
+As the tmth of a booıean combination depends only on thņ tmth ol
+its oìııstituents, the tlıeoņ  · Thqr (A. A) is contniluųt in D(-4) Þ-. 11t  · iırc thc
+deductiw closures of T U Tı'qriÀ. łł) anil T U D (A) złrc  · the samt  · . But,
+b ıpmma 6. ı. 1. Also Thqr(A. A) and Thqr(N, A) are tile same. Thus (')
+sa! nothing 111orıl than tlıe completeness of T u D (A) for nıı. 4 Ç M T.
+Consequently, (ii) is equi \ Ħlent to ľ). And hence also to (i).
+That (iii) follows from (ii) is clear, since the completeness of T U D (A)
+e\?n implies (. \'t. A) = (. \-. A), for all models Ļf nml. Ąr of T su«ll that
+
+We arc left with (iii) (i). The preceding lemma reduces thc elimina-
+tion to the case of simply primit ive formulas. hence, by proposition 9. 1. 2, it
+su 伍 ces to pro \ T tılť following claim.
+So suppose. H,-ư. ii. And b are as above, and (. M, ii) zqF (N, b). Write
+b = f[ā] for an appropriate bijection f ii-b such that (N, b) = (N, f[â]).
+As ( · H. ii) zqf (-V. f[â]), using Exercise 6. 3. 3 Tve can extend f to an isomor-
+phism F. V. . LTflñ!-. NÈ. After an isomorphic correction ofN (using an
+extension of F-') we can easily achieve that â = b (more exactly, f = id.)
+and even. Vá-. i.. Now we are left with verifying (JV, ii) 三 3  · (N, ii). How-
+ever. If. 4 is the universe of, à-AT.. Then (iii) implies (JV, A) 三 3  · (N, A),
+hence also (.'V. ã) 三 3  · (. ,', â). D
+
+Remark.
+(9) (About languages without constants.) Suppose T is a theory with
+quantffier elimination in a language L without constants. We know
+from Remark (1) above that T is complete. One can also derive this
+from Remark (T)-invoking the previous theorem. Here is yet another
+proof. Bv Remark (3) of §2. 5 all quantifier-free sentences are logically
+equivalent to T or 上. Since T is true in every structure, while 上 is
+true in none, we infer that all models of T are elementarily equivalent,
+whence T is complete.
+
+The next example shows that the preceding theorem becomes false if in
+the concept of substructur»completeness empty (sub-) structures are ex-
+eluded.
+
+
+
+Page 9     
+OCR Texts: 
+9. 2. Q UA NTIFIER ELIAMNATION 135
+Example. Let L be the language (without constants) whose only non-
+logical symbol is a predicate P. Let further Tp be the Łtheory omatized
+the sentence VÆ P( · ) V VÆ-P (z). The models of Tp are exactly those
+infinite sets, all of whose elements satisfy P or all of whose elements satisfy
+ĦP. Thus Tp is not complete, hence, by the preceding remark, cannot have
+quantifier elimination. (One can see this directly : the sentences V£ P (£) and
+3a P( · ) cannot be TF-equivalent to a quantifier-ħee formula.) However, if
+A is a nonempty substructure of a model of Tp (e. g. a singleton) then
+TP U D (A) is complete, since depending on whether Vz P (£) or V£-P( · )
+holds true in A, one of these sentences already Jollo1ıJs from Tp U D (A). If
+one would not allow empty structures, TP would be substructure-complete
+without having quantifier elimination.
+We conclude this section with a characterization of complete theories of
+Jinite structures having quantifier elimination in terms of extendability of
+isomorphisms. To this end, a structure M is said to be ultrahomogeneous
+if every isomorphism between finitely generated substructures of M can be
+extended to an automorphism of M.
+Corollary 9. 2. 3. Let M be a Jinite, but ?ıonempty struchłre.
+
+THM admits quantiFer ełiminatioTı įf and oTLIy įí M is ultrahomoge-
+neolıs.
+
+Proof. Assume first that T-Th M hǆ quantifier elimination. Let A and
+B be isomorphic substructures of M. This means nothing more than that
+(M, A) and (M, B) are models of T U D (A). Substructurķcompleteness
+now implies (M, A) = (M, B). As both struct\ıres are finite, this yields an
+isomorphism h : (M, A) ¥ (M, B). But, tllis just means that / ı € Aut M
+and h[A] ー ı3. This argument can bc easily modiĺied to yield the full
+ultrahomogeneity of M (which is left m iln cxttrcise).
+
+Assume now that M is ultrahomogeneous. Given A Ç M, we will prove
+(N, B) = (M, II) for every model (N, B) of T U D (A), Such a set B is ilie
+universe of a substructure ß that is isomorphic to A. Since M is finite, N
+is isomorphic to M. Now it remains to extend the isomorphism between B
+and A to an automorphism of M to infer that (M, B) ¥ (M, A), hence also
+(M, B) = (M, Jļ) D
+
+Example. By Exercise 15. 1. 2 below, all finite cycıic groups are ultrahomo-
+geneous.
+In the next two sections we illustrate the method of quantifier eliminn-
+tion by two prominent exampıee, DLO and ACF. As another application,
+
+
+
+Page 10     
+OCR Texts: 
+136 CIIA pı ER 9. EI, ıAIINATION
+the reader may ₩ to §515. 1-3, wïıerc  · the cxaınple «»f thp (thmw ol t. Hp)
+intege is treated in detail.
+Exercise 9. 2. 1. Fill in tlıľ ınissing details in thc ptuof of the aba \ r conıiInņ  · .
+
+Exercise 9. 2. 2. Veriıjr thp assprtions about atomizations, in pnrticular that tln  ·  ·
+admit quantffipr pıiınination.
+
+Exercise 9. 2. 3. Pmr that conjunctions of finitľly many priınitivc (reip., lw»i-
+ti \ E prinıiti\rp) fomiulas are again pńmitivp (rrsp., positi \ T primitive). Rehıtr nn
+analogotıs statement for sinıply priınitivp formulas.
+
+Exercise 9. 2. 4. Let T bc a 入-categorical an«l complete L-theory and ž ıLI.
+Show that T has quantffipr elimination, provj 山뇌'the'model of T of powTr À is
+ultrahomogcneous.
+
+Exercise 9. 2. 5. Lct A be a class of formulas containing at. And lct i be its
+boolean closure.
+Find generaıizations of ı, emma 9. 2. ı and Theorem 9. 2. 2 for A-elimination.
+
+Exercise 9. 2. 6. Show that T_has no quantifier elimination, but all completions
+of T. do.
+
+Exercise 9. 2. 7. ProLre that. For any division ring /c, the theory of the infinite
+/c-vector spaces admits quantifier eliminat ion.
+
+Exercise 9. 2. 8. Lot A br an infinite set and G a group of permutations of A (that
+is a subgroup of the symmetric group of łļ). Consider a language LG whose Iıoıı-
+logical symbols are unary function symbols, one for each g € G, which we again
+denote by 9. This should not cause any confusion, since wc interpret it on A by
+g. Denote the resulting Lc-structure by A (so that it makes sense to say that A is
+the structure (/ł. g) 9 € G  ·
+
+Prove that Th A admits quantifier elimination.
+
+9. 3 Dense linear orderings
+First we consider the theory of dense linear orderings without endpoints,
+DLO_., in the language L< (as in §5. 5).
+
+ıłemma 9. 3. ı. ĮJ M and N are models of DLO__and A is a 51ıbstntcture
+oĵ M and oJ N, then ĻM, A) = ĻN, A).
+
+Proof Obviously, (M, A) 三 (N, a4) if and only if (M, Ao) (N, Ao) holds
+for every Ao A. So let Ao-{ (ıot... 1Qn-1} Ç A. By Löwenheim-
+Skolem downward there are countable M'M and JV JV such that
+Ao c M'nN ı (remember, L< is countable). Since then (M, Ao) = (M', Ao)
+
+
+
+Page 11     
+OCR Texts: 
+!). :¢. l. I'NSIL'I, rNI£A It OltD1ćlfıNGS 1 37
+nı \ \l (Ar, Ao) (N', Au), thla rcduce« ı. ıltı aeßürtiorı Io tho countable models
+ır ı\ıw h 睏 O, the tuļHcrtion followe from Cantor'H theorem (which
+t\wn ylnıda JW N'), Any noncmpty /lo płırlitione M'nnd N'into
+thņ Hłuıw [lnllo ttıunbcr or lntervale, all of wlrich are (countable) dense ]in-
+tlł\r orcıering« ł \ mı t lıt\reŔ»ro, by Cantor asain, isomorpıric. Patching corr»
+sï»orıdln8 lsomorphiHmtl together, we obtain (M', Jlo) (Ń', Jlo), hence also
+
+口
+
+So DLO__i8 81 山 structur»complctc nnd thus admits quantifier elimina-
+1 lt»ıt, ltemark (1 ) of the preceding section implies tııat DLO__is complete
+(as ı,. ııas no constant. s). Wc summarize this together with what we can
+eay about t lld other dense linear orderings.
+Tııoorem 0. 3. 2. DLO ltns eaactly Tour diñerent L<-completions, namely
+ı) 1. 0_-I DLO. ı.., 1) LO_1., arıd Dĺ. O++. Each of these is No-calegorzcal
+(nml tlnts }ltls arı clcmentarįly prime model). Only DLO__ol the aboDe liųe
+łheories l\[ıs qtıa1Łtili cr climinatįon.
+Ptuol, All of 1, he Ibuľ mentioned extensions of DLO are No-categorical (which
+imsily hllows from t. He Nn-calegoricity of DLO__on adding the correspond-
+ing endpoint, s). ilcnce, by lhc loś-vaught test (theorem 8. 5. l), they are all
+coïırplc  · te, for DLO ltns infinite models only. By Remark (4) of §8. 5, all of
+tlıem have an elementnrily prime model.
+
+nırl, hcr, every completion of DLO has to'decide'which endpoints exist.
+Hence each completion must contain-thus be equal to-one of these four
+complet, e theories.
+
+That DLO__has quantifier elimination we saw already from the previous
+lemrlra. So we are left wit, h showing that none of the other have quantifier
+elimination (then, being a subtheory, neither does DLO).
+
+Suppose, for instance, the countable model M DLO has a left end-
+point c. Given any point (i € M, let Ad denote the induced ordering on
+(i. e. Tlıe subst. Ructure generated by) t. He set [d, oo) = {a € M : d < a}. By
+No-cntegoricity, is isomorphic to M, hence a model of Th M. However,
+(.  · V, [U, oo)) nnd (At, [d, oo)) are not elementarily equivalent. For 3 (z < d)
+holds in the former, but not in tlıe latter. Consequently, ThM is not
+substructur»complete.
+
+An analogous argument proves that Th M has no quantifier elimination
+whenever Jl has a right endpoint. D
+
+Exercise 9. 3. 1. Show that the countable dense linear ordering without endpoints
+is alı eleıııentarily prime model of DLO_., aıı algebraically (but not elementar-
+
+
+
+Page 12     
+OCR Texts: 
+138 CIIA PTER 9. Eı. ıMJNATıON
+ily) primt'motlel nf DLO, mıtl \ priNT structure for (blıt iıot itseıf a Im'lnb(:r nr)
+blođ(DLO+-) u MoD(DLO_-◆ ) U ħiođ(DLO++ )  ·
+Exercise 9. 3. 2. Exhibit formulǆ excīnplifying tıiat DLO, DLO+., DLO_+  · imd
+DLO++ do not admit quantilier elimination. In cme of DLO one can evcll find such
+a sentence. Why is this impossible in the other tliree cases?
+The next exercise shows how far DLO is from having quantifier elimination.
+
+Exercise 9. 3. 3. Lct Vi be the formula V!/(T-y V x < y) and . Thc formula
+Vy(r-yvy< T). Set A-qf U {w, 3x V  · 1, (p.. 3z . }. Verify that DLO admits
+A-elimination.
+
+9. 4 A1gebraically closed fields
+We now turn to the most prominent example, which essentially motivated
+model-theoretic concepts and results. The quantifier elimination for alg
+braically closed fields, which we are to verify first, will prove to be a useful
+tool : it immediately yields a number of classical algebraic results, ǆ we will
+see in the next section.
+
+The theory we have to deal with is the theory ACF of algebraically
+closed fıelds, iomatized by the set of axioms
+
+TFU {Vyo... y.-13×(z"+ yn-l£ TZ-'+... + y】+ yo-0) : O<n< b}}.
+As tn §5. 3, we tuork in tite language L = L(0, 1 ; +,-,  · ) wìıeneuer we deal
+utįth Jĺelďs (or rings).
+
+The models of this theory are precisely the ĥelds in which every poly-
+nomial of positive degree (in one indeterminate) and with coefficients from
+the given field have a root. Such fields are said to be algebraically closed
+(Note that, in the axioms ACF, we required the existence of a root, only
+for monic polynomials of positive degree, i. e. For polynomials of positive
+degree whose leading coefficient is 1 ; however, this is no restriction, as
+the coefficient ring is a ĥeld.)
+
+Remark. ACF has only infinite models, for if /c is a ĥnite field with universe
+{ki : i < n}, then the polynomial 1 + Hi«. (z-ki) can have no root in K.
+Adding the axiom about a positive characteristic p or infinitely many
+axioms about characteristic O (see §5. 3), we obtain the extensions ACF,-
+ACF U TFp and ACFo-ACF U TFo ·
+
+
+
+Page 13     
+OCR Texts: 
+9. 4. ALGEBRAICAŁLY CLOSED FıEI, DS 139
+Example. Giulss 'so-cMled Jtłntlamental tlłeorem ol algebra saye that the
+field of complex nutııbers C is a model of ACF (lıence also of ACFo). Thc
+lields Q aiıd m (of the ratioīıals and tlıc rcals, respectively) are not alge-
+braically closed : e. g. z2 + 1 has no root in them.
+Let us recall some material concerning polynomials in one indeterminate over
+a ield K (i. e. with coeñi cients from that field). Such a polynomial is a term of the
+form k. z"+ kn-lz"-'+... +krz+ko, where ki € K (i < n) (it is indeed a term in
+the formal sense of §2. 2 if we regard it as being in thc language L (K)). Under the
+usual operations these polynomials form the so-called polynomial ring K[z] over
+K. If f is the polynomial above and k. ł O, then n is the degree of f, denoted
+by deg f. If ko =...-k.-O, that is f = O, we set deg f =-oo. Usually the
+polynomiaJs of degree ś 0 in ) C[  · ] are identified with the elements of the field /c,
+which is thus regarded as a subring of K[  · ]. The constant polynomia10 € /c is the
+zero of the ring ìc[  · ], while the constant polynomial 1 € K is its one. If a is a root
+of a poıynomiaı of positive degree from lc[  · ] in a certain extension field E of K, then
+a minimal polynomial of a over /c is a monic polynomial f E K[ß] of minimal
+degree having a as a root. (We will see shortly that this does not depend on E.)
+Since the difïerence of two manic polynomials of the same degree is a polynomial
+of lesser degree, there is exactly one minimal polynomial of a. More can be said,
+once it is taken into account that K[z] is a euclidean ring, i. e., given nonzero
+polynomials 9 : f € ) C[z], there are polynomials q, r € K[  · ] such that g-qf + r
+and degr < degf. ħom this one easily sees that a nonzero polynomial from / c[z]
+with a root a € JC is divisible by Æ-a in ìc[  · ]. By induction on the degree one can
+further show that a nonzero polynomial g Ē /c[z] has at most degg roots. (This
+implies in turn that over an injinite field /c only the polynomials of degree ś O, i. e.
+only the elements from /c, can be constant (ǆ a function from JC to /c). In İinite
+fields this is difrerent the so-called obenius map on 】Fp, given by z H £P, is the
+identical map, i. e., the polynomial zp_z is constantly 0.) It follows from tc[  · ]
+being euclidean that the minimal polynomiaJ f of a over /c divides every polynomial
+g E ìc[z] that has a as a root. For if g-qf + r as before, a is a root also of r,
+hence r-O, as deg r < deg f (otherwise one could make r monic, contradicting the
+minimality of f). This implies that all roots of the minimal polynomial f of a over
+/c (in any extension Iield of K) are roots aJso of every polynomial in K[  · ] that has a
+as a root. ĺbrther, the minimal polynomial f of a over K is irreducible (in /c[z]),
+i. e., if f is a product of polynomials h, Tï e ) C[×], then íl E K or l2 E /c (i. e.
+Ciegh-0 or deg l2 = 0). This is so, since f (a) = O implies h (a) = 0 or l2 (a) = O,
+as E has no zero-divisors ; however, deg f = deg ll + deg l2, hence the minimality
+of f yields ciegh-0 or degjz = 0. Together with the aforementioned feature of
+sets of roots of minimaJ polynomiaJs, this shows that f is a minima, 1 polynomial of
+
+
+
+Page 14     
+OCR Texts: 
+I  · in
+CHAPTER 9. EI. IIĹINATION
+
+nll its rnols (in any ext( · nsion of K). This nlsn itııpıies tłıat the set of roots of an!'
+othnr polynomiłıl from )C[z} in arly field extension )C'of K contains either all or
+none of tltp roots ol j in K'.
+Since in our signature substructures of fields arc in general only sub rings
+(cf. §5. 3), w(? need to know tliat thcrp is a canorıical way of passing to a field
+aglin, w}ıich is a gcncralization of thc construction of the rationals from the inte-
+gers. It works for every intpgral doniain (i. e. For every commutative ring without
+zero-divisors, cf. Exercise 5. 3. 2). which is no pmblnm, as every subring of a field
+is suclr an integral domain. More precisely. Given airy integral domain , there
+is a so-called quotient field (or field of fractions) of A which contains A as a
+sııbring and is embeddablc in every field containing A. In this sense thc quotient
+field is th(: smallest ńcld containing a. thus it is unique trp to a-isomorphism. it
+is denoted by Q (À). (It hǆ all cern stronger feature : every isomorphism af rings,
+A B, can be cxtcndcd to an isomorphism of their quotient fields, Q (A) = Q (B).
+For tnorc details sec tllc quoted algebraic literature at the end of thc book.
+
+ïn §5. 3 wc convince«l ourselves that, modulo the theory CR (of com-
+mutativc rings), the L-terms t(£, ã) with parameters iı from K arc just the
+polynoīnials from tc[  · ]. And ttiat correspondingly the atomic L-lormulas
+v(£, ii) with parameters â from K are the polynomial equations f = 0. where
+İ € / c[  · ] ; sce Lemma 5. 3. 3. Hence the sets deñnable in an extension fieıd
+E of K by 1-place atomic fonnulǆ with parameters from K are exactly the
+sets of roots of such polyuomials. Thus these definable sets are either finite
+or-in the case of thtï zero polynomial._All of E. Next we investigate what
+this looks like for arbitrary quantifier-free fonnulas instead of just atomic
+
+oies.
+
+Lemma 9. 4. 1. Let A bn fıī\ iīıtegrcıl aoTīıaiïı and tl  · ţx) € LLA)  · q\ıantifier-
+Jree lonnula (iīt rıĮ most one Jrce uariab[c £ and \uith ptıraTneters Jrorn A).
+
+Then one oJ ŁtĮc TŁeaT tłıTĽc. cases takes pĮace.
+La) tl  · is satisfied in īło Jicld K Ä.
+(h) For all ßelds K A, the set K \ Q0c) = {a € K : K -ý (a) } is
+
+Jinįte.
+(c) Tltere is a nainirrztıl polynomial f € Q (A) [  · ] (of an element satisfying
+
+tp) such tłıat, Joľ all Jields K A (which clearhl coTttaiTı also QIA)),
+the defirıable set LK ) contains all loots oJ Ĵ hı K ; i. e.
+
+TF u (D(A)) Vr (f(£) = 0-> (£)) ·
+Mrthcr, tí  · is satisli cd in. Euery algebrtıi colhi closed lield ) C  · J A, prouided tl'
+is s[ıŁisfied hı some fic【d K A at all.
+
+
+
+Page 15     
+OCR Texts: 
+9. 4. ALGEBRAICALL) 尸 CLOSED FIELDS 141
+Proof. By the above remark about quotient fields we niay assume tlıat A
+itself is a óeld. i. e. A = Q (A).
+
+Being a quantilier-{ree formula. ť  · is a boolean combination of atomic
+formulas. It is emy to see that it suffices to consider the cǆe, witcre V'
+consists of one disjunct only. By Leinma 5. 3. 3 (2). ų', may be taken of the
+
+torm
+
+A ti (z) = OA A sj (T) 0 (ti 1 sj € At  · D.
+i<m j<n
+
+A polynomial equation a-O with a constant polynoïııiaı a € A is satisfied
+either simultaneously in all fields K J A (namely if and only if a-0) or else
+in no field K A at all. Since the same holds true also for boolean combi-
+nations of such eouations, the lemma is proved for sentences Q. Moreover,
+any conjunct of the form a-0 or Q + 0 is redundant or makes the formula
+inconsistent. Therefore we may assume that all occurring polynomials ti
+and sj have positive degree. We consider two cases.
+
+Case ı m-0. This means that ¢ is logically equivalent to the formula
+-Vj< n sj (z) = 0. Then, in any field K J A, the set jc \ Q (K) is the union
+of the (ñnitely many) sets of roots of the sj, hence (b) holds.
+
+Case 2 m > 0. Assume (a) and (b) do not hold. Then ¢ is satisfied by
+an element c of some field extension /c J A. As m > 0. The element c is a
+root of a polynomial of positive degree and thus has a minimal polynomial
+f over A. The roots of f arhas explained abovroots of all polynomials
+ti (i < m), but of no polynomial sj (j < n) (for c is no root of any of the
+sj). Consequently, all roots of f satisfy tp (in all field extensions of A), i. e.,
+(c) takes place.
+
+Now that this trichotomy is verified, suppose A C K'ACF and is
+Satisfied n some field /c J A. Then we are in (b) or (c). In case (c), UC')
+contains all roots of f in /c'. But this field is algebraically closed, hence f
+does have a root therein. In case (b), /c'\ Q (K') is finite. But being an
+algebraically cıosed fieıd, K'is infinite (see Remark above), hence Quc')
+can't be empty either D
+
+This lemma is the essential technical ingredient of the proof of the main
+result of this section.
+Theorem 9. 4. 2. ACF admits quantifıer elimination euery (0, l; +,-,  · )-
+JoTrnuta tTĮ the ïree uariables Ë is ACŢ-equiuatent to a boolearı combįïlatįoïh
+ol polynomial equations t = 0, tuhere i E ta[].
+
+The same is tmłe lor ACF q in aįt characteristics q.
+
+Tarski (1948), unpublished, see
+
+
+
+Page 16     
+OCR Texts: 
+12 ćĦPTER §. ELßAXATTON
+ヨ生と铂一盖.夏日区rod=đion协Model了もel骂了a目jdU)钍渔Mleca国a客heド
+matics olf A S € i Wc and the Fiomǳtinns oŕ ]Äarǳnıßtics 66.
+
+p_ Wie s* ¢i) €i Tneoirem . æ Ĺ Ł. we 5hûțr for aay.W..ų-
+ACF ₩ Į ńįgÅů € ¢t4 aá. \-(óiEkeíy getıerated or riot) thaāc
+】ĺo i e k. a pįy Te Ł(_įe tTtıe IIL_t_By
+TEaoi= 0 qiy we need oEļy show Ēt i i5 true also . \-Wfite'
+as j9þ. ıç iË a cúCTJůE oí L(A)-erz_Since_W = . The
+qtıaæióer Ĥĵirm[ıİa Ľ  · is sat h c Êełd. w. the pr  · Xeig
+le!ıınaa虹巴西ĺレ雯式蛀區姓ヒ砠zlgeb面c2Eナcİared&出妇conrai끄irıgリ·虹
+
+tbe) -(11 í recaE Ei tbf cla=es c (algebray ciūseåi fipłr 
+of characteristic hae prime §icrūcturEs_the prtme fĤełds_
+Coronary 9. 4_3.
+
+€ į) eories ACFo md ACFp (p> O) are conplé_
+
+W» Etler¥ embeddmg bdæ € En dg(=blTj closed les i§ f[fmT īı-
+
+THEXi the mp T tÎłĵ 二 5 of ACF are € cÊbr E tories ACFIT-we q
+aprime区ゆーIn case qーの，虧r iııstallce.ĺ虹눋虹ワ蠡즈鹵ar a(Oーヒー。一、-)一
+senterne tme i ₩ brdc  · clrĵE € d óeh af characterise û if aııd£
+oah  · if it i5 true in C.
+
+We qrill see Ë įį. Ž that & tories LCF, are TrncotmEäb c erĵĆC
+and hat? elemiemariķ prime rnodeķ (CorsļĮäry ī4 kit Renıar ĹžJ
+(3) aftłpr 14. 2. 5)-
+
+Exercise 9. Łl. Assłmıing tbaı eïery óe&Ĵ contaǳdE an eržĵ"-closEđ
+6eįd ( bdore Lenuııı 9. ]l bełmir) p€ÐwE eha= ACF 7 is C dime cłoEĮıre oE
+CRじ{ブ戛ゾ€ズリー日ーヱー日V多一句}，(T뇨姑姑t除Ľ钰e대歹of虹嘘日ヨa£凼m男初氖
+cĹ Excise ii_3. 2-)
+
+Exercise 9A. 2. Show that ACFo Es no & finrter axiomaŁizabłe_
+
+Exercise 9.4月，飘飞at abous ACF.?
+
+9. 5 Field-theoretic appli cations
+
+The quantióer eliıııination for ACF has far-reaching comeqtïe lÆcles-ta par-
+tictııar it pr ın us ńth Iı€1F and somletimres more tramparent proo of
+classical reslııts. of which rıE coæider a felr in tMs
+
+
+
+Page 17     
+OCR Texts: 
+9. 5. FIELD-TııEORETıC A PPLıCATIONS 143
+nact. Every field is contained in aıı algebraically closed óeld.
+
+On a more formal level, tıris means that for every /c TF the set
+ACF U D (K) is consistent. This is a well-known algebraic fact. Assrıming
+it ĺor the moment, we want to derive now some deeper algebraic results
+from the material of the previotıs section. We postpone a (semntaiııed)
+proof of the above fact until Exercise 12. 1. 4. (Moreover, in Exercise 12. 1. 5
+a famous theorem of Steinitz about algebraic closure, wHch has the above
+fact as a consequence, is to be derived from our much more general-model-
+theoreticonsiderations. This topic will be resumed in Chapter 11.)
+
+Lemma 9. 5. 1. (Hilbert) Suppose a is a ßnite system of polwomiaı e ₩ a-
+tions and inequations tuįth coejJicients from the lield )C.
+
+If o has a sohıtįon irı some Feld eMerıđing )C, then a has a solution in
+euery atgebraįcatlg closed lielď ertendirŁg ) C. (Equiualerıtly, if TF U D (】C) U
+{35 cr () } is consistent, then ACF U DUC) 3ž cr ().)
+
+Proof. Suppose cr has a solution in a certain field JC') C and K C ľ
+ACF. We have to show, cr has a solution in K'.
+
+By the above fact there is an algebraically closed field K ır K ı. Since (T
+is quantffier-free with parameters in /c, to have a solution is an ejstential
+statement and thus passes up to K". Hence ACF u D (K) u {32 a} is consis-
+tent. But the substructur»completeness of ACF implies the conıpleteness
+of ACF U DOC). Consequently, ACF U DOC) 35 cr (í), as desired. D
+
+Now we can give a proof of a classical theorem that is fundamental in
+algebraic geometry. The previous lemma constitutes-in our treatment-
+the model-theoretic part of it, while the remaining part is purely algebraic
+(and known as Kronecker 's constĦtction).
+Theorem 9. 5. 2. (Hilbert', Nullstellensatz) 2 Suppose K is a ßeld, 7Z-
+) C[zo,..., zn-1] is the ring ol polynomiazs in the indeterminates zo,..., Tn-1
+urįth coeßicįents m JC, amd ïo,..., 1.-1 € T.
+
+玎 the įdeaı generated by the poıyrŁornįaįs lo,..., lm-1 in 71 įs a proper
+ideaı (į. e. Diûerent ırom TŁ), then the ₩ lynomÈaıs Ĵo,..., 1.-1 haųe a joint
+Foot im euery aıgebraįcaįly cįosed lieįď exŁending )C, į. e.
+
+i<n
+
+2'Nullstelle'[the stress is on'Null'] is a German word for'root','Satz'a German word
+for'proposition'.
+
+
+
+Page 18     
+OCR Texts: 
+1  · ł-ļ CHA PŢER 9. ELıAııNA 了了 ON
+Pruol. Iļv tllľ above lemma. It suffitwt to find an extt  · nsion lield of K in
+whiclı j, :...., J...-ı have a joint root.
+Invoking Zonı's lemma, ĺirht rłtoose a maximal ideaı 11 in 73 containing
+the l.. Tīıen K'_def R/. \l ih a field. It is ťĮsil.''seen that k-/ +,\l [lefin
+a ring homomorphisnı / ı : /c-K'with kernpl /cnA  · t. Note that. \ 1 contains
+no invertible elements (otııerwise t wouıd ıie in, \l, contradicting 71 ¢ M).
+Hence /c n M = {o}, i. e. /ı : K c K'. This embedding canonicalıy induces
+an embedding lc[ŕ] K'[ŕ], which we denote bv h again.
+Now we show that (zo+M,-... T.-1 +. \l) is a root of each of the poıyn»
+mials h (Jo),.... / ı(f.-ı ) in K'. Herp we identify, for simplicity, polynomials
+from K[È] with their h-images in K'[ì] ·
+A t1tical element of / C'is of the form T + Af. where T E 72. Tłıe
+arithmetical operations in /c'are (T + M) + (s + AI) = ( · + s) + Af and
+( · + A!)  · (, q + AI) = (T  · S) + Af. where T., 5 € 71. Hence we have f(fu +
+Al,..., T.-I + M) = firo,... Tn-ı) + Al for every polynomial f € 71. Thus
+every i < m (ǆ li € M). But O+Aİ is the zero of the field K'. Consecłuentl.'',
+ro +. \ f,..., zn-I + M is a joint root of the li in ìC'.
+By isomorphic correction one can ĥnally make /c'contain / C. D
+Remark. The ideal generated by a (single) polynomial f € K[z] i5 thp
+entire ring /c[z】 if and only if there is a polynomial g É tc[z】 such that f9 = 1,
+i. e. If and only if f has degree 0. Thus the Hilbert Nullste1ıensatz generalizes
+in two\Ą'ays the defining property or algebraically closed fields (that every
+polynomial in K[  · ] of positive degree have a root in every algebraically closed
+field extension oF K) : to finitely many polynomials and to (finitely) many
+indeterminates.
+By the way, the Nullstellensatz does not require the full strength oł
+quantifier elimination of the theory ACF, but only its so-called model-
+completeness, as is (o be shown in Exercise 9. 6. 2 below. Our next appli-
+cation, hoìn  · ever, would not folıow from the modeı-completeness alone.
+
+Suppose K ACF and n < u. By a constructible set of the affine
+space )C"v  · e mean a set deñnable in /c by a formula from qf n L. (K), i. c.
+a (ĥnite) boolean combination of solution sets of polynomial equations in n
+indeterminates with coefficients from /c.
+
+Theorem 9. 5. 3. (Chevall ₩) Suppose K ACF and m < n < u.
+
+Euery projectįoTŁ ol a coïıstmctibıe set Jrom )C"onto W is constructįbıe
+(ITı IC").
+
+
+
+Page 19     
+OCR Texts: 
+9. 5. FıELD-THEORETIC APPLICATIONS 145
+[D. Mumford, Algebraic Geometry I (Complex Projective Varieties), Grund-
+lehren der Mathematischen Wissenschaften 221, Springer, Berlin 1976]
+Proof If X Ç /c"is defined by P(ZO,..., zn-1), then its projection e. g-onto
+the last n-1 components is delined by Ĵxop(ZO,..., zn-]). But the latter
+is, by quantifier elimination, ACF-equivalent to a quantifier-free formula,
+hence defines a constructible set in W. D
+Remark. The proof yields a strengthening of Chevalley's theorem for ev-
+ery ĘQ(O,..  · 13n-1) there is a quantifier-free (£1,... 1on-1) defining the
+projection of v (W) onto T1t... Tzn-1 not only in one, but simultaneously
+in all /c ACF.
+Let /c ACF. A function f : K"K-is said to be constructible
+if so is its graph (as a subset of )C  · +.').
+
+Corollary 9. 5. 4. The image as uïell as the domain ol tnjecttuįty ol a coTı-
+stmctible f\ınction is constnıctible.
+
+Proof If v(ŕ, ) defines the graph of the given function, 35 v(ŕ, jì) defines
+its image, while Vr'y (v(Ë, ý) A P(ŕ', ý) 4 = #) defines ts domain of
+injectivity. D
+Remark. A formula P(ŕ, ý, ii) with parameters â from a field /c ACF
+defines in K a function È H ý if and only if it does so in any other lield
+/c ı ACF containing the field (or ring) generated by ã in JC.
+
+This is another conóequence of the quantióer elimination for ACF, or
+rather its substructurecompleteness, which implies
+
+We will see more field-theoretic applications in (the exercises of) Chapter
+12 and in Chapter 14.
+Exercise 9. 5. 1. (Simultan«»tıs Solvabillty Criterion.) Given a finite systenı a(ī, )
+of polynomial equations and inequations in tıie indetenniuates í a】ıd ï (with in-
+toger coefficiente), prove that there i8 a booıeaıı combination a'(í) of polynonıiaı
+equations in the indeterminates ý (with integer coefficients) satisljńlıg the following
+equivalence for all K ACF and all l(ý)-tuples č from IC a(ï, č) has a solution in
+IC if and only if K «r'(č), i. e.,
+ACF Vý(3fa(Ë, ý) H.'())  ·
+Exercise 9. 6. 2. Do the same as hı the previous ex but auo«ńng paranı
+from a certain óeld M.
+
+
+
+Page 20     
+OCR Texts: 
+146 CHA PTER 9. ELIMINATION
+Exercise 9. 5. 3. Firıd Ł\ more down-tccarth proof of Lttmma 9. 5. 1 using th(: first
+exercise above.
+Exercise 9. 5. 4. Derive from Theorein 9. 5. 2 the following more usual fornıtılation
+of Hilbert's Nullstellensatz.
+If, in an algebraically closed field extension of K, all joint roots of To,..., f.-1 €
+K[Ē】 me albo roots of g € /[ŕ], then 9 k, for solne k > O, is contained in the ideal
+generated by Jo,..., j.-Rin K[ž] ·
+
+Given a field /c, GLƝUC) denotes the so-called general linear group of 2 × 2
+matrices over K, i. e. The set, of 2 × 2 matrices over K whose determinant is not O,
+with the tısual matrix multiplication. Two clements a and b of a group G are said
+to bc conjugate (in G) if there is 9 E G with a-g-'b9 ·
+
+Exercise 9. 5. 5. Show that two matrices from GL2 (K) with K ACF are conju-
+gate in GL2 (K) if and only if they are conjugate in GL2 (K') for some /c'ACF
+extending )C.
+
+9. 6 Model-completeness
+
+Consider the following weakening of substructure-completeness. A theory T
+is said to be model-complete if it is Mod T-complete (see §9. 2).
+
+[binson, A. : Complete Theories, Studies in Logic and the Foundations of
+Mathematics, North-Holland, Amsterdam, 1956]
+
+We are going to show that model-completeness is equivalent to a ı  · eaker
+elimination property, namely to 3-elimination, and, equivalent ly, also to V-
+elimination. There is another interesting equivalent, for which we introduce
+
+another concept.
+Given. L-structures M Ç N, we say that M is existentially closed in
+N if JV v (łı) implies M p (ã) for every existential Lformula q () and
+every matching tuple ä from M, i. e. If M Ĵ N (cf. Notation in ₩. 3). M
+is said to be existentially closed in a given class of structures, K, if
+M € K and M is existentially closed in every N € K with M C N. An
+existentially closed model of a theory T is, by definition, a model of T
+that is existentially closed for the class Mod T.
+Remarks.
+(1) As mentioned before Lemma 9. 2. 1, every 3-formula is logically equiva-
+lent to a disjunction of primitive formulas. Therefore for the existential
+closedness of M in N J M it suffices to check primitive formuıas.
+(2) A primitive formula is of the form 3Ē cT(, ), where cr is a conjunction of
+
+literals. In languages without relation symbols the latter are just term
+
+
+
+Page 21     
+OCR Texts: 
+9. 6. MODE COAIPLETENESS 147
+equations and inequations. Hence in this case the existential closedness
+of JM in N M means that every finite system cr of equations and
+inequations with parameters from M is solvable in M whenever it it
+is solvable in N. Thus Lemma 9. 5. 1 implies that algebraically closed
+fields are existentially closed (in the class of all fields). 3 Since every
+polynomial of positive degree in one indeterminate with coefficients
+from a given field has a solution in alı extension field (use e. g. Kro-
+necker's construction from the proof of the Nullstellensatz), we infer
+that, conversely, every existentially closed field is algebraically closed.
+Thus for fields both notions coincide (where existentially closed field
+is to mean ° existentially closed in the class of fields').
+Next we prove an extended analogue of Theorem 9. 2. 2. The implication
+(iv) 4 (i) is known as Robinson's model-completeïıess test.
+Theorem 9. 6. 1. (A. Robinson) For euery theory T the Tolloluing are eqtıiu-
+aıent.
+(i) T is model-complete.
+
+i ) Euery Tnonornorphįsm bettueen Tnodeįs ol T is eıemerıtary.
+W 玎 M, JVT andMcN, thenMJV 。
+Ov') IĴM, NT andMļN, therŁMaN ·
+( · ) All modeıs ol T are eristentįaıįy cıosed.
+(vi) T has 3-elimination.
+LW T has V-eıimination.
+
+Proof (i) 4 (ii). Clearly, (M, M) is a model of TuD (M). If f : M JV
+and M, N T, also (N, f[M]) is a model of T U D (M). Its completeness
+(given by hypothesis) yields (M, M)-(N, f[M]), whence f is elementary.
+
+间二辛(币)·二争(iv)号(·)二辛(iv)is trivial.
+
+(iv) 4 (vi). Since the V-formulas are (up to logical equivalence) exactly
+the negations of 3-formulas, M Ĵ N if and only if for all V-formulas ()
+and all matching ä from M we have ţhe implication if M tþ(ii), then
+N ý (ä). Corollary 6. 2. 6 then implies that all V-formulas are T-equivalent
+to 3-formulas.
+
+In order to show that eitery formula fp is T-equivalent to an 3-formula,
+we proceed by induction on the complexity of q. The initial step is, as
+well as the quantifier step, is trivial. But so is also the conjunction stepi
+as 35q (Ē) A ĴyQ (y) is logically equivalent to 3g (qo(Ē) A ()). We'are
+ıeft with the negation. So let 0 be of the form-, where ý is already T-
+
+aThis can also be derived using RabinorıJitsch'trick : TF Vz(z / 0-3y(ry-1)).
+
+
+
+Page 22     
+OCR Texts: 
+1-łs CHA PTER 9. ELIA  · 【ıNATI0N
+t'quivalent to an 3-for mula. Tllcu is T-equivalent to an V-formula, whiclı
+in tm  · 11 is, iui ruentioncd above, equivalent to an 3-formula.
+
+(vi) (vii) is immediate, ǆ every formula can bc written as a (double)
+
+negation.
+
+(vii) (iii) follows fronı Lemma 6. 2. 1 and Remark (6) in §6. 1.
+
+(iii) (ii). Let f : M N an«l M, N T. Then there is M'with
+f : M M'Ė N, and (iii) yields M'N. Hence f is elementary (Lernma
+
+(ii) (i). Any two models of T u D (M) are of the forni (Nu, JD【AI])
+and (Nl, J] [AI]) for certain li : M N. By (ii) these latter maps are
+elementary, hence (Mo, Jo[AI])  · 00, A1)-(N】, fl[nf])  ·
+
+□
+
+Remarks.
+
+(3) Also for model-complete theories the two notions of prime model coin-
+
+eide, and we just say prime model.
+(4) (Prime Model Test)
+
+Every modeı-complete theory with a prime model is complete.
+
+One of the exercises below shows that finite linear orderings with more
+than one element are examples of complete and model-complete theories
+that do not admit quantiĥer elimination.
+Example. (A complete, model-complete theory with infinite models that
+does not have quantiĥer elimination.)
+
+Let L be the language whose only non-logical symbol is a binary relation
+symbol R. Consider the L-structure M on the universe u defined by
+
+Let T be the L-theory axiomatized by the sentences
+
+(RO) Vxy (R(z, y) R(v, z)) (R is symmetrical),
+(R1) 3-I zvy-R(z, y) (there is a unique isolated and irrefıexive point),
+(R2) 3-3z-R(£, T) A Vx (R(z, z) 4 Vy (R(z, y) 4 z-y)) (there are
+
+exactly three irreflexive points, and alı reflexive points are isolated),
+(R3) 3z3/(£ # y A R(T, y)) (there are nonisolated poinı. s).
+
+
+
+Page 23     
+OCR Texts: 
+9. 6. MODEL COMPLETENESS 149
+It folıows from (R1) and (R2) that there are at most two nonisolated points.
+Together with (R3) this yields exactly two nonisolated points. The models
+of T thus difĺer from. At moet in the nurııber of relıeriue points (related
+to themselves). Hence every model. /v of T has power 3 and, in case
+N is finite, exactly ıNı-3 rellexive points. Consequently, T is totally
+categorical. Then T°o is totally categońcaı, and hence complete. A point of
+a substructure A of a model N of T is reHexive in A if aııd only if it is so iıı
+N. Hence in case A T aļl three irreßexive points of. TV must be irreĤexive
+also in A. If, in addition, both models are infinite, Corollaņ  · 8. 3. 4 easil!  ·
+gives A N. Consequently, Tac is model-complete.
+
+But T°c is not substructurmompıete : we claim that TuD (B) is not com
+plete for the substructure B that consists of a single. IrreHexive point. For,
+the substructures of M on the universe {0} and on the universe {1} are both
+isomorphic to ı3, hence (M, O) and (M, 1) are models of TuD (B). However,
+they are not elementariıy equivalent, as M V3/-R(O, y) A ĵyR(1, y)  ·
+
+Exercise 9. 6. 1. Wny don't ı«mma 8. 2. 2 (2) and Corollary 8. 4. 5 imply that
+complete theory is model complete?
+
+Exercise 9. 6. 2. Derive Lemma 9. 5. 1 (and thm Hiıbert's Nullstellensatz) from the
+model-completeness of ACF. (For ACF, though, modelmmpleteness does not seem
+to be easier to prove than quaiıtifier elimination.)
+
+Exercise 9. 6. 3. Every incomplete theory with quantffier elimination (like ACF) is
+an example of a model-complete, but not complete theory. Find a model-complete
+theory in a language with only a binary relation symbol which is not complete.
+Exercise 9. 6. 4. Consider, in the language L of the above exanıple, the structure
+N on (ı/ such that RN_{(n, n + 1) : 3 ś n < (4ì} and show that its complete
+theory is not model-compıete.
+Exercise 9. 6. 5. Wnich theories of dense linear orderings are modekomplete?
+
+Exercise 9. 6. 6. Prove that every complete theory with finite models is model-
+complete, and that no finite linem ordering with nıore than one element admits
+quantilier elimination.
+
+Exercise 9. 6. 7. Prove that a theory T admits quantffier elimination if and only
+if iţ is model-complete and has the following aiııalgamation property.
+
+If A is a joint substructure of the models M, N T, then there is a model
+M'J M of T and an embedding g : N M ı such that idaıidA-g idA ·
+
+Exercise 9. 6. 8. Show that Th(Z ; O ; +,-) is not model-complete.
+
+
+
