@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>hw08</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","output/HTML-CSS"],
+    extensions: [],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    showMathMenu: false
+  });
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+</script>
+      <style>
+.conflict-resolved {
+  background: rgba(255, 255, 255, 0.07);
+}
+.conflict-ours {
+  background: rgba(23, 202, 101, 0.4);
+}
+.conflict-ours.cursor-line {
+  background: rgba(23, 202, 101, 0.3);
+}
+.conflict-theirs {
+  background: rgba(0, 152, 255, 0.4);
+}
+.conflict-theirs.cursor-line {
+  background: rgba(0, 152, 255, 0.3);
+}
+.conflict-base {
+  background: rgba(255, 170, 44, 0.4);
+}
+.conflict-base.cursor-line {
+  background: rgba(255, 170, 44, 0.3);
+}
+.conflict-dirty {
+  background: rgba(245, 225, 29, 0.4);
+}
+.conflict-dirty.cursor-line {
+  background: rgba(245, 225, 29, 0.3);
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+pre.editor-colors .wrap-guide {
+  background-color: #676a6c;
+}
+pre.editor-colors .indent-guide {
+  color: #676a6c;
+}
+pre.editor-colors .invisible-character {
+  color: #676a6c;
+}
+pre.editor-colors .gutter {
+  background-color: #1d1f21;
+  color: #969896;
+}
+pre.editor-colors .gutter .line-number {
+  padding: 0 0.25em 0 0.5em;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  background-color: #373b41;
+  color: #c5c8c6;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  color: #c5c8c6;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #969896;
+}
+pre.editor-colors .invisible {
+  color: #c5c8c6;
+}
+pre.editor-colors .cursor {
+  color: #ffffff;
+}
+pre.editor-colors .selection .region {
+  background-color: #373b41;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-color: #969896;
+}
+.syntax--comment {
+  color: #969896;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #969896;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #f0c674;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #b5bd68;
+}
+.syntax--keyword {
+  color: #b294bb;
+}
+.syntax--keyword.syntax--control {
+  color: #b294bb;
+}
+.syntax--keyword.syntax--operator {
+  color: #c5c8c6;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #81a2be;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #de935f;
+}
+.syntax--storage {
+  color: #b294bb;
+}
+.syntax--constant {
+  color: #de935f;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #8abeb7;
+}
+.syntax--constant.syntax--numeric {
+  color: #de935f;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #8abeb7;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #b5bd68;
+}
+.syntax--variable {
+  color: #cc6666;
+}
+.syntax--variable.syntax--interpolation {
+  color: #a3685a;
+}
+.syntax--variable.syntax--parameter.syntax--function {
+  color: #c5c8c6;
+}
+.syntax--invalid.syntax--illegal {
+  background-color: #cc6666;
+  color: #1d1f21;
+}
+.syntax--string {
+  color: #b5bd68;
+}
+.syntax--string.syntax--regexp {
+  color: #8abeb7;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #f0c674;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #cc6666;
+}
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #c5c8c6;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #81a2be;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #f0c674;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #b294bb;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #a3685a;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #c5c8c6;
+}
+.syntax--support.syntax--class {
+  color: #f0c674;
+}
+.syntax--support.syntax--function {
+  color: #8abeb7;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #81a2be;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #81a2be;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #f0c674;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #81a2be;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #cc6666;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #de935f;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #81a2be;
+}
+.syntax--meta.syntax--class {
+  color: #f0c674;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #c5c8c6;
+}
+.syntax--meta.syntax--link {
+  color: #de935f;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #c5c8c6;
+}
+.syntax--meta.syntax--require {
+  color: #81a2be;
+}
+.syntax--meta.syntax--selector {
+  color: #b294bb;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #c5c8c6;
+}
+.syntax--meta.syntax--tag {
+  color: #c5c8c6;
+}
+.syntax--none {
+  color: #c5c8c6;
+}
+.syntax--markup.syntax--bold {
+  color: #de935f;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #b294bb;
+}
+.syntax--markup.syntax--deleted {
+  color: #cc6666;
+}
+.syntax--markup.syntax--italic {
+  color: #b294bb;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #cc6666;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #81a2be;
+}
+.syntax--markup.syntax--link {
+  color: #81a2be;
+}
+.syntax--markup.syntax--inserted {
+  color: #b5bd68;
+}
+.syntax--markup.syntax--quote {
+  color: #de935f;
+}
+.syntax--markup.syntax--raw {
+  color: #b5bd68;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #8abeb7;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #b294bb;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #cc6666;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #cc6666;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #b5bd68;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #8abeb7;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h2>HW 8</h2>
+<p><strong>Due Friday April 13</strong></p>
+<p><strong>Exercises:</strong> <strong>8.1.1</strong>, <strong>8.2.2</strong>, <strong>8.3.1</strong>, (8.3.5), (8.3.6), <strong>8.4.1</strong>, <strong>8.4.3</strong>, <strong>8.4.4</strong>, <strong>8.4.5</strong>, <strong>8.5.1</strong>, (8.5.2), <strong>8.5.5</strong>.</p>
+<p>To pass this assignment, submit well-written, complete, correct solutions to at least <strong>five</strong> exercises from among the non-parenthesized numbers above.</p>
+<hr>
+<p><strong>8.1.1.</strong>
+Lct <span class="math"><script type="math/tex">\varphi \in L</script></span> deĥne a finite set <span class="math"><script type="math/tex">X</script></span> in the <span class="math"><script type="math/tex">L</script></span>-structure <span class="math"><script type="math/tex">\mathcal M</script></span>.
+Show that in every <span class="math"><script type="math/tex">\mathcal N</script></span> elementarily equivalent to <span class="math"><script type="math/tex">\mathcal M</script></span>,
+the set defined by <span class="math"><script type="math/tex">\varphi</script></span> has the same power as <span class="math"><script type="math/tex">X</script></span>. Formulate and prove a converse of this.</p>
+<hr>
+<p><strong>8.2.2.</strong>
+Given a structure <span class="math"><script type="math/tex">\mathcal M</script></span> and an ultrafilter <span class="math"><script type="math/tex">U</script></span> on a nonempty set <span class="math"><script type="math/tex">I</script></span>,
+prove that the canonical embedding (from Exercise 4.1.2) of <span class="math"><script type="math/tex">\mathcal M</script></span> in its ultrapower <span class="math"><script type="math/tex">\mathcal M^I/U</script></span> is elementary.</p>
+<hr>
+<p><strong>8.3.1.</strong>
+Let <span class="math"><script type="math/tex">\mathcal M</script></span> be an <span class="math"><script type="math/tex">L</script></span>-structure. Prove that the following are equivalent
+for any formula <span class="math"><script type="math/tex">\varphi \in L_n(M)</script></span>.<br>
+(i) <span class="math"><script type="math/tex">\varphi(\mathcal M)</script></span> is finite.<br>
+(ii) <span class="math"><script type="math/tex">\varphi(\mathcal M) = \varphi(\mathcal N)</script></span> for every <span class="math"><script type="math/tex">\mathcal N \succcurlyeq \mathcal M</script></span>.<br>
+(iii) <span class="math"><script type="math/tex">\varphi(\mathcal M) \subseteq M^n</script></span> for every <span class="math"><script type="math/tex">\mathcal N \succcurlyeq \mathcal M</script></span>.</p>
+<hr>
+<p>(8.3.5)
+Show by counterexample that the criterion 8.3.4 is not necessary
+for being an elementary substructure.</p>
+<hr>
+<p>(8.3.6)
+Prove that, given an arbitrary subordering <span class="math"><script type="math/tex">\mathcal M = (M, <) \subseteq \rho</script></span>, this inclusion is elementary if and only if <span class="math"><script type="math/tex">\mathcal M \vDash \mathrm{DLO}_{--}</script></span>.</p>
+<hr>
+<p><strong>8.4.1.</strong>
+Suppose <span class="math"><script type="math/tex">\mathcal M</script></span> is an <span class="math"><script type="math/tex">L</script></span>-structure and <span class="math"><script type="math/tex">\varphi \in L_n (n > 0)</script></span>
+is such that <span class="math"><script type="math/tex">\varphi(\mathcal M)</script></span>
+is infinite. Then for every <span class="math"><script type="math/tex">\kappa \in \mathbf{Cn}</script></span> with <span class="math"><script type="math/tex">\kappa \geq |L|</script></span>, there is an <span class="math"><script type="math/tex">L</script></span>-structure <span class="math"><script type="math/tex">\mathcal N \equiv \mathcal M</script></span> of power
+<span class="math"><script type="math/tex">\kappa</script></span> and such that <span class="math"><script type="math/tex">|\varphi(\mathcal N)| = \kappa</script></span>.</p>
+<hr>
+<p><strong>8.4.3.</strong>
+Verify that ultrapowers (along with isomorphic correction) provide us with another tool to construct elementary extensions.</p>
+<hr>
+<p><strong>8.4.4</strong>
+Consider <span class="math"><script type="math/tex">\mathcal M</script></span> and <span class="math"><script type="math/tex">\mathcal N</script></span> as in Example (4) of §6.3 and the
+disjoint union of <span class="math"><script type="math/tex">\mathcal M</script></span> and <span class="math"><script type="math/tex">\mathcal N</script></span>, regarded as an <span class="math"><script type="math/tex">L_{<}</script></span>-structure <span class="math"><script type="math/tex">\mathcal N'</script></span>.  Prove that <span class="math"><script type="math/tex">\mathcal M</script></span> and <span class="math"><script type="math/tex">\mathcal N'</script></span> are elementarily equivalent.</p>
+<hr>
+<p><strong>8.4.5.</strong>
+Find an example of a theory <span class="math"><script type="math/tex">T</script></span> and a model of <span class="math"><script type="math/tex">T_{\exists}</script></span> that does not
+contain a model of <span class="math"><script type="math/tex">T</script></span> (this showing that we cannot improve on Exercise 6.2.6).</p>
+<hr>
+<p><strong>8.5.1.</strong>
+Show that <span class="math"><script type="math/tex">\mathrm{DLO}_{-+}</script></span>, <span class="math"><script type="math/tex">\mathrm{DLO}_{+-}</script></span>, and <span class="math"><script type="math/tex">\mathrm{DLO}_{++}</script></span> are complete theories.</p>
+<hr>
+<p>(8.5.2)
+Prove that <span class="math"><script type="math/tex">\mathrm{DLO}_{--}</script></span> is in no uncountable power categorical.</p>
+<hr>
+<p><strong>8.5.5.</strong> Show that the theory of the structure <span class="math"><script type="math/tex">\mathcal M</script></span> from Exercise 8.4.4 is
+categorical in all uncountable powers.</p>
+<hr></body>
+</html>
