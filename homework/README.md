@@ -83,37 +83,21 @@
 
 ## HW 7
 
-**Due Friday Mar 16**
+**Due Friday Mar 23**
 
-**Exercises:** TBA
+**Exercises:** (7.1.1), **7.2.1**, **7.3.2**, **7.4.1**, **7.4.2**, **7.5.1**, **7.5.2**, **7.5.3** 
 
 ---
 
 ## HW 8
 
-**Due Friday Mar 23**
+**Due Friday April 13**
 
-**Exercises:** TBA
+**Exercises:** **8.1.1**, **8.2.2**, **8.3.1**, **8.3.5**, (8.3.6), **8.4.1**, (8.4.2), **8.4.3**, **8.4.4**, **8.4.5**, **8.5.1**, **8.5.5**.
 
 ---
 
 ## HW 9
-
-**Due Friday Apr 6**
-
-**Exercises:** TBA
-
----
-
-## HW 10
-
-**Due Friday Apr 13**
-
-**Exercises:** TBA
-
----
-
-## HW 11
 
 **Due Friday Apr 20**
 
@@ -121,8 +105,18 @@
 
 ---
 
-## HW 12
+## HW 10
 
 **Due Friday Apr 27**
 
 **Exercises:** TBA
+
+---
+
+## HW 11
+
+**Due Friday May 4**
+
+**Exercises:** TBA
+
+---
