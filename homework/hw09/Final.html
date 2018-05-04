@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Final</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","output/HTML-CSS"],
+    extensions: [],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    showMathMenu: false
+  });
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+</script>
+      <style>
+.conflict-resolved {
+  background: rgba(255, 255, 255, 0.07);
+}
+.conflict-ours {
+  background: rgba(23, 202, 101, 0.4);
+}
+.conflict-ours.cursor-line {
+  background: rgba(23, 202, 101, 0.3);
+}
+.conflict-theirs {
+  background: rgba(0, 152, 255, 0.4);
+}
+.conflict-theirs.cursor-line {
+  background: rgba(0, 152, 255, 0.3);
+}
+.conflict-base {
+  background: rgba(255, 170, 44, 0.4);
+}
+.conflict-base.cursor-line {
+  background: rgba(255, 170, 44, 0.3);
+}
+.conflict-dirty {
+  background: rgba(245, 225, 29, 0.4);
+}
+.conflict-dirty.cursor-line {
+  background: rgba(245, 225, 29, 0.3);
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+.languagetool-match .region {
+  background-color: #c00;
+}
+
+pre.editor-colors {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+pre.editor-colors .wrap-guide {
+  background-color: #676a6c;
+}
+pre.editor-colors .indent-guide {
+  color: #676a6c;
+}
+pre.editor-colors .invisible-character {
+  color: #676a6c;
+}
+pre.editor-colors .gutter {
+  background-color: #1d1f21;
+  color: #969896;
+}
+pre.editor-colors .gutter .line-number {
+  padding: 0 0.25em 0 0.5em;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  background-color: #373b41;
+  color: #c5c8c6;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  color: #c5c8c6;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #969896;
+}
+pre.editor-colors .invisible {
+  color: #c5c8c6;
+}
+pre.editor-colors .cursor {
+  color: #ffffff;
+}
+pre.editor-colors .selection .region {
+  background-color: #373b41;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-color: #969896;
+}
+.syntax--comment {
+  color: #969896;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #969896;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #f0c674;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #b5bd68;
+}
+.syntax--keyword {
+  color: #b294bb;
+}
+.syntax--keyword.syntax--control {
+  color: #b294bb;
+}
+.syntax--keyword.syntax--operator {
+  color: #c5c8c6;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #81a2be;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #de935f;
+}
+.syntax--storage {
+  color: #b294bb;
+}
+.syntax--constant {
+  color: #de935f;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #8abeb7;
+}
+.syntax--constant.syntax--numeric {
+  color: #de935f;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #8abeb7;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #b5bd68;
+}
+.syntax--variable {
+  color: #cc6666;
+}
+.syntax--variable.syntax--interpolation {
+  color: #a3685a;
+}
+.syntax--variable.syntax--parameter.syntax--function {
+  color: #c5c8c6;
+}
+.syntax--invalid.syntax--illegal {
+  background-color: #cc6666;
+  color: #1d1f21;
+}
+.syntax--string {
+  color: #b5bd68;
+}
+.syntax--string.syntax--regexp {
+  color: #8abeb7;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #f0c674;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #cc6666;
+}
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #c5c8c6;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #81a2be;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #f0c674;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #b294bb;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #a3685a;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #c5c8c6;
+}
+.syntax--support.syntax--class {
+  color: #f0c674;
+}
+.syntax--support.syntax--function {
+  color: #8abeb7;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #81a2be;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #81a2be;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #f0c674;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #81a2be;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #cc6666;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #de935f;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #81a2be;
+}
+.syntax--meta.syntax--class {
+  color: #f0c674;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #c5c8c6;
+}
+.syntax--meta.syntax--link {
+  color: #de935f;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #c5c8c6;
+}
+.syntax--meta.syntax--require {
+  color: #81a2be;
+}
+.syntax--meta.syntax--selector {
+  color: #b294bb;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #c5c8c6;
+}
+.syntax--meta.syntax--tag {
+  color: #c5c8c6;
+}
+.syntax--none {
+  color: #c5c8c6;
+}
+.syntax--markup.syntax--bold {
+  color: #de935f;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #b294bb;
+}
+.syntax--markup.syntax--deleted {
+  color: #cc6666;
+}
+.syntax--markup.syntax--italic {
+  color: #b294bb;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #cc6666;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #81a2be;
+}
+.syntax--markup.syntax--link {
+  color: #81a2be;
+}
+.syntax--markup.syntax--inserted {
+  color: #b5bd68;
+}
+.syntax--markup.syntax--quote {
+  color: #de935f;
+}
+.syntax--markup.syntax--raw {
+  color: #b5bd68;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #8abeb7;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #b294bb;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #cc6666;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #cc6666;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #b5bd68;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #8abeb7;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1>Math 6000: Model Theory</h1>
+<h2>Final Homework (HW 9)</h2>
+<p><strong>DUE: Friday, 11 May 2018</strong></p>
+<p><strong>Motivation.</strong>
+This problem set is about proof theory, which requires some preliminaries that we haven’t covered in class.  However, these will be presented below.  Since we have spent a lot of time developing a certain (model-theoretic) point of view, we should have by now a fairly sophisticated context or framework, with respect to which we can understand and appreciate (or judge) other approaches to foundations and related areas.</p>
+<p>The idea of this homework, then, is to give you a chance to compare some of the basic definitions of model theory (e.g., a theory, entailment, completeness) to their proof-theoretic analogues, and to contrast the points of view taken in these distinct (though not disjoint) branches of logic.</p>
+<p><strong>Intructions.</strong>
+Answer Problems 1 through 8 below.  A few of the problems are somewhat open-ended, and you could write extensive essays on the topic, but that is not my intention.  Rather, I would like you to think carefully about each question and then write anywhere from two sentence up to two paragraphs in response.  Your answer should show that you have thought about the question, can appreciating its significance, and can express your thoughts about it intelligently and succinctly.  So, limit your answers to one or two paragraphs; be precise and concise; no b.s.</p>
+<p>Typeset your solutions using LaTeX or Markdown.  You may submit solutions electronically as a pdf file via email, or leave a (typed or typeset) hard-copy in my mailbox anytime on or before the deadline.</p>
+<hr>
+<h2>A Very Brief Introduction to Proof Theory</h2>
+<h3>Languages</h3>
+<p>A <strong>language</strong> <span class="math"><script type="math/tex">\mathcal L</script></span> (in proof theory) is a tuple <span class="math"><script type="math/tex">(\mathcal S, \mathcal F , \mathcal P)</script></span>
+where <span class="math"><script type="math/tex">\mathcal S</script></span> is a non-empty set of <em>term sorts</em> and <span class="math"><script type="math/tex">\mathcal F</script></span> and <span class="math"><script type="math/tex">\mathcal P</script></span> are sets whose elements are called <em>function symbols</em> and <em>predicate symbols</em>, respectively. Each function symbol has an associated arity, which is an <span class="math"><script type="math/tex">(n + 1)</script></span>-tuple of elements of <span class="math"><script type="math/tex">\mathcal S</script></span>, and each predicate symbol has an arity which is an <span class="math"><script type="math/tex">n</script></span>-tuple of elements of <span class="math"><script type="math/tex">\mathcal S</script></span>.</p>
+<p><strong>PROBLEM 1.</strong> Compare/contrast this notion of language and the languages we encountered in model theory.</p>
+<hr>
+<h3>Terms</h3>
+<p>Let <span class="math"><script type="math/tex">\mathcal L</script></span> be a language and <span class="math"><script type="math/tex">(\mathcal V_s)_{s\in\mathcal S}</script></span> a family of
+infinite, pairwise disjoint sets, indexed by term sorts, whose elements are called
+<em>variables</em>. The set of <strong>terms</strong> of sort <span class="math"><script type="math/tex">s</script></span> of the language <span class="math"><script type="math/tex">\mathcal L</script></span>, for a given family of sets of variables, is inductively defined as follows.</p>
+<ul>
+<li>Variables of sort <span class="math"><script type="math/tex">s</script></span> are terms of sort <span class="math"><script type="math/tex">s</script></span>.</li>
+<li>If <span class="math"><script type="math/tex">f</script></span> is a symbol of arity <span class="math"><script type="math/tex">(s_1, \dots, s_n, s')</script></span> and <span class="math"><script type="math/tex">t_1, \dots, t_n</script></span> are terms of sorts <span class="math"><script type="math/tex">s_1, \dots, s_n</script></span>, then <span class="math"><script type="math/tex">f(t_1, \dots, t_n)</script></span> is a term of sort <span class="math"><script type="math/tex">s'</script></span>.</li>
+</ul>
+<p><strong>PROBLEM 2.</strong> Compare/contrast these terms and the terms we encounter in model theory.</p>
+<hr>
+<h3>Propositions</h3>
+<p>Let <span class="math"><script type="math/tex">\mathcal L</script></span> be a language. The set of <strong>propositions</strong> of the language <span class="math"><script type="math/tex">\mathcal L</script></span>, for a given family of sets of variables <span class="math"><script type="math/tex">(\mathcal V_s)_{s\in\mathcal S}</script></span> is inductively defined as follows.</p>
+<ul>
+<li>If <span class="math"><script type="math/tex">P</script></span> is a predicate symbol of arity <span class="math"><script type="math/tex">(s_1, \dots, s_n)</script></span> and <span class="math"><script type="math/tex">t_1, \dots, t_n</script></span> are terms of sorts <span class="math"><script type="math/tex">s_1, \dots, s_n</script></span>, then the expression <span class="math"><script type="math/tex">P(t_1, \dots, t_n)</script></span> is a proposition.</li>
+<li><span class="math"><script type="math/tex">\top</script></span> and <span class="math"><script type="math/tex">\perp</script></span> are propositions.</li>
+<li>If <span class="math"><script type="math/tex">A</script></span> is a proposition, then <span class="math"><script type="math/tex">\neg A</script></span> is a proposition.</li>
+<li>If <span class="math"><script type="math/tex">A</script></span> and <span class="math"><script type="math/tex">B</script></span> are propositions, then <span class="math"><script type="math/tex">A ∧ B</script></span>, <span class="math"><script type="math/tex">A ∨ B</script></span> and <span class="math"><script type="math/tex">A \to B</script></span> are propositions.</li>
+<li>If <span class="math"><script type="math/tex">A</script></span> is a proposition and <span class="math"><script type="math/tex">x</script></span> is a variable of sort <span class="math"><script type="math/tex">s</script></span>, then <span class="math"><script type="math/tex">∀_s x\, A</script></span> and <span class="math"><script type="math/tex">∃_s x \, A</script></span> are propositions.
+The notation <span class="math"><script type="math/tex">A \leftrightarrow B</script></span> will be used as an abbreviation for <span class="math"><script type="math/tex">(A \to B) ∧ (B \to A)</script></span>.</li>
+</ul>
+<p><strong>PROBLEM 3.</strong> Can you find a model theoretic anaolog of “proposition” as defined here?</p>
+<hr>
+<!-- + **Atomic.** A proposition of the form $P(t_1,\dots, t_n)$ is called *atomic*.
+ -->
+<h3>Sequents and Natural Deduction</h3>
+<p>A <strong>sequent</strong> is a pair <span class="math"><script type="math/tex">\Gamma \vdash A</script></span>, where <span class="math"><script type="math/tex">\Gamma</script></span> is a finite set of propositions and <span class="math"><script type="math/tex">A</script></span> is a proposition.</p>
+<p>The <strong>rules of natural deduction</strong> are the following <em>axioms</em>, <em>introduction rules</em>, and <em>elimination rules</em>:</p>
+<span class="math"><script type="math/tex; mode=display">\frac{}{\Gamma \vdash A}\text{axiom } A \in \Gamma,\qquad \frac{}{\Gamma \vdash \top}\top \text{-intro}, \qquad \frac{\perp}{\Gamma \vdash A}\perp \text{-elim}
+</script></span>
+<span class="math"><script type="math/tex; mode=display">\frac{\Gamma \vdash A, \qquad \Gamma \vdash B}{\Gamma \vdash A \wedge B}\wedge\text{-intro}, \qquad \frac{\Gamma \vdash A \wedge B}{\Gamma \vdash A}\wedge\text{-elim},\qquad \frac{\Gamma \vdash A \wedge B}{\Gamma \vdash B}\wedge\text{-elim},
+</script></span>
+<span class="math"><script type="math/tex; mode=display"> \frac{\Gamma \vdash A}{\Gamma \vdash A \vee B}\vee\text{-intro}, \quad
+\frac{\Gamma \vdash B}{\Gamma \vdash A \vee B}\vee\text{-intro}, 
+\quad \frac{\Gamma \vdash A \vee B \quad \Gamma, A \vdash C \quad \Gamma, B \vdash C }{\Gamma \vdash C}\vee\text{-elim},</script></span>
+<span class="math"><script type="math/tex; mode=display"> \frac{\Gamma, A \vdash B}{\Gamma \vdash A \to B}\to\text{-intro}, \qquad
+\frac{\Gamma \vdash A \to B \qquad \Gamma \vdash A}{\Gamma \vdash B}\to\text{-elim},</script></span>
+<span class="math"><script type="math/tex; mode=display"> \frac{\Gamma, A \vdash \perp}{\Gamma \vdash \neg A}\neg\text{-intro}, \qquad
+\frac{\Gamma \vdash A \qquad \Gamma \vdash \neg A}{\Gamma \vdash \perp}\neg\text{-elim},</script></span>
+<span class="math"><script type="math/tex; mode=display"> \frac{\Gamma \vdash A}{\Gamma \vdash \forall x \,A}\forall\text{-intro}\, (x\notin {\rm FV}(\Gamma)), \qquad
+\frac{\Gamma \vdash \forall x \, A}{\Gamma \vdash [t/x]A}\forall\text{-elim},</script></span>
+<span class="math"><script type="math/tex; mode=display"> \frac{\Gamma \vdash [t/x]A}{\Gamma \vdash \exists x \,A}\exists\text{-intro}, \quad
+\frac{\Gamma \vdash \exists x \, A \quad \Gamma, A \vdash B}{\Gamma \vdash B}\exists\text{-elim}\, (x\notin {\rm FV}(\Gamma, B)),</script></span>
+<span class="math"><script type="math/tex; mode=display">\frac{}{\Gamma \vdash A \vee \neg A}\text{ excluded middle}.
+</script></span>
+<p>The set of <strong>provable sequents</strong> is inductively defined by the natural deduction rules, as we now explain.</p>
+<p>A <strong>proof</strong> of a sequent <span class="math"><script type="math/tex">\Gamma \vdash A</script></span> is a derivation of this sequent, that is, a tree where nodes are labelled by sequents and where the root is labelled by <span class="math"><script type="math/tex">\Gamma \vdash A</script></span>, and such that if a node is labelled by a sequent
+<span class="math"><script type="math/tex">\Delta \vdash B</script></span> and its children are labelled by sequents <span class="math"><script type="math/tex">\Sigma_1 \vdash C_1, \dots, \Sigma_n \vdash C_n</script></span> then there is a natural deduction rule
+that allows us to deduce <span class="math"><script type="math/tex">\Delta \vdash B</script></span> from <span class="math"><script type="math/tex">\Sigma_1 \vdash C_1, \dots, \Sigma_n \vdash C_n</script></span>.</p>
+<p>A sequent <span class="math"><script type="math/tex">\Gamma \vdash A</script></span> is <strong>provable</strong> if there exists a proof of <span class="math"><script type="math/tex">\Gamma \vdash A</script></span>.</p>
+<p><strong>Example.</strong> If this is your first exposure to formal natural deduction proofs, then you will want to see an example of a <em>proof tree</em> (or <em>derivation tree</em>) of the kind described in the definition of “proof” above.  But first let’s define one more proof principle (because it will help control the size of the proof tree in our example).</p>
+<ul>
+<li><strong>Weakening.</strong> The <em>principle of weakening</em> asserts that it is possible to add useless hypotheses in a sequent. Precisely, if the sequent <span class="math"><script type="math/tex">\Gamma \vdash A</script></span> is provable, then the sequent <span class="math"><script type="math/tex">\Gamma, B \vdash A</script></span> is also provable. (The weakening principle is provable in natural deduction by induction over the structure of a proof of <span class="math"><script type="math/tex">Γ \vdash A</script></span>.)</li>
+</ul>
+<p>Here is a natural deduction proof of the sequent <span class="math"><script type="math/tex">\emptyset \vdash \neg\neg A  \to A</script></span>. (Here, <span class="math"><script type="math/tex">\Gamma = \emptyset</script></span> and in such cases we typically write <span class="math"><script type="math/tex">\vdash A</script></span> instead of <span class="math"><script type="math/tex">\emptyset\vdash A</script></span>.) Assume we have a proof <span class="math"><script type="math/tex">\pi</script></span> of the sequent <span class="math"><script type="math/tex">\vdash \neg \neg A</script></span>. Then, we can derive <span class="math"><script type="math/tex">\vdash A</script></span> as follows:</p>
+<span class="math"><script type="math/tex; mode=display">\frac{\frac{}{\vdash A \vee \neg A}{\small \text{excl. mid.}}\quad \frac{}{A \vdash A}{\small \text{axiom}} \quad \frac{\frac{\frac{}{\neg A \vdash \neg A}\qquad \frac{\frac{\pi}{\vdash \neg \neg A}}{\neg A \vdash \neg \neg A}{\text{weakening}}}{\neg A \vdash \perp}\neg\text{-elim}}{\neg A \vdash A}{\small \perp\text{-elim}}}{\vdash A}\vee\text{-elim}
+</script></span>
+<p><strong>PROBLEM 4.</strong> Compare/contrast the binary relation <span class="math"><script type="math/tex">\vdash</script></span> introduced here and the relation <span class="math"><script type="math/tex">\vdash</script></span> we use in model theory.</p>
+<hr>
+<h3>Theories and Theorems</h3>
+<p>A <em>theory</em> is a finite or infinite set of <em>closed</em> propositions
+(i.e., propositions with no free variables); the elements of a theory are called <em>axioms</em>.</p>
+<p>If a theory <span class="math"><script type="math/tex">\mathcal T</script></span> is finite, we say that a proposition <span class="math"><script type="math/tex">A</script></span> is a <em>theorem in</em> <span class="math"><script type="math/tex">\mathcal T</script></span>, or that the proposition <em>can be proved in</em> <span class="math"><script type="math/tex">\mathcal T</script></span>, if the sequent <span class="math"><script type="math/tex">\mathcal T \vdash A</script></span> is provable.  However, in the general case, the pair <span class="math"><script type="math/tex">\mathcal T \vdash</script></span> is not a sequent.  We need to give a more general definition.</p>
+<p>A proposition <span class="math"><script type="math/tex">A</script></span> is a <em>theorem</em> (or <em>provable proposition</em>) <em>in the theory</em> <span class="math"><script type="math/tex">\mathcal T</script></span> if there exists a finite subset <span class="math"><script type="math/tex">\Gamma</script></span> of <span class="math"><script type="math/tex">\mathcal T</script></span> such that the sequent <span class="math"><script type="math/tex">\Gamma \vdash A</script></span> is provable.</p>
+<p><strong>PROBLEM 5.</strong><br>
+a. Compare/contrast a proof theory theory and a model theory theory.<br>
+b. Comment on this definition of “theorem” from the point of view of model theory. (Be sure to say something about finiteness.)</p>
+<hr>
+<h3>Consistency</h3>
+<p>A theory <span class="math"><script type="math/tex">\mathcal T</script></span> is <em>consistent</em> if there is some proposition that is not provable in <span class="math"><script type="math/tex">\mathcal T</script></span>.  Otherwise, <span class="math"><script type="math/tex">\mathcal T</script></span> is <em>contradictory.</em></p>
+<p><strong>PROBLEM 6.</strong> Is this definition of “consistent” the same as ours?</p>
+<hr>
+<h3>Soundness</h3>
+<p>One of the motivations for the study of models is that validity in a model is an invariant of provability: provable sequents are valid in all models.
+Thus, if a proposition is provable in a theory, then it is valid in all the models of the theory. This suggests a method to show that a proposition is not provable in a given theory: it is sufficient to show that there is a model of the theory in which the proposition is not valid. The second formulation of the soundness theorem given below states this principle.</p>
+<p><strong>Theorem 1.</strong> If a sequent <span class="math"><script type="math/tex">A_1, \dots, A_m \vdash B_1, \dots, B_n</script></span> is
+provable in natural deduction, then it is valid in all models.</p>
+<p>In the model theory that we studied, many theorems involved validity of a given formula <span class="math"><script type="math/tex">\varphi</script></span> in a given model, and the proof typically proceeds by induction on the structure (or complexity) of <span class="math"><script type="math/tex">\varphi</script></span>.  Theorem 1 above is about the validity (in all models) of a sequent that is provable in natural deduction. Its proof proceeds by induction <em>on the structure of a natural deduction proof.</em></p>
+<p><strong>PROBLEM 7.</strong> Can you prove Theorem 1?  (An outline of a proof will suffice, as long as it’s clear and well-written.)</p>
+<p>The following so-called <em>soundness theorem</em> is a consequence of Theorem 1, and it can be formulated in three different (equivalent) ways.</p>
+<p><strong>Theorem 2.</strong> (Soundness) Let <span class="math"><script type="math/tex">\mathcal T</script></span> be a theory and <span class="math"><script type="math/tex">A</script></span> a proposition.</p>
+<ol>
+<li>If <span class="math"><script type="math/tex">A</script></span> is provable in <span class="math"><script type="math/tex">\mathcal T</script></span>, then <span class="math"><script type="math/tex">A</script></span> is valid in all the models of <span class="math"><script type="math/tex">\mathcal T</script></span>.</li>
+<li>If there exists a model of <span class="math"><script type="math/tex">\mathcal T</script></span> that is not a model of <span class="math"><script type="math/tex">A</script></span>, then <span class="math"><script type="math/tex">A</script></span> is not provable in <span class="math"><script type="math/tex">\mathcal T</script></span>.</li>
+<li>If <span class="math"><script type="math/tex">\mathcal T</script></span> has a model, then <span class="math"><script type="math/tex">\mathcal T</script></span> is consistent.</li>
+</ol>
+<hr>
+<h3>Completeness</h3>
+<p>The soundness theorem tells us that if a proposition <span class="math"><script type="math/tex">A</script></span> is provable in a theory
+<span class="math"><script type="math/tex">\mathcal T</script></span> then it is valid in all the models of the theory. The completeness
+theorem, first proved in 1930 by Gödel, is the converse of the soundness theorem.
+Similarly to soundness, the completeness theorem can be formulated in
+three different (equivalent) ways.</p>
+<p><strong>Theorem 3.</strong> (Completeness) Let <span class="math"><script type="math/tex">\mathcal T</script></span> be a theory and <span class="math"><script type="math/tex">A</script></span> a proposition.</p>
+<ol>
+<li>If <span class="math"><script type="math/tex">A</script></span> is valid in all the models of <span class="math"><script type="math/tex">\mathcal T</script></span> then <span class="math"><script type="math/tex">A</script></span> is provable in <span class="math"><script type="math/tex">\mathcal T</script></span>.</li>
+<li>If <span class="math"><script type="math/tex">A</script></span> is not provable in <span class="math"><script type="math/tex">\mathcal T</script></span>, then there exists a model of <span class="math"><script type="math/tex">\mathcal T</script></span> which is not a model of <span class="math"><script type="math/tex">A</script></span>.</li>
+<li>If <span class="math"><script type="math/tex">\mathcal T</script></span> is consistent then <span class="math"><script type="math/tex">\mathcal T</script></span> has a model.</li>
+</ol>
+<p>The first two formulations are trivially equivalent, and version 3 is a consequence
+of 2 if we take <span class="math"><script type="math/tex">A = \perp</script></span>.</p>
+<p><strong>PROBLEM 8.</strong> Show that version 2 of the completeness theorem is a consequence of version 3.</p>
+<!-- Consider a theory T and a proposition A not provable in this theory. By Proposition 1.7, the
+proposition ⊥ is not provable in the theory T , ¬A. Therefore by (3) the theory
+T , ¬A has a model. This model is a model of T but not a model of A. -->
+<hr>
+<!-- ### Problems from Rothmaler -->
+<!-- **3.3.2**, **3.3.4**, **3.6.2**, **4.2.5**,  -->
+<!-- **5.6.1.** Prove---without using the Axiom of Choice (or any equivalent, like Zorn's Lemma)---that in a well-ordered boolean algebra, every filter can be extended to an ultrafilter. (Note that this applies to any countable boolean algebra, in particular to the Lindenbaum-Tarski algebras of countable languages (or theories).) -->
+<!-- Recall, if $\mathcal M$ is an $L$-structure and $X \subseteq M$, then the **substructure of $\mathcal M$ generated by $X$** is denoted by $\mathcal M_X$ (or by $\langle X \rangle$ when $\mathcal M$ is clear from context), and is defined to be the substructure of $\mathcal M$ with universe $M_X := \bigcap \{N : X \subseteq N, \mathcal N \leq \mathcal M\}$.
+
+**Problem 2.** [Rothmaler 6.3.3.]  
+Let $\mathcal{M}$ and $\mathcal{N}$ be $L$-structures and $X \subseteq M$. Suppose $f\colon X \rightarrow N$ satisfies $(\mathcal{M}, X) \equiv_{\mathbf{at}} (\mathcal{N}, f[X])$ (and is thus injective). Extend $f$ to an isomorphism $F\colon \mathcal{M}_X \cong \mathcal{N}_{f[X]}$ and prove $(\mathcal{M}, M_X) \equiv_{\mathbf{at}} (\mathcal{N}, F[M_X]).$ --></body>
+</html>
