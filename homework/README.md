@@ -93,30 +93,12 @@
 
 **Due Friday April 13**
 
-**Exercises:** **8.1.1**, **8.2.2**, **8.3.1**, **8.3.5**, (8.3.6), **8.4.1**, (8.4.2), **8.4.3**, **8.4.4**, **8.4.5**, **8.5.1**, **8.5.5**.
+**Exercises:** **8.1.1**, **8.2.2**, **8.3.1**, (8.3.5), (8.3.6), **8.4.1**, (8.4.2), **8.4.3**, **8.4.4**, **8.4.5**, **8.5.1**, (8.5.2), **8.5.5**.
 
 ---
 
-## HW 9
+## Take-home Final Exam (HW 9)
 
-**Due Friday Apr 20**
+**Due Friday May 11
 
-**Exercises:** TBA
-
----
-
-## HW 10
-
-**Due Friday Apr 27**
-
-**Exercises:** TBA
-
----
-
-## HW 11
-
-**Due Friday May 4**
-
-**Exercises:** TBA
-
----
+**Exercises:** (see Final.{md,pdf,html} in hw09 directory)
