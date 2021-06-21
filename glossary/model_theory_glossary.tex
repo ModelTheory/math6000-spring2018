@@ -434,7 +434,7 @@ closed inconsistent set of 𝐿-sentences.
   \(\bfall\) is the class of formulas in which \(\exists\) does not appear;
   \(T_{\bfall} = (T ∩ \bfall)^⊢\),  the \emph{universal part} of 𝑇.
 \item
-  \(\operatorname{Th}_Δ ℳ := \{φ ∈ 𝐿₀ : φ ∈ Δ, \, ℳ ⊢ φ\}\),
+  \(\operatorname{Th}_Δ ℳ := \{φ ∈ 𝐿₀ : φ ∈ Δ, \, ℳ \models φ\}\),
   the set of 𝐿-sentences in Δ that are true in ℳ.
 \item
   \(\operatorname{Th} ℳ := \operatorname{Th}_{L_0} ℳ\),
@@ -450,8 +450,8 @@ closed inconsistent set of 𝐿-sentences.
   \item 𝑇 is complete.
   \item 𝑇 is a maximal 𝐿-theory.
   \item 𝑇 is a maximal consistent set of 𝐿-sentences.
-  \item 𝑇 = Th ℳ for all ℳ ⊢ 𝑇.
-  \item 𝑇 = Th ℳ for some ℳ ⊢ 𝑇.
+  \item 𝑇 = Th ℳ for all \(ℳ \models 𝑇\).
+  \item 𝑇 = Th ℳ for some \(ℳ \models 𝑇\).
   \end{enumerate}
 \end{lemma}
 
@@ -463,7 +463,7 @@ closed inconsistent set of 𝐿-sentences.
 \item The \defn{diagram} of ℳ is the set \(𝐷(ℳ) := \mathbf{cl}_{𝐿(𝑀)}\) of all
   atomic and negated atomic 𝐿(𝑀)-sentences;
 \item
-  \(ℳ ⇒_Δ 𝒩\) means ∀ φ ∈ Δ ∩ 𝐿₀ (ℳ ⊢ φ → 𝒩 ⊢ φ).
+  \(ℳ ⇒_Δ 𝒩\) means ∀ φ ∈ Δ ∩ 𝐿₀ \((ℳ \models φ → 𝒩 \models φ)\).
 \item
   ℳ ⇒ 𝒩 means \(ℳ ⇒_𝐿 𝒩\).
 \item
@@ -473,7 +473,7 @@ closed inconsistent set of 𝐿-sentences.
   𝑓 : ℳ ↪ 𝒩 means 𝑓 is an 𝐿-structure-monomorphism from ℳ to 𝒩.
 \item
   \(𝑓 : ℳ \stackrel{Δ}{⟶} 𝒩\) means all 𝐿-formulas in Δ are preserved by 𝑓; that
-  is, ℳ~⊢~φ(𝑎) implies 𝒩~⊢~φ(𝑓~∘~𝑎), for all φ ∈ Δ ∩ 𝐿 and all tuples 𝑎 from 𝑀.
+  is, \(ℳ \models φ(𝑎)\) implies \(𝒩 \models φ(𝑓 ∘ 𝑎)\), for all φ ∈ Δ ∩ 𝐿 and all tuples 𝑎 from 𝑀.
 \item
   \(𝑓 : ℳ \stackrel{≡}{⟶} 𝒩\) means \(𝑓 : ℳ \stackrel{L}{⟶} 𝒩\).
 \end{enumerate}
@@ -490,7 +490,7 @@ then denote by 𝑓[𝑀] the \defn{image} of 𝑀 under 𝑓.
   negations of unnested relational atomic formulas, then 𝑓 is a strong
   homomorphism. (The converse is not true.)
 \item If \(f : ℳ \stackrel{Δ}{⟶} 𝒩\) and Δ is closed under negation, then
-  ℳ ⊢ φ(𝑎) implies 𝒩 ⊢ φ(𝑓 ∘ 𝑎), for all φ~∈~Δ and tuples 𝑎 from 𝑀.
+  \(ℳ \models φ(𝑎)\) implies \(𝒩 \models φ(𝑓 ∘ 𝑎)\), for all φ~∈~Δ and tuples 𝑎 from 𝑀.
 \item 𝑓 : 𝑀 → 𝑁 is injective iff \(f : ℳ \stackrel{Δ}{⟶} 𝒩\)
 for the set \(Δ = \{x \neq y\}\).
 \item If Δ ⊆ 𝐿₀, then \(f : ℳ \stackrel{Δ}{⟶} 𝒩\) iff \(ℳ ⇒_Δ 𝒩\) and
@@ -502,7 +502,7 @@ for the set \(Δ = \{x \neq y\}\).
 \subsection{The Lemma on Constants}\label{the-lemma-on-constants}
 
 Above we remarked that if (𝒜, 𝑎) is an 𝐿(𝑐)-structure with 𝒜 an 𝐿-structure,
-then for every atomic formula φ of 𝐿, we have 𝒜 ⊢ φ(𝑎) if and only if (𝒜, 𝑎) ⊢ φ(𝑐).
+then for every atomic formula φ of 𝐿, we have \(𝒜 \models φ(𝑎)\) if and only if \((𝒜, 𝑎) \models φ(𝑐)\).
 
 \begin{lemma}[\protect{\cite[2.3.2]{Hodges:1993}}] Let 𝐿 be a language, 𝑇 a
 theory in 𝐿, and φ(𝑥) a formula in 𝐿. Let 𝑐 be a sequence of distinct constants
@@ -516,8 +516,8 @@ that are not in 𝐿. Then 𝑇 ⊢ φ(𝑐) if and only if 𝑇 ⊢ ∀ 𝑥, �
   \begin{enumerate}
   \item
     \(𝑓 : ℳ ↪ 𝒩 \, ⇔ \, 𝑓 : ℳ \stackrel{\mathbf{qf}}{⟶} 𝒩
-                  \, ⇔ \, (𝒩, 𝑓[M]) ⊢ 𝐷(ℳ)\).
-    In particular \(f : ℳ \stackrel{≡}{↪} 𝒩  \, ⇒  \, f : ℳ ↪ 𝒩\).
+                  \, ⇔ \, (𝒩, 𝑓[M]) \models 𝐷(ℳ)\).\\[6pt]
+    In particular, \(f : ℳ \stackrel{≡}{↪} 𝒩  \, ⇒  \, f : ℳ ↪ 𝒩\).\\[-3mm]
   \item
     \(ℳ ↪ 𝒩 \; ⇔ \; 𝒩\) has an 𝐿(𝑀)-expansion that models 𝐷(ℳ).
   \end{enumerate}
@@ -540,10 +540,11 @@ new notation.
 
 \begin{lemma}[\protect{\cite[1.4.2]{Hodges:1993}}] The following are equivalent:
   \begin{enumerate}
-  \item For every atomic sentence φ(𝑐) of 𝐿(𝑐), if (ℳ, 𝑐) ⊢ φ(𝑐) then (𝒩, 𝑐) ⊢ φ(𝑐). 
+  \item For every atomic sentence φ(𝑐) of 𝐿(𝑐), if \((ℳ, 𝑐) \models φ(𝑐)\) then \((𝒩, 𝑐)\models φ(𝑐)\). 
   \item There is a homomorphism 𝑓 : ⟨ 𝑎 ⟩ → 𝒩 such that 𝑓 ∘ 𝑎 = 𝑏.
   \item The homomorphism is unique, if it exists, and it is an embedding if and
-    only if for every atomic sentence φ of 𝐿(𝑐), we have (ℳ, 𝑐) ⊢ φ  ⇔ (𝒩, 𝑐) ⊢ φ.
+    only if for every atomic sentence φ of 𝐿(𝑐), we have
+    \((ℳ, 𝑐) \models φ \, ⇔ \, (𝒩, 𝑐) \models φ\).
   \end{enumerate}
 \end{lemma}
 
@@ -607,7 +608,7 @@ The \defn{elementary diagram} of an 𝐿-structure ℳ is the complete 𝐿(𝑀
 \begin{lemma}[\protect{\cite[8.2.1]{Rothmaler:2000}}]
  Let ℳ and 𝒩 be 𝐿-structures and 𝑓 : 𝑀 → 𝑁.
 \begin{enumerate}
-\item  𝑓 is elementary ⇔ (ℳ, 𝑀) ≡ (𝒩, 𝑓[𝑀]) ⇔ (𝒩, 𝑓[𝑀]) ⊢ Th(ℳ, 𝑀).
+\item  𝑓 is elementary ⇔ (ℳ, 𝑀) ≡ (𝒩, 𝑓[𝑀]) ⇔ \((𝒩, 𝑓[𝑀]) \models Th(ℳ, 𝑀)\).
 \item \(ℳ \stackrel{≡}{↪} 𝒩\) ⇔ 𝒩 has an expansion that is a model of Th(ℳ, 𝑀).
 \end{enumerate}
 \end{lemma}
