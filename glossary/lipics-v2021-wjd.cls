@@ -1150,23 +1150,28 @@
 		\def\subparagraphautorefname{Subparagraph}%
 	}
 	\ifx\usethmrestate\relax
-		\newtheorem{lemma}[theorem]{Lemma}
-		\newtheorem{corollary}[theorem]{Corollary}
 		\newtheorem{proposition}[theorem]{Proposition}
 		\newtheorem{exercise}[theorem]{Exercise}
 		\newtheorem{definition}[theorem]{Definition}
 		\newtheorem{conjecture}[theorem]{Conjecture}
 		\newtheorem{observation}[theorem]{Observation}
 		\theoremstyle{definition}
-		\newtheorem{example}[theorem]{Example}
+		\newtheorem{lemma}[theorem]{Lemma}
+		\newtheorem{corollary}[theorem]{Corollary}
 		\theoremstyle{remark}
 		\newtheorem{note}[theorem]{Note}
 		\newtheorem*{note*}{Note}
 		\newtheorem{remark}[theorem]{Remark}
 		\newtheorem*{remark*}{Remark}
+		\newtheorem{remarks}[theorem]{Remarks}
+		\newtheorem*{remarks*}{Remarks}
 		\theoremstyle{claimstyle}
 		\newtheorem{claim}[theorem]{Claim}
 		\newtheorem*{claim*}{Claim}
+		\newtheorem{example}[theorem]{Example}
+		\newtheorem{example*}{Example}
+		\newtheorem{examples}[theorem]{Examples}
+		\newtheorem*{examples*}{Examples}
 	\else
 		\newaliascnt{lemma}{theorem}
 		\newtheorem{lemma}[lemma]{Lemma}
